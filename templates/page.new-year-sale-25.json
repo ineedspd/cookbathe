@@ -1,0 +1,850 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "rich_text_pVdqpG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_XAj6BA": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1><strong>New Year Sale – Redefine Your Spaces in 2026</strong></h1>",
+            "heading_size": "h1"
+          }
+        },
+        "text_CkbfN8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Cook & Bathe New Year Sale brings together a focused range of kitchen, bathroom, and laundry products selected for design integrity, build quality, and everyday performance. Explore premium sinks, tapware, fixtures, and accessories from trusted brands, with savings available across selected ranges for a limited time. Whether you are replacing key pieces or planning a larger renovation, this collection is built to support practical decision-making, long-term value, and cohesive design outcomes across your home.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XAj6BA",
+        "text_CkbfN8"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_LWhTkp": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_EikPCr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new-year-sale-best-sellers"
+          }
+        },
+        "featured_collection_WREy6N": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new-year-sale-bathroom-1"
+          }
+        },
+        "featured_collection_FafRBg": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "new-year-sale-kitchen-1"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_EikPCr",
+        "featured_collection_WREy6N",
+        "featured_collection_FafRBg"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-2",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_7VkMgz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kQYPDp": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Sinks & Tapware</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_DXGPFE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Sinks and tapware form the functional centre of the kitchen, and selecting the right combination plays a key role in both usability and overall design cohesion. The New Year Sale includes a focused range of sinks and tapware from leading brands known for precision engineering, material quality, and long-term performance.<br/><br/>Explore <a href=\"https://www.cookandbathe.com.au/collections/franke\" title=\"https://www.cookandbathe.com.au/collections/franke\"><strong>Franke sinks and tapware</strong></a>, offering integrated solutions designed to work seamlessly together. Franke is widely specified for kitchens where durability, refined design, and practical performance are essential, making it a strong option for both new builds and renovations.<br/><br/>For tapware-only upgrades, <a href=\"https://www.cookandbathe.com.au/collections/bella_vista\" title=\"https://www.cookandbathe.com.au/collections/bella_vista\"><strong>Bella Vista tapware</strong></a> provides contemporary mixer designs with clean profiles and balanced proportions. These ranges suit modern kitchen environments where visual consistency and ease of use are prioritised.<br/><br/>Sink-focused solutions are available from<strong> </strong><a href=\"https://www.cookandbathe.com.au/collections/seima\" title=\"https://www.cookandbathe.com.au/collections/seima\"><strong>Seima</strong></a>, selected for their functional bowl configurations, robust materials, and suitability across a range of kitchen layouts. Seima offers options that support both minimalist aesthetics and practical daily use.<br/><br/>Together, these brands provide targeted sink and tapware solutions that prioritise performance, design cohesion, and long-term value within the kitchen.</p>"
+          }
+        },
+        "button_8qnR6b": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Sale Sinks & Tapware",
+            "button_link": "shopify://collections/new-year-sale-basins-and-sinks",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kQYPDp",
+        "text_DXGPFE",
+        "button_8qnR6b"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_hGyPBB": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Sinks & Tapware",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": true,
+        "description_style": "body",
+        "collection": "new-year-sale-basins-and-sinks",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_CD7dhn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YjirmD": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Mirrors & Vanities</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_GEfrVc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Mirrors and vanities play a defining role in how a bathroom looks, functions, and feels on a daily basis. Beyond storage, these elements influence spatial balance, lighting, and how efficiently the room supports everyday routines. The New Year Sale includes a focused selection of mirrors and vanities from established brands known for quality finishes, considered proportions, and practical design suited to Australian bathrooms.<br/><br/>Explore <a href=\"https://www.cookandbathe.com.au/collections/otti\" title=\"https://www.cookandbathe.com.au/collections/otti\">Otti mirrors, shaving cabinets,  and vanities</a>, designed to support clean, contemporary bathroom layouts with an emphasis on usability and visual restraint. Otti ranges are valued for their integrated storage solutions, streamlined profiles, and finishes that work well across modern and transitional interiors, making them a strong option for both renovations and new builds.<br/><br/>For additional design flexibility, discover <a href=\"https://www.cookandbathe.com.au/collections/fienza\" title=\"https://www.cookandbathe.com.au/collections/fienza\">Fienza mirrors and vanities</a>, offering a broad range of styles that balance form and function. Fienza products are selected for their material quality, thoughtful detailing, and ability to integrate seamlessly into a variety of bathroom layouts, from compact spaces to larger, statement bathrooms.<br/><br/>Mirror design continues to favour clarity and simplicity, supporting improved lighting and a more open feel within the room, while vanity configurations focus on efficient storage without visual bulk. When selected together, mirrors and vanities help create bathrooms that feel organised, balanced, and cohesive, supporting everyday use while maintaining a refined overall aesthetic.<br/><br/>Together, Otti and Fienza provide practical, well-designed mirror and vanity solutions that prioritise durability, usability, and long-term design consistency.</p>"
+          }
+        },
+        "button_9PWgy4": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Mirrors & Vanities",
+            "button_link": "shopify://collections/new-year-mirror-vanities-sale",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YjirmD",
+        "text_GEfrVc",
+        "button_9PWgy4"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_FLDDPm": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Mirrors & Vanities",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-year-mirror-vanities-sale",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_kfMPD4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_8HQe3z": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Baths & Showers</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_MEwLPf": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Showers and baths are foundational to both comfort and functionality in the bathroom, with modern design prioritising efficient layouts, durable materials, and long-term usability. Current preferences favour bathrooms that feel open and uncluttered, where baths and showers are selected based on space, daily routines, and ease of maintenance rather than purely decorative appeal.<br/><br/>Bath selection continues to centre on form, comfort, and practicality. Freestanding baths are commonly chosen for larger bathrooms where they can act as a visual anchor, while inset and back-to-wall bath designs suit more compact layouts that require efficient use of space. The New Year Sale includes bath options from established manufacturers such as <a href=\"https://www.cookandbathe.com.au/collections/decina\" title=\"https://www.cookandbathe.com.au/collections/decina\">Decina</a>, <a href=\"https://www.cookandbathe.com.au/collections/seima\" title=\"https://www.cookandbathe.com.au/collections/seima\">Seima</a>, and <a href=\"https://www.cookandbathe.com.au/collections/fienza\" title=\"https://www.cookandbathe.com.au/collections/fienza\">Fienza</a>, supporting a range of bathroom configurations and design approaches without compromising on build quality or comfort.<br/><br/>Shower design continues to move toward walk-in formats, frameless screens, and simplified layouts that improve accessibility and reduce visual noise. The focus is on reliable water delivery, efficient drainage, and surfaces that are easy to clean and maintain over time. Shower systems and fittings from brands including <a href=\"https://www.cookandbathe.com.au/collections/phoenix\" title=\"https://www.cookandbathe.com.au/collections/phoenix\">Phoenix</a>, <a href=\"https://www.cookandbathe.com.au/collections/caroma\" title=\"https://www.cookandbathe.com.au/collections/caroma\">Caroma</a>, and <a href=\"https://www.cookandbathe.com.au/collections/bella_vista\" title=\"https://www.cookandbathe.com.au/collections/bella_vista\">Bella Vista</a> support bathrooms where performance and consistency are prioritised across fixtures.<br/><br/>Shower floor solutions also play an important role in overall usability, contributing to water management, safety, and long-term durability within the shower zone. Options from suppliers such as <a href=\"https://www.cookandbathe.com.au/collections/decina\" title=\"https://www.cookandbathe.com.au/collections/decina\">Domus Living</a> help create bathrooms that function efficiently while maintaining a clean, resolved finish.<br/><br/>Together, these shower and bath solutions support bathrooms that are practical, balanced, and designed for everyday use, making it easier to plan spaces that remain functional and visually cohesive over time.</p>"
+          }
+        },
+        "button_UzhjTU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Baths & Showers",
+            "button_link": "shopify://collections/new-year-baths-showers-sale",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8HQe3z",
+        "text_MEwLPf",
+        "button_UzhjTU"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_fgBbNG": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Baths & Showers",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-year-baths-showers-sale",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_ahk48e": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_p8KRAp": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Basins & Tapware</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_XkcehH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Basins and tapware work together to define both the visual balance and everyday usability of the bathroom. Contemporary bathroom design continues to favour clean forms, efficient layouts, and pairings that feel intentional rather than decorative. The focus is on proportion, ease of use, and finishes that integrate naturally with surrounding materials and cabinetry.<br/><br/>Basin selection is increasingly driven by how the space is used and how the basin sits within the overall layout. Above-counter and semi-recessed basins are commonly chosen to introduce subtle visual interest, while integrated and inset designs support a more streamlined appearance. The New Year Sale includes basin options from established suppliers such as <a href=\"https://www.cookandbathe.com.au/collections/seima-basins\" title=\"https://www.cookandbathe.com.au/collections/seima-basins\">Seima basins</a> and <a href=\"https://www.cookandbathe.com.au/collections/fienza-basins\" title=\"https://www.cookandbathe.com.au/collections/fienza-basins\">Fienza basins</a>, offering a range of forms and finishes suited to modern bathroom environments without unnecessary visual complexity.<br/><br/>Tapware selection plays a supporting role, ensuring comfortable operation and visual alignment with the basin itself. Bathroom tapware trends continue to favour refined profiles, smooth operation, and finishes that complement neutral palettes and textured surfaces. Tapware ranges from <a href=\"https://www.cookandbathe.com.au/collections/bella-vista-bathroom\" title=\"https://www.cookandbathe.com.au/collections/bella-vista-bathroom\">Bella Vista basin tapware</a> and <a href=\"https://www.cookandbathe.com.au/collections/phoenix-bathroom-tapware\" title=\"https://www.cookandbathe.com.au/collections/phoenix-bathroom-tapware\">Phoenix bathroom tapware</a> support bathrooms where consistency across fixtures and long-term reliability are key considerations.<br/><br/>When selected together, basins and tapware contribute to bathrooms that feel balanced, practical, and visually resolved, supporting everyday use while maintaining clarity in the overall design.<br/><br/></p>"
+          }
+        },
+        "button_h4eDxg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Basins & Tapware",
+            "button_link": "shopify://collections/new-year-basins-sinks-sale",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_p8KRAp",
+        "text_XkcehH",
+        "button_h4eDxg"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_kakGfP": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Basins & Tapware",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-year-sale-basins-and-sinks",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-2",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_Ub4MbX": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Appliances",
+        "heading_size": "h1",
+        "description": "<p>Appliances play a central role in how a kitchen functions on a daily basis, influencing cooking performance, efficiency, and overall layout. Contemporary kitchen design prioritises appliances that integrate cleanly into cabinetry, support consistent results, and suit a wide range of cooking habits, from everyday family use to more considered entertaining. <br/><br/>The New Year Sale includes a broad selection of kitchen appliances spanning key categories such as fridges, ovens, cooktops, rangehoods, dishwashers, microwaves, and alfresco cooking solutions. Selection is increasingly driven by practical factors including cooking capacity, heat control, ventilation efficiency, and how appliances work together within the space, rather than individual statement pieces.</p><p>Cooking appliances remain a core focus, with ovens and cooktops selected based on reliability, temperature accuracy, and layout flexibility. Ventilation is equally important, with rangehoods specified to manage steam, heat, and odours effectively while maintaining visual balance within the kitchen. Refrigeration continues to be an essential consideration, with fridge designs chosen to suit storage needs, kitchen size, and integration preferences.<br/><br/>Dishwashers and microwaves support everyday efficiency, with an emphasis on quiet operation, intuitive controls, and durability in high-use environments. Alfresco appliances are also increasingly specified, extending cooking and entertaining spaces outdoors while maintaining consistent performance and material quality.<br/><br/>Appliance ranges from established manufacturers including <a href=\"https://www.cookandbathe.com.au/collections/electrolux\" title=\"https://www.cookandbathe.com.au/collections/electrolux\">Electrolux</a>, <a href=\"https://www.cookandbathe.com.au/collections/euro-appliances\" title=\"https://www.cookandbathe.com.au/collections/euro-appliances\">Euro Appliances</a>, and <a href=\"https://www.cookandbathe.com.au/collections/smeg\" title=\"https://www.cookandbathe.com.au/collections/smeg\">Smeg</a> provide options across all major categories, supporting kitchens that prioritise functionality, design cohesion, and long-term usability.</p><p>Together, these appliance solutions allow kitchens to be planned holistically, ensuring each component works efficiently within the overall layout while supporting consistent performance over time.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-year-appliances-sale",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_KGp9mK": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Toilets",
+        "heading_size": "h1",
+        "description": "<p>Toilets are a core functional element of the bathroom, with modern design placing emphasis on efficiency, comfort, and ease of maintenance. Current preferences favour streamlined profiles and practical configurations that integrate cleanly into contemporary bathroom layouts while supporting everyday usability.<br/><br/>Wall-faced and back-to-wall toilets continue to be widely specified for their ability to conceal pipework, simplify cleaning, and create a more cohesive finish across the space. Rimless designs are increasingly preferred for hygiene and ease of maintenance, while soft-close seats contribute to quieter operation and improved day-to-day comfort. Water efficiency also remains a key consideration, with dual-flush systems supporting reduced water usage without compromising performance.<br/><br/>The New Year Sale includes toilet options from established manufacturers such as <a href=\"https://www.cookandbathe.com.au/collections/geberit\" title=\"https://www.cookandbathe.com.au/collections/geberit\">Geberit</a>, <a href=\"https://www.cookandbathe.com.au/collections/argent\" title=\"https://www.cookandbathe.com.au/collections/argent\">Argent</a>, <a href=\"https://www.cookandbathe.com.au/collections/villeroy-boch\" title=\"https://www.cookandbathe.com.au/collections/villeroy-boch\">Villeroy & Boch</a>, and <a href=\"https://www.cookandbathe.com.au/collections/fienza-toilets\" title=\"https://www.cookandbathe.com.au/collections/fienza-toilets\">Fienza</a>, offering a range of designs suited to modern residential bathrooms and renovation projects.<br/><br/>When selected with layout and usage in mind, toilets contribute to bathrooms that feel balanced, practical, and resolved, supporting long-term performance while aligning with contemporary expectations for efficiency and design clarity.<br/><br/></p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-years-toilets-sale",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_AnLY9P": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_i7c4B9": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Elevate Your Home with Leading Brands</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_pmxMCm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Cook & Bathe, we partner with only the best brands in the industry, ensuring your home renovation projects are as stylish as they are functional. During our <strong>New Year Sale</strong>, enjoy huge savings on these iconic names:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_i7c4B9",
+        "text_pmxMCm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_4Cw7QW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8kU7fj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Phoenix Tapware",
+            "heading_size": "h1"
+          }
+        },
+        "text_qg49Va": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Renowned for cutting-edge designs and sophisticated finishes, Phoenix Tapware offers everything from <strong>sleek gooseneck taps</strong> to <strong>state-of-the-art basin mixers</strong>. Whether you’re designing a contemporary kitchen or a luxurious bathroom, this collection will exceed your expectations.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CaPbJh": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Phoenix Tapware",
+            "button_link": "shopify://collections/phoenix"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8kU7fj",
+        "text_qg49Va",
+        "button_CaPbJh"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/HPmobile_Wk45_Phoenix_acfa0512-5991-4b7f-8067-b62b40e62c6c.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_dnRw6a": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zhnTYi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Franke",
+            "heading_size": "h1"
+          }
+        },
+        "text_RMWHR4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Marrying European craftsmanship with robust performance, Franke is synonymous with quality. Their <strong>kitchen sinks</strong> are celebrated for seamless design, while <strong>sink mixers</strong> deliver timeless elegance. Explore Franke for solutions that blend effortlessly into any modern kitchen.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_EfHeBy": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Franke",
+            "button_link": "shopify://collections/franke"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zhnTYi",
+        "text_RMWHR4",
+        "button_EfHeBy"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/HPmobile_Wk42_FrankeSinks_9970c966-6f2b-4731-9782-a1ade5a93898.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_4mnU49": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_NRTBCR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Euro Appliances",
+            "heading_size": "h1"
+          }
+        },
+        "text_QagL4H": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Turn your kitchen into a refined and functional space with <strong>Euro Appliances</strong>. From precision-engineered ovens to sleek, high-performance rangehoods, Euro Appliances are designed for reliability, efficiency, and modern living. Elevate your cooking experience with Euro Appliances today.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CnUrza": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Euro Appliances",
+            "button_link": "shopify://collections/euro-appliances"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NRTBCR",
+        "text_QagL4H",
+        "button_CnUrza"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Week44_blog4.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_XPcADy": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fYKzA4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Kleenmaid",
+            "heading_size": "h1"
+          }
+        },
+        "text_LqaeQ3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover innovative European design with <strong>Kleenmaid ovens</strong>, <strong>cooktops</strong>, <strong>rangehoods</strong>,  <strong>fridges </strong>and more. Stylish, efficient, and packed with features, these appliances elevate the modern home.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_pjDQt9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Euro Appliances",
+            "button_link": "shopify://collections/euro-appliances"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fYKzA4",
+        "text_LqaeQ3",
+        "button_pjDQt9"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/tile_Wk40_Euro-Appliances-dishwashers.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_TyFCVb": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_XVbpzA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Otti Australia",
+            "heading_size": "h1"
+          }
+        },
+        "text_C3RRkp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Redefine your bathroom with Otti’s sleek <strong>basins, vanities</strong> and <strong>bathroom furniture</strong>. Designed with Australian homes in mind, Otti’s range includes minimalist designs and versatile configurations.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_6AAk8H": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Otti Australia",
+            "button_link": "shopify://collections/otti"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XVbpzA",
+        "text_C3RRkp",
+        "button_6AAk8H"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Otti2_1440x1778_mobilebanner_e4bf1e06-1894-4424-9609-499452d95522.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_NDfcxF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_krGALd": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>National Delivery Across Australia</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_NVP8Md": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cook & Bathe offers national delivery across Australia, making it easier to access premium kitchen, bathroom, and laundry products no matter where you are located. Our delivery network is structured to support metropolitan, regional, and selected remote locations, allowing customers outside major cities to source high-quality products without relying on local availability.</p><p>National delivery supports homeowners, renovators, builders, and designers who require consistent access to trusted brands and curated ranges, regardless of state or postcode. This approach ensures product selection is not limited by geography, providing the same access to sinks, tapware, appliances, baths, showers, and bathroom fixtures across the country.</p><p>Delivery methods are tailored to suit the size and nature of each product, with careful handling for larger and heavier items to support safe transit and condition on arrival. </p><p>By offering Australia-wide delivery, Cook & Bathe supports national renovation projects, remote builds, and customers seeking specialist products that may not be available locally, ensuring consistent access to considered design and dependable performance wherever your project is based.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_krGALd",
+        "text_NVP8Md"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "470d66d1-ac12-44e8-8b33-7169079e03e9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Coming Soon!</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1737601100fc7fdf29": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "rich_text_pVdqpG",
+    "collection_list_LWhTkp",
+    "rich_text_7VkMgz",
+    "featured_collection_hGyPBB",
+    "rich_text_CD7dhn",
+    "featured_collection_FLDDPm",
+    "rich_text_kfMPD4",
+    "featured_collection_fgBbNG",
+    "rich_text_ahk48e",
+    "featured_collection_kakGfP",
+    "featured_collection_Ub4MbX",
+    "featured_collection_KGp9mK",
+    "rich_text_AnLY9P",
+    "image_with_text_4Cw7QW",
+    "image_with_text_dnRw6a",
+    "image_with_text_4mnU49",
+    "image_with_text_XPcADy",
+    "image_with_text_TyFCVb",
+    "rich_text_NDfcxF",
+    "cb_find_showroom_PQG6UA",
+    "470d66d1-ac12-44e8-8b33-7169079e03e9",
+    "main",
+    "1737601100fc7fdf29"
+  ]
+}

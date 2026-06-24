@@ -1,0 +1,32 @@
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'title-style-1' %}
+      <div class="section_head_holder d-flex {% if block.settings.text-style == 'center' %}section_head_center_holder align-items-md-center justify-content-md-center{% endif %}">
+        <{{ block.settings.heading-tag }} class="h3">{{ block.settings.title }}</{{ block.settings.heading-tag }}>
+      </div>
+    {% when 'title-style-2' %}
+      <div class="section_head_holder section_head__text_holder d-flex flex-wrap flex-md-nowrap align-items-center">
+        <{{ block.settings.heading-tag }} class="h3">{{ block.settings.title }}</{{ block.settings.heading-tag }}>
+        <div class="d-none d-sm-block">{{ block.settings.content }}</div>        
+      </div>
+    {% when 'title-style-3' %}
+      <div class="section_head_holder d-flex align-items-center justify-content-between">
+        <{{ block.settings.heading-tag }} class="h3">{{ block.settings.title }}</{{ block.settings.heading-tag }}>
+        {% if block.settings['btn-name'] != blank %}
+          {% assign type = block.settings['btn-link'] | split: ':' %}
+          <a
+            href="{{ block.settings.btn-link }}"
+            class="{{ block.settings.btn-style }} {% if block.settings.btn-type == 'large' %} btn-lg {% endif %} "
+          >
+            {%- if type[0] == 'tel' %}
+              {%- render 'icon-call' -%}
+            {% endif -%}
+            {%- if type[0] == 'mailto' %}
+              {%- render 'icon-mail' -%}
+            {% endif -%}
+            {{ block.settings['btn-name'] }}
+          </a>
+        {% endif %}
+      </div>
+  {% endcase %}
+{% endfor %}

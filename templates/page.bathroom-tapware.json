@@ -1,0 +1,456 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "rich_text_i6aRkn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TGHNNy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Shop Our Bathroom Tapware Range</h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Tgm7iC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover tapware solutions that suit every style, bathroom layout, and budget. Whether you’re updating a compact ensuite or designing a luxury bathroom retreat, our range has the perfect piece for you:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TGHNNy",
+        "text_Tgm7iC"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_RN4nb9": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tKKNd8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_basintapware.png",
+            "title": "Basin Mixers",
+            "text": "<p>Sleek and functional designs that offer effortless control and a sophisticated finish, ideal for modern bathroom spaces.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/basin-mixers"
+          }
+        },
+        "column_zV8BR3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/iconwallbasinoutlets.png",
+            "title": "Wall-Mounted Tapware",
+            "text": "<p>Minimalist and space-saving styles designed to create a streamlined, contemporary look in your bathroom.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/wall-basin-outlets"
+          }
+        },
+        "column_X346kn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_shower.svg",
+            "title": "Shower Tapware",
+            "text": "<p>Featuring adjustable and thermostatic shower mixers for optimal comfort, water-saving efficiency, and consistent temperature control.</p>",
+            "link_label": "Shop Now",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_tKKNd8",
+        "column_zV8BR3",
+        "column_X346kn"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Bathroom Tapware",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Shop Tapware",
+        "button_link": "shopify://collections/tapware-bathroom",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3qAx9n": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3tWCM3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Enhance Your Bathroom with Stylish Tapware Solutions</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Tq7myG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choosing the right tapware is essential to achieving a functional and beautiful bathroom. Whether you’re after a sleek, minimalist look, a touch of luxury with brushed gold finishes, or affordable yet durable solutions for family bathrooms, Cook & Bathe offers one of Australia’s finest selections of modern and classic tapware designs.</p><p>From statement freestanding bath fillers to subtle wall-mounted mixers, our bathroom tapware range is tailored to meet every lifestyle need and design ambition. Invest in quality, style, and performance with tapware that transforms your daily routines into moments of indulgence.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3tWCM3",
+        "text_Tq7myG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_THfhdg": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_9xFXBB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "basin-hob-tapware"
+          }
+        },
+        "featured_collection_AEqk3A": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bath-hob-tapware"
+          }
+        },
+        "featured_collection_PCMCnp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bidet-tapware"
+          }
+        },
+        "featured_collection_HiJRHY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shower-tapware"
+          }
+        },
+        "featured_collection_4NBm3D": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cistern-tapware"
+          }
+        },
+        "featured_collection_MfxYi6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wall-top-assemblies-shower-tapware"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_9xFXBB",
+        "featured_collection_AEqk3A",
+        "featured_collection_PCMCnp",
+        "featured_collection_HiJRHY",
+        "featured_collection_4NBm3D",
+        "featured_collection_MfxYi6"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop Bathroom Tapware Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_dQbDaC": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Phoenix Tapware",
+        "heading_size": "h1",
+        "description": "<p>Elevate your bathroom with the award-winning designs of Phoenix Tapware. Crafted for modern living, Phoenix blends innovation, style, and durability across their stunning range of taps, showers, and accessories.</p><p><strong>Shop the Phoenix Tapware collection today and discover the perfect balance of form and function.</strong></p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "phoenix-bathroom-tapware",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_XKUHmE": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Bella Vista",
+        "heading_size": "h1",
+        "description": "<p>Modern style meets everyday functionality with Bella Vista tapware. Designed for durability and timeless appeal, Bella Vista brings effortless sophistication to any bathroom project.</p><p><strong>Shop our Bella Vista range now and transform your space with confidence.</strong></p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bella-vista-mica-tapware",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_a7qCcf": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Hansgrohe",
+        "heading_size": "h1",
+        "description": "<p>Experience the finest in German engineering with Hansgrohe. Fusing innovation, precision, and design excellence, Hansgrohe tapware and showers set the benchmark for modern bathroom luxury.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "hansgrohe-tapware",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_xUqC8f": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ihENJh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Shop Bathroom Tapware Online or Visit Our Showrooms</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_EEVVCH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ready to upgrade your bathroom? Browse our full tapware collection online or visit one of our Melbourne showrooms to experience the quality firsthand. Our knowledgeable team is here to assist you every step of the way.</p><p>Shop Bathroom Tapware Now or Contact Our Showroom Consultants to get started.</p>"
+          }
+        },
+        "button_dFVyJP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find Showrooms",
+            "button_link": "shopify://pages/store-locations",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ihENJh",
+        "text_EEVVCH",
+        "button_dFVyJP"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_blog_YqrJzW": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "173948753494c948f2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "rich_text_i6aRkn",
+    "multicolumn_RN4nb9",
+    "rich_text_3qAx9n",
+    "collection_list_THfhdg",
+    "featured_collection_dQbDaC",
+    "featured_collection_XKUHmE",
+    "featured_collection_a7qCcf",
+    "rich_text_xUqC8f",
+    "featured_blog_YqrJzW",
+    "cb_find_showroom_PQG6UA",
+    "173948753494c948f2",
+    "main"
+  ]
+}

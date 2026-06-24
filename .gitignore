@@ -1,0 +1,54 @@
+# OS / editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# GitHub / Shopify local state
+.shopify/
+.theme-check/
+.sass-cache/
+
+# Dependencies and generated files
+node_modules/
+dist/
+build/
+coverage/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Archives and database exports
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Secrets and local environment files
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_rsa.*
+
+# Local QA / review artifacts
+screenshots/
+test-results/
+playwright-report/
+qa_scripts/
+backups/
+reports/
+*.har

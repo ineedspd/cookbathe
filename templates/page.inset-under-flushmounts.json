@@ -1,0 +1,535 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "image_with_text_3GbWkc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8xnAD3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Inset, Undermount & Flushmount Kitchen Sinks",
+            "heading_size": "h2"
+          }
+        },
+        "text_NfTz3m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choosing the right sink style is a defining decision when designing your dream kitchen. Inset, undermount, and flushmount sinks each bring distinct design characteristics, practical benefits, and aesthetic enhancements. Whether you're refreshing your space or planning a full renovation, explore our expertly selected sink styles below to find the perfect fit for your kitchen layout and design vision.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_8xnAD3",
+        "text_NfTz3m"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/hpmobile_Wk18_Sinks.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_7YiDix": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HLPWrc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><a href=\"https://www.cookandbathe.com.au/collections/inset-sinks\" title=\"https://www.cookandbathe.com.au/collections/inset-sinks\">Inset Sinks</a></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_aDLzMN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Inset sinks, also known as top-mount sinks, are installed from above the benchtop, making them one of the most accessible and versatile sink styles available. Their visible lip creates a framed look that works well in both traditional and contemporary kitchen settings. Easy to install and often more budget-friendly, inset sinks are a popular choice for homeowners wanting a practical and stylish upgrade.</p><p>Designed to stand out, inset sinks offer flexibility in size and finish, accommodating a wide range of kitchen benchtops and configurations. Their elevated rim also acts as a barrier to water overflow, which can be especially useful in busy kitchens or family homes.<br/></p><ul><li>Simple to install with standard cabinetry</li><li>Visually frames the sink for a bold design statement</li><li>Edge lip helps contain spills and water</li><li>Compatible with laminate and stone benchtops</li><li>Ideal for renovations and retrofits</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HLPWrc",
+        "text_aDLzMN"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_hTDhiq": {
+      "type": "rich-text",
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_8y3Mnp": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Explore Inset Sinks",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "inset-sinks",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_U9xNNy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zXwpWb": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><a href=\"https://www.cookandbathe.com.au/collections/undermount\" title=\"Undermount Sink Collection\">Undermount Sinks</a></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_LBd7gE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For a sleek and seamless aesthetic, undermount sinks are a favourite among design-conscious renovators and luxury kitchen planners. These sinks are mounted beneath the benchtop, allowing for an uninterrupted surface that’s both modern and functional. Without the lip of a top-mount sink, the bench appears more expansive and uncluttered, letting your materials — like stone or engineered quartz — shine.</p><p>Undermount sinks make cleaning easier too — simply wipe crumbs or water directly into the bowl without obstruction. They are ideal for minimalist designs and premium kitchen spaces where attention to detail matters.</p><p></p><ul><li>Seamless integration beneath benchtop</li><li>Maximise usable bench space and create visual flow</li><li>Easy wipe-down surface and with no sink lip interference</li><li>Perfect for modern, minimalist or luxury kitchens</li><li>Best suited to solid surface materials like stone</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zXwpWb",
+        "text_LBd7gE"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_rMDx7w": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Shop Undermount Sinks",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "undermount",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_JWX8NY": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kxezJx": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><a href=\"https://www.cookandbathe.com.au/collections/flushmount\" title=\"Flushmount Sink collection\">Flushmount Sinks</a></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_TiaVw3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Flushmount sinks offer the ultimate in design cohesion, sitting level with the benchtop for a perfectly integrated look. Whether used in contemporary designer kitchens or commercial-grade chef setups, flushmount sinks achieve a refined, architectural feel. The transition from sink to surface is seamless, both visually and functionally, enhancing the sophistication of the kitchen space.</p><p>Flushmount sinks are also easy to maintain, with no exposed edges or gaps where grime can accumulate. This makes them ideal for homeowners prioritising hygiene and clean lines without sacrificing bold design impact.</p><ul><li>Flat, flush fit with surrounding benchtop for seamless appeal</li><li>Highly hygenic with no ridges or crevices</li><li>Blends harmoniously with contemporary kitchen surfaces</li><li>Delivers a premium architectural finish</li><li>Often featured in designer and high-end homes</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kxezJx",
+        "text_TiaVw3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_RyBx7h": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Browse Flushmount Sinks",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "flushmount",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_tdwfWX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Wby6HU": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Explore Sink Collections by Trusted Brands</h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_YECRJj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Cook & Bathe, we stock a wide range of inset, undermount, and flushmount sinks from Australia’s most respected kitchen brands. Each collection is handpicked for quality, innovation, and aesthetic value — helping you achieve a kitchen design that performs as beautifully as it looks.</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Wby6HU",
+        "text_YECRJj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_LMjzWQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_jkRYEJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bella_Vista_logo_print_RGB_Inline_Peach_R_large_use.svg",
+            "title": "Bella Vista Sinks",
+            "text": "<p>Stylish and durable designs for practical kitchen solutions.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/bella-vista-sinks"
+          }
+        },
+        "column_Cji8zL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BourneLogo.png",
+            "title": "Bourne Sinks",
+            "text": "<p>Affordable sink options that don’t compromise on quality.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/bourne-sinks"
+          }
+        },
+        "column_aFnCBR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Franke_Logo_Red_BG_RGB_NEW.png",
+            "title": "Franke Sinks",
+            "text": "<p>Swiss engineering and premium craftsmanship.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/franke-sinks"
+          }
+        },
+        "column_mCELTi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Oliveri_CMYK.png",
+            "title": "Oliveri Sinks",
+            "text": "<p>Australian-made innovation for local homes.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/oliveri-kitchen-sinks"
+          }
+        },
+        "column_jyn64T": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/phoenix-logo-Black_NEW.png",
+            "title": "Phoenix Sinks",
+            "text": "<p>Modern styling with quality construction</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/phoenix-sinks"
+          }
+        },
+        "column_zkJMdF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEIMA_LOGO_Black_327e24c1-eab7-4410-802c-a0c0b35441e9.png",
+            "title": "Seima Sinks",
+            "text": "<p>Elegant designs with a minimalist edge</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/seima-sinks"
+          }
+        }
+      },
+      "block_order": [
+        "column_jkRYEJ",
+        "column_Cji8zL",
+        "column_aFnCBR",
+        "column_mCELTi",
+        "column_jyn64T",
+        "column_zkJMdF"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Explore Brands",
+        "button_link": "shopify://pages/brands",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_iAUWjT": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_brChMY": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>Design with Confidence</h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_jWYV86": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Whether you're creating a show-stopping island kitchen or upgrading your workspace for better daily function, the right sink style plays a vital role. Inset, undermount, and flushmount sinks offer distinct benefits that cater to different lifestyles and layouts. Our expert team at Cook & Bathe is here to help you find a sink that reflects your aesthetic while delivering the performance your kitchen deserves. <a href=\"https://www.cookandbathe.com.au/collections/sinks\" title=\"Sinks collection\">Explore our full collection</a> online or <a href=\"https://www.cookandbathe.com.au/pages/contact-us\" title=\"https://www.cookandbathe.com.au/pages/contact-us\">speak with a showroom consultant</a> to find your ideal match today.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_brChMY",
+        "text_jWYV86"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "470d66d1-ac12-44e8-8b33-7169079e03e9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Coming Soon!</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "173948753494c948f2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "image_with_text_3GbWkc",
+    "rich_text_7YiDix",
+    "rich_text_hTDhiq",
+    "featured_collection_8y3Mnp",
+    "rich_text_U9xNNy",
+    "featured_collection_rMDx7w",
+    "rich_text_JWX8NY",
+    "featured_collection_RyBx7h",
+    "rich_text_tdwfWX",
+    "multicolumn_LMjzWQ",
+    "rich_text_iAUWjT",
+    "cb_find_showroom_PQG6UA",
+    "470d66d1-ac12-44e8-8b33-7169079e03e9",
+    "173948753494c948f2",
+    "main"
+  ]
+}

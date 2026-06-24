@@ -1,0 +1,347 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "cb_full_image_block_V4jaJt": {
+      "type": "cb-full-image-block",
+      "name": "Full Image Block",
+      "settings": {
+        "image": "shopify://shop_images/StyleSourceBook_Banner.jpg"
+      }
+    },
+    "rich_text_bqYwej": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9EHXz4": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>Create Your Bathroom & Kitchen Mood Board</h1>",
+            "heading_size": "h2"
+          }
+        },
+        "text_pGQaPa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Bring your renovation vision to life. The Cook & Bathe Mood Board, powered by Style Sourcebook, lets you curate your finishes, fixtures and fittings in one interactive workspace, helping you see how your ideas come together before you buy.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9EHXz4",
+        "text_pGQaPa"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_Ya3MCG": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "{align-content: center;}"
+      ],
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div style=\"display: flex; justify-content: center;\">\n  <button id=\"mood-board-button\" class=\"open-mood-board square\">Create a Mood Board</button>\n</div>\n\n<style>\n  #mood-board-button {\n      cursor: pointer;\n      width: 400px;\n      padding: 16px 0;\n      font-size: xx-large;\n      font-family: Raleway;\n      color: #ffffff;\n      border: 1px solid #ddbea9;\n      background-color: rgb(0, 0, 0);\n      transition: all linear 0.25s;\n      display: block;\n      margin: 0 auto;\n  }\n\n  #mood-board-button:hover {\n      color: rgb(0, 0, 0);\n      border-color: rgb(0, 0, 0);\n      background-color: rgb(255, 255, 255);\n  }\n\n  #mood-board-button.pill {\n      border-radius: 90px;\n  }\n\n  #mood-board-button.rounded {\n      border-radius: 8px;\n  }\n\n  #mood-board-button.square {\n      border-radius: 0;\n  }\n\n  #cobranded-modal-container {\n      display: none;\n      opacity: 0;\n      position: fixed;\n      top: 0;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      background: rgba(0,0,0,0.45);\n      transition: opacity linear 0.35s;\n      width: 100%;\n      z-index: 99999999999;\n  }\n\n  #cobranded-modal-container.open {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      opacity: 1;\n  }\n\n  .cobranded-modal-iframe-container {\n      background: #fff;\n      width: 90vw;\n      height: 90vh;\n      border: 4px solid #fff;\n      border-radius: 8px;\n  }\n\n  #cobranded-modal-container iframe {\n      width: 100%;\n      height: 100%;\n      border-radius: 5px;\n  }\n\n  @media screen and (max-width: 700px) {\n      .cobranded-modal-iframe-container {\n          width: 100%;\n          height: 100%;\n          position: absolute;\n      }\n\n      #cobranded-modal-container iframe {\n          width: 100%;\n          height: 100%;\n      }\n  }\n\n  @media screen and (max-height: 690px) {\n      .cobranded-modal-iframe-container {\n          width: 98%;\n          height: 98%;\n          position: absolute;\n      }\n\n      #cobranded-modal-container iframe {\n          width: 100%;\n          height: 100%;\n      }\n  }\n</style>\n\n<script>\n  var eventMethod = window.addEventListener ? \"addEventListener\" : \"attachEvent\";\n  var eventer = window[eventMethod];\n  var messageEvent = eventMethod === \"attachEvent\" ? \"onmessage\" : \"message\";\n\n  // Listen to message from child window\n  eventer(messageEvent, function(e) {\n      var key = e.message ? \"message\" : \"data\";\n      var data = e[key];\n      var iframe = document.getElementById('ssb-cobranded');\n      var modal = document.getElementById('cobranded-modal-container');\n\n      if (data === 'close') {\n          modal.remove();\n          document.querySelector(\"html\").style.overflow = \"scroll\";\n      }\n\n      if (Array.isArray(data)) {\n          if (data[0] === \"addToCartPMB\") {\n              data[1].forEach(item => {});\n              window.alert('Products added to cart');\n          }\n      }\n  }, false);\n\n  document.querySelectorAll('.open-mood-board').forEach(function(button) {\n      button.addEventListener('click', function() {\n          document.querySelector(\"html\").style.overflow = \"hidden\";\n\n          var divElement = document.createElement(\"div\");\n          divElement.setAttribute(\"class\", \"cobranded-modal-container open\");\n          divElement.setAttribute(\"id\", \"cobranded-modal-container\");\n\n          var innerDivElement = document.createElement(\"div\");\n          innerDivElement.setAttribute(\"class\", \"cobranded-modal-iframe-container\");\n\n          var iframeElement = document.createElement(\"iframe\");\n          iframeElement.setAttribute(\"id\", \"ssb-cobranded\");\n          iframeElement.setAttribute(\"src\", \"https://stylesourcebook.com.au/create-mood-board?cobranded_id=83916\");\n\n          innerDivElement.appendChild(iframeElement);\n          divElement.appendChild(innerDivElement);\n\n          var bodyElement = document.getElementsByTagName(\"body\")[0];\n          bodyElement.appendChild(divElement);\n      });\n  });\n</script>",
+        "color_scheme": "background-2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_DpgCng": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pPC3V8": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Is a Mood Board?",
+            "heading_size": "h1"
+          }
+        },
+        "text_kaDJ7k": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A mood board is a visual design tool that combines colours, textures, and products into a single image. Designers use them to define style direction, test palettes, and confirm cohesion between key pieces like basins, tapware, vanities and tiles. It turns abstract inspiration into a clear, confident plan.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pPC3V8",
+        "text_kaDJ7k"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/EDM_flatlay1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_AwzXJM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_dUeyQG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Use Our Mood Board Tool?",
+            "heading_size": "h2"
+          }
+        },
+        "text_B7pVFB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Cook & Bathe Mood Board is more than inspiration—it’s practical decision-making. Powered by Style Sourcebook, it features real Cook & Bathe products you can drag, drop and rearrange. Visualise your combinations, save boards, and refine your selections with clarity.<br/><br/>• Real products from our catalogue – See true finishes and proportions.<br/>• Drag & drop interface – Build and adjust with ease.<br/>• Save & share – Export or show your design to family or your designer.<br/><br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dUeyQG",
+        "text_B7pVFB"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/StyleSource_Kitchen_Laptop_Background.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_tNd3FY": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div style=\"display: flex; justify-content: center;\">\n  <button id=\"mood-board-button\" class=\"open-mood-board square\">Create a Mood Board</button>\n</div>\n\n<style>\n  #mood-board-button {\n      cursor: pointer;\n      width: 400px;\n      padding: 16px 0;\n      font-size: xx-large;\n      font-family: Raleway;\n      color: #ffffff;\n      border: 1px solid #ddbea9;\n      background-color: rgb(0, 0, 0);\n      transition: all linear 0.25s;\n      display: block;\n      margin: 0 auto;\n  }\n\n  #mood-board-button:hover {\n      color: rgb(0, 0, 0);\n      border-color: rgb(0, 0, 0);\n      background-color: rgb(255, 255, 255);\n  }\n\n  #mood-board-button.pill {\n      border-radius: 90px;\n  }\n\n  #mood-board-button.rounded {\n      border-radius: 8px;\n  }\n\n  #mood-board-button.square {\n      border-radius: 0;\n  }\n\n  #cobranded-modal-container {\n      display: none;\n      opacity: 0;\n      position: fixed;\n      top: 0;\n      bottom: 0;\n      left: 0;\n      right: 0;\n      background: rgba(0,0,0,0.45);\n      transition: opacity linear 0.35s;\n      width: 100%;\n      z-index: 99999999999;\n  }\n\n  #cobranded-modal-container.open {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      opacity: 1;\n  }\n\n  .cobranded-modal-iframe-container {\n      background: #fff;\n      width: 90vw;\n      height: 90vh;\n      border: 4px solid #fff;\n      border-radius: 8px;\n  }\n\n  #cobranded-modal-container iframe {\n      width: 100%;\n      height: 100%;\n      border-radius: 5px;\n  }\n\n  @media screen and (max-width: 700px) {\n      .cobranded-modal-iframe-container {\n          width: 100%;\n          height: 100%;\n          position: absolute;\n      }\n\n      #cobranded-modal-container iframe {\n          width: 100%;\n          height: 100%;\n      }\n  }\n\n  @media screen and (max-height: 690px) {\n      .cobranded-modal-iframe-container {\n          width: 98%;\n          height: 98%;\n          position: absolute;\n      }\n\n      #cobranded-modal-container iframe {\n          width: 100%;\n          height: 100%;\n      }\n  }\n</style>\n\n<script>\n  var eventMethod = window.addEventListener ? \"addEventListener\" : \"attachEvent\";\n  var eventer = window[eventMethod];\n  var messageEvent = eventMethod === \"attachEvent\" ? \"onmessage\" : \"message\";\n\n  // Listen to message from child window\n  eventer(messageEvent, function(e) {\n      var key = e.message ? \"message\" : \"data\";\n      var data = e[key];\n      var iframe = document.getElementById('ssb-cobranded');\n      var modal = document.getElementById('cobranded-modal-container');\n\n      if (data === 'close') {\n          modal.remove();\n          document.querySelector(\"html\").style.overflow = \"scroll\";\n      }\n\n      if (Array.isArray(data)) {\n          if (data[0] === \"addToCartPMB\") {\n              data[1].forEach(item => {});\n              window.alert('Products added to cart');\n          }\n      }\n  }, false);\n\n  document.querySelectorAll('.open-mood-board').forEach(function(button) {\n      button.addEventListener('click', function() {\n          document.querySelector(\"html\").style.overflow = \"hidden\";\n\n          var divElement = document.createElement(\"div\");\n          divElement.setAttribute(\"class\", \"cobranded-modal-container open\");\n          divElement.setAttribute(\"id\", \"cobranded-modal-container\");\n\n          var innerDivElement = document.createElement(\"div\");\n          innerDivElement.setAttribute(\"class\", \"cobranded-modal-iframe-container\");\n\n          var iframeElement = document.createElement(\"iframe\");\n          iframeElement.setAttribute(\"id\", \"ssb-cobranded\");\n          iframeElement.setAttribute(\"src\", \"https://stylesourcebook.com.au/create-mood-board?cobranded_id=83916\");\n\n          innerDivElement.appendChild(iframeElement);\n          divElement.appendChild(innerDivElement);\n\n          var bodyElement = document.getElementsByTagName(\"body\")[0];\n          bodyElement.appendChild(divElement);\n      });\n  });\n</script>",
+        "color_scheme": "background-2",
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "176238898994b6a03b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_18c1f64_wT4HU7": {
+          "type": "ai_gen_block_18c1f64",
+          "settings": {
+            "title": "How to Use the Mood Board",
+            "subtitle": "Follow these simple steps to get started",
+            "step_1_title": "Open the Tool",
+            "step_1_description": "Click Create a Mood Board to launch Style Sourcebook in a pop-up workspace.",
+            "step_2_title": "Add Products",
+            "step_2_description": "Browse Cook & Bathe collections and drag pieces onto the board.",
+            "step_3_title": "Refine Your Look",
+            "step_3_description": "Mix colours, textures and finishes until you're happy.",
+            "step_4_title": "Save or Share",
+            "step_4_description": "Download your board or share it with your designer.",
+            "max_width": 1200,
+            "section_padding": 60,
+            "header_spacing": 40,
+            "steps_top_margin": 20,
+            "step_gap": 30,
+            "background_color": "#ffffff",
+            "title_color": "#121212",
+            "subtitle_color": "#666666",
+            "step_background": "#f3f3f3",
+            "step_border_color": "#e0e0e0",
+            "number_background": "#121212",
+            "number_color": "#ffffff",
+            "step_title_color": "#121212",
+            "step_description_color": "#666666",
+            "connector_color": "#e0e0e0",
+            "title_size": 32,
+            "subtitle_size": 16,
+            "step_title_size": 18,
+            "step_description_size": 14,
+            "step_padding": 25,
+            "step_border_radius": 8,
+            "step_border_width": 1,
+            "number_size": 50,
+            "number_font_size": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_18c1f64_wT4HU7"
+      ],
+      "settings": {}
+    },
+    "video_xjKJYF": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "cover_image": "shopify://shop_images/Youtube_video_cover.png",
+        "video_url": "https://www.youtube.com/watch?v=zULHc5dpNL8&t=1s",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "470d66d1-ac12-44e8-8b33-7169079e03e9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Coming Soon!</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "173948753494c948f2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "cb_full_image_block_V4jaJt",
+    "rich_text_bqYwej",
+    "custom_liquid_Ya3MCG",
+    "image_with_text_DpgCng",
+    "image_with_text_AwzXJM",
+    "custom_liquid_tNd3FY",
+    "176238898994b6a03b",
+    "video_xjKJYF",
+    "cb_find_showroom_PQG6UA",
+    "470d66d1-ac12-44e8-8b33-7169079e03e9",
+    "173948753494c948f2",
+    "main"
+  ]
+}

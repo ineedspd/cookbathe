@@ -1,0 +1,277 @@
+<div class="blog_post_wrapper recently_blog_post_wrapper position-relative">
+  <div class="container">
+    {% if section.settings.title != blank %}
+      <div class="title_block position-relative">
+        <p class="bg-white mb-0 d-inline-block">{{ section.settings.title }}</p>
+      </div>
+    {% endif %}
+    {% assign limit = section.settings.pagination_limit %}
+    {%- paginate blog.articles by limit -%}
+      <div class="blog_post_listing">
+        <div class="row">
+             {% if blog.articles.size > 0 %}
+          {%- for article in blog.articles -%}
+            <div class="col-xl-3 col-lg-4 col-md-6 col-12">
+              <div class="blog_card position-relative overflow-hidden">
+                <a
+                  href="{{ article.url }}"
+                  class="d-block blog_card_cover bg_cover"
+                  style="background-image: url({{ article.image | img_url:'master' }});"
+                >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/recently-blog-post-cover.png"
+                    alt="{{ article.title }}"
+                    class="d-none d-sm-block"
+                  >
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/blog-post-mobile-cover.png"
+                    alt="{{ article.title }}"
+                    class="d-sm-none"
+                  >
+                </a>
+                <div class="blog_card_content">
+                  <ul class="list-unstyled meta_data d-flex align-items-center">
+                    {% comment %}
+                    <li>
+                      <a href="#">
+                        {%- render 'icon-account' %}
+                        {{ article.author -}}
+                      </a>
+                    </li>
+                    {% endcomment %}
+                    <li>{%- render 'icon-account' %} Cook & Bathe</li>
+                    {% assign count = article.content.size %}
+                    <li class="d-none">
+                      {% render 'icon-clock' %}
+                      {% render 'cb-time-blog', count: count %}
+                    </li>
+                  </ul>
+                  <p>{{ article.title }}</p>
+                </div>
+                <div class="blog_card_cta">
+                  <a href="{{ article.url }}" class="btn btn-outline-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+       {% else %}
+            <h3 class="center">No blog found!</h3>
+          {% endif %}
+        </div>
+      </div>
+      {% if blog.articles.size > 0 %}
+      <div class="pagination_results_recommended_perpage d-flex align-items-center justify-content-end">
+        <div class="pagination_results_block d-flex flex-wrap align-items-center">
+          <div class="results_block">
+            {% assign form_num = paginate.page_size | times: paginate.current_page %}
+            {% if form_num <= paginate.items %}
+              {% assign fnum = form_num %}
+            {% else %}
+              {% assign fnum = paginate.items %}
+            {% endif %}
+
+            {{ paginate.current_offset | plus: 1 }} - {{ fnum }} of {{ paginate.items }} Results
+          </div>
+          {% render 'pagination', paginate: paginate %}
+        </div>
+      </div>
+        {% endif %}
+    {% endpaginate %}
+  </div>
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "Blog Posts Recently Added",
+"tag": "section",
+"class": "cb-recently-blogs",
+"settings": [
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Title",
+    "default":"Recently Added"
+  },
+  {
+    "type": "range",
+    "id": "pagination_limit",
+    "min": 4,
+    "max": 30,
+    "step": 2,
+    "label": "Per Page Blog",
+    "default": 12
+  }
+],
+"blocks":[
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Blog Posts Recently Added"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,58 @@
+<div class="cb_common_banner position-relative">
+    <div class="cb_common_banner_content d-flex align-items-md-end align-items-center bg_cover" style="background-image: url('{{ section.settings.image | img_url:'master' }}');">
+    <div class="container">
+            <div class="banner_content_box">
+                    {% if section.settings.title != blank %}
+                        <h1 class="h2">{{ section.settings.title }}</h1>
+                    {% endif %}
+                    {% if section.settings.sub_title != blank %}
+                    <div class="para">
+                        {{ section.settings.sub_title }}
+                    </div>
+                    {% endif %}
+                    {% if section.settings.link != blank %}
+                        <a href="{{section.settings.link}}" class="button button--primary">{{section.settings.link_title}}</a>
+                    {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Common banner",
+    "tag": "section",
+    "class": "cb_common_banne_shopify",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"image",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"richtext",
+        "id":"sub_title",
+        "label":"Sub title"
+      },
+      {
+        "type":"text",
+        "id":"link_title",
+        "label":"Link title"
+      },
+      {
+        "type":"url",
+        "id":"link",
+        "label":"Link"
+      },
+    ],
+    "presets": [
+      {
+        "name": "Common banner"
+      }
+    ]
+    }
+    {% endschema %}

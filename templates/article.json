@@ -1,0 +1,221 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "36d5fa5d-36c5-4d9a-9ee3-c48c36490095": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "blocks": {
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "featured_image",
+        "title",
+        "share",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "677c024e-4ad8-4d84-b974-6beb39441053": {
+      "type": "cb-single-blog-banner",
+      "settings": {}
+    },
+    "793c0ec8-7956-48ea-ac50-b24c9549291d": {
+      "type": "cb-single-blog-description",
+      "settings": {}
+    },
+    "ce229d96-9635-4469-87d0-5389b4cb55ae": {
+      "type": "cb-blog-post",
+      "blocks": {
+        "7c0f32e0-cba6-4d09-89cc-017e6d179643": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "left",
+            "title": "Recommended for you"
+          }
+        },
+        "df8108c2-a2ca-4e56-894e-87ea1119f667": {
+          "type": "blog",
+          "settings": {
+            "blogs": "news"
+          }
+        }
+      },
+      "block_order": [
+        "7c0f32e0-cba6-4d09-89cc-017e6d179643",
+        "df8108c2-a2ca-4e56-894e-87ea1119f667"
+      ],
+      "settings": {}
+    },
+    "ef69e77d-7780-4690-b136-6f4c3637c409": {
+      "type": "cb-featured-products",
+      "blocks": {
+        "0f63dc59-d693-4b8a-8142-040418d19966": {
+          "type": "title-style-3",
+          "settings": {
+            "heading-tag": "h2",
+            "title": "Featured Products",
+            "btn-type": "default",
+            "btn-style": "btn btn-link",
+            "btn-name": "View All Products",
+            "btn-link": "#"
+          }
+        },
+        "c2248ee5-0f7d-4644-8624-6b658d3bc480": {
+          "type": "collection",
+          "settings": {
+            "coll": "bathroom"
+          }
+        }
+      },
+      "block_order": [
+        "0f63dc59-d693-4b8a-8142-040418d19966",
+        "c2248ee5-0f7d-4644-8624-6b658d3bc480"
+      ],
+      "settings": {
+        "columns_desktop": 4,
+        "product_show": 4,
+        "double_image": true,
+        "variant_enable": true,
+        "wishlist_enable": true,
+        "discount_enable": true,
+        "price_enable": true,
+        "addtocart": false,
+        "arrows": false
+      }
+    },
+    "e9e594b6-ad32-4c50-8616-41fe00384857": {
+      "type": "cb-instagram-posts",
+      "settings": {
+        "heading-tag": "h2",
+        "title": "Our Insta Inspo",
+        "btn-style": "btn btn-link",
+        "btn-name": "Follow @cookandbathe",
+        "btnlink": ""
+      }
+    },
+    "1678074528c76cfcc3": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "278a019d-0a4b-45a5-b779-6bd27d50b879": {
+      "type": "cb-collage",
+      "blocks": {
+        "6eb08f57-21ed-4669-94b9-ceb4e922fd73": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "center",
+            "title": "Explore and be Inspired"
+          }
+        },
+        "a012f9df-3818-41b6-ae7b-997905ccb381": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_bathroom_phoenixtapware_banner.jpg",
+            "name": "Bathroom",
+            "link": "shopify://collections/bathroom"
+          }
+        },
+        "54b29209-6d70-41fe-ae5e-2a3d31eda22f": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_kitchen_banner.jpg",
+            "name": "Kitchen",
+            "link": "shopify://collections/kitchen"
+          }
+        },
+        "c10e131d-32e5-4de8-b096-5b86579a97ac": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_laundry_franke_banner.jpg",
+            "name": "Laundry",
+            "link": "shopify://collections/laundry"
+          }
+        }
+      },
+      "block_order": [
+        "6eb08f57-21ed-4669-94b9-ceb4e922fd73",
+        "a012f9df-3818-41b6-ae7b-997905ccb381",
+        "54b29209-6d70-41fe-ae5e-2a3d31eda22f",
+        "c10e131d-32e5-4de8-b096-5b86579a97ac"
+      ],
+      "settings": {}
+    },
+    "1732585763c710c90d": {
+      "type": "apps",
+      "custom_css": [
+        "{padding-top: 20opx;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "6e9f641b-8131-4266-bc99-9b63b3777468": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "36d5fa5d-36c5-4d9a-9ee3-c48c36490095",
+    "main",
+    "677c024e-4ad8-4d84-b974-6beb39441053",
+    "793c0ec8-7956-48ea-ac50-b24c9549291d",
+    "ce229d96-9635-4469-87d0-5389b4cb55ae",
+    "ef69e77d-7780-4690-b136-6f4c3637c409",
+    "e9e594b6-ad32-4c50-8616-41fe00384857",
+    "1678074528c76cfcc3",
+    "278a019d-0a4b-45a5-b779-6bd27d50b879",
+    "1732585763c710c90d",
+    "6e9f641b-8131-4266-bc99-9b63b3777468"
+  ]
+}

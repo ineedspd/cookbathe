@@ -1,0 +1,68 @@
+<div class="single_blog_banner_wrapper position-relative">
+  <div class="single_blog_banner_content bg-dark">
+    <div class="container">
+      <a href="{{ blog.url }}" class="product_back_btn">{% render 'icon-back' %}</a>
+      <div class="single_blog_banner_content_inner text-md-center">
+        {% if article.tags.size != blank %}
+          <ul class="d-flex justify-content-md-center list-unstyled post_tags m-0 p-0">
+            {% for tag in article.tags %}
+              <li class="mb-0">
+                <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+        <h1 class="h2 text-white">{{ article.title }}</h1>
+        {% comment %}<p class="mb-0 post_author text-white">By {{ article.author }}</p>{% endcomment %}
+        <p class="mb-0 post_author text-white">By Cook & Bathe</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="single_blog_banner_image">
+    <div class="container">
+      {% if article.image.size != blank %}
+        <div class="single_blog_banner_cover bg_cover">
+          <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/single_blog_banner_image_mobile_cover.png" alt="{{ article.title }}" class="d-md-none">
+          <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/single_blog_banner_image_cover.png" alt="{{ article.title }}" class="d-none d-md-block">
+        </div>      
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% assign desk_image = article.image | img_url: 'master' %}
+{% if article.metafields.custom.mobile_banner_image != blank %}
+  {% assign mob_image = article.metafields.custom.mobile_banner_image | img_url: 'master' %}
+{% else %}
+  {% assign mob_image = article.image | img_url: 'master'  %}
+{% endif %}
+<style>
+  .single_blog_banner_cover {
+    background-image: url({{ mob_image }});
+  }
+  @media (min-width: 768px) {
+    .single_blog_banner_cover {
+      background-image: url({{ desk_image }});
+    }
+  }
+</style>
+{% schema %}
+{
+"name": "Single Blog Banner",
+"tag": "section",
+"class": "cb-single-blog-banner",
+"settings": [],
+"presets": [
+  {
+    "name": "Single Blog Banner"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

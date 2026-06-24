@@ -1,0 +1,216 @@
+<div class="product_details_wrapper position-relative">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-12">
+        <div class="accordion" id="product-accordion">
+          {% assign check_accordin = false %}
+          {% if product.content != blank %}
+            {% assign check_accordin = true %}
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="description-head">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#tab-desc"
+                  aria-expanded="true"
+                  aria-controls="Description"
+                >
+                  Description
+                </button>
+              </h2>
+              <div
+                id="tab-desc"
+                class="accordion-collapse collapse show"
+                aria-labelledby="description-head"
+                data-bs-parent="#product-accordion"
+              >
+                <div class="accordion-body">
+                  {{ product.content }}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="description-head">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tab-spec"
+                aria-expanded="false"
+                aria-controls="Description"
+              >
+                Specifications
+              </button>
+            </h2>
+            <div
+              id="tab-spec"
+              class="accordion-collapse collapsed collapse"
+              aria-labelledby="description-head"
+              data-bs-parent="#product-accordion"
+            >
+              <div class="accordion-body">
+                <ul>
+                  {% if product.metafields.global.finish != blank %}
+                    <li>Finish : {{ product.metafields.global.finish }}</li>
+                  {% endif %}
+                  {% if product.metafields.custom.material != blank %}
+                    <li>Material : {{ product.metafields.custom.material }}</li>
+                  {% endif %}
+                  {% if product.metafields.global['is-featured'] != blank
+                    and product.metafields.global['is-featured'] != 'No'
+                  %}
+                    <li>Is Featured? : {{ product.metafields.global['is-featured'] }}</li>
+                  {% endif %}
+                  {% if product.metafields.global['wels-rating'] != blank %}
+                    <li>Wels rating : {{ product.metafields.global['wels-rating'] }}</li>
+                  {% endif %}
+                  {% if product.metafields.custom.wels_star_ratting != blank %}
+                    <li>Wels Star Ratting : {{ product.metafields.custom.wels_star_ratting }}</li>
+                  {% endif %}
+                  {% if product.metafields.custom.dimensions_mm_ != blank %}
+                    <li>Dimensions (mm) : {{ product.metafields.custom.dimensions_mm_ }}</li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          {% for block in section.blocks %}
+            {% if block.settings.ans != blank or block.settings.custom_liquid != blank %}
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="description-head">
+                  <button
+                    class="accordion-button {% if check_accordin == true %}collapsed{% endif %}"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#tab-{{ forloop.index }}"
+                    aria-expanded="{% if check_accordin == false %}true{% else %}false{% endif %}"
+                    aria-controls="{{ block.settings.question }}"
+                  >
+                    {{ block.settings.question }}
+                  </button>
+                </h2>
+                <div
+                  id="tab-{{ forloop.index }}"
+                  class="accordion-collapse collapse {% if check_accordin == false %} show{% endif %}"
+                  aria-labelledby="description-head"
+                  data-bs-parent="#product-accordion"
+                >
+                  <div class="accordion-body">
+                    {{ block.settings.ans }}
+                    {{ block.settings.custom_liquid }}
+                  </div>
+                </div>
+              </div>
+              {% if check_accordin == false %}
+                {% assign check_accordin = true %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <script>
+
+   // Find the anchor tag inside the element with id "product-accordion"
+let productAccordions = document.getElementById('product-accordion');
+var specButton = document.getElementById("static-specification");
+
+var spec_found = false;
+// Check if the element exists
+if (productAccordions && specButton) {
+  // Find all anchor tags within the element
+  const anchorTags = productAccordions.getElementsByTagName('a');
+
+  // Loop through each anchor tag
+  for (let i = 0; i < anchorTags.length; i++) {
+    const anchor = anchorTags[i];
+
+    // Check if the anchor's text content includes "Product Specification Sheet"
+    if (anchor.textContent.includes('Product Specification Sheet')) {
+      // Return the href attribute
+     
+      specButton.classList.remove('d-none');
+        specButton.setAttribute('href', anchor.href);
+      spec_found = true;
+    }
+  }
+}
+
+  if(specButton && spec_found !== true){
+  const specHref = specButton.getAttribute("data-href");
+  const fallbackSpecHref = specButton.getAttribute("data-href1");
+
+  if (specHref) {
+  fetch(specHref)
+    .then(response => {
+      if (response.ok) {
+        specButton.classList.remove('d-none');
+        specButton.setAttribute('href', specHref);
+        console.log("File exists");
+      } else if (fallbackSpecHref) {
+     
+        console.log("er");
+        fetch(fallbackSpecHref)
+    .then(response => {
+      if (response.ok) {
+        specButton.classList.remove('d-none');
+        specButton.setAttribute('href', fallbackSpecHref);
+        console.log("File exists");
+      }
+    });
+      }
+    })
+    .catch(error => {
+     specButton.style.display = 'none'
+
+    });
+  }
+  }
+</script>
+{% schema %}
+{
+"name": "Product Details",
+"tag": "section",
+"class": "cb-product-details",
+"settings": [],
+"blocks":[
+  {
+    "type":"faq",
+    "name":"FAQ",
+    "settings":[
+      {
+        "type":"text",
+        "id":"question",
+        "label":"Questions"
+      },
+      {
+         "type":"richtext",
+         "id":"ans",
+         "label":"Ans"
+      },
+      {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
+          "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Product Details"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

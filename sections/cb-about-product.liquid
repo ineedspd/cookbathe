@@ -1,0 +1,60 @@
+<div class="about_product_wrapper position-relative">
+  <div class="container">
+    <div class="section_head_holder d-flex">
+      <h2 class="h3">
+        {% if product.metafields.about.title != blank -%}
+          {{- product.metafields.about.title -}}
+        {%- else -%}
+          About This Product
+        {%- endif %}
+      </h2>
+    </div>
+    <div class="about_product_content">
+      {% assign count = product.metafields.oddevent.title.size | minus: 1 %}
+      {% for i in (i..count) %}
+        <div class="about_product_odd_even">
+          <div class="row {% cycle '', 'flex-row-reverse' %} g-0">
+            <div class="col-xl-8 col-lg-7 col-12">
+              <div
+                class="about_product_odd_even_img bg_cover lazy-bg"
+                data-bg="{{ product.metafields.oddevent.image[i] }}"
+              >
+                <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/about-product-cover.png" alt="{{  product.metafields.oddevent.title[i] }}" loading="lazy" class="d-none d-sm-block">
+                <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/about-product-mobile-cover.png" alt="{{  product.metafields.oddevent.title[i] }}"  loading="lazy" class="d-sm-none">
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-12">
+              <div class="about_product_odd_even_text">
+                <div class="about_product_odd_even_text_inner">
+                  <h4>{{ product.metafields.oddevent.title[i] }}</h4>
+                  {{ product.metafields.oddevent.description[i] }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "About Product",
+"tag": "section",
+"class": "cb-about-product",
+"settings": [],
+"presets": [
+  {
+    "name": "About Product"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+  
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

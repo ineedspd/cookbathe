@@ -1,0 +1,532 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "36d5fa5d-36c5-4d9a-9ee3-c48c36490095": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {}
+    },
+    "cb_inspiration_page_banner_VEPXCe": {
+      "type": "cb-inspiration-page-banner",
+      "blocks": {
+        "section_padding_XdJyyM": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 10,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 25,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 70
+          }
+        }
+      },
+      "block_order": [
+        "section_padding_XdJyyM"
+      ],
+      "settings": {}
+    },
+    "image_with_text_YYj4Vj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Hackpa": {
+          "type": "heading",
+          "settings": {
+            "heading": "Traditional",
+            "heading_size": "h1"
+          }
+        },
+        "text_y9z6gp": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>SOPHISTICATED. CHARM. HOMAGE TO YOUR HOME.</strong></p><p>The beauty is in the detail. Illustrate the unique history of your home and epitomise an era using quality, crafted pieces. Implement modern living technologies whilst upholding classic appeal.</p><p>A traditionally styled home exudes timeless elegance through classic design elements and balanced proportions. Interiors often showcase rich wood tones, ornate lighting, and formal layouts with distinct living and dining spaces. The colour palette typically combines neutral base tones with rich accents like burgundy and navy, creating a cohesive and serene environment. Decorative elements such as antique furniture, detailed fireplaces, and Persian rugs enhance traditional charm. </p><p>The fixtures and <a href=\"/collections/appliances\" title=\"Appliances\"><span style=\"text-decoration:underline\">appliances</span></a> you choose for your home are vital in bringing together the style you imagine. For example, the Nostalgia tapware collection by <a href=\"/collections/phoenix\" title=\"Phoenix\"><span style=\"text-decoration:underline\">Phoenix Tapware</span></a> offers a beautiful traditional range of <a href=\"/collections/tapware-bathroom\" title=\"Bathroom Tapware\"><span style=\"text-decoration:underline\">tapware</span></a> in various finishes that exude timeless elegance. <a href=\"/collections/freestanding-ovens\" title=\"Freestanding Ovens\"><span style=\"text-decoration:underline\">Upright cookers</span></a> by <a href=\"/collections/smeg\" title=\"Smeg\"><span style=\"text-decoration:underline\">Smeg</span></a> boast luxury and classic designs to complete your traditional home.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_xXfbxQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Traditional Style Collection",
+            "button_link": "shopify://collections/traditional"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Hackpa",
+        "text_y9z6gp",
+        "button_xXfbxQ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Traditional2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_GVhcGz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_znFX64": {
+          "type": "heading",
+          "settings": {
+            "heading": "Modern Minimalism",
+            "heading_size": "h1"
+          }
+        },
+        "text_PRrf8f": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>CONTEMPORARY. TIMELESS. BESPOKE SIMPLICITY.</strong></p><p><strong><br/></strong>Design that stands the test of time. Incorporate deliberate, styled minimalism to your home with well-considered avant-garde fixtures and fittings. Create a broad appeal for your bathroom.</p><p>Minimalism in kitchen design emphasises simplicity, functionality, and clean aesthetics, think <a href=\"/collections/franke-tapware\" title=\"Franke Tapware\">Franke tapware</a>. This style features clean lines, simple shapes, and a neutral colour palette dominated by whites and greys to create a calm, spacious atmosphere. </p><p>In bathrooms, minimalism continues with sleek fixtures, natural light, neutral colours to maintain a bright and airy feel. Functional layouts with ample storage keep the space clutter-free, and open designs enhance the sense of simplicity and space.</p><p>Creating a minimalist home  fosters a calm, orderly environment that prioritises essential elements and promotes a sense of tranquility and spaciousness.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_kiNrEB": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Modern Minimalism Style Collection",
+            "button_link": "shopify://collections/modern-minimalism"
+          }
+        }
+      },
+      "block_order": [
+        "heading_znFX64",
+        "text_PRrf8f",
+        "button_kiNrEB"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Modern_Minimalism2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_z9x9Jj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_7xTyU4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hotel Inspired",
+            "heading_size": "h1"
+          }
+        },
+        "text_P7YnDR": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>INDULGENT. VOGUE. 5 STAR AT HOME.</strong></p><p>Spoil yourself every day with an exclusive bathroom, impeccably styled to your taste. Place a strong emphasis on premium fittings and features to achieve a 5-star feeling in your home.</p><p>A hotel-inspired bathroom exudes luxury and sophistication, featuring high-quality materials such as marble, granite, and premium tiles. Elegant fixtures such as <a href=\"/collections/shower-heads\" title=\"Shower Heads\"><span style=\"text-decoration:underline\">overhead showers</span></a>, <a href=\"/collections/freestanding\" title=\"Freestanding Baths\"><span style=\"text-decoration:underline\">freestanding baths</span></a>, and sleek tapware in finishes like chrome or matte black enhance the hotel-like ambience. Pamper yourself with <a href=\"/collections/accessories-bathroom\" title=\"Accessories\"><span style=\"text-decoration:underline\">bathroom accessories</span></a> such as plush towels, designer toiletries, and <a href=\"/collections/heated-towel-rail\" title=\"Heated Towel Rails\"><span style=\"text-decoration:underline\">heated towel rails</span></a> and indulge in luxury in the comfort of your own home.</p><p>The neutral and calming colour palette, typically consisting of whites, greys, and beiges, creates a serene atmosphere. Luxury touches like large mirrors, double vanities, and free-standing bath fillers further elevate the experience. Every detail provides a relaxing and indulgent ambience, ensuring the bathroom offers a tranquil retreat similar to that of a high-end hotel.</p><p>The overall ambience of a kitchen that exudes a hotel-like ambience should be one of luxury and efficiency, where every element is designed to enhance the cooking and dining experience. By incorporating high-end materials, state-of-the-art kitchen appliances<span style=\"text-decoration:underline\">,</span> elegant <a href=\"/collections/sink-mixers-sink-tapware\" title=\"Sink Mixers\"><span style=\"text-decoration:underline\">sink mixers</span></a>, and thoughtful design, the kitchen can become a statement of both style and comfort within your home.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CVjxcm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Hotel Inspired Style Collection",
+            "button_link": "shopify://collections/hotel-inspired"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7xTyU4",
+        "text_P7YnDR",
+        "button_CVjxcm"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Hotel_Inspired2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_rYF4CM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_czH6Rw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sanctuary",
+            "heading_size": "h1"
+          }
+        },
+        "text_cWN9Km": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LIGHT & BREEZY. RELAX & KICK BACK. HOME RESORT.</strong></p><p>Come home, exhale and enjoy the stillness and calm of your in-home relaxation hub. Unwind in a mellow bathroom of natural elements amidst personal design touches.</p><p>To create a home that feels like a sanctuary, focus on a soothing colour palette of soft whites, beiges, and greys, complemented by natural materials like wood and stone that add organic textures. Lighting plays a key role in creating the ambience you desire. Maximise natural light with large windows and opt for soft, ambient lighting. Incorporate soft textiles like cotton and linen, and bring the warmth of nature indoors with a touch of greenery.</p><p>In your bathroom, choose elegant fixtures like rain showers and freestanding bathtubs in sleek finishes. <a href=\"/collections/vanity-units\" title=\"Vanities\"><span style=\"text-decoration:underline\">Vanities</span></a> that feature wood textures and white countertops paired with chrome minimalist tapware are the perfect combo for this style. Alongside chrome, white tapware would work amazingly well to create the sanctuary of your dreams. Inspired by nature, the <span style=\"text-decoration:underline\">Nuage tapware range</span> by Phoenix Tapware boasts simplicity and tranquillity. </p><p>In order to create a kitchen sanctuary, opt for high-quality, natural materials such as granite for your <a href=\"/collections/sinks\" title=\"Sinks\"><span style=\"text-decoration:underline\">kitchen sink</span></a> and wooden cabinetry. Incorporate state-of-the-art appliances in stainless steel or matte finishes and above all style your home with minimalism at the forefront of your design. Think glass vases with fresh flowers, wooden chopping boards and white sheer curtains.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_QeceGe": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Sanctuary Style Collection",
+            "button_link": "shopify://collections/sanctuary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_czH6Rw",
+        "text_cWN9Km",
+        "button_QeceGe"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Sanctuary2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_tjw634": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4DmpTT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Nordic",
+            "heading_size": "h1"
+          }
+        },
+        "text_H3VGVV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>BALANCE. INTUITIVE FEATURES. RESTRAINT & REFINEMENT.</strong></p><p>Nordic design in kitchens and bathrooms is characterised by simplicity, functionality, and a connection to nature. Have the confidence to pare back the design of your bathroom and let quality cabinetry and fittings tell the story. Create harmony between textures and materials to achieve Nordic finesse.</p><p>A Nordic-styled kitchen translates to clean lines, minimalism, and efficient storage solutions, with a focus on open shelving and <a href=\"/collections/integrated-appliances\" title=\"Integrated Appliances\"><span style=\"text-decoration:underline\">integrated appliances</span></a>. Think streamlined elegance, where every element is carefully chosen to achieve minimalist form and ultimate function. The integrated appliances by Smeg are the perfect addition to any minimalist kitchen wanting to achieve this look.</p><p>Nordic bathroom design continues with minimalist fixtures, frameless shower screens, and the use of neutral colours to create a calming atmosphere. Natural materials like wood and stone are used to add warmth and texture, while efficient storage solutions and user-friendly layouts enhance functionality. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_XiEx3E": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Nordic Style Collection",
+            "button_link": "shopify://collections/nordic"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4DmpTT",
+        "text_H3VGVV",
+        "button_XiEx3E"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Nordic2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_6zP8eg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_tNBdFe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Organic",
+            "heading_size": "h1"
+          }
+        },
+        "text_KRHJVq": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>TEXTURE BLEND. CONTRAST. ECLECTIC MODERN.</strong></p><p>Organic design emphasises harmony with nature through natural materials like raw wood, stone, and sustainable finishes. Integrate a collection of materials together to create a unique, harmonious bathroom experience. Think stone, think timber, think steel or chrome cohesively working together. </p><p>Earthy colour palettes and natural light create a warm, inviting atmosphere, meanwhile incorporating indoor plants enhances the connection to nature. </p><p>Your kitchen, bathroom and laundry spaces should prioritise seamless indoor-outdoor connections and high-quality craftsmanship, promoting a tranquil and natural ambience. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_83G6Pk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Organic Style Collection",
+            "button_link": "shopify://collections/organic"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tNBdFe",
+        "text_KRHJVq",
+        "button_83G6Pk"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Organic2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_Y7ppJh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jAp8pM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Coastal",
+            "heading_size": "h1"
+          }
+        },
+        "text_VECiRH": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LIGHT TIMBERS. SOFT TEXTURES. NATURAL LIGHT.</strong></p><p>Picture yourself at the beach, think of that feeling you want to create in your home. Use colours and textures that reflect the ocean, sand and sky. Think light timbers, subtle tiles and loads of natural light.</p><p>Incorporating the light and airy feeling of the beach into your bathroom can achieved through loads of natural light, neutral colours and beachside decor. In the bathroom, sandy-coloured towels, brushed nickel tapware and a light timber vanity set up the perfect coastal suite.</p><p>The goal of a coastal aesthetic is to bring that beach holiday feeling to your home in a modern and minimalist way. Your kitchen can reflect your coastal style through white granite sinks, integrated appliances and kitchen accessories like shopping boards and minimalist cookbooks!</p>",
+            "text_style": "body"
+          }
+        },
+        "button_673iG7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Coastal Style Collection",
+            "button_link": "shopify://collections/coastal"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jAp8pM",
+        "text_VECiRH",
+        "button_673iG7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Coastal2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_tT4Dkr": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_EebTNp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hamptons",
+            "heading_size": "h1"
+          }
+        },
+        "text_ifhy8G": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LUXURY. INVITING. SOPHISTICATED. </strong></p><p>Inspired by the luxury, elegance, and highlight of grand living of the Hamptons. Find clean white fixtures, paired with marble bench tops and bold tapware features.</p><p>Emulating that Hamptons luxury feel we all love in your home is achieved through adding a sense of grandeur to your spaces. Think chandelier or pendant lighting, all-white shaker-style cabinetry and traditional tapware. Hampton-styled homes use colours like white, grey, navy blue and touches of brushed gold for added glamour. </p><p>To achieve the perfect Hamptons look, carefully selected fixtures and accessories are key. In your kitchen, a striking gold sink mixer and white butler sink make the perfect Hamptons combo and you can’t go wrong with a traditional basin mixer and white basin in your bathroom. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_VeaBeD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Hamptons Style Collection",
+            "button_link": "shopify://collections/hamptons"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EebTNp",
+        "text_ifhy8G",
+        "button_VeaBeD"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Hamptons2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_eDRGey": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_y7LBiT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Modern Maximalism",
+            "heading_size": "h1"
+          }
+        },
+        "text_hEKAKN": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LOUD. UNIQUE. CHARACTER.</strong></p><p>Express your personal style through bold colours, patterns and contrast! Get creative and don’t be afraid to add some unique features to your home. Wow your guests with sleek finishes and bold statement features.</p><p>Maximalism in kitchen design embraces bold colours and eclectic patterns, creating vibrant and visually dynamic spaces. Rich hues like deep blues, vibrant reds, and emerald greens dominate, while a mix of diverse textures such as glossy tiles, rough-hewn wood, and smooth marble adds depth. Traditional freestanding appliances and extravagant sink mixers fit into the maximalist space by adding a sense of grandeur.</p><p>In bathrooms, maximalism continues with vivid colours, intricate patterns, and a variety of rich materials like marble and brass. Ornate mirrors, detailed vanities, and bold lighting fixtures create a sense of opulence, while plush towels, elegant accessories, and unique sink designs add layers of luxury. Think traditional tapware with matching accessories in bold brassy finishes alongside a black above counter basin. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_B79PXp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop the Modern Maximalism Style Collection",
+            "button_link": "shopify://collections/modern-maximalism"
+          }
+        }
+      },
+      "block_order": [
+        "heading_y7LBiT",
+        "text_hEKAKN",
+        "button_B79PXp"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Modern_Maximalism_d069b1f1-49c1-4d32-8340-4c52f3ecef47.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "e9e594b6-ad32-4c50-8616-41fe00384857": {
+      "type": "cb-instagram-posts",
+      "settings": {
+        "heading-tag": "h2",
+        "title": "Our Insta Inspo",
+        "btn-style": "btn btn-link",
+        "btn-name": "Follow @cookandbathe",
+        "btnlink": ""
+      }
+    },
+    "1678074528c76cfcc3": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "278a019d-0a4b-45a5-b779-6bd27d50b879": {
+      "type": "cb-collage",
+      "blocks": {
+        "6eb08f57-21ed-4669-94b9-ceb4e922fd73": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "center",
+            "title": "Explore and be Inspired"
+          }
+        },
+        "a012f9df-3818-41b6-ae7b-997905ccb381": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_bathroom_phoenixtapware_banner.jpg",
+            "name": "Bathroom",
+            "link": "shopify://collections/bathroom"
+          }
+        },
+        "54b29209-6d70-41fe-ae5e-2a3d31eda22f": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_kitchen_banner.jpg",
+            "name": "kitchen",
+            "link": "shopify://collections/kitchen"
+          }
+        },
+        "c10e131d-32e5-4de8-b096-5b86579a97ac": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_laundry_franke_banner.jpg",
+            "name": "Laundry",
+            "link": "shopify://collections/laundry"
+          }
+        }
+      },
+      "block_order": [
+        "6eb08f57-21ed-4669-94b9-ceb4e922fd73",
+        "a012f9df-3818-41b6-ae7b-997905ccb381",
+        "54b29209-6d70-41fe-ae5e-2a3d31eda22f",
+        "c10e131d-32e5-4de8-b096-5b86579a97ac"
+      ],
+      "settings": {}
+    },
+    "6e9f641b-8131-4266-bc99-9b63b3777468": {
+      "type": "cb-signup",
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "36d5fa5d-36c5-4d9a-9ee3-c48c36490095",
+    "main",
+    "cb_inspiration_page_banner_VEPXCe",
+    "image_with_text_YYj4Vj",
+    "image_with_text_GVhcGz",
+    "image_with_text_z9x9Jj",
+    "image_with_text_rYF4CM",
+    "image_with_text_tjw634",
+    "image_with_text_6zP8eg",
+    "image_with_text_Y7ppJh",
+    "image_with_text_tT4Dkr",
+    "image_with_text_eDRGey",
+    "e9e594b6-ad32-4c50-8616-41fe00384857",
+    "1678074528c76cfcc3",
+    "278a019d-0a4b-45a5-b779-6bd27d50b879",
+    "6e9f641b-8131-4266-bc99-9b63b3777468"
+  ]
+}

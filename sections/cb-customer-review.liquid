@@ -1,0 +1,295 @@
+<div class="customer_review_wrapper position-relative">
+  <div class="container">
+    {% render 'cb-title-option' %}
+  </div>
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "Customer Review",
+"tag": "section",
+"class": "cb-customer-review",
+"settings": [],
+"blocks":[
+    {
+      "type":"title-style-1",
+      "name":"Title style 1",
+      "limit":1,
+      "settings":[
+          {
+            "type":"select",
+            "options": [
+                          {
+                            "label": "Left",
+                            "value": "left"
+                          },
+                          {
+                            "label": "Center",
+                            "value": "center"
+                          }
+            ],
+            "id":"text-style",
+            "label":"Title Align"
+          },
+          {
+            "type":"text",
+            "id":"title",
+            "label":"Title"
+          }
+      ]
+    },
+    {
+      "type":"title-style-2",
+      "name":"Title style 2",
+      "limit":1,
+      "settings":[
+          {
+              "type":"text",
+              "id":"title",
+              "label":"Title"
+          },
+          {
+              "type":"richtext",
+              "id":"content",
+              "label":"Content"
+          }
+      ]
+      },
+    {
+      "type":"title-style-3",
+      "name":"Title style 3",
+      "limit":1,
+      "settings":[
+          {
+              "type":"text",
+              "id":"title",
+              "label":"Title"
+          },
+          {
+              "type":"select",
+              "id":"btn-type",
+              "options": [
+                              {
+                              "label": "Default",
+                              "value": "default"
+                              },
+                              {
+                              "label": "Large",
+                              "value": "large"
+                              }
+              ],
+              "label":"Button Type"
+          },
+          {
+              "type":"select",
+              "id":"btn-style",
+              "options": [
+                          {
+                              "label": "Primary",
+                              "value": "btn btn-primary"
+                          },
+                          {
+                              "label": "Outline",
+                              "value": "btn btn-outline-primary"
+                          },
+                          {
+                              "label": "Animation",
+                              "value": "btn btn-outline-primary btn-animated"
+                          },
+                          {
+                              "label": "Link",
+                              "value": "btn btn-link"
+                          }
+              ],
+              "label":"Button Style",
+              "default":"btn btn-primary"
+          },
+          {
+              "type":"text",
+              "id":"btn-name",
+              "label":"Button Name"
+          },
+          {
+              "type":"url",
+              "id":"btn-link",
+              "label":"Button Link"
+          }
+      ]
+    },
+    {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+    {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Customer Review"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+@media (min-width: 576px) {
+  .customer_review_wrapper {
+    padding: 80px 0 86px;
+  }
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,202 @@
+{% if article.metafields.box.title != blank or article.metafields.box.image != blank %}
+  <div class="img_with_txt_wrapper position-relative">
+    <div class="container img_with_txt_container">
+      <div class="bg_cover" style="background-image: url({{article.metafields.box.image}});">
+        <div class="img_with_txt_content bg-white">
+          {% if article.metafields.box.icon != blank %}
+            <img src="{{article.metafields.box.icon}}" alt="{{ article.metafields.box.title }}">
+          {% endif %}
+          <h2 class="h3">
+            {{ article.metafields.box.title }}
+          </h2>
+          {{ article.metafields.box.content }}
+          {% if article.metafields.boc['btn-name'] != blank %}
+            <a href="{{article.metafields.box.btn-link}}" class="btn btn-outline-primary">
+              {{ article.metafields.boc['btn-name'] }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "Inspiration Img With Text",
+"tag": "section",
+"class": "cb-inspiration-bg-image-text",
+"settings": [],
+"blocks":[
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Inspiration Img With Text"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,295 @@
+
+{% assign collection_list = page.metafields.category.collection | split: '|' %}
+{% if collection_list.size != 0 %}
+  <div class="category_slider_wrapper position-relative">
+  <div class="container">
+    {% if page.metafields.category.title != blank %}        
+      <div class="section_head_holder d-flex align-items-center justify-content-between">
+        <h2 class="h3">{{ page.metafields.category.title }}</h2>
+        {% if page.metafields.link.category != blank %}
+          <a href="{{ page.metafields.link.category }}" class="btn btn-link  ">View All</a>
+        {% endif %}  
+      </div>
+    {% endif %}
+
+    <!-- Swiper -->
+    {% assign category = section.blocks | where: 'type', 'category' %}
+    <div class="category_slider_block" data-count="{{ category.size  }}">
+      <div class="swiper category_swiper">
+        <div class="swiper-wrapper">
+          {% assign collection_list = page.metafields.category.collection | split: '|' %}
+          {% for item in collection_list %}
+            {% if collections[item].title != blank %}
+            {% if collections[item].metafields.custom.icon.size != blank %}
+              {% assign icon = collections[item].metafields.custom.icon | img_url: 'master' %}
+            {% else %}
+              {% assign icon = 'image' | placeholder_svg_tag %}
+            {% endif %}
+            <div class="swiper-slide">
+              <a
+                href="{{ collections[item].url }}"
+                class="category_card d-flex flex-column align-items-center justify-content-center"
+              >
+            {% comment %}
+                {% if collections[item].metafields.custom.icon.size == blank %}
+                  {{ icon }}
+                {% else %}
+                  <img src="{{ icon }}" alt="{{ collections[item].title }}">
+                {% endif %}
+            {% endcomment %}
+                <p>{{ collections[item].title }}</p>
+              </a>
+            </div>
+               {% endif %}
+          {% endfor %}
+        </div>
+        <div class="category_swiper_pagination swiper-pagination d-sm-none"></div>
+      </div>
+      <div class="category_swiper_next swiper-button-next d-none d-sm-flex">&nbsp;</div>
+      <div class="category_swiper_prev swiper-button-prev d-none d-sm-flex">&nbsp;</div>
+    </div>
+  </div>
+{% endif %}  
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "Range Category Slider",
+"tag": "section",
+"class": "cb-range-category",
+"settings": [],
+"blocks":[
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+  "type": "section_padding",
+  "name": "Section Padding",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Large\/Desktop Device"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "label": "Padding Top",
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "label": "Padding Bottom",
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Tablet Device"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_md",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "label": "Padding Top",
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_md",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "label": "Padding Bottom",
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Mobile Device"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_xs",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "label": "Padding Top",
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_xs",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "label": "Padding Bottom",
+      "unit": "px",
+      "default": 50
+    }
+  ]
+}
+],
+"presets": [
+  {
+    "name": "Range Category Slider"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+    var loop_check = true;
+    // if($(window).width() >= 1200){
+    //   var count = $('.category_slider_block').attr('data-count');
+    //   if( count <= 5 ){
+    //     $('.category_slider_block .category_swiper_prev').addClass('d-lg-none');
+    //     $('.category_slider_block .category_swiper_next').addClass('d-lg-none');
+    //     var loop_check = false;
+    //   }
+    // }
+    // if($(window).width() >= 992 && $(window).width() <= 1199){
+    //   var count = $('.category_slider_block').attr('data-count');
+    //   if( count <= 4 ){
+    //     $('.category_slider_block .category_swiper_prev').addClass('d-lg-none');
+    //     $('.category_slider_block .category_swiper_next').addClass('d-lg-none');
+    //     var loop_check = false;
+    //   }
+    // }
+    // if($(window).width() >= 768 && $(window).width() <= 991){
+    //   var count = $('.category_slider_block').attr('data-count');
+    //   if( count <= 2 ){
+    //     $('.category_slider_block .category_swiper_prev').addClass('d-lg-none');
+    //     $('.category_slider_block .category_swiper_next').addClass('d-lg-none');
+    //     var loop_check = false;
+    //   }
+    // }
+    // if($(window).width() <= 767){
+    //   var count = $('.category_slider_block').attr('data-count');
+    //   if( count <= 1 ){
+    //     $('.category_slider_block .category_swiper_prev').addClass('d-lg-none');
+    //     $('.category_slider_block .category_swiper_next').addClass('d-lg-none');
+    //     var loop_check = false;
+    //   }
+    // }
+    var swiper = new Swiper(".category_swiper", {
+    loop: loop_check,
+    slidesPerView: 2,
+    spaceBetween: 20,
+    pagination: {
+      el: ".category_swiper_pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".category_swiper_next",
+      prevEl: ".category_swiper_prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1440: {
+        slidesPerView: 3,
+        spaceBetween: 32,
+      },
+    },
+  });
+{% endjavascript %}

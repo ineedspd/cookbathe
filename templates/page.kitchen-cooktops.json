@@ -1,0 +1,533 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_i6aRkn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TGHNNy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>Why Invest in a Quality Cooktop?</h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Tgm7iC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choosing the right fridge is one of the most important decisions in designing a functional kitchen. At Cook & Bathe, our refrigeration collection is designed to meet a broad range of lifestyle needs, spatial requirements, and design preferences. Whether you’re upgrading your primary fridge or adding a secondary unit to your home bar or wine cellar, our selection offers tailored solutions that combine energy efficiency, smart storage, and refined finishes.</p><p>Our <a href=\"https://www.cookandbathe.com.au/collections/fridges\">Fridges collection</a> includes a broad spectrum of sizes and configurations, ensuring there’s an option suited to every kitchen—from compact apartments to large family homes. Each model is built with modern refrigeration technology to maintain consistent temperatures, reduce frost build-up, and support food longevity. Whether you’re after spacious internal layouts, adjustable shelving, or dedicated humidity-controlled compartments, you’ll find a fridge designed to enhance both form and function.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TGHNNy",
+        "text_Tgm7iC"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_RN4nb9": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tKKNd8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon-kitchen.svg",
+            "title": "Gas Cooktops",
+            "text": "<p><a href=\"https://www.cookandbathe.com.au/collections/gas-cooktops-stove\">Gas Cooktops</a> deliver instant, precise heat, making them a favourite for Australian home cooks who value control and versatility. Perfect for everything from high-heat searing to gentle simmering, gas cooktops cater to diverse cooking styles with features like wok burners and easy-to-use controls. Modern gas cooktops are designed with safety and style in mind, seamlessly blending into any kitchen while providing reliable performance for everyday meals and special occasions.</p>",
+            "link_label": "Shop Gas Cooktops",
+            "link": "shopify://collections/gas-cooktops-stove"
+          }
+        },
+        "column_zV8BR3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_electriccooktop.png",
+            "title": "Induction Cooktops",
+            "text": "<p><a href=\"https://www.cookandbathe.com.au/collections/induction\">Induction Cooktops</a> combine advanced technology with sleek design to bring speed and energy efficiency to your kitchen. Using electromagnetic energy to directly heat your pots and pans, induction cooktops provide rapid heating and precise temperature control while remaining cool to the touch. This makes them a safe, family-friendly option that is easy to clean and perfect for busy households seeking a seamless cooking experience with a modern aesthetic.</p>",
+            "link_label": "Shop Induction Cooktops",
+            "link": "shopify://collections/induction"
+          }
+        },
+        "column_X346kn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_electriccooktop.png",
+            "title": "Ceramic Cooktops",
+            "text": "<p><a href=\"https://www.cookandbathe.com.au/collections/ceramic-cooktops\">Ceramic Cooktops</a> offer a contemporary, minimalist design that complements modern kitchens while providing reliable and consistent heat. With their flat, glass surfaces, ceramic cooktops are easy to clean and maintain, making them a practical choice for homeowners who value simplicity and functionality. Ideal for a wide range of cooking needs, they provide a stylish solution for those looking to upgrade their kitchen with a cooktop that offers both form and function.</p>",
+            "link_label": "Shop Ceramic Cooktops",
+            "link": "shopify://collections/ceramic-cooktops"
+          }
+        }
+      },
+      "block_order": [
+        "column_tKKNd8",
+        "column_zV8BR3",
+        "column_X346kn"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Cooktops: Crafted for Precision, Designed for Your Kitchen",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Shop Cooktops",
+        "button_link": "shopify://collections/cooktops",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3qAx9n": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3tWCM3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Cooktops at Cook & Bathe</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Tq7myG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cooktops are the heart of your kitchen, influencing not just what you prepare but how efficiently you can cook each meal. At Cook & Bathe, we offer a premium selection of cooktops that blend performance, style, and seamless integration for every kitchen. Whether you love precise control with <a>gas cooktops</a>, the efficiency of <a>induction cooktops</a>, or the sleek design of <a>ceramic cooktops</a>, we have options to match your lifestyle.</p><p>Explore our complete range of cooktops to find the ideal match for your kitchen design, cooking habits, and culinary ambitions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3tWCM3",
+        "text_Tq7myG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_CQwnLV": {
+      "type": "rich-text",
+      "blocks": {
+        "text_n4gY8q": {
+          "type": "text",
+          "settings": {
+            "text": "<h3><a href=\"https://www.cookandbathe.com.au/collections/gas-cooktops-stove\">Gas Cooktops</a></h3><p>Gas cooktops are valued by Australian home cooks for their instant and precise heat control, making them ideal for everything from high-heat searing to gentle simmering. Whether you're preparing quick midweek dinners or hosting a weekend gathering, gas cooktops provide the flexibility to manage multiple dishes simultaneously. Our range includes models with wok burners and multiple cooking zones, offering flexibility for family meals and entertaining.</p><p>Choose from trusted brands such as <a href=\"https://www.cookandbathe.com.au/collections/smeg-cooktops\">Smeg</a>, known for their Italian craftsmanship, <a href=\"https://www.cookandbathe.com.au/collections/westinghouse/Cooktops\">Westinghouse</a> for practical, family-friendly designs, and <a href=\"https://www.cookandbathe.com.au/collections/electrolux-cooktops\">Electrolux</a>, delivering modern, easy-to-use gas cooktops that blend seamlessly into your kitchen aesthetic.</p><p>Gas cooktops are easy to use and durable, with many models featuring flame failure safety devices for added peace of mind. With a focus on energy efficiency and performance, a gas cooktop from Cook & Bathe will become a trusted part of your daily cooking routine.</p><h3><a href=\"https://www.cookandbathe.com.au/collections/induction\">Induction Cooktops</a></h3><p>Induction cooktops are the choice for homeowners seeking speed, precision, and energy efficiency in their kitchens. Using electromagnetic technology, induction cooktops heat your cookware directly while the surface remains cool, making them safe for families and easy to clean. Induction cooking is perfect for households looking to reduce energy consumption without compromising on performance.</p><p>At Cook & Bathe, we offer induction cooktops from leading brands such as <a href=\"https://www.cookandbathe.com.au/collections/bora\">Bora</a>, known for their advanced downdraft extraction and sleek design, <a href=\"https://www.cookandbathe.com.au/collections/franke-cooktops\">Franke</a> for their premium European styling, and <a href=\"https://www.cookandbathe.com.au/collections/kleenmaid-cooktops\">Kleenmaid</a> for their balance of reliability and contemporary features.</p><p>Induction cooktops allow for rapid boiling, precise simmering, and a high level of control, helping you cook everything from sauces to stir-fries with ease. Many models include touch controls and flexible cooking zones, adding versatility and convenience to your kitchen.</p><h3><a href=\"https://www.cookandbathe.com.au/collections/ceramic-cooktops\">Ceramic Cooktops</a></h3><p>Ceramic cooktops provide a sleek, modern look that enhances any kitchen while delivering consistent heat and straightforward functionality. The smooth glass surface makes cleaning up spills simple, while clearly marked cooking zones ensure ease of use during busy meal preparation.</p><p>Our selection includes ceramic cooktops from reputable brands such as <a href=\"https://www.cookandbathe.com.au/collections/euro-appliances-cooktops\">Euro Appliances</a>, offering functional, stylish designs, and <a href=\"https://www.cookandbathe.com.au/collections/smeg-cooktops\">Smeg</a>, bringing Italian design and advanced features to your kitchen. Ceramic cooktops are ideal for homeowners seeking a balance of performance, design, and practicality without the complexities of gas or induction cooking.</p><p>Whether you need a cooktop for a family kitchen, a compact apartment, or a stylish renovation project, ceramic cooktops are a reliable choice that complements your kitchen while making daily cooking simple and efficient.</p><p>At Cook & Bathe, we are dedicated to helping you find the perfect cooktop that aligns with your kitchen’s design and your cooking lifestyle. Explore our <a href=\"https://www.cookandbathe.com.au/collections/cooktops\">full cooktops collection</a> or visit our showroom to receive expert advice and discover a cooktop that will enhance your kitchen for years to come.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_n4gY8q"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_dQbDaC": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "BORA",
+        "heading_size": "h1",
+        "description": "<p>BORA cooktops redefine kitchens with their innovative integrated ventilation, combining advanced induction technology with powerful extraction for a cleaner, minimalist kitchen. Engineered for precision and efficiency, BORA cooktops are ideal for modern homes seeking seamless design and exceptional performance.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bora",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_XKUHmE": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Electrolux",
+        "heading_size": "h1",
+        "description": "<p>Electrolux cooktops bring practical, user-friendly features to everyday Australian kitchens. Known for their sleek designs and intuitive controls, Electrolux induction and gas cooktops provide reliable, efficient cooking with modern safety features, making them a trusted choice for family homes.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "electrolux-cooktops",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_a7qCcf": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Euro Appliances",
+        "heading_size": "h1",
+        "description": "<p>Euro Appliances cooktops offer versatile, affordable solutions for Australian kitchens, balancing contemporary style with reliable performance. Available in gas, induction, and ceramic options, Euro cooktops provide everyday functionality while complementing a modern kitchen aesthetic.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "euro-appliances-cooktops",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_JLbUeE": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Franke",
+        "heading_size": "h1",
+        "description": "<p>Franke cooktops combine Swiss precision with contemporary design, offering a premium cooking experience. With options in gas, induction, and ceramic, Franke cooktops are engineered for performance and efficiency, fitting seamlessly into modern and luxury kitchen spaces.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "franke-cooktops",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_XHUDee": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Kleenmaid",
+        "heading_size": "h1",
+        "description": "<p>Kleenmaid cooktops are designed for reliability and everyday functionality, delivering efficient cooking with sleek styling. With a focus on quality and durability, Kleenmaid offers induction, ceramic, and gas cooktops to suit a variety of kitchen designs and family needs.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "kleenmaid-cooktops",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_fqVMkx": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Smeg",
+        "heading_size": "h1",
+        "description": "<p>Smeg cooktops bring Italian design excellence to Australian kitchens, combining style with advanced cooking technology. From elegant gas cooktops with precision flame control to cutting-edge induction models, Smeg offers high-performance solutions for kitchens that value aesthetics and functionality.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "smeg-cooktops",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_ejRAKE": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Westinghouse",
+        "heading_size": "h1",
+        "description": "<p>Westinghouse cooktops are practical, family-friendly options for Australian homes, offering straightforward controls and reliable performance. With gas and induction cooktops designed to support everyday cooking, Westinghouse helps households cook with confidence and ease.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "westinghouse-cooktops",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_xUqC8f": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ihENJh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3><strong>Shop Cooktops Online or Visit Our Showrooms</strong></h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_EEVVCH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ready to upgrade your kitchen with a new cooktop? Explore our full range of premium cooktops online or visit one of our Melbourne showrooms to experience our curated selection in person. From gas and induction cooktops to ceramic options, our team is here to help you find the perfect solution for your kitchen, lifestyle, and cooking needs.</p><p><br/></p><p><a href=\"https://www.cookandbathe.com.au/collections/cooktops\">Shop Cooktops Now</a> or <a href=\"https://www.cookandbathe.com.au/pages/contact-us\">Contact Our Showroom Consultants</a> to get started.</p>"
+          }
+        },
+        "button_dFVyJP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find Showrooms",
+            "button_link": "shopify://pages/store-locations",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ihENJh",
+        "text_EEVVCH",
+        "button_dFVyJP"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_blog_YqrJzW": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "173948753494c948f2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "main",
+    "rich_text_i6aRkn",
+    "multicolumn_RN4nb9",
+    "rich_text_3qAx9n",
+    "rich_text_CQwnLV",
+    "featured_collection_dQbDaC",
+    "featured_collection_XKUHmE",
+    "featured_collection_a7qCcf",
+    "featured_collection_JLbUeE",
+    "featured_collection_XHUDee",
+    "featured_collection_fqVMkx",
+    "featured_collection_ejRAKE",
+    "rich_text_xUqC8f",
+    "featured_blog_YqrJzW",
+    "cb_find_showroom_PQG6UA",
+    "173948753494c948f2"
+  ]
+}

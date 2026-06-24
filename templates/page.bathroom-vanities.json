@@ -1,0 +1,402 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_n3iVMi": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_XN6ciV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/OttiBlack.png",
+            "title": "Otti Australia",
+            "text": "<p>At Cook & Bathe, we proudly showcase the Otti Collection – a brand that exemplifies the fusion of elegant design and everyday functionality. Whether you're updating a <a href=\"https://www.cookandbathe.com.au/pages/bathroom-range\"><strong>bathroom</strong></a>, or designing a new build; Otti offers an exceptional range of <a href=\"https://www.cookandbathe.com.au/collections/basins\"><strong>basins</strong></a><strong>, </strong><a href=\"https://www.cookandbathe.com.au/collections/mirrors\"><strong>mirrors</strong></a><strong>, </strong><a href=\"https://www.cookandbathe.com.au/collections/baths\"><strong>baths</strong></a>, and <a href=\"https://www.cookandbathe.com.au/collections/vanity-units\"><strong>vanities</strong></a>, that reflect the latest in modern Australian home styling.<br/></p>",
+            "link_label": "Otti Australia",
+            "link": "shopify://collections/otti"
+          }
+        },
+        "column_k4DiEn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Fienza.png",
+            "title": "Fienza",
+            "text": "<p>Step into a world where form meets function. Welcome to Cook & Bathe's exclusive collection of <a href=\"/collections/fienza\" title=\"Fienza\"><strong>Fienza bathroom products</strong></a>, where every piece tells a story. Our selection, ranging from <a href=\"/collections/fienza-vanities\" title=\"Fienza Vanities\"><strong>Vanities</strong></a><strong> and </strong><a href=\"/collections/fienza-basins\" title=\"Fienza Basins\"><strong>Basins </strong></a><strong>to </strong><a href=\"/collections/fienza-tapware\" title=\"Fienza Tapware\"><strong>Sink Mixers</strong></a><strong>, showers, bath mixers, and pop-up waste</strong>, embodies the art of living well.<br/></p>",
+            "link_label": "Fienza Bathware",
+            "link": "shopify://collections/fienza"
+          }
+        }
+      },
+      "block_order": [
+        "column_XN6ciV",
+        "column_k4DiEn"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Vanity & Shaving Cabinet Brands",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Explore All Brands",
+        "button_link": "shopify://collections/brands",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_EDKXGR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VrkJxB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Otti Vanities & Shaving Cabinets: The full solution",
+            "heading_size": "h1"
+          }
+        },
+        "text_Yj4mcy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With the Modern Australian Home in mind, Otti Australia’s collection and combinations of Vanities, Shaving Cabinets and Basins create a beautiful and detailed space for any home.</p><p>Each piece in the Otti range is crafted with a deep understanding of contemporary Australian interiors—balancing minimalist lines with rich, organic textures and functional storage. Whether you’re looking for a sleek wall-hung vanity to enhance a compact ensuite or a bold floor-standing unit to anchor a family bathroom, Otti offers versatile options to suit every need.</p><p>Their shaving cabinets are more than just mirrors—they provide smart, integrated storage with soft-close doors and optional LED lighting for added luxury. With sizes ranging from 600mm to 1200mm and finishes like matte white, charcoal oak, and natural oak, these pieces are designed to harmonise with a wide range of bathroom aesthetics.</p><p>Built for durability with moisture-resistant materials and seamless ceramic basins, Otti vanities and cabinets are a trusted choice for renovators, interior designers, and homeowners seeking quality without compromise.</p><p>Explore the full Otti Australia collection today and elevate your bathroom with modern elegance, practical design, and enduring quality—available online or in-store at Cook & Bathe.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_WRH8Hp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Otti Australia Vanities",
+            "button_link": "shopify://collections/otti-vanities"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VrkJxB",
+        "text_Yj4mcy",
+        "button_WRH8Hp"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/LED-BOSV1275B_Lifestyle3_Web.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_dGLkLM": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Otti Australia Vanities",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "otti-vanities",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_arUXyj": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Otti Australia Bathroom Products",
+        "heading_size": "h1",
+        "description": "<p>Shop Otti Shaving Cabinets, Basins, Baths and more.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "otti",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_xngRVJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WUHCbr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fienza Bathware",
+            "heading_size": "h1"
+          }
+        },
+        "text_EjqKGg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With a reputation built on precision, innovation, and bold design, Fienza delivers bathroom furniture that makes a statement. Their vanities and shaving cabinets are not just functional—they’re focal points. Created for homeowners who value contemporary detail and architectural flair, each piece offers a refined take on everyday bathroom essentials.</p><p>Fienza vanities feature strong geometric forms, textured finishes, and fluted or ribbed detailing that adds depth and drama to any space. Whether you're selecting a floating vanity for a clean, modern look or a structured floor-mounted design for added presence, Fienza’s options are designed to align with current interior trends—while delivering day-to-day performance.</p><p>Shaving cabinets in the Fienza collection are equally striking. Framed or frameless, mirrored or matte, with optional open shelving and soft-close mechanisms—they’re designed to complement modern lifestyles while elevating the overall aesthetic of the bathroom.</p><p>Highlights include:</p><ul><li>On-trend finishes including timber, matte white, and deep oak.</li><li>Optional brushed gold or matte black handles for a designer touch.</li><li>Fluted and V-Groove door designs for texture and dimensions.</li><li>Durable, moisture-resistant construction built for Australian conditions.</li><li>Customisable widths and configurations to suit any space.</li></ul><p>Fienza is the brand of choice for those designing high-impact bathrooms with purpose and personality. Whether you're starting fresh or upgrading a dated space, explore Fienza’s bold bathroom furniture range today online at Cook & Bathe, or visit our Melbourne showroom for expert guidance.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Ue3bWq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Fienza Vanities",
+            "button_link": "shopify://collections/fienza-vanities"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WUHCbr",
+        "text_EjqKGg",
+        "button_Ue3bWq"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/tile_Wk3_FienzaVanity.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_8g7GJ7": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Fienza Bathware Australia Vanities",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fienza-vanities",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_L9WJjp": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Fienza Bathware Collections",
+        "heading_size": "h1",
+        "description": "<p>Shop Fienza Bathroom accessories, basins, toilets and more.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "fienza",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_Renqx7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_YYwPtj": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Why Australian Homes Choose Quality Vanities</h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_hxw6mn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At <strong>Cook & Bathe</strong>, we know vanities are more than just bathroom furniture; they’re a balance of design, storage, and daily ease in demanding Australian conditions. With decades of experience supplying trusted brands like <a href=\"https://www.cookandbathe.com.au/collections/ott\" title=\"Otti Australia Collection\">Otti Australia</a>, and <a href=\"https://www.cookandbathe.com.au/collections/fienza\" title=\"Fienza bathware collection\">Fienza</a>, we select vanities built for moisture resilience, long-lasting finishes, and seamless style integration. Whether you're renovating a family bathroom, updating a compact ensuite, or creating a spa-like retreat, we're your go‑to partner for expertise, reliable delivery across Australia, and exceptional post-purchase support.<br/><br/></p>"
+          }
+        },
+        "heading_V8JDzn": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>Timeless Styles Powered by Local Expertise</h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_eKf8xY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover inspiration from our <a href=\"https://www.cookandbathe.com.au/blogs/news/get-inspired-9-styles-we-cant-get-enough-of\" title=\"9 Styles We Can’t Get Enough Of\">“9 Styles We Can’t Get Enough Of”</a> blog—covering design themes from coastal minimalism to modern maximalism, boutique hotel vibes to classic Hamptons chic. Our curated collections make it easy to match your décor:</p><ul><li>For a sleek minimalist look, choose a handle-free <a href=\"https://www.cookandbathe.com.au/collections/wall-hung\" title=\"https://www.cookandbathe.com.au/collections/wall-hung\">wall-hung vanity.</a></li><li>Love texture or visual depth? Try <a href=\"https://www.cookandbathe.com.au/collections/fienza\" title=\"Fienza Bathware Fluted Vanity\">fluted-front vanities</a> in timber finishes from Fienza.</li></ul><p>We link these style inspirations directly into our <a href=\"https://www.cookandbathe.com.au/collections/vanity-units\" title=\"Cook & Bathe Vanity collection\">Vanity Units</a> range, along with tapware, mirrors and basins, creating one cohesive design journey for your bathroom.<br/></p>"
+          }
+        },
+        "heading_TTtVdd": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>Smart Storage and Practical Performance<br/></h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_tjHJGA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ideal storage solutions matter—soft-close drawers, adjustable shelving, integrated basins and concealed plumbing access ensure your vanity works as hard as it looks. Many models offer standard dimensions (600 mm, 750 mm, 900 mm, 1200 mm)—perfectly suited to Australian building standards and typical bathroom layouts. Our experts help you avoid costly mistakes by matching units to plumbing spaces and style requirements before purchase.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YYwPtj",
+        "text_hxw6mn",
+        "heading_V8JDzn",
+        "text_eKf8xY",
+        "heading_TTtVdd",
+        "text_tjHJGA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_HemrCg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AFn8CN": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>Trends Tailored for Australian Homes in 2025</h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_rE6Xrd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As part of our Bathroom Trends 2025 Collection, we’ve layered storewide trends into our vanity offer—like water-conscious basins, eco-friendly finishes, and combined aesthetic features pulled through from modern kitchens to bathrooms. Pair your vanity with archival-style tapware or brushed-gold fixtures for a timeless finish, drawing from our blog inspiration on:</p><ul><li><a href=\"https://www.cookandbathe.com.au/blogs/news/get-inspired-9-styles-we-cant-get-enough-of\">Interior Styles</a></li><li><a href=\"https://www.cookandbathe.com.au/blogs/news/outside-in\">Bringing the Outside In</a></li><li><a href=\"https://www.cookandbathe.com.au/blogs/news/brushed-gold-finding-your-style-with-stunning-flatlays\">Brushed Gold Styling Inspiration</a><br/><br/></li></ul>"
+          }
+        },
+        "heading_UhJmhc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>Complete Your Bathroom with Complementary Collections</h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_FBqwwt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To build a fully coordinated space, consider:</p><ul><li><a href=\"/collections/basins-and-sinks\" title=\"Basins and Sinks\">Basins</a>: sleek integrated-top basins, designer ceramic styles and countertop bowls</li><li><a href=\"https://www.cookandbathe.com.au/collections/tapware-bathroom\">Tapware & Bathroom Accessories</a>: match your vanity with stylish tapware and finishes</li><li><a href=\"https://www.cookandbathe.com.au/collections/mirrors\">Mirrors</a>: round, pill, LED-lit and arched options to enhance both light and design flow</li></ul>"
+          }
+        },
+        "heading_4fUGk3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Your Renovation Partner, from Concept to Completion</h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_w6BCNw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our <a href=\"https://www.cookandbathe.com.au/pages/store-locations\">Melbourne showrooms</a> are grounded in style advice and hands-on product viewing—serving renovators, designers and homeowners nationwide. We offer expert help choosing the right vanity for your style, functionality needs and room dimensions. Shop confidently with free Australia-wide delivery, full product specs, expert design guides and exceptional post-sale support.<br/><br/>Embrace functional luxury built for Australian bathrooms—from streamlined wall-hung designs to bold floor-standing vanities and smart shaving cabinets; only at Cook & bathe.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AFn8CN",
+        "text_rE6Xrd",
+        "heading_UhJmhc",
+        "text_FBqwwt",
+        "heading_4fUGk3",
+        "text_w6BCNw"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_n3iVMi",
+    "image_with_text_EDKXGR",
+    "featured_collection_dGLkLM",
+    "featured_collection_arUXyj",
+    "image_with_text_xngRVJ",
+    "featured_collection_8g7GJ7",
+    "featured_collection_L9WJjp",
+    "rich_text_Renqx7",
+    "rich_text_HemrCg"
+  ]
+}

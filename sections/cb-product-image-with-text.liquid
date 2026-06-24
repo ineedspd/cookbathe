@@ -1,0 +1,48 @@
+{% if product.metafields.box.image != blank
+  or product.metafields.box.title != blank
+  or product.metafields.box.description != blank
+%}
+  <div class="product_image_with_text_wrapper position-relative">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12">
+          <div class="row align-items-center">
+            {% if product.metafields.box.image != blank %}
+              <div class="col-lg-6 col-12">
+                <div class="image_holder">
+                  <img src="{{product.metafields.box.image}}" alt="{{product.metafields.box.title}}">
+                </div>
+              </div>
+            {% endif %}
+            <div class="col-lg-6 col-12">
+              <div class="text_holder">
+                <h4>{{ product.metafields.box.title }}</h4>
+                {{ product.metafields.box.description }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% schema %}
+{
+"name": "Product Image With Text",
+"tag": "section",
+"class": "cb-product-image-with-text",
+"settings": [],
+"presets": [
+  {
+    "name": "Product Image With Text"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

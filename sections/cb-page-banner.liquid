@@ -1,0 +1,38 @@
+{% if page.metafields.custom.banner_page != blank %}
+  {% assign img_url = page.metafields.custom.banner_page | img_url:'master'  %}
+{% else %}
+   {% assign img_url = section.settings.image | img_url:'master'  %}
+{% endif %}  
+<div
+  class="terms_conditions_banner position-relative bg_cover" style="background-image: url({{ img_url }});">
+  <div class="container">
+    <div class="terms_conditions_banner_content">
+      <h1 class="h2">{{ page.title }}</h1>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Pages Banner",
+"tag": "section",
+"class": "cb-page-banner",
+"settings": [
+  {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Image"
+  }
+],
+"presets": [
+  {
+    "name": "Pages Banner"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

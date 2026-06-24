@@ -1,0 +1,130 @@
+<div class="product_card d-flex flex-column position-relative overflow-hidden">
+  {% if discount == true %}
+    {% if card_product.compare_at_price %}
+      {% capture discount %}
+        {{ card_product.price | minus:card_product.compare_at_price | times:100 | divided_by:card_product.compare_at_price }}%
+      {% endcapture %}
+      <div class="product_sale">{{ discount | remove: '-' }} OFF</div>
+    {% endif %}
+  {% endif %}
+  {% if wishlist == true %}
+    <div class="product_wishlist">
+      {% comment %}
+        <button
+          type="button"
+          data-with-epi="true"
+          class="wishlist_btn swym-button swym-add-to-wishlist-view-product product_{{card_product.id}}"
+          data-swaction="addToWishlist"
+          data-product-id="{{card_product.id | json}}"
+          data-variant-id="{{card_product.variants[0].id}}"
+          data-product-url="{{ shop.url }}{{ card_product.url }}"
+        ></button>
+      {% endcomment %}
+      {% render 'wishlisthero-collection-product' with product: card_product %}
+    </div>
+  {% endif %}
+  <a href="{{ card_product.url }}" class="d-inline-flex mx-auto product_cover_block position-relative overflow-hidden">
+    {% comment %}
+    <img
+      src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/product-card-cover.png"
+      alt="{{ card_product.title }}"
+      class="mx-auto d-block"
+    >
+    {% endcomment %}
+     {{ card_product.featured_image | image_url: width: 175 | image_tag:
+              loading: 'lazy',
+              height: 175,
+    width: 175,
+              sizes: "100vw",
+              widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+            }}
+
+    
+    {% comment %}
+    <div
+      class="product_cover_block_front bg_cover"
+      style="background-image: url({{ card_product.featured_image | img_url:"master" }});"
+    >
+      &nbsp;
+    </div>
+    {% if card_product.media.size != 1 and double_image == true %}
+      <div
+        class="product_cover_block_back bg_cover"
+        style="background-image: url({{ card_product.media[1] | image_url }});"
+      >
+        &nbsp;
+      </div>
+    {% endif %}
+    {% endcomment %}
+  </a>
+  <div class="product_content">
+    <a href="{{ card_product.url }}" class="btn btn-outline-primary">View More</a>
+    {% if variant == true %}
+      <div class="product_color d-flex align-items-center">
+        {% for option in card_product.options_with_values %}
+          {% if option.name == 'Color' or option.name == 'color' %}
+            {% assign index = forloop.index0 %}
+            {% assign colorlist = '' %}
+            {% assign color = '' %}
+            {% for variant in card_product.variants %}
+              {% capture color %}
+                {{ variant.options[index] }}
+            {% endcapture %}
+              {% unless colorlist contains color %}
+                {% if variant.metafields.custom.color_code != blank %}
+                  <input
+                    type="radio"
+                    class="form-check-input color_input"
+                    id="{{ section.id }}-{{ variant.id }}-{{ forloop.index0 }}"
+                    name="{{ option.name }}"
+                    value="{{ color | escape }}"
+                    {% comment %}
+                      {% if option.selected_value == value or forloop.index == 1 %}
+                        checked
+                      {% endif %}
+                    {% endcomment %}
+                    style="background-color:{{ variant.metafields.custom.color_code }};"
+                  >
+                {% endif %}
+                {% capture tempList %}
+                  {{colorlist | append: color | append: ' '}}
+              {% endcapture %}
+                {% assign colorlist = tempList %}
+              {% endunless %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+    <h3 class="product_title">
+      {{ card_product.title }}
+    </h3>
+    {%- assign current_variant = card_product.selected_or_first_available_variant -%}
+          <small class="mb-4 d-inline-block"><strong>SKU:</strong> {{ current_variant.sku }}</small>
+    {% if card_product.tags contains 'min-max' %}
+      <p class="quick-ship">Quick Ship</p>
+    {% endif %}
+    {% assign for_sale = card_product.metafields.global['for-sale'] | strip %}
+    {% if for_sale == "No" %}
+    <p class="call-message">
+      <a href="tel:0393762299" class="call-link">
+        <svg class="icon icon-call" aria-hidden="true" focusable="false" role="presentation" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.70945 1.61042L2.12827 2.66454C2.02545 2.73348 1.94257 2.82824 1.88792 2.93932C1.83327 3.05039 1.80879 3.17389 1.81692 3.29741L3.70945 1.61042ZM3.70945 1.61042C3.73352 1.5943 3.76188 1.58579 3.79085 1.586L3.70945 1.61042ZM12.8237 9.53052L12.8236 9.52996C12.7873 9.3928 12.7226 9.26479 12.6338 9.15418C12.5449 9.04358 12.4338 8.95283 12.3077 8.88782L9.79099 7.58366C9.79092 7.58363 9.79085 7.58359 9.79078 7.58355C9.57711 7.47033 9.32987 7.43766 9.09411 7.49149C8.85829 7.54534 8.64967 7.68216 8.50631 7.877L8.5062 7.87715L8.0992 8.43474L8.09904 8.43496C8.08527 8.45404 8.065 8.46744 8.04204 8.47262C8.01919 8.47778 7.99525 8.47446 7.97468 8.46328C7.38035 8.12502 6.83622 7.70534 6.3581 7.21641L6.35811 7.2164L6.35731 7.21562C5.8684 6.73748 5.44872 6.19336 5.11045 5.59904C5.09927 5.57847 5.09594 5.55453 5.1011 5.53169C5.10629 5.50873 5.11968 5.48846 5.13877 5.47468L5.13906 5.47447L5.69461 5.06748L5.69469 5.06741C5.88953 4.92406 6.02635 4.71544 6.0802 4.47961C6.13403 4.24387 6.10136 3.99663 5.98815 3.78297C5.98811 3.78289 5.98807 3.78281 5.98803 3.78274L4.69202 1.26802L4.69196 1.26791C4.62647 1.14162 4.53511 1.03055 4.42383 0.941939C4.31254 0.853323 4.18384 0.789151 4.04609 0.753605C3.90835 0.718058 3.76466 0.711935 3.6244 0.735634C3.48413 0.759333 3.35043 0.812323 3.23201 0.891149L3.23191 0.891218L1.65083 1.94934C1.65081 1.94935 1.65079 1.94937 1.65077 1.94938C1.42148 2.10207 1.23634 2.31232 1.11388 2.55908C0.991469 2.80574 0.935994 3.08023 0.953002 3.35507C0.974083 3.80799 1.03508 4.25818 1.13528 4.70038L1.13526 4.70039L1.13564 4.70188C1.56768 6.36859 2.60886 8.07941 4.05257 9.52517C5.49638 10.971 7.20929 12.0081 8.87602 12.4361L8.87602 12.4361L8.87741 12.4364C9.31975 12.5366 9.77006 12.5976 10.2231 12.6187L10.2231 12.6188H10.2254H10.3272H10.3273C10.5838 12.6182 10.8362 12.5549 11.0627 12.4344C11.2891 12.3138 11.4825 12.1397 11.6262 11.9273L11.6264 11.927L12.6803 10.3461C12.6803 10.3461 12.6804 10.346 12.6804 10.346C12.7604 10.2278 12.8145 10.0941 12.8392 9.95365C12.8639 9.81309 12.8587 9.66889 12.8237 9.53052ZM2.15608 2.70609C2.15609 2.70608 2.1561 2.70607 2.15612 2.70606L3.73718 1.65202L3.73726 1.65197C3.753 1.64143 3.77155 1.63586 3.79049 1.636H3.79085H3.82242C3.83354 1.63961 3.84392 1.64523 3.85305 1.65257C3.86368 1.66112 3.87237 1.67183 3.87856 1.68398L3.87871 1.68427L5.1811 4.20153L5.18112 4.20157C5.19185 4.22228 5.1949 4.24613 5.18971 4.26887C5.18454 4.29153 5.17152 4.31163 5.15297 4.32562C5.1529 4.32567 5.15284 4.32572 5.15277 4.32578L4.59767 4.73243L4.59738 4.73265C4.39918 4.8801 4.26187 5.09504 4.21137 5.33685C4.16088 5.57866 4.20071 5.83059 4.32334 6.04503L4.32334 6.04504C4.7022 6.70726 5.17055 7.31409 5.71517 7.84838C6.24942 8.39304 6.85626 8.8614 7.51851 9.24021L7.54334 9.19681L7.51852 9.24021C7.73296 9.36284 7.98489 9.40267 8.2267 9.35217C8.46851 9.30168 8.68345 9.16437 8.8309 8.96618L8.83117 8.96581L9.23777 8.40875C9.23784 8.40866 9.23791 8.40857 9.23798 8.40848C9.25197 8.38996 9.27205 8.37697 9.29468 8.37181C9.31742 8.36661 9.34127 8.36966 9.36198 8.3804L9.36202 8.38042L11.8791 9.68269C11.8791 9.68272 11.8792 9.68275 11.8792 9.68278C11.8914 9.68917 11.9021 9.69803 11.9106 9.7088C11.9192 9.71961 11.9254 9.7321 11.9288 9.74547C11.9323 9.75883 11.9328 9.77276 11.9306 9.78637C11.9283 9.79997 11.9231 9.81295 11.9155 9.82445L11.9021 9.84476L11.9061 9.85698L10.8719 11.4194C10.8718 11.4195 10.8718 11.4196 10.8717 11.4196C10.8071 11.515 10.7186 11.5919 10.6152 11.6426C10.5116 11.6934 10.3966 11.7163 10.2815 11.7089L10.2807 11.7089C9.88461 11.6906 9.49084 11.6386 9.10362 11.5535C7.59608 11.1613 6.03301 10.2124 4.70132 8.8746C3.3694 7.5366 2.4165 5.97954 2.02427 4.47209C1.93845 4.08492 1.88579 3.69114 1.86686 3.29503L1.86687 3.29503L1.86681 3.29413C1.85926 3.17935 1.88201 3.0646 1.93278 2.96139C1.98355 2.85819 2.06056 2.77015 2.15608 2.70609Z" fill="currentColor" stroke="currentColor" stroke-width="0.1"></path>
+        </svg>
+        Call
+      </a>
+    </p>
+    {% endif %}
+  </div>
+  {% if price == true %}
+    <div class="product_price {% if card_product.compare_at_price != blank %}product_sale_price{% endif %}">
+      {% if card_product.compare_at_price != blank %}
+        <span class="real_price">{{ card_product.compare_at_price | times: 1 | money }}</span>
+      {% endif %}
+      <span class="{% if card_product.compare_at_price != blank %}sale_price{% else %}real_price{% endif %}">{{ card_product.price | times: 1 | money }}</span>
+      {% if addtocart == true %}
+        <a href="#" class="btn btn-outline-primary">Add to Cart</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>

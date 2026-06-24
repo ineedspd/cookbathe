@@ -1,0 +1,148 @@
+<div class="odd_even_wrapper position-relative">
+  <div class="container">
+    <div class="row align-items-center g-0 {% if section.settings.layout == 'text_first' %}flex-row-reverse{% endif %}">
+      <div class="col-xl-7 col-lg-6 col-12">
+        <div
+          class="odd_even_image_block bg_cover d-inline-block lazy-bg"  data-bg="{{ section.settings.image | img_url :'master' }}"
+        >
+          <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/odd-even-cover.png" alt="About Us" loading="lazy" height="618" width="684">
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-6 col-12">
+        <div class="odd_even_content_block">
+          <div class="section_head_holder d-flex align-items-center">
+            <{{ section.settings.heading-tag }} class="h3">{{ section.settings.title }}</{{ section.settings.heading-tag }}>
+          </div>
+          {{ section.settings.description }}
+          {% if section.settings['btn-name'] != blank %}
+            <a href="{{ section.settings.btn-link }}" class="{{ section.settings.btn-style }}">
+              {{- section.settings['btn-name'] -}}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Image With Content",
+"tag": "section",
+"class": "cb-image-with-content",
+"settings": [
+    {
+      "type":"image_picker",
+      "id":"image",
+      "label":"Image"
+    },
+    {
+      "type": "select",
+      "id": "layout",
+      "options": [
+        {
+          "value": "image_first",
+          "label": "t:sections.image-with-text.settings.layout.options__1.label"
+        },
+        {
+          "value": "text_first",
+          "label": "t:sections.image-with-text.settings.layout.options__2.label"
+        }
+      ],
+      "default": "image_first",
+      "label": "t:sections.image-with-text.settings.layout.label",
+      "info": "t:sections.image-with-text.settings.layout.info"
+    },
+    {
+    "type":"select",
+    "id":"heading-tag",
+    "options":[
+      {
+        "label":"Paragraph",
+        "value":"p"
+      },
+      {
+        "label":"H1",
+        "value":"h1"
+      },
+      {
+        "label":"H2",
+        "value":"h2"
+      },
+      {
+        "label":"H3",
+        "value":"h3"
+      },
+      {
+        "label":"H4",
+        "value":"h4"
+      },
+      {
+        "label":"H5",
+        "value":"h5"
+      },
+      {
+        "label":"H6",
+        "value":"h6"
+      }      
+    ],
+    "label":"Heading Tag",
+    "default":"h2"
+  },
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title"
+    },
+    {
+      "type":"richtext",
+      "id":"description",
+      "label":"Description"
+    },
+    {
+          "type":"select",
+          "id":"btn-style",
+          "options": [
+                      {
+                          "label": "Primary",
+                          "value": "btn btn-primary"
+                      },
+                      {
+                          "label": "Outline",
+                          "value": "btn btn-outline-primary"
+                      },
+                      {
+                          "label": "Animation",
+                          "value": "btn btn-outline-primary btn-animated"
+                      },
+                      {
+                          "label": "Link",
+                          "value": "btn btn-link"
+                      }
+          ],
+          "label":"Button Style",
+          "default":"btn btn-primary"
+    },
+    {
+      "type":"text",
+      "id":"btn-name",
+      "label":"Button Name"
+    },
+    {
+      "type":"url",
+      "id":"btn-link",
+      "label":"Button Link"
+    }
+],
+"presets": [
+  {
+    "name": "Image With Content"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

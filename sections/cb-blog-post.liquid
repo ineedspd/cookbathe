@@ -1,0 +1,538 @@
+
+<div class="blog_post_wrapper position-relative">
+  <div class="container">
+    {% render 'cb-title-option' %}
+    <div class="blog_post_listing">
+      <div class="swiper blogs_swiper">
+        <div class="swiper-wrapper">
+          {% assign id = article.id %}
+          {% assign blogs_type = section.blocks | where: 'type', 'blog' %}
+          {%- for block in blogs_type -%}
+            {% assign blog = blogs[block.settings.blogs] %}
+            {% assign limit = 0 %}
+            {%- for article in blog.articles %}
+              {% if id != article.id and limit < 3 %}
+                <div class="swiper-slide">
+                  <div class="blog_card position-relative overflow-hidden">
+                    <a
+                      href="{{ article.url }}"
+                      class="d-block blog_card_cover bg_cover"
+                    >
+                       <img
+                    src="{{  article.image | img_url: '280x' }}"
+                    srcset="{{  article.image | img_url: '200x' }} 200w,
+                            {{  article.image | img_url: '400x' }} 400w,
+                            {{  article.image | img_url: '600x' }} 600w,
+                            {{  article.image | img_url: '800x' }} 800w,
+                            {{  article.image | img_url: 'master' }} 1200w"
+                    sizes="(max-width: 600px) 100vw, 600px"
+                    alt="{{article.title }}"
+                    loading="lazy"
+                         height="280"
+                         width="420"
+style="object-fit:cover;"  class="d-none d-sm-block" />
+                         {% comment %}
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/blog-post-cover.png"
+                        alt="{{ article.title }}"
+                        class="d-none d-sm-block"
+                      >
+                   
+                      <img
+                        src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/blog-post-mobile-cover.png"
+                        alt="{{ article.title }}"
+                        class="d-sm-none"
+                      >
+                         {% endcomment %}
+                        <img
+                    src="{{  article.image | img_url: '280x' }}"
+                    srcset="{{  article.image | img_url: '200x' }} 200w,
+                            {{  article.image | img_url: '400x' }} 400w,
+                            {{  article.image | img_url: '600x' }} 600w,
+                            {{  article.image | img_url: '800x' }} 800w,
+                            {{  article.image | img_url: 'master' }} 1200w"
+                    sizes="(max-width: 600px) 100vw, 600px"
+                    alt="{{article.title }}"
+                    loading="lazy"
+                         height="177"
+                         width="348"
+style="object-fit:cover;"  class="d-sm-none" />
+                    </a>
+                    <div class="blog_card_content">
+                      <ul class="list-unstyled meta_data d-flex align-items-center">
+                        {% comment %}
+                        <li>
+                            {%- render 'icon-account' %}
+                            {{ article.author -}}
+                        </li>
+                        {% endcomment %}
+                        <li>{%- render 'icon-account' %} Cook & Bathe</li>
+                        {% assign count = article.content | size %}
+                        <li class="d-none">
+                          {% render 'icon-clock' %}
+                          {% render 'cb-time-blog', count: count %}
+                        </li>
+                      </ul>
+                      <p>{{ article.title }}</p>
+                    </div>
+                    <div class="blog_card_cta">
+                      <a href="{{ article.url }}" class="btn btn-outline-primary">Read more about {{  article.title }}</a>
+                    </div>
+                  </div>
+                </div>
+                {% assign limit = limit | plus: 1 %}
+              {% endif %}
+            {%- endfor -%}
+          {%- endfor -%}
+        </div>
+        <div class="swiper_control">
+          <div class="blogs_swiper_prev swiper-button-prev">&nbsp;</div>
+          <div class="blogs_swiper_pagination swiper-pagination"></div>
+          <div class="blogs_swiper_next swiper-button-next">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+  "name": "Blog Posts",
+  "tag": "section",
+  "class": "cb-blog-post",
+  "settings": [],
+  "blocks" :[
+    {
+      "type":"title-style-1",
+      "name":"Title style 1",
+      "limit":1,
+      "settings":[
+          {
+            "type":"select",
+            "id":"heading-tag",
+            "options":[
+              {
+                "label":"Paragraph",
+                "value":"p"
+              },
+              {
+                "label":"H1",
+                "value":"h1"
+              },
+              {
+                "label":"H2",
+                "value":"h2"
+              },
+              {
+                "label":"H3",
+                "value":"h3"
+              },
+              {
+                "label":"H4",
+                "value":"h4"
+              },
+              {
+                "label":"H5",
+                "value":"h5"
+              },
+              {
+                "label":"H6",
+                "value":"h6"
+              }      
+            ],
+            "label":"Heading Tag",
+            "default":"h2"
+          },
+          {
+            "type":"select",
+            "options": [
+                          {
+                            "label": "Left",
+                            "value": "left"
+                          },
+                          {
+                            "label": "Center",
+                            "value": "center"
+                          }
+            ],
+            "id":"text-style",
+            "label":"Title Align"
+          },
+          {
+            "type":"text",
+            "id":"title",
+            "label":"Title"
+          }
+      ]
+    },
+    {
+      "type":"title-style-2",
+      "name":"Title style 2",
+      "limit":1,
+      "settings":[
+          {
+            "type":"select",
+            "id":"heading-tag",
+            "options":[
+              {
+                "label":"Paragraph",
+                "value":"p"
+              },
+              {
+                "label":"H1",
+                "value":"h1"
+              },
+              {
+                "label":"H2",
+                "value":"h2"
+              },
+              {
+                "label":"H3",
+                "value":"h3"
+              },
+              {
+                "label":"H4",
+                "value":"h4"
+              },
+              {
+                "label":"H5",
+                "value":"h5"
+              },
+              {
+                "label":"H6",
+                "value":"h6"
+              }      
+            ],
+            "label":"Heading Tag",
+            "default":"h2"
+          },
+          {
+              "type":"text",
+              "id":"title",
+              "label":"Title"
+          },
+          {
+              "type":"richtext",
+              "id":"content",
+              "label":"Content"
+          }
+      ]
+    },
+    {
+      "type":"title-style-3",
+      "name":"Title style 3",
+      "limit":1,
+      "settings":[
+          {
+            "type":"select",
+            "id":"heading-tag",
+            "options":[
+              {
+                "label":"Paragraph",
+                "value":"p"
+              },
+              {
+                "label":"H1",
+                "value":"h1"
+              },
+              {
+                "label":"H2",
+                "value":"h2"
+              },
+              {
+                "label":"H3",
+                "value":"h3"
+              },
+              {
+                "label":"H4",
+                "value":"h4"
+              },
+              {
+                "label":"H5",
+                "value":"h5"
+              },
+              {
+                "label":"H6",
+                "value":"h6"
+              }      
+            ],
+            "label":"Heading Tag",
+            "default":"h2"
+          },
+          {
+              "type":"text",
+              "id":"title",
+              "label":"Title"
+          },
+          {
+              "type":"select",
+              "id":"btn-type",
+              "options": [
+                              {
+                              "label": "Default",
+                              "value": "default"
+                              },
+                              {
+                              "label": "Large",
+                              "value": "large"
+                              }
+              ],
+              "label":"Button Type"
+          },
+          {
+              "type":"select",
+              "id":"btn-style",
+              "options": [
+                          {
+                              "label": "Primary",
+                              "value": "btn btn-primary"
+                          },
+                          {
+                              "label": "Outline",
+                              "value": "btn btn-outline-primary"
+                          },
+                          {
+                              "label": "Animation",
+                              "value": "btn btn-outline-primary btn-animated"
+                          },
+                          {
+                              "label": "Link",
+                              "value": "btn btn-link"
+                          }
+              ],
+              "label":"Button Style",
+              "default":"btn btn-primary"
+          },
+          {
+              "type":"text",
+              "id":"btn-name",
+              "label":"Button Name"
+          },
+          {
+              "type":"url",
+              "id":"btn-link",
+              "label":"Button Link"
+          }
+      ]
+    },
+    {
+      "type":"blog",
+      "name":"Blogs",
+      "limit":1,
+      "settings":[
+         {
+           "type":"blog",
+           "id":"blogs",
+           "label":"Select Blog"
+         }
+      ]
+    },
+    {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+    {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+  ],
+  "presets": [
+    {
+      "name": "Blog Posts"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+   // var swiper = new Swiper(".blogs_swiper", 
+   var data = {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 32,
+    pagination: {
+      el: ".blogs_swiper_pagination",
+      clickable: true,
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".blogs_swiper_next",
+      prevEl: ".blogs_swiper_prev",
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+        loop: false,
+      },
+      1200: {
+        slidesPerView: 3,
+        loop: false,
+      },
+    },
+  }
+    var swiper = new Swiper(".blogs_swiper",data);
+    jQuery(window).resize(function(){       
+       jQuery('.blogs_swiper_prev,.blogs_swiper_next').removeClass('swiper-button-lock');
+       swiper.destroy();
+       swiper = new Swiper(".blogs_swiper",data);
+    });
+{% endjavascript %}

@@ -1,0 +1,79 @@
+{% assign blocks_types = false %}
+{%- for block in section.blocks -%}
+  {% case block.type %}
+    {%- when 'section_margin' -%}
+      {% assign blocks_types = true %}
+    {%- when 'section_padding' -%}
+      {% assign blocks_types = true %}
+  {% endcase %}
+{% endfor %}
+{% if section.blocks.size != 0 and blocks_types != false %}
+  {%- style -%}
+    #shopify-section-{{ section.id }}{
+    	position: relative;
+           {%- for block in section.blocks -%}
+           {%- case block.type -%}
+           {%- when 'section_margin' -%}
+           {%- assign bset = block.settings -%}
+           margin-top: {{ bset.section_margin_top_xs }}px;
+           margin-bottom: {{ bset.section_margin_bottom_xs }}px;
+           {%- when 'section_padding' -%}
+           {%- assign bset = block.settings -%}
+           padding-top: {{ bset.section_padding_top_xs }}px;
+           padding-bottom: {{ bset.section_padding_bottom_xs }}px;
+           {%- endcase -%}
+           {%- endfor -%}
+       }
+       {% assign section_margin = section.blocks | where: 'type', 'section_margin' %}
+       {%- for block in section_margin -%}
+         {%- assign bset = block.settings -%}
+         {% if bset.section_margin_top_md != 0 and bset.section_margin_bottom_md != 0 %}
+         @media (min-width: 768px) {
+           #shopify-section-{{ section.id }}{
+               margin-top: {{ bset.section_margin_top_md }}px;
+               margin-bottom: {{ bset.section_margin_bottom_md }}px;
+           }
+         }
+        {% endif %}
+       {% endfor %}
+
+       {% assign section_padding = section.blocks | where: 'type', 'section_padding' %}
+       {%- for block in section_padding -%}
+         {%- assign bset = block.settings -%}
+         {% if bset.section_padding_top_md != 0 and bset.section_padding_bottom_md != 0 %}
+           @media (min-width: 768px) {
+             #shopify-section-{{ section.id }}{
+               padding-top: {{ bset.section_padding_top_md }}px;
+               padding-bottom: {{ bset.section_padding_bottom_md }}px;
+            }
+          }
+        {% endif %}
+      {% endfor %}
+
+      {% assign section_margin = section.blocks | where: 'type', 'section_margin' %}
+       {%- for block in section_margin -%}
+         {%- assign bset = block.settings -%}
+         {% if bset.section_margin_top_md != 0 and bset.section_margin_bottom_md != 0 %}
+         @media (min-width: 992px) {
+           #shopify-section-{{ section.id }}{
+               margin-top: {{ bset.section_margin_top }}px;
+               margin-bottom: {{ bset.section_margin_bottom }}px;
+           }
+         }
+        {% endif %}
+       {% endfor %}
+
+       {% assign section_padding = section.blocks | where: 'type', 'section_padding' %}
+       {%- for block in section_padding -%}
+         {%- assign bset = block.settings -%}
+         {% if bset.section_padding_top_md != 0 and bset.section_padding_bottom_md != 0 %}
+           @media (min-width: 992px) {
+             #shopify-section-{{ section.id }}{
+               padding-top: {{ bset.section_padding_top }}px;
+               padding-bottom: {{ bset.section_padding_bottom }}px;
+            }
+          }
+        {% endif %}
+      {% endfor %}
+  {%- endstyle -%}
+{% endif %}

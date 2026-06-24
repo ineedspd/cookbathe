@@ -1,0 +1,374 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "disabled": true,
+      "settings": {
+        "label-1": "30 Years Industry Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c": {
+      "type": "cb-range-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/midea_lifestyle.jpg"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_48wida": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Pxq4hP": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Midea: Innovation for Smarter Living</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_gKqxXz": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Midea</strong> is a leading global home appliance and smart living brand dedicated to enhancing everyday life through innovative, energy-efficient, and user-focused solutions. Founded in 1968, Midea has grown into one of the world’s most recognised appliance manufacturers, serving hundreds of millions of customers in over 200 countries and regions.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Pxq4hP",
+        "text_gKqxXz"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_bGBCtd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_aCnJwA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Midea Cooktops",
+            "heading_size": "h1"
+          }
+        },
+        "text_WpqcNV": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Midea Cooktops</strong> bring performance, style, and everyday convenience to the heart of your kitchen. Designed for modern homes, they combine intuitive controls, durable surfaces, and reliable safety features so you can cook with confidence and ease. From sleek induction and ceramic electric models to powerful gas options, Midea cooktops cater to a variety of cooking styles and kitchen layouts.  </p>",
+            "text_style": "body"
+          }
+        },
+        "button_NrmE4d": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Cooktops",
+            "button_link": "shopify://collections/midea-cooktops"
+          }
+        }
+      },
+      "block_order": [
+        "heading_aCnJwA",
+        "text_WpqcNV",
+        "button_NrmE4d"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/MCG90GBL_2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_NQj9pk": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rdGNV4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Midea Ovens",
+            "heading_size": "h1"
+          }
+        },
+        "text_iXYnmT": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Midea Ovens</strong> bring reliable performance, versatile cooking and modern design to your kitchen, helping you create everyday meals and special-occasion dishes with ease. Designed to integrate seamlessly into contemporary kitchens, Midea ovens offer features that elevate your cooking experience - from fast preheating and even heat distribution to intuitive controls and multiple cooking functions. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_9xABkp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Ovens",
+            "button_link": "shopify://collections/midea-ovens"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rdGNV4",
+        "text_iXYnmT",
+        "button_9xABkp"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/93M90D0-E110000.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_99QiWi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kDBKNV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Midea Rangehoods",
+            "heading_size": "h1"
+          }
+        },
+        "text_dckmA9": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Midea Rangehoods</strong> are engineered to keep your kitchen air fresh, clean, and comfortable while enhancing the look and feel of your cooking space. They combine sleek, modern design with practical performance to deliver reliable ventilation that suits everyday Australian kitchens.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_wxb6C7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Rangehoods",
+            "button_link": "shopify://collections/midea-rangehoods"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kDBKNV",
+        "text_dckmA9",
+        "button_wxb6C7"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/60A15-EA26.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_h6zz3k": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_KPA3iV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Midea Excellence",
+            "heading_size": "h2"
+          }
+        },
+        "text_MrFTez": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Globally trusted and recognised, Midea brings world-leading innovation into Australian homes with smart, reliable appliances designed to make everyday living easier, more efficient, and more enjoyable.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KPA3iV",
+        "text_MrFTez"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/midea_info.png",
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 68,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_4gMhaH": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Check Out The Entire Range",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "midea",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_CqJ3bj": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_AT7Key": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/kFjQC5RGWhM6gvYv6",
+            "btn-target-2": false
+          }
+        },
+        "showroom_h8J3iR": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "https://maps.app.goo.gl/cRuiaDRb6RMjcf7J9",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393574900",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/q2o9qc5pKF4zz2xFA",
+            "btn-target-2": false
+          }
+        },
+        "showroom_hKD9QM": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393762299",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/yE7ag6RUPCQWn1Kf6",
+            "btn-target-2": false
+          }
+        }
+      },
+      "block_order": [
+        "showroom_AT7Key",
+        "showroom_h8J3iR",
+        "showroom_hKD9QM"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "17325826721ab3d3e6": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "div",
+        "heading-class": "h2",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within <a href=\"https://www.cookandbathe.com.au/pages/terms-and-conditions\">Metro Melbourne</a></p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c",
+    "main",
+    "rich_text_48wida",
+    "image_with_text_bGBCtd",
+    "image_with_text_NQj9pk",
+    "image_with_text_99QiWi",
+    "image_with_text_h6zz3k",
+    "featured_collection_4gMhaH",
+    "cb_find_showroom_CqJ3bj",
+    "17325826721ab3d3e6",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

@@ -1,0 +1,566 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "rich_text_i6aRkn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TGHNNy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3><strong>Tapware That Balances Beauty and Performance</strong></h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Tgm7iC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Cook & Bathe, we understand that the kitchen isn’t just where meals are made — it’s where conversations start, memories are shared, and families gather. Choosing the right kitchen tapware is about more than just function; it’s about creating a space that feels effortless, welcoming, and beautifully designed.</p><p>Our collection of kitchen taps combines intelligent design with quality craftsmanship, offering solutions that meet the demands of daily life without compromising on style.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TGHNNy",
+        "text_Tgm7iC"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_RN4nb9": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tKKNd8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_basintapware.png",
+            "title": "Kitchen Sink Mixers",
+            "text": "<p>Sleek, versatile designs ideal for modern and classic kitchen spaces.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/sink-mixers-sink-tapware"
+          }
+        },
+        "column_zV8BR3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons-08.svg",
+            "title": "Pull-Out and Flexible Sink MIxers",
+            "text": "<p>Practical solutions for busy kitchens, perfect for rinsing and cleaning.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/pullout-mixers"
+          }
+        },
+        "column_X346kn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons-19.svg",
+            "title": "Gooseneck Taps",
+            "text": "<p>Elegant profiles that offer extra clearance for large pots and pans.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/gooseneck-tapware"
+          }
+        }
+      },
+      "block_order": [
+        "column_tKKNd8",
+        "column_zV8BR3",
+        "column_X346kn"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Kitchen Tapware",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Shop Kitchen Tapware",
+        "button_link": "shopify://collections/tapware-bathroom",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3qAx9n": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3tWCM3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3><strong>Designed for Australian Homes</strong></h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Tq7myG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every kitchen is different, which is why we offer tapware solutions to match a variety of styles, configurations, and needs.</p><p>From streamlined wall-mounted designs to bold statement mixers, each piece is carefully selected to offer superior performance and lasting quality.</p><p>Choose from a wide range of premium finishes, including Chrome, Brushed Nickel, Matte Black, Brushed Gold, and Gun Metal, to create a kitchen that reflects your personal style.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3tWCM3",
+        "text_Tq7myG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_THfhdg": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_9xFXBB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hob-sink-sets"
+          }
+        },
+        "featured_collection_AEqk3A": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "wall-sink-sets"
+          }
+        },
+        "featured_collection_PCMCnp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sink-outlets"
+          }
+        },
+        "featured_collection_HiJRHY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sink-spouts"
+          }
+        },
+        "featured_collection_4NBm3D": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pot-fillers"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_9xFXBB",
+        "featured_collection_AEqk3A",
+        "featured_collection_PCMCnp",
+        "featured_collection_HiJRHY",
+        "featured_collection_4NBm3D"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop Bathroom Tapware Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_TUWnBm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_dmiRjb": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3><strong>Craftsmanship from Leading Brands</strong></h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_M8p3ez": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We proudly partner with some of the most trusted and innovative names in kitchen tapware, ensuring that quality, design, and performance are at the heart of every product we offer:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_dmiRjb",
+        "text_M8p3ez"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_dQbDaC": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Phoenix Tapware",
+        "heading_size": "h1",
+        "description": "<p>Phoenix Tapware leads the way in Australian innovation, creating kitchen taps that combine award-winning design with superior functionality. Their kitchen mixer taps and pull-out sprays are crafted to suit the modern Australian lifestyle, offering sleek lines, premium finishes, and effortless performance. Whether you’re renovating a contemporary kitchen or designing a minimalist space, Phoenix delivers the perfect balance of style and durability for today’s homes.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "phoenix-bathroom-tapware",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_a7qCcf": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Hansgrohe",
+        "heading_size": "h1",
+        "description": "<p>Hansgrohe kitchen tapware showcases the very best of German engineering, offering precision craftsmanship, superior water efficiency, and timeless design. With a heritage of innovation spanning over a century, Hansgrohe kitchen mixers and pull-out taps are designed to meet the needs of discerning homeowners who value both form and function. Create a kitchen that feels luxurious and performs effortlessly with the reliability that Hansgrohe is known for worldwide.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "hansgrohe-tapware",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_VEJAiP": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Franke",
+        "heading_size": "h1",
+        "description": "<p>Franke brings premium Swiss quality to the heart of your kitchen. Known for their intelligent design solutions, Franke kitchen taps blend style, convenience, and performance. Their mixers and filtered water taps are perfect for busy kitchens, providing smooth operation and enduring strength. Whether you prefer a statement gooseneck tap or a sleek, understated mixer, Franke tapware ensures your kitchen looks stunning and functions beautifully every day.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "franke-tapware",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_XKUHmE": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Bella Vista",
+        "heading_size": "h1",
+        "description": "<p>Bella Vista tapware offers the perfect fusion of everyday practicality and stylish design, crafted specifically for Australian homes. Their kitchen tapware range features high-quality materials, ergonomic designs, and finishes that complement a wide variety of kitchen styles. Affordable without compromising on quality, Bella Vista taps are ideal for both family kitchens and modern renovations where form and function are equally important.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bella-vista-mica-tapware",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_r7kRNN": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_KATx3K": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "franke-tapware"
+          }
+        },
+        "featured_collection_rMpJww": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "caroma-tapware"
+          }
+        },
+        "featured_collection_Vewmxi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bella_vista"
+          }
+        },
+        "featured_collection_NhGiFN": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hansgrohe-tapware"
+          }
+        },
+        "featured_collection_mhh3ki": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "phoenix-kitchen-tapware"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_KATx3K",
+        "featured_collection_rMpJww",
+        "featured_collection_Vewmxi",
+        "featured_collection_NhGiFN",
+        "featured_collection_mhh3ki"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_xUqC8f": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ihENJh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3><strong>Shop Bathroom Tapware Online or Visit Our Showrooms</strong></h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_EEVVCH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Ready to transform your kitchen? Explore our full range of kitchen tapware online or visit one of our Melbourne showrooms to experience the quality firsthand. Our experienced team is here to guide you in finding the perfect tapware solution for your space.</p><p><strong>Shop Kitchen Tapware Now</strong> or <strong>Speak with Our Showroom Consultants</strong> to get started.</p>"
+          }
+        },
+        "button_dFVyJP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find Showrooms",
+            "button_link": "shopify://pages/store-locations",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ihENJh",
+        "text_EEVVCH",
+        "button_dFVyJP"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_blog_YqrJzW": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "173948753494c948f2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "rich_text_i6aRkn",
+    "multicolumn_RN4nb9",
+    "rich_text_3qAx9n",
+    "collection_list_THfhdg",
+    "rich_text_TUWnBm",
+    "featured_collection_dQbDaC",
+    "featured_collection_a7qCcf",
+    "featured_collection_VEJAiP",
+    "featured_collection_XKUHmE",
+    "collection_list_r7kRNN",
+    "rich_text_xUqC8f",
+    "featured_blog_YqrJzW",
+    "cb_find_showroom_PQG6UA",
+    "173948753494c948f2",
+    "main"
+  ]
+}

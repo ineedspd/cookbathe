@@ -1,0 +1,37 @@
+{% if collection.metafields.custom.title != blank or collection.metafields.custom.description != blank %}
+  <div class="about_content_block  position-relative">
+    <div class="container">
+      <div class="about_content_txt text-center">
+        <div class="row justify-content-center">
+          <div class="col-xl-8 col-12">
+            {% if collection.metafields.custom.title != blank %}
+              <div class="section_head_holder d-flex section_head_center_holder align-items-center justify-content-center py-5">
+                <h2 class="h3">{{ collection.metafields.custom.title }}</h2>
+              </div>
+            {% endif %}
+            {{ collection.metafields.custom.description }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% schema %}
+{
+  "name": "Rich Content Block",
+  "tag": "section",
+  "class": "cb-rich-text",
+  "settings": [],
+  "presets": [
+    {
+      "name": "Rich Content Block"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

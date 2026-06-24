@@ -1,0 +1,540 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "cb_common_banner_AWUzyj": {
+      "type": "cb-common-banner",
+      "settings": {
+        "image": "shopify://shop_images/hp_Trade_HeroBanner_V2.jpg",
+        "title": "Trusted Trade Supplier",
+        "sub_title": "<p>Partner with Cook & Bathe for tailored trade pricing, extensive stock availability, and expert support from Australia’s kitchen, bathroom, and laundry specialists.</p>",
+        "link_title": "Apply Now",
+        "link": "#applicationForm"
+      }
+    },
+    "cb_on_specs_9NAn94": {
+      "type": "cb-on-specs",
+      "blocks": {
+        "work_block_m8AL74": {
+          "type": "work_block",
+          "settings": {
+            "spec_ic": "shopify://shop_images/price.svg",
+            "spec_title": "Special Pricing",
+            "spec_info": "<p>Get exclusive trade discounts across our premium product range</p>"
+          }
+        },
+        "work_block_Gj9zDt": {
+          "type": "work_block",
+          "settings": {
+            "spec_ic": "shopify://shop_images/StockHoldings_434ad7ff-2c4c-4c4d-bc17-82dd193dcabd.svg",
+            "spec_title": "Large Stock Holdings",
+            "spec_info": "<p>Access in-demand items with minimal lead times thanks to our extensive inventory</p>"
+          }
+        },
+        "work_block_PWFtVy": {
+          "type": "work_block",
+          "settings": {
+            "spec_ic": "shopify://shop_images/builders.svg",
+            "spec_title": "Servicing Builders  of all sizes",
+            "spec_info": "<p>Whether you're managing single or multi-dwelling projects, we scale with you</p>"
+          }
+        },
+        "work_block_NA7mmf": {
+          "type": "work_block",
+          "settings": {
+            "spec_ic": "shopify://shop_images/Logistics_da6eed95-2493-49ad-9a56-78919f01ee2f.svg",
+            "spec_title": "Logistics Advantage",
+            "spec_info": "<p>Reliable delivery and dispatch solutions to keep your builds on schedule</p>"
+          }
+        }
+      },
+      "block_order": [
+        "work_block_m8AL74",
+        "work_block_Gj9zDt",
+        "work_block_PWFtVy",
+        "work_block_NA7mmf"
+      ],
+      "settings": {}
+    },
+    "cb_brand_slider_Fhretr": {
+      "type": "cb-brand-slider",
+      "blocks": {
+        "brand_block_eGE4Da": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/BadUndKuche_logo.png"
+          }
+        },
+        "brand_block_ptiLcY": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/BNK_Black.png"
+          }
+        },
+        "brand_block_KbPMDr": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Decina-logo.png"
+          }
+        },
+        "brand_block_Q8HbTb": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/ECT.png"
+          }
+        },
+        "brand_block_xh83Bx": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/ElectroluxLogo.png"
+          }
+        },
+        "brand_block_KPerYw": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Euro-Appliances-Logo_Landscape_black.png"
+          }
+        },
+        "brand_block_TjDBBc": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Fienza.png"
+          }
+        },
+        "brand_block_4cKMyT": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Franke_Logo_Black_BG_RGB_NEW.png"
+          }
+        },
+        "brand_block_GMWU3x": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Geberit_Logo_Black.png"
+          }
+        },
+        "brand_block_rNUYXV": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/IKON_logo_black.png"
+          }
+        },
+        "brand_block_rTJfgk": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/INALTO.png"
+          }
+        },
+        "brand_block_DH8e7K": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/logo_kleenmaid_the_best_you_can_own.png"
+          }
+        },
+        "brand_block_dXPqJQ": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Omega_black_logo_transparent.png"
+          }
+        },
+        "brand_block_ziKtTz": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/OttiBlack.png"
+          }
+        },
+        "brand_block_YXCJR4": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/phoenix-logo-Black_NEW.png"
+          }
+        },
+        "brand_block_BYfFLG": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Polymaster.png"
+          }
+        },
+        "brand_block_JjB9q9": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/RINNAI.png"
+          }
+        },
+        "brand_block_WBHdUp": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/SEIMA_LOGO_Black_327e24c1-eab7-4410-802c-a0c0b35441e9.png"
+          }
+        },
+        "brand_block_cjnNRw": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Smeg_Black.png"
+          }
+        },
+        "brand_block_kpDCVy": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Technika.png"
+          }
+        },
+        "brand_block_9c97Ln": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/WestinghouseLogo.png"
+          }
+        }
+      },
+      "block_order": [
+        "brand_block_eGE4Da",
+        "brand_block_ptiLcY",
+        "brand_block_KbPMDr",
+        "brand_block_Q8HbTb",
+        "brand_block_xh83Bx",
+        "brand_block_KPerYw",
+        "brand_block_TjDBBc",
+        "brand_block_4cKMyT",
+        "brand_block_GMWU3x",
+        "brand_block_rNUYXV",
+        "brand_block_rTJfgk",
+        "brand_block_DH8e7K",
+        "brand_block_dXPqJQ",
+        "brand_block_ziKtTz",
+        "brand_block_YXCJR4",
+        "brand_block_BYfFLG",
+        "brand_block_JjB9q9",
+        "brand_block_WBHdUp",
+        "brand_block_cjnNRw",
+        "brand_block_kpDCVy",
+        "brand_block_9c97Ln"
+      ],
+      "name": "Brand slider",
+      "settings": {
+        "title": "Leading Kitchen, Bathroom & Laundry Brands",
+        "full_slider": true
+      }
+    },
+    "catalogue_NV8z8b": {
+      "type": "catalogue",
+      "blocks": {
+        "catalogue_block_feEMqq": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/Feature_Tiles_Catalogues1.jpg",
+            "cat_title": "Core Collection Catalogue",
+            "cat_link": "#applicationForm"
+          }
+        },
+        "catalogue_block_DQhwYU": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/Feature_Tiles_Catalogues2.jpg",
+            "cat_title": "Essentials Collection Catalogue",
+            "cat_link": "#applicationForm"
+          }
+        },
+        "catalogue_block_VddGip": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/Feature_Tiles_Catalogues3.jpg",
+            "cat_title": "Designer Collection Catalogue",
+            "cat_link": "#applicationForm"
+          }
+        },
+        "catalogue_block_VzxyXK": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/Feature_Tiles_Catalogues4.jpg",
+            "cat_title": "Luxe Collection Catalogue",
+            "cat_link": "#applicationForm"
+          }
+        },
+        "catalogue_block_kkmhKP": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/Feature_Tiles_Catalogues5.jpg",
+            "cat_title": "Water Solutions Catalogue",
+            "cat_link": "#applicationForm"
+          }
+        },
+        "catalogue_block_FPV8xW": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/Feature_Tiles_Catalogues6.jpg",
+            "cat_title": "Door Furniture Catalogue",
+            "cat_link": "#applicationForm"
+          }
+        }
+      },
+      "block_order": [
+        "catalogue_block_feEMqq",
+        "catalogue_block_DQhwYU",
+        "catalogue_block_VddGip",
+        "catalogue_block_VzxyXK",
+        "catalogue_block_kkmhKP",
+        "catalogue_block_FPV8xW"
+      ],
+      "name": "Catalogue",
+      "settings": {
+        "title": "Unlock Trade Exclusive Resources",
+        "content": "<p>Gain full access to our curated trade catalogues and price books.</p>"
+      }
+    },
+    "steps_TehbEd": {
+      "type": "steps",
+      "blocks": {
+        "steps_block_jLdnDe": {
+          "type": "steps_block",
+          "settings": {
+            "icon": "shopify://shop_images/apply.svg",
+            "step": "Step 1",
+            "step_title": "Apply",
+            "step_content": "<p>Fill out our quick form below</p>"
+          }
+        },
+        "steps_block_8hbq88": {
+          "type": "steps_block",
+          "settings": {
+            "icon": "shopify://shop_images/connect.svg",
+            "step": "Step 2",
+            "step_title": "Connect",
+            "step_content": "<p>A dedicated trade consultant will get in touch</p>"
+          }
+        },
+        "steps_block_KdPF8D": {
+          "type": "steps_block",
+          "settings": {
+            "icon": "shopify://shop_images/quote.svg",
+            "step": "Step 3",
+            "step_title": "Proposal",
+            "step_content": "<p>Receive a tailored solution or custom pricing</p>"
+          }
+        },
+        "steps_block_VAGRpX": {
+          "type": "steps_block",
+          "settings": {
+            "icon": "shopify://shop_images/sign.svg",
+            "step": "Step 4",
+            "step_title": "Sign",
+            "step_content": "<p>Formalise your trade agreement</p>"
+          }
+        },
+        "steps_block_LjrKbQ": {
+          "type": "steps_block",
+          "settings": {
+            "icon": "shopify://shop_images/order.svg",
+            "step": "Step 5",
+            "step_title": "Order",
+            "step_content": "<p>Start sourcing premium products at trade rates</p>"
+          }
+        }
+      },
+      "block_order": [
+        "steps_block_jLdnDe",
+        "steps_block_8hbq88",
+        "steps_block_KdPF8D",
+        "steps_block_VAGRpX",
+        "steps_block_LjrKbQ"
+      ],
+      "name": "Simple steps",
+      "settings": {
+        "title": "Getting Started is Simple"
+      }
+    },
+    "trade_testimonial_UBkhtj": {
+      "type": "trade-testimonial",
+      "blocks": {
+        "testimonial_block_9EGzAX": {
+          "type": "testimonial_block",
+          "settings": {
+            "rating": "shopify://shop_images/Mimosa_Rating.svg",
+            "content": "<p>\"The professionalism and deep product knowledge of the Cook & Bathe team make them an invaluable extension of our own. Their responsiveness and dedication to meeting tight build schedules have consistently exceeded our expectations.\"</p>",
+            "author": "— Peter Holt, Mimosa Homes"
+          }
+        },
+        "testimonial_block_CHk8T4": {
+          "type": "testimonial_block",
+          "settings": {
+            "rating": "shopify://shop_images/Metronest_Rating.svg",
+            "content": "<p>\"Cook & Bathe is great at building relationships with customers. The team are product experts who listen carefully to customer needs and offer tailored solutions, resulting in successful sales. They present information in a way that’s easy to understand, making the whole process smooth and effective.\"</p>",
+            "author": "— Megha Gupta Jain, Metronest Homes"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_block_9EGzAX",
+        "testimonial_block_CHk8T4"
+      ],
+      "name": "Trader testimonial",
+      "settings": {
+        "title": "What Our Trade Partners Say"
+      }
+    },
+    "trade_testimonial_n4Ujye": {
+      "type": "trade-testimonial",
+      "blocks": {
+        "testimonial_block_7T4bY6": {
+          "type": "testimonial_block",
+          "settings": {
+            "rating": "shopify://shop_images/Empire_Rating.svg",
+            "content": "<p>“I’ve had the pleasure of working with Cook & Bathe for close to 10 years. The team is professional, responsive, and brings a depth of knowledge in their field. They take the time to understand their clients’ needs and consistently deliver high-quality kitchen, bathroom, and laundry fixtures that meet both aesthetic and functional requirements.”</p>",
+            "author": "— Alex Masalkovski, Empire Property Builders"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_block_7T4bY6"
+      ],
+      "name": "Trader testimonial",
+      "settings": {
+        "title": ""
+      }
+    },
+    "trade_network_riErJa": {
+      "type": "trade-network",
+      "name": "Trade network",
+      "settings": {
+        "title": "Ready to Join the Trade Network?",
+        "sub_title": "Partner with Cook & Bathe for:",
+        "content": "<ul><li>Competitive trade-only pricing</li><li>Access leading kitchen, bathroom and laundry brands</li><li>Dedicated account managers</li><li>Reliable Site Delivery</li></ul>",
+        "icon": "shopify://shop_images/Frame.svg",
+        "qac_title": "Quick and easy application.",
+        "qac_content": "<p>We’ll be in touch within one business day.</p>"
+      }
+    },
+    "apply_now_9HhJXM": {
+      "type": "apply-now",
+      "blocks": {
+        "catalogue_block_4VW8Fa": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/builders.png",
+            "ap_title": "Volume Builders",
+            "ap_link": ""
+          }
+        },
+        "catalogue_block_yXWTnN": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/residential-builder.png",
+            "ap_title": "Multi Residential Builders",
+            "ap_link": ""
+          }
+        },
+        "catalogue_block_6j4neY": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/developer.png",
+            "ap_title": "Property Developers",
+            "ap_link": ""
+          }
+        },
+        "catalogue_block_mXjdjN": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/architect.png",
+            "ap_title": "Architects",
+            "ap_link": ""
+          }
+        },
+        "catalogue_block_zaeAc4": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/ID.png",
+            "ap_title": "Interior Designers",
+            "ap_link": ""
+          }
+        },
+        "catalogue_block_6WccjU": {
+          "type": "catalogue_block",
+          "settings": {
+            "image": "shopify://shop_images/renovators.png",
+            "ap_title": "Renovators",
+            "ap_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "catalogue_block_4VW8Fa",
+        "catalogue_block_yXWTnN",
+        "catalogue_block_6j4neY",
+        "catalogue_block_mXjdjN",
+        "catalogue_block_zaeAc4",
+        "catalogue_block_6WccjU"
+      ],
+      "disabled": true,
+      "name": "Who can apply",
+      "settings": {
+        "title": "Who Can Apply?"
+      }
+    },
+    "expericence_x8Nj3F": {
+      "type": "expericence",
+      "blocks": {
+        "image_block_TDdV8x": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/HIAPartner.png"
+          }
+        },
+        "image_block_a8agRx": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/LeadingBrands.png"
+          }
+        },
+        "image_block_B88DYa": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/AccManager.png"
+          }
+        },
+        "image_block_UCD9Kp": {
+          "type": "image_block",
+          "settings": {
+            "image": "shopify://shop_images/Showrooms_7b9b3197-0a4d-48ba-bee9-0cf3a9965fab.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_TDdV8x",
+        "image_block_a8agRx",
+        "image_block_B88DYa",
+        "image_block_UCD9Kp"
+      ],
+      "name": "Our experience",
+      "settings": {
+        "title": "Trusted by Melbourne Builders for over 30 Years"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cb_common_banner_AWUzyj",
+    "cb_on_specs_9NAn94",
+    "cb_brand_slider_Fhretr",
+    "catalogue_NV8z8b",
+    "steps_TehbEd",
+    "trade_testimonial_UBkhtj",
+    "trade_testimonial_n4Ujye",
+    "trade_network_riErJa",
+    "apply_now_9HhJXM",
+    "expericence_x8Nj3F"
+  ]
+}

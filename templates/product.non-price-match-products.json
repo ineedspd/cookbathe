@@ -1,0 +1,623 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "30ab5397-0f7a-4b04-86f1-ee78487b31f8": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "cd9c3fd8-ff6b-4e7d-8242-94d056d63157": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share",
+        "cd9c3fd8-ff6b-4e7d-8242-94d056d63157"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_info": true,
+        "media_position": "left",
+        "gallery_layout": "stacked",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "965fbdb897b4e9907a60": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "44c9e31a-8e4e-458b-9158-ec01610a663e": {
+      "type": "cb-main-product",
+      "blocks": {
+        "13f02d9b-bdef-4570-9dcb-457d2c66226f": {
+          "type": "title",
+          "settings": {}
+        },
+        "19527552-ed32-4342-a323-bb6a54d054b4": {
+          "type": "price",
+          "settings": {}
+        },
+        "30e97a66-718c-416c-8f99-1679cc8b7be1": {
+          "type": "afterpay",
+          "settings": {}
+        },
+        "a7304149-5430-47a1-93c8-14a8463e639e": {
+          "type": "variant",
+          "settings": {}
+        },
+        "notice_pyYhFT": {
+          "type": "notice",
+          "settings": {
+            "icon_option": "shopify://shop_images/Cart-White.svg",
+            "notice": "<p>Sorry! This is a not a product we are able to price match.</p>",
+            "tag_name": "Caroma"
+          }
+        },
+        "notice_yPx7EP": {
+          "type": "notice",
+          "settings": {
+            "icon_option": "shopify://shop_images/Cart-White.svg",
+            "notice": "<p>New Year Bonus Offer Applies at Checkout!</p>",
+            "tag_name": "NewYearTapware10"
+          }
+        },
+        "38749980-4ba9-4663-8458-07d54e49f034": {
+          "type": "notice",
+          "settings": {
+            "icon_option": "shopify://shop_images/Deliver-white.svg",
+            "notice": "<p>In Stock Now!</p>",
+            "tag_name": "1-2-days"
+          }
+        },
+        "notice_F3TrHj": {
+          "type": "notice",
+          "settings": {
+            "icon_option": "shopify://shop_images/Deliver-white.svg",
+            "notice": "<p>In Stock Now!</p>",
+            "tag_name": "min-max"
+          }
+        },
+        "b72cd99a-ee8f-4a21-b0ea-a662454158b7": {
+          "type": "notice",
+          "settings": {
+            "icon_option": "shopify://shop_images/Cart-White.svg",
+            "notice": "<p>Item is experiencing delays or is on backorder <a href=\"/pages/contact\" title=\"Contact\">contact us</a> for ETA</p>",
+            "tag_name": "contact-us"
+          }
+        },
+        "68a0ea38-ce72-4d8b-aaeb-43c0971e155c": {
+          "type": "notice",
+          "settings": {
+            "icon_option": "shopify://shop_images/Cart-White.svg",
+            "notice": "<p>Special order item <a href=\"/pages/contact\" title=\"Contact\">contact us</a> for ETA </p>",
+            "tag_name": "special-order"
+          }
+        },
+        "notice_3tyRmK": {
+          "type": "notice",
+          "settings": {
+            "icon_option": "shopify://shop_images/Cart-White.svg",
+            "notice": "<p>Please <a href=\"https://www.cookandbathe.com.au/pages/contact\" title=\"https://www.cookandbathe.com.au/pages/contact\">Contact Us</a> for Availability and Delivery options. </p>",
+            "tag_name": "enquiry-product"
+          }
+        },
+        "notice_KEhwxm": {
+          "type": "notice",
+          "settings": {
+            "icon_option": "shopify://shop_images/Deliver-white.svg",
+            "notice": "<p><strong>Shipped by Supplier:</strong> The supplier will deliver this product and contact you to arrange delivery.</p>",
+            "tag_name": "agency-product"
+          }
+        },
+        "defc4c85-2773-4b4e-aa8e-8f1a923c0f3c": {
+          "type": "description",
+          "settings": {
+            "description": "<p>{{ product.metafields.global.short_description | metafield_tag }}</p><p></p>",
+            "custom_liquid": "{{product.metafields.global.short_description}}"
+          }
+        },
+        "b00871e8-4765-4198-9a65-42dd96385133": {
+          "type": "showroom",
+          "settings": {
+            "btn-name-1": "Locate Showroom",
+            "btn-link-1": "/pages/contact#locate-showroom",
+            "btn-name-2": "Talk to an Expert",
+            "btn-link-2": "tel:0393762299"
+          }
+        }
+      },
+      "block_order": [
+        "13f02d9b-bdef-4570-9dcb-457d2c66226f",
+        "19527552-ed32-4342-a323-bb6a54d054b4",
+        "30e97a66-718c-416c-8f99-1679cc8b7be1",
+        "a7304149-5430-47a1-93c8-14a8463e639e",
+        "notice_pyYhFT",
+        "notice_yPx7EP",
+        "38749980-4ba9-4663-8458-07d54e49f034",
+        "notice_F3TrHj",
+        "b72cd99a-ee8f-4a21-b0ea-a662454158b7",
+        "68a0ea38-ce72-4d8b-aaeb-43c0971e155c",
+        "notice_3tyRmK",
+        "notice_KEhwxm",
+        "defc4c85-2773-4b4e-aa8e-8f1a923c0f3c",
+        "b00871e8-4765-4198-9a65-42dd96385133"
+      ],
+      "settings": {}
+    },
+    "e4bddd7e-48fd-492b-aae7-721b64f4ec65": {
+      "type": "cb-about-product",
+      "disabled": true,
+      "settings": {}
+    },
+    "2624a8d6-e103-4d3e-8e7b-ff1adfb14e90": {
+      "type": "cb-product-details",
+      "blocks": {
+        "5d89ff9e-6003-43fb-8d31-737013032966": {
+          "type": "faq",
+          "settings": {
+            "question": "Dimensions & Weights",
+            "ans": "",
+            "custom_liquid": "{% if product.metafields.global.dimensions-mm != blank %}\nDimension : {{product.metafields.global.dimensions-mm}}\n{% endif %}\n{%comment%}\n{% if product.metafields.global.weight != blank %}<br/>\nWeight : {{product.metafields.global.weight}}\n{% endif %}\n{%endcomment%}"
+          }
+        },
+        "c7710241-6485-43a7-a886-e07a7f573bcd": {
+          "type": "faq",
+          "settings": {
+            "question": "Warranty",
+            "ans": "",
+            "custom_liquid": "{{product.metafields.global.warranty }}"
+          }
+        },
+        "6a7df8f5-7e2e-4f7f-ab8e-2eee8d348a3e": {
+          "type": "faq",
+          "settings": {
+            "question": "Shipping & Returns",
+            "ans": "<p>{{ product.metafields.custom.shipping_return | metafield_tag }}</p>",
+            "custom_liquid": ""
+          }
+        },
+        "c95cfa81-41b9-460f-a762-41e85b83709e": {
+          "type": "faq",
+          "settings": {
+            "question": "FAQs",
+            "ans": "<p>{{ product.metafields.custom.faqs | metafield_tag }}</p>",
+            "custom_liquid": ""
+          }
+        },
+        "c7875fa8-e46e-4047-b362-3b7564b98c89": {
+          "type": "faq",
+          "settings": {
+            "question": "Specification Documents",
+            "ans": "{{ product.metafields.custom.downloadables | metafield_tag }}",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "5d89ff9e-6003-43fb-8d31-737013032966",
+        "c7710241-6485-43a7-a886-e07a7f573bcd",
+        "6a7df8f5-7e2e-4f7f-ab8e-2eee8d348a3e",
+        "c95cfa81-41b9-460f-a762-41e85b83709e",
+        "c7875fa8-e46e-4047-b362-3b7564b98c89"
+      ],
+      "settings": {}
+    },
+    "2f692a367765b55870b2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "4957412f-9f38-4dde-977d-943f0004f0d4": {
+      "type": "cb-featured-products",
+      "blocks": {
+        "bfaea8a7-b975-4666-9b0e-9e172f276689": {
+          "type": "title-style-3",
+          "settings": {
+            "heading-tag": "h2",
+            "title": "Similar Product",
+            "btn-type": "default",
+            "btn-style": "btn btn-primary",
+            "btn-name": "View All Products",
+            "btn-link": "shopify://collections/all"
+          }
+        },
+        "13a31e73-5802-444f-87f0-3b4118c728a5": {
+          "type": "collection",
+          "settings": {
+            "coll": "shop"
+          }
+        }
+      },
+      "block_order": [
+        "bfaea8a7-b975-4666-9b0e-9e172f276689",
+        "13a31e73-5802-444f-87f0-3b4118c728a5"
+      ],
+      "disabled": true,
+      "settings": {
+        "columns_desktop": 4,
+        "product_show": 4,
+        "double_image": true,
+        "variant_enable": true,
+        "wishlist_enable": true,
+        "discount_enable": true,
+        "price_enable": true,
+        "addtocart": false,
+        "arrows": false
+      }
+    },
+    "1733105985f1b740ea": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "ef405632-dc99-4b96-a341-708c21b68652": {
+      "type": "cb-related-products",
+      "blocks": {
+        "1f8ed7ef-b597-418b-9c6d-5b20362903e8": {
+          "type": "title-style-3",
+          "settings": {
+            "heading-tag": "h2",
+            "title": "Similar Products",
+            "btn-type": "default",
+            "btn-style": "btn btn-link",
+            "btn-name": "View All Products",
+            "btn-link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "1f8ed7ef-b597-418b-9c6d-5b20362903e8"
+      ],
+      "disabled": true,
+      "settings": {
+        "columns_desktop": 4,
+        "product_show": 4,
+        "double_image": false,
+        "variant_enable": true,
+        "wishlist_enable": true,
+        "discount_enable": true,
+        "price_enable": true,
+        "addtocart": false,
+        "arrows": false
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "d74c11f4-709c-4e8f-97ae-c736f285e0cf": {
+      "type": "cb-product-image-with-text",
+      "settings": {}
+    },
+    "173258180180e31637": {
+      "type": "apps",
+      "custom_css": [
+        "{padding-top: 55px;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1334c567-a3af-46b1-9693-15f99edff755": {
+      "type": "cb-product-related-category",
+      "blocks": {
+        "c2bf3092-9c62-4c0c-9cb4-b9f468b86fa0": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "left",
+            "title": "Related Categories"
+          }
+        }
+      },
+      "block_order": [
+        "c2bf3092-9c62-4c0c-9cb4-b9f468b86fa0"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "717b5dbf-e616-4028-a002-7dbd90cc53a3": {
+      "type": "cb-instagram-posts",
+      "settings": {
+        "heading-tag": "h2",
+        "title": "Our Insta Inspo",
+        "btn-style": "btn btn-link",
+        "btn-name": "Follow @cookandbathe",
+        "btnlink": ""
+      }
+    },
+    "1678074348962de0eb": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "ca9b2804-936d-494e-991e-aae5fff243cb": {
+      "type": "cb-collage",
+      "blocks": {
+        "4b1c7c58-5941-4ceb-9fe7-cda094b3d471": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "center",
+            "title": "Explore and be Inspired"
+          }
+        },
+        "becb9c15-61e1-4efe-810c-8802324efd41": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_bathroom_phoenixtapware_banner.jpg",
+            "name": "Bathroom",
+            "link": "shopify://collections/bathroom"
+          }
+        },
+        "2fbcc533-357e-49fc-85a6-0e6eac00a61b": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_kitchen_banner.jpg",
+            "name": "Kitchen",
+            "link": "shopify://collections/kitchen"
+          }
+        },
+        "3b4f54d5-6008-4ea5-924b-d003c8892292": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_laundry_franke_banner.jpg",
+            "name": "Laundry",
+            "link": "shopify://collections/laundry"
+          }
+        }
+      },
+      "block_order": [
+        "4b1c7c58-5941-4ceb-9fe7-cda094b3d471",
+        "becb9c15-61e1-4efe-810c-8802324efd41",
+        "2fbcc533-357e-49fc-85a6-0e6eac00a61b",
+        "3b4f54d5-6008-4ea5-924b-d003c8892292"
+      ],
+      "settings": {}
+    },
+    "050f4445-182e-4632-aca8-2d678c6410c9": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $799 and delivery within Metro Melbourne</p>"
+      }
+    },
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "image-with-text-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "image-with-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "image-with-text-0",
+        "image-with-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column-0": {
+          "type": "column",
+          "settings": {
+            "title": "Free Shipping",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Hassle-Free Exchanges",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column-0",
+        "column-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "30ab5397-0f7a-4b04-86f1-ee78487b31f8",
+    "main",
+    "965fbdb897b4e9907a60",
+    "44c9e31a-8e4e-458b-9158-ec01610a663e",
+    "e4bddd7e-48fd-492b-aae7-721b64f4ec65",
+    "2624a8d6-e103-4d3e-8e7b-ff1adfb14e90",
+    "2f692a367765b55870b2",
+    "4957412f-9f38-4dde-977d-943f0004f0d4",
+    "1733105985f1b740ea",
+    "ef405632-dc99-4b96-a341-708c21b68652",
+    "product-recommendations",
+    "d74c11f4-709c-4e8f-97ae-c736f285e0cf",
+    "173258180180e31637",
+    "1334c567-a3af-46b1-9693-15f99edff755",
+    "717b5dbf-e616-4028-a002-7dbd90cc53a3",
+    "1678074348962de0eb",
+    "ca9b2804-936d-494e-991e-aae5fff243cb",
+    "050f4445-182e-4632-aca8-2d678c6410c9",
+    "image-with-text",
+    "multicolumn"
+  ]
+}

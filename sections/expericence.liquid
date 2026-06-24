@@ -1,0 +1,51 @@
+<div class="our_experience position-relative">
+    <div class="container">
+        {% if section.settings.title != blank %}
+        <div class="our_experince_title text-center section_head_holder section_head_center_holder">
+            <h2 class="h3">{{section.settings.title}}</h2>
+        </div>
+        {% endif %}
+
+        <div class="our_experience_info d-flex align-items-center justify-content-evenly">
+            {% for block in section.blocks %}
+            <div class="our_experience_info_box">
+                {% assign image_url = block.settings.image %}
+                {% assign image_name = image_url | split: '/' | last | split: '.' | first %}
+                <img src="{{ image_url | img_url : 'large' }}" alt="{{ image_name }}" loading="lazy" width="auto" height="auto">
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Our experience",
+    "class": "our_experience_shopify",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+    ],
+    "blocks": [
+        {
+        "type": "image_block",
+        "name": "Image block",
+        "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+            ]
+        }
+    ],
+    "presets" : [
+        {
+        "name" : "Our experience"
+        }
+    ]
+  }
+{% endschema %}

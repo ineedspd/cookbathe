@@ -1,0 +1,165 @@
+<div class="single_blog_description_wrapper position-relative">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-10 col-lg-11 col-12">
+        <div class="single_blog_description_content">
+          <div class="row">
+            <div class="col-lg-8 col-12">
+              <div class="blog_description_inner">
+                {{ article.content }}
+              </div>
+            </div>
+            <div class="col-lg-4 col-12">
+              <div class="blog_sidebar">
+               {% comment %}
+                <div class="blog_author_block">
+                  <div class="title_block position-relative">
+                    <p class="bg-white mb-0 d-inline-block">Author</p>
+                  </div>
+
+                  <a href="#" class="author_card_block d-flex align-items-center">
+                    <div
+                      class="bg_cover"
+                      {% if article.user.image.size != blank %}
+                        style="background-image: url({{ article.user.image | img_url: 'master' }});"
+                      {% else %}
+                        style="background-image:url(https://cdn.shopify.com/s/files/1/0667/0588/3436/files/user-icon.png);"
+                      {% endif %}
+                    >
+                    </div>
+                    <p class="lead mb-0">{{ article.author }}</p>
+                  </a>
+                </div>
+                {% endcomment %}
+                <div class="blog_author_block">
+                  <div class="title_block position-relative">
+                    <p class="bg-white mb-0 d-inline-block">Author</p>
+                  </div>
+
+                  <div class="author_card_block d-flex align-items-center">
+                    <div
+                      class="bg_cover"
+                      {% if article.user.image.size != blank %}
+                        style="background-image: url({{ article.user.image | img_url: 'master' }});"
+                      {% else %}
+                        style="background-image:url(https://cdn.shopify.com/s/files/1/0667/0588/3436/files/user-icon.png);"
+                      {% endif %}
+                    >
+                    </div>
+                    <p class="lead mb-0">Cook & Bathe</p>
+                  </div>
+                </div>
+                <div class="blog_article_share_block">
+                  <div class="title_block position-relative">
+                    <p class="bg-white mb-0 d-inline-block">Share this article</p>
+                  </div>
+                  <ul class="list-unstyled d-flex align-items-center">
+                    <li class="mb-0">
+                      <a
+                        href="http://pinterest.com/pin/create/button/?url={{ shop.url }}{{ article.url }}&description={{ article.title }}"
+                        target="_blank"
+                      >
+                        {%- render 'ic-social-pinterest' -%}
+                      </a>
+                    </li>
+                    <li class="mb-0">
+                      <a
+                        href="http://www.facebook.com/sharer.php?u={{ shop.url }}{{ article.url }}&p={{ article.title }}"
+                        target="_blank"
+                      >
+                        {%- render 'ic-social-facebook' -%}
+                      </a>
+                    </li>
+                    <li class="mb-0">
+                      <a
+                        href="http://www.linkedin.com/shareArticle?url={{ shop.url }}{{ article.url }}&title={{ article.title }}&summary={{ article.excerpt }}>"
+                        target="_blank"
+                      >
+                        {%- render 'icon-linkedin' -%}
+                      </a>
+                    </li>
+                    {% comment %}
+                      <li class="mb-0">
+                        <a href="#" target="_blank">{% render 'ic-social-instagram' %}</a>
+                      </li>
+                    {% endcomment %}
+                  </ul>
+                </div>
+                <div class="blog_article_newsletter_block">
+                  <div class="title_block position-relative">
+                    <p class="bg-white mb-0 d-inline-block">Subscribe to our Newsletter</p>
+                  </div>
+                  <!-- Begin Mailchimp Signup Form -->
+                  <div id="mc_embed_signup">
+                    <form
+                      action="https://cookandbathe.us17.list-manage.com/subscribe/post?u=fd365139b58b749f9dac3767a&amp;id=f72d799bd8&amp;f_id=007398e0f0"
+                      method="post"
+                      id="mc-embedded-subscribe-form"
+                      name="mc-embedded-subscribe-form"
+                      class="validate subscribe-form"
+                      target="_self"
+                    >
+                      <div id="mc_embed_signup_scroll">
+                        <div class="mc-field-group">
+                          <!-- <label for="mce-EMAIL">Email Address <span class="asterisk">*</span> </label> -->
+                          <input
+                            type="email"
+                            value=""
+                            name="EMAIL"
+                            class="required email form-control"
+                            id="mce-EMAIL"
+                            placeholder="Email"
+                          >
+                          <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                        </div>
+                        <div id="mce-responses" class="clear">
+                          <div class="response" id="mce-error-response" style="display:none"></div>
+                          <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                        <!--
+                          real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                        -->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                          <input type="text" name="b_fd365139b58b749f9dac3767a_f72d799bd8" tabindex="-1" value="">
+                        </div>
+                        <div class="clear">
+                          <input
+                            type="submit"
+                            value="Sign Up"
+                            name="subscribe"
+                            id="mc-embedded-subscribe"
+                            class="btn btn-primary w-100"
+                          >
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- End mc_embed_signup -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Single Blog Description",
+"tag": "section",
+"class": "cb-single-blog-description",
+"settings": [],
+"presets": [
+  {
+    "name": "Single Blog Description"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

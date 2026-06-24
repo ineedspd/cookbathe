@@ -1,0 +1,331 @@
+<div
+  class="image_with_text_wrapper bg_cover position-relative lazy-bg" data-bg="{{ section.settings.image | img_url : 'master' }}"
+>
+  <div class="container image_with_text_container">
+    <div class="image_with_text_content bg-white">
+     <img 
+  src="{{ section.settings.icon | img_url: '300x300' }}" 
+  srcset="
+    {{ section.settings.icon | img_url: '100x100' }} 100w,
+    {{ section.settings.icon | img_url: '250x200' }} 250w,
+    {{ section.settings.icon | img_url: '350x300' }} 350w" 
+  sizes="(max-width: 600px) 100px, 
+         (max-width: 1024px) 200px, 
+         300px" 
+  width="355" 
+  height="300" 
+  alt="{{ section.settings.title | strip_html }}" 
+  loading="lazy" 
+  style="height: auto; width: 100%; max-width: 355px;">
+      {% comment %}
+      <img src="{{ section.settings.icon | img_url:'master' }}" alt="{{ section.settings.title | strip_html }}" loading="lazy">
+      {% endcomment %}
+      <{{ section.settings.heading-tag }} class="h3">
+        {{ section.settings.title }}
+      </{{ section.settings.heading-tag }}>
+      {{- section.settings.decription -}}
+      {% if section.settings['btn-name'] != blank %}
+        <a
+          href="{{ section.settings.btn-link }}"
+          class="{{ section.settings.btn-style }} {% if section.settings.btn-type == 'large' %}btn-lg{% endif %}"
+        >
+          {{- section.settings['btn-name'] -}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "Image With Text",
+"tag": "section",
+"class": "cb-bg-image-with-text",
+"settings": [
+  {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Image"
+  },
+  {
+    "type":"image_picker",
+    "id":"icon",
+    "label":"Icon"
+  },
+  {
+    "type":"select",
+    "id":"heading-tag",
+    "options":[
+      {
+        "label":"Paragraph",
+        "value":"p"
+      },
+      {
+        "label":"H1",
+        "value":"h1"
+      },
+      {
+        "label":"H2",
+        "value":"h2"
+      },
+      {
+        "label":"H3",
+        "value":"h3"
+      },
+      {
+        "label":"H4",
+        "value":"h4"
+      },
+      {
+        "label":"H5",
+        "value":"h5"
+      },
+      {
+        "label":"H6",
+        "value":"h6"
+      }      
+    ],
+    "label":"Heading Tag",
+    "default":"h2"
+  },
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Title"
+  },
+  {
+    "type":"richtext",
+    "id":"decription",
+    "label":"Description"
+  },
+  {
+      "type":"select",
+      "id":"btn-type",
+      "options": [
+                      {
+                        "label": "Default",
+                        "value": "default"
+                      },
+                      {
+                        "label": "Large",
+                        "value": "large"
+                      }
+      ],
+      "label":"Button Type"
+  },
+  {
+      "type":"select",
+      "id":"btn-style",
+      "options": [
+                  {
+                      "label": "Primary",
+                      "value": "btn btn-primary"
+                  },
+                  {
+                      "label": "Outline",
+                      "value": "btn btn-outline-primary"
+                  },
+                  {
+                      "label": "Animation",
+                      "value": "btn btn-outline-primary btn-animated"
+                  },
+                  {
+                      "label": "Link",
+                      "value": "btn btn-link"
+                  }
+      ],
+      "label":"Button Style",
+      "default":"btn btn-primary"
+  },
+  {
+      "type":"text",
+      "id":"btn-name",
+      "label":"Button Name"
+  },
+  {
+      "type":"url",
+      "id":"btn-link",
+      "label":"Button Link"
+  }
+],
+"blocks":[
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Image With Text"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+    .image_with_text_wrapper {
+       background-image: url(https://cdn.shopify.com/s/files/1/0667/0588/3436/files/laundry-room-bundle.png);
+  }
+   @media (min-width:768px){
+     .image_with_text_wrapper {
+       background-image: url(https://cdn.shopify.com/s/files/1/0667/0588/3436/files/laundry-room-bundle.png);
+     }
+  }
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

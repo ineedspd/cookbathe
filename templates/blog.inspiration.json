@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ff6f7335-6d06-44ad-bb5e-604edf24eb20": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "7505a65b-24bf-4790-8800-0124972579f0": {
+      "type": "cb-inspiration-banner",
+      "settings": {
+        "image": "shopify://shop_images/InspoHub_header_Banner_2880x720_604ff87a-ffcb-477c-86a4-f22c2778bf89.jpg",
+        "image-mobile": "shopify://shop_images/InspoHub_header_MobileBanner_642x647_f9e4675f-4edd-44c8-bd8e-12141705bc08.jpg",
+        "title": "Get The Perfect Inspo For Your Home"
+      }
+    },
+    "f000c8e9-ce60-48e6-8470-f2d645730058": {
+      "type": "cb-inspiration-listing",
+      "settings": {}
+    },
+    "901df9f3-f18b-44c9-a2cd-34dc0eff45a3": {
+      "type": "cb-inspiration-recently-added",
+      "disabled": true,
+      "settings": {
+        "title": "Recently Added"
+      }
+    },
+    "bfdd0f69-4200-4f5c-b9c2-6331d1cd06ea": {
+      "type": "cb-collage",
+      "blocks": {
+        "cb1c3cbf-1670-4025-82ea-5cf53b6dcc53": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "center",
+            "title": "Explore and be Inspired"
+          }
+        },
+        "ba3af2c9-2445-4aa7-b730-b5e6c1c53fbe": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_bathroom_phoenixtapware_banner.jpg",
+            "name": "Bathroom",
+            "link": "shopify://collections/bathroom"
+          }
+        },
+        "d2deaa22-a463-4a0b-a25b-196bc6f96daf": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_kitchen_banner.jpg",
+            "name": "Kitchen",
+            "link": "shopify://collections/kitchen"
+          }
+        },
+        "ee121bd6-5382-4631-96ff-4ed7a77c25ff": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_laundry_franke_banner.jpg",
+            "name": "Laundry",
+            "link": "shopify://collections/laundry"
+          }
+        }
+      },
+      "block_order": [
+        "cb1c3cbf-1670-4025-82ea-5cf53b6dcc53",
+        "ba3af2c9-2445-4aa7-b730-b5e6c1c53fbe",
+        "d2deaa22-a463-4a0b-a25b-196bc6f96daf",
+        "ee121bd6-5382-4631-96ff-4ed7a77c25ff"
+      ],
+      "settings": {}
+    },
+    "4a479fe7-b5bf-4864-8236-f6189fc3ccef": {
+      "type": "cb-signup",
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ff6f7335-6d06-44ad-bb5e-604edf24eb20",
+    "7505a65b-24bf-4790-8800-0124972579f0",
+    "f000c8e9-ce60-48e6-8470-f2d645730058",
+    "901df9f3-f18b-44c9-a2cd-34dc0eff45a3",
+    "bfdd0f69-4200-4f5c-b9c2-6331d1cd06ea",
+    "4a479fe7-b5bf-4864-8236-f6189fc3ccef"
+  ]
+}

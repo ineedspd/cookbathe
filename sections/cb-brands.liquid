@@ -1,0 +1,62 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'section-collection-list.css' | asset_url | stylesheet_tag }}
+<div class="main_collection_list_wrapper pb-5 py-lg-5 position-relative">
+  <div class="container">
+    <h1 class="title title--primary">{{ section.settings.title | escape }}</h1>
+    <div class="category_slider_block px-0 collections_listing_block">
+      <div class="category_swiper">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+          {%- for block in section.blocks -%}
+            {% assign collection = collections[block.settings.col] %}
+            <div class="col my-2">
+              <a
+                href="{{ collection.url }}"
+                class="category_card d-flex flex-column align-items-center justify-content-end"
+              >
+                <img src="{{collection.featured_image | img_url :'master' }}" alt="{{ collection.title }}" loading="lazy">
+                <p>{{ collection.title }}</p>
+              </a>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Brands",
+  "class": "cb-brands",
+  "settings": [
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"brand",
+      "name":"Brand",
+      "settings":[
+        {
+          "type":"collection",
+          "id":"col",
+          "label":"Select Brand"
+        }
+      ]
+    }
+  ],
+  "presets": [
+      {
+        "name": "CB Brands"
+      }
+    ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

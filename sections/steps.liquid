@@ -1,0 +1,77 @@
+<div class="simple_steps_wrapper position-relative overflow-hidden">
+    <div class="container">
+        <div class="simple_steps_title text-center section_head_holder section_head_center_holder">
+            <h2 class="h3">{{section.settings.title}}</h2>
+        </div>
+
+        <div class="simple_steps_container d-flex align-items-start justify-content-lg-between justify-content-center flex-lg-nowrap flex-wrap">
+            {% for block in section.blocks %}
+            <div class="simple_steps_box text-center">
+                <div class="ssb_icon">
+                    {% assign image_url = block.settings.icon %}
+                    {% assign image_name = image_url | split: '/' | last | split: '.' | first %}
+                    <img src="{{ image_url | img_url : '80x' }}" alt="{{ image_name }}" loading="lazy" width="auto" height="auto">
+                </div>
+                <div class="ssb_content">
+                  {% if block.settings.step != blank %}
+                    <div class="steps"><p>{{block.settings.step}}</p></div>
+                   {% endif %}
+                  {% if block.settings.step_title != blank %}
+                    <h6>{{block.settings.step_title}}</h6>
+                    {% endif %}
+                  {% if block.settings.step_content != blank %}
+                    <div class="para">
+                        {{block.settings.step_content}}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% schema %}
+  {
+    "name": "Simple steps",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+    ],
+    "blocks": [
+      {
+        "type": "steps_block",
+        "name": "Steps block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "step",
+            "label": "Step"
+        },
+          {
+            "type": "text",
+            "id": "step_title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "step_content",
+            "label": "Content"
+        }
+        ]
+      }
+  ],
+    "presets" : [
+        {
+        "name" : "Simple steps"
+        }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,512 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/header_banner_phoenixkitchentapware_2716x594_af58188f-5835-4951-bf5b-2b7254d02c01.jpg"
+      }
+    },
+    "rich_text_XLdnRM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hMB7jc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Phoenix Tapware at Cook & Bathe: Style Meets Function</h2>",
+            "heading_size": "h2"
+          }
+        },
+        "text_BkfVWw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover premium taps, showers & fixtures that combine German engineering, elegant design and sustainable innovation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hMB7jc",
+        "text_BkfVWw"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_XBiqK7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VmGnFm": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Hansgrohe",
+            "heading_size": "h1"
+          }
+        },
+        "text_XWFjiJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hansgrohe is one of the world’s leading manufacturers of bathroom and kitchen fixtures, with over a century of excellence in design and performance. Headquartered in Schiltach, Germany, the Hansgrohe Group creates products that bring water to life through thoughtful engineering, aesthetic appeal and environmental responsibility. </p><p>At Hansgrohe, water isn’t just a resource; it's the core of user experience. Their mission is to deliver meaningful, water-rich interactions, whether it’s a morning shower or a kitchen rinse. </p><p>Over the years, Hansgrohe has partnered with top design studios (including Phoenix Design) to refine their form language and visual identity. </p><p>In Australia, we stock the full Hansgrohe range; backed by local support, warranty servicing, and spare parts availability.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_jeMLcp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Hansgrohe",
+            "button_link": "shopify://collections/hansgrohe"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VmGnFm",
+        "text_XWFjiJ",
+        "button_jeMLcp"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/74800003_Lifesyle1_Web_e6c5da24-e73e-4dd6-9263-0b0401dba7d3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_7wWidb": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Phoenix Tapware",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "phoenix",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_hQX7Dz": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Phoenix Bathroom Tapware",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "phoenix-bathroom-tapware",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_jq7Dw4": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Phoenix Tapware Showers",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "phoenix-showers",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_nUthzd": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Phoenix Tapware Accessories",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "phoenix-bathroom-accessories",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_DmjYfM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dpQBDC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/72800003_Lifestyle2_Web_6780cc3a-8eb8-4b6b-a22f-67b8ab4a8b04.jpg",
+            "title": "Tapware",
+            "text": "<p>Discover Hansgrohe Tapware, a leader in luxury kitchen and bathroom fittings designed for discerning Australian homes. Hansgrohe combines sophisticated German engineering with contemporary style, offering an extensive range of basin mixers, kitchen taps, and accessories that elevate any renovation or new build. Renowned for innovation, water efficiency, and precision craftsmanship, Hansgrohe tapware delivers the performance and durability that homeowners and designers rely on. Whether you’re refreshing your kitchen with a sleek mixer or upgrading your bathroom with a refined basin tap, Hansgrohe provides stylish, high-quality solutions that blend form with function. At Cook & Bathe, we proudly stock Hansgrohe’s best-selling tapware collections, helping you find the perfect balance between modern design and everyday practicality. Explore Hansgrohe Tapware today to bring elegance and performance to your kitchen and bathroom.</p>",
+            "link_label": "Hansgrohe Tapware",
+            "link": "shopify://collections/hansgrohe-tapware"
+          }
+        },
+        "column_btBdt3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/banner_hansgrohesinkmixers_1080x594_0dbdc946-e254-4969-b0d4-dcbc754a6fde.jpg",
+            "title": "Sink Mixers",
+            "text": "<p>Experience the craftsmanship and design of Hansgrohe Sink Mixers, engineered to bring comfort and performance to your kitchen. Hansgrohe delivers a sophisticated selection of kitchen mixers and pull-out taps that combine timeless design with innovative water-saving technology. Built to meet the highest standards of German precision, Hansgrohe mixers offer smooth operation, sustainable efficiency, and a refined aesthetic that complements any interior. Whether you’re upgrading a family kitchen or creating a designer space, Hansgrohe’s sink mixers provide practical functionality, effortless control, and lasting reliability. At Cook & Bathe, we curate a premium selection of Hansgrohe’s best-selling mixers, allowing you to enjoy precision water flow and elegant form every day. Explore Hansgrohe Sink Mixers today and discover the perfect blend of beauty and performance for your kitchen.</p>",
+            "link_label": "Hansgrohe Sink Mixers",
+            "link": "shopify://collections/hansgrohe-sink-mixers"
+          }
+        },
+        "column_JE3UyW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/24141700_Lifestyle1_Web_0c541362-b704-422b-b6b2-203218c54fed.jpg",
+            "title": "Showers",
+            "text": "<p>Discover the innovation and indulgence of Hansgrohe Showers, meticulously designed to transform your bathroom into a sanctuary of comfort and style. Hansgrohe offers a range of premium overhead, rail, and hand showers crafted with cutting-edge features such as AirPower, Select, and EcoSmart technologies that redefine the shower experience. Combining refined aesthetics with functional brilliance, Hansgrohe showers deliver powerful performance while reducing water consumption — ideal for the modern Australian home. Whether you’re renovating your ensuite or upgrading a family bathroom, Hansgrohe provides luxurious, reliable solutions that inspire daily relaxation. At Cook & Bathe, we proudly feature Hansgrohe’s most sought-after shower collections, helping you create a space that is both sustainable and sophisticated. Explore Hansgrohe Showers today and experience the perfect harmony of design, technology, and comfort.</p>",
+            "link_label": "Hansgrohe Showers",
+            "link": "shopify://collections/hansgrohe-showers"
+          }
+        }
+      },
+      "block_order": [
+        "column_dpQBDC",
+        "column_btBdt3",
+        "column_JE3UyW"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Discover Phoenix for Kitchen and Bathroom",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Explore Hansgrohe",
+        "button_link": "shopify://collections/hansgrohe",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_WArYMe": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_L4LxPA": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Hansgrohe Best Sellers</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_jc64eA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop our top-selling Hansgrohe products, enhancing spaces with perfect engineering.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_L4LxPA",
+        "text_jc64eA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "cb_featured_products_qNVbk6": {
+      "type": "cb-featured-products",
+      "blocks": {
+        "collection_LLHQgq": {
+          "type": "collection",
+          "settings": {
+            "coll": "hansgrohe"
+          }
+        }
+      },
+      "block_order": [
+        "collection_LLHQgq"
+      ],
+      "name": "Featured Products",
+      "settings": {
+        "columns_desktop": 4,
+        "product_show": 4,
+        "double_image": true,
+        "variant_enable": true,
+        "wishlist_enable": true,
+        "discount_enable": true,
+        "price_enable": true,
+        "addtocart": false,
+        "arrows": false
+      }
+    },
+    "rich_text_NbyDwm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KANrki": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Why Choose Hansgrohe</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_99cxVa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover tapware that blends timeless design with everyday functionality, bringing style and performance to your kitchen and bathroom.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_KANrki",
+        "text_99cxVa"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 24
+      }
+    },
+    "image_with_text_akdj38": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_AwwJPb": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hansgrohe Croma Range",
+            "heading_size": "h2"
+          }
+        },
+        "text_f7r6Up": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover the <strong>Hansgrohe Croma Range</strong>, where German engineering meets everyday practicality to transform your daily routine in Australian bathrooms.</p><p>With its <strong>sleek design</strong> and versatile functionality, the Croma collection combines premium form with smart features, delivering exceptional shower performance. Featuring <strong>innovative water-saving technology</strong> and durable finishes, this collection includes everything from ergonomic hand showers to indulgent, full-coverage overheads.</p><p>Ideal for homeowners seeking a sophisticated aesthetic without compromising on efficiency or reliability, Croma provides intuitive controls and quality components that seamlessly integrate with both contemporary and classic bathroom styles. Explore the curated <strong>Hansgrohe Croma</strong> collection at <strong>Cook & Bathe</strong> and elevate your shower space with trusted German excellence.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_kmzfDg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Hansgrohe Croma",
+            "button_link": "shopify://collections/hansgrohe-croma-range"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AwwJPb",
+        "text_f7r6Up",
+        "button_kmzfDg"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/croma-280-air-1jet-overhead-shower_standing-woman_ambience_3x4_e1485979-f677-477c-9ff0-386a515ad9ae.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_q7KcCe": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jFEbNH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hansgrohe Crometta Range",
+            "heading_size": "h2"
+          }
+        },
+        "text_6WzHiT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover the Hansgrohe Crometta range, your affordable entry point to German shower innovation and quality. With its clean, contemporary aesthetic and proven performance, Crometta delivers an invigorating and efficient shower experience every day.</p><p>Featuring water-saving **EcoSmart** technology and durable chrome finishes, this collection includes versatile hand showers and all-in-one **Showerpipe** systems, perfect for upgrading your bathroom without complex renovations. Crometta is the smart, reliable choice for homeowners seeking sophisticated style that doesn't compromise on efficiency or price.</p><p>Explore the full Crometta collection at Cook & Bathe and elevate your daily routine with reliable, eco-conscious shower technology.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_JpknCY": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Hansgrohe Crometta",
+            "button_link": "shopify://collections/hansgrohe-crometta-range"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jFEbNH",
+        "text_6WzHiT",
+        "button_JpknCY"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/crometta-vario-shower-set_standing-woman_ambience_3x4_cde25883-acbd-4aaa-89ae-67b5615385d1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_blog_W9cEUx": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h2",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1732583062cc650e12": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "rich_text_XLdnRM",
+    "image_with_text_XBiqK7",
+    "featured_collection_7wWidb",
+    "featured_collection_hQX7Dz",
+    "featured_collection_jq7Dw4",
+    "featured_collection_nUthzd",
+    "multicolumn_DmjYfM",
+    "main",
+    "rich_text_WArYMe",
+    "cb_featured_products_qNVbk6",
+    "rich_text_NbyDwm",
+    "image_with_text_akdj38",
+    "image_with_text_q7KcCe",
+    "featured_blog_W9cEUx",
+    "1732583062cc650e12",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

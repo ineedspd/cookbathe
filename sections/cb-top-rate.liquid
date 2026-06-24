@@ -1,0 +1,77 @@
+<div class="product_highlight_bar_wrapper d-none d-md-block position-relative">
+  <div class="container">
+    <ul class="product_highlight_bar_listing list-unstyled d-flex flex-wrap">
+      {% if section.settings['label-1'] != blank %}
+        <li class="product_highlight_bar_item mb-0 d-flex align-items-center">
+          {% render 'icon-account' %}
+          {{ section.settings['label-1'] }}
+        </li>
+      {% endif %}
+      {% if section.settings['label-2'] != blank %}
+        <li class="product_highlight_bar_item mb-0 d-flex align-items-center">
+          {% render 'icon-australian-map' %}
+          {{ section.settings['label-2'] }}
+        </li>
+      {% endif %}
+      {% if section.settings['label-3'] != blank %}
+        <li class="product_highlight_bar_item mb-0 d-flex align-items-center">
+          {% render 'icon-star' %}
+          {{ section.settings['label-3'] }}
+        </li>
+      {% endif %}
+      {% if section.settings['label-4'] != blank %}
+        <li class="product_highlight_bar_item mb-0 d-flex align-items-center">
+          {% render 'icon-warranty' %}
+          {% if template == 'product' %}
+            {{ section.settings['label-4'] }}
+          {% else %}
+            {{ section.settings['label-4'] }}
+          {% endif %}
+        </li>
+      {% endif %}
+    </ul>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Top Rate Line",
+  "class": "cb-top-rate",
+  "settings": [
+    {
+      "type":"text",
+      "id":"label-1",
+      "label":"Label 1",
+      "default":" Trusted by 35K Customers"
+    },
+    {
+      "type":"text",
+      "id":"label-2",
+      "label":"Label 2",
+      "default":"Australian Owned and Operated"
+    },
+    {
+      "type":"text",
+      "id":"label-3",
+      "label":"Label 3",
+      "default":"4.8 Stars on Google"
+    },
+    {
+      "type":"text",
+      "id":"label-4",
+      "label":"Label 4",
+      "default":"3 Years Warranty"
+    }
+  ],
+  "presets": [
+  {
+    "name": "Top Rate Line"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

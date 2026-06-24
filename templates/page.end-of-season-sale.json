@@ -1,0 +1,581 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "image_banner_AArBjw": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/homepage_Wk45_SpringSale_Bathroom_opt2.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_6TzcaK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EJnLaE": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1><strong>End of Season Sale </strong></h1><h2><strong>Up to 60% Off Kitchen, Bathroom & Laundry Essentials</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_YLcdnT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Take advantage of Cook & Bathe’s biggest sale of the season! Get up to 60% off a wide range of high-quality products across your kitchen, bathroom, and laundry spaces. Whether you’re updating a single fixture or renovating an entire room, our End of Season Sale brings you exclusive discounts on top brands like <a href=\"/collections/phoenix\" title=\"Phoenix\">Phoenix Tapware</a>, <a href=\"/collections/franke\" title=\"Franke\">Franke</a>, Timberline, <a href=\"/collections/otti\" title=\"Otti\">Otti</a>, <a href=\"/collections/smeg\" title=\"Smeg\">Smeg</a>, and more. Don’t miss this chance to elevate your home with premium products at unbeatable prices.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EJnLaE",
+        "text_YLcdnT"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_XFPkFp": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"position:relative;padding-top:max(60%,326px);height:0;width:100%\"><iframe allow=\"clipboard-write\" sandbox=\"allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox allow-forms\" allowfullscreen=\"true\" style=\"position:absolute;border:none;width:100%;height:100%;left:0;right:0;top:0;bottom:0;\" src=\"https://e.issuu.com/embed.html?d=catalogue2024_catalogue&u=cookandbathe8\"></iframe></div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection_6jHUVf": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Bathroom End of Season",
+        "heading_size": "h2",
+        "description": "<p>Explore a range of bathroom essentials, from basins and tapware to mirrors and vanities, crafted to blend functionality with style.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "end-of-season-sale-bathroom",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_6nBamd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fqcbYR": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Why Choose Cook & Bathe?</strong></h2>",
+            "heading_size": "h2"
+          }
+        },
+        "text_Ej4Nxy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Cook & Bathe, we bring you only the best in kitchen, bathroom, and laundry products. Our collections feature carefully selected items from trusted brands, ensuring quality and durability in every piece. Our team of experts is here to help you find the perfect products to suit your style and needs, making it easy to create spaces that feel uniquely yours.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fqcbYR",
+        "text_Ej4Nxy"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_WmzUFr": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Kitchen End of Season",
+        "heading_size": "h2",
+        "description": "<p>A curated selection of everything you need for the kitchen, from essential fixtures to accessories that complete the look.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "end-of-season-sale-kitchen",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_RpHmyG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xKwh4W": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Terms & Conditions:</strong></h2>",
+            "heading_size": "h2"
+          }
+        },
+        "text_YUetFN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\t•\tOffer applies to selected products across the End of Season Sale collections.<br/>•\tDiscounts are automatically applied at checkout for eligible items.<br/>\t•\tSale ends on Sunday, 24th November 2024.<br/><strong>Shop Online or </strong><a href=\"/pages/store-locations\" title=\"Store Locations\"><strong>Visit Our Showroom</strong></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xKwh4W",
+        "text_YUetFN"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_QBnGeU": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Basins and Tapware",
+        "heading_size": "h2",
+        "description": "<p>Discover beautifully designed basins and high-quality tapware that add elegance and efficiency to any bathroom.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "end-of-season-sale-bathroom-basins-and-tapware",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3FidG9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VrPgyz": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Shop Online or Visit Our Showroom</strong></p>",
+            "heading_size": "h2"
+          }
+        },
+        "text_b9Ffxh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enjoy a seamless shopping experience by browsing our website or visiting our showroom to see the products in person. Whether you’re renovating or simply refreshing a space, Cook & Bathe’s End of Season Sale has everything you need to bring your vision to life.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VrPgyz",
+        "text_b9Ffxh"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_UKEGRU": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Sinks and Tapware",
+        "heading_size": "h2",
+        "description": "<p>Upgrade your kitchen with sleek sinks and versatile tapware. Find options that suit both traditional and modern aesthetics.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "end-of-season-sale-kitchen-sinks-and-tapware",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_ELEVMc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EnRWYG": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3><strong>Hurry, These Offers Won’t Last!</strong></h3>",
+            "heading_size": "h2"
+          }
+        },
+        "text_wJyJyt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shop now to make the most of these incredible discounts. With up to 60% off kitchen, bathroom, and laundry essentials, this sale is the perfect time to invest in quality upgrades that will enhance your home for years to come.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EnRWYG",
+        "text_wJyJyt"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_AtdVXB": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Showers and Baths End of Season",
+        "heading_size": "h2",
+        "description": "<p>Create a spa-like retreat with discounts on showers, baths, and shower heads. Indulge in luxury with top-quality fixtures.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "end-of-season-sale-showers-and-baths",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_aPLfAq": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Kitchen Appliances End of Season",
+        "heading_size": "h2",
+        "description": "<p>Transform your kitchen with advanced, stylish appliances from leading brands. Discover ovens, cooktops, rangehoods, and more.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "end-of-season-sale-kitchen-appliances",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_3AqimE": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Toilets End of Season",
+        "heading_size": "h2",
+        "description": "<p>Upgrade your bathroom with modern, high-efficiency toilets designed for comfort and performance.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "end-of-season-sale-toilets",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_g9CCVN": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Mirrors and Vanities End of Season",
+        "heading_size": "h2",
+        "description": "<p>Add the perfect finishing touches with stylish mirrors and practical vanities, ideal for creating a functional yet elegant space.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "end-of-season-sale-mirrors-and-vanities",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_eYE8BN": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Laundry End of Season",
+        "heading_size": "h2",
+        "description": "<p>Discover laundry essentials designed to enhance convenience and organisation in one of the busiest spaces in your home.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "end-of-season-laundry",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {}
+    },
+    "470d66d1-ac12-44e8-8b33-7169079e03e9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Coming Soon!</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1732582639ca96dec8": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "image_banner_AArBjw",
+    "rich_text_6TzcaK",
+    "custom_liquid_XFPkFp",
+    "featured_collection_6jHUVf",
+    "rich_text_6nBamd",
+    "featured_collection_WmzUFr",
+    "rich_text_RpHmyG",
+    "featured_collection_QBnGeU",
+    "rich_text_3FidG9",
+    "featured_collection_UKEGRU",
+    "rich_text_ELEVMc",
+    "featured_collection_AtdVXB",
+    "featured_collection_aPLfAq",
+    "featured_collection_3AqimE",
+    "featured_collection_g9CCVN",
+    "featured_collection_eYE8BN",
+    "cb_find_showroom_PQG6UA",
+    "470d66d1-ac12-44e8-8b33-7169079e03e9",
+    "main",
+    "1732582639ca96dec8",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

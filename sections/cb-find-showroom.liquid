@@ -1,0 +1,646 @@
+<div id="locate-showroom" class="find_showroom_wrapper find_showroom_custom position-relative">
+  <div class="container">
+    {% render 'cb-title-option' %}
+    {% if section.settings['show_map_full'] != blank %}
+    <div class="locate_showroom_full mb-5">
+      <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/melbourne-map.png?v=1732775699" alt="melbourne-map" class="w-100">
+      {% comment %}        
+      <div class="ratio ratio-21x9">        
+        <iframe src="https://www.google.com/maps/d/embed?mid=18H2Fke_3eIiLFG-dzLuczYYiTk9EKH4&ehbc=2E312F" allowfullscreen></iframe>
+      </div>
+      {% endcomment %}
+    </div>
+    {% endif %}
+    <div class="find_showroom_listing">
+      <div class="row">
+        {% assign brand = section.blocks | where: 'type', 'showroom' %}
+        {% for block in brand %}
+          <div class="col-md-4 col-12">
+            <div class="find_showroom_card position-relative overflow-hidden">
+              {% if block.settings.img-with-iframe == 'image' %}
+              <a
+                href="{{ block.settings.map-link }}"
+                class="d-block find_showroom_card_cover bg_cover"
+                style="background-image: url({{ block.settings.logo | img_url:'master' }});"
+              >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/showroom-card-cover.png"
+                  alt="{{ block.settings.name }}"
+                  class="d-none d-sm-block"
+                >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/showroom-card-mobile-cover.png"
+                  alt="{{ block.settings.name }}"
+                  class="d-sm-none"
+                >
+              </a>
+              {% else %}
+                {% if block.settings.map-iframe != blank %}
+                <div class="ratio ratio-16x9">
+                  <iframe src="{{ block.settings.map-iframe }}" class="border-0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                {% endif %}
+              {% endif %}
+              <div class="find_showroom_card_content">
+                <h4>
+                  {% render 'icon-location' %}
+                  {{ block.settings.name }}
+                </h4>
+                <ul class="list-unstyled">
+                  <li>
+                    {% if block.settings['map-link'] != blank %}
+                      <a href="{{ block.settings.map-link }}" target="_blank">
+                        {%- render 'icon-location' -%}
+                        {{ block.settings.address -}}
+                      </a>
+                    {% else %}
+                      {%- render 'icon-location' -%}
+                      {{ block.settings.address }}
+                    {% endif %}
+                  </li>
+                  <li>
+                    <a href="tel:{{ block.settings.phone | remove :' ' |remove : '(' | remove:')' }}">
+                      {%- render 'icon-call' %}
+                      {{ block.settings.phone -}}
+                    </a>
+                  </li>
+                  {% if block.settings.opening_hour != blank %}
+                  <li class="opening_hour_item">
+                     {%- render 'icon-clock' -%}
+                      <span>{{ block.settings.opening_hour -}}</span>
+                  </li>
+                  {% endif %}
+                </ul>
+              </div>
+              <div class="find_showroom_card_cta d-flex flex-wrap align-items-center justify-content-between">
+                {% if block.settings['btn-name-1'] != null %}
+                  <a
+                    href="{{ block.settings.btn-link-1 }}"
+                    {% if block.settings['btn-target-1'] != blank %}
+                      target="blank"
+                    {% endif %}
+                    class="{{ block.settings.btn-style-1 }}"
+                  >
+                    {{- block.settings['btn-name-1'] -}}
+                  </a>
+                {% endif %}
+                {% if block.settings['btn-name-2'] != null %}
+                  <a
+                    href="{{ block.settings.btn-link-2 }}"
+                    {% if block.settings['btn-target-2'] != blank %}
+                      target="blank"
+                    {% endif %}
+                    class="{{ block.settings.btn-style-2 }}"
+                  >
+                    {{- block.settings['btn-name-2'] -}}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "Find Showroom",
+"tag": "section",
+"class": "cb-find-showroom",
+"settings": [
+  {
+    "type":"checkbox",
+    "id":"show_map_full",
+    "label":"Static Map Full Show"
+  }
+],
+"blocks":[
+  {
+    "type":"title-style-1",
+    "name":"Title style 1",
+    "limit":1,
+    "settings":[
+        {
+            "type":"select",
+            "id":"heading-tag",
+            "options":[
+              {
+                "label":"Paragraph",
+                "value":"p"
+              },
+              {
+                "label":"H1",
+                "value":"h1"
+              },
+              {
+                "label":"H2",
+                "value":"h2"
+              },
+              {
+                "label":"H3",
+                "value":"h3"
+              },
+              {
+                "label":"H4",
+                "value":"h4"
+              },
+              {
+                "label":"H5",
+                "value":"h5"
+              },
+              {
+                "label":"H6",
+                "value":"h6"
+              }      
+            ],
+            "label":"Heading Tag",
+            "default":"h2"
+          },
+        {
+          "type":"select",
+          "options": [
+                        {
+                          "label": "Left",
+                          "value": "left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "center"
+                        }
+          ],
+          "id":"text-style",
+          "label":"Title Align"
+        },
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Title"
+        }
+    ]
+  },
+  {
+    "type":"title-style-2",
+    "name":"Title style 2",
+    "limit":1,
+    "settings":[
+        {
+            "type":"select",
+            "id":"heading-tag",
+            "options":[
+              {
+                "label":"Paragraph",
+                "value":"p"
+              },
+              {
+                "label":"H1",
+                "value":"h1"
+              },
+              {
+                "label":"H2",
+                "value":"h2"
+              },
+              {
+                "label":"H3",
+                "value":"h3"
+              },
+              {
+                "label":"H4",
+                "value":"h4"
+              },
+              {
+                "label":"H5",
+                "value":"h5"
+              },
+              {
+                "label":"H6",
+                "value":"h6"
+              }      
+            ],
+            "label":"Heading Tag",
+            "default":"h2"
+          },
+        {
+            "type":"text",
+            "id":"title",
+            "label":"Title"
+        },
+        {
+            "type":"richtext",
+            "id":"content",
+            "label":"Content"
+        }
+    ]
+    },
+  {
+    "type":"title-style-3",
+    "name":"Title style 3",
+    "limit":1,
+    "settings":[
+        {
+            "type":"select",
+            "id":"heading-tag",
+            "options":[
+              {
+                "label":"Paragraph",
+                "value":"p"
+              },
+              {
+                "label":"H1",
+                "value":"h1"
+              },
+              {
+                "label":"H2",
+                "value":"h2"
+              },
+              {
+                "label":"H3",
+                "value":"h3"
+              },
+              {
+                "label":"H4",
+                "value":"h4"
+              },
+              {
+                "label":"H5",
+                "value":"h5"
+              },
+              {
+                "label":"H6",
+                "value":"h6"
+              }      
+            ],
+            "label":"Heading Tag",
+            "default":"h2"
+          },
+        {
+            "type":"text",
+            "id":"title",
+            "label":"Title"
+        },
+        {
+            "type":"select",
+            "id":"btn-type",
+            "options": [
+                            {
+                            "label": "Default",
+                            "value": "default"
+                            },
+                            {
+                            "label": "Large",
+                            "value": "large"
+                            }
+            ],
+            "label":"Button Type"
+        },
+        {
+            "type":"select",
+            "id":"btn-style",
+            "options": [
+                        {
+                            "label": "Primary",
+                            "value": "btn btn-primary"
+                        },
+                        {
+                            "label": "Outline",
+                            "value": "btn btn-outline-primary"
+                        },
+                        {
+                            "label": "Animation",
+                            "value": "btn btn-outline-primary btn-animated"
+                        },
+                        {
+                            "label": "Link",
+                            "value": "btn btn-link"
+                        }
+            ],
+            "label":"Button Style",
+            "default":"btn btn-primary"
+        },
+        {
+            "type":"text",
+            "id":"btn-name",
+            "label":"Button Name"
+        },
+        {
+            "type":"url",
+            "id":"btn-link",
+            "label":"Button Link"
+        }
+    ]
+  },
+  {
+    "type":"showroom",
+    "name":"Showroom",
+    "settings":[
+      {
+          "type":"select",
+          "options": [
+                        {
+                          "label": "Iframe",
+                          "value": "iframe"
+                        },
+                        {
+                          "label": "Image",
+                          "value": "image"
+                        }
+          ],
+          "id":"img-with-iframe",
+          "label":"Image With Iframe"
+      },
+      {
+        "type":"image_picker",
+        "id":"logo",
+        "label":"Select Logo"
+      },
+      {
+        "type":"text",
+        "id":"name",
+        "label":"Name"
+      },
+      {
+        "type":"textarea",
+        "id":"address",
+        "label":"Address"
+      },
+      {
+        "type":"url",
+        "id":"map-link",
+        "label":"Map Link"
+      },
+      {
+        "type":"text",
+        "id":"phone",
+        "label":"Phone"
+      },
+      {
+        "type":"textarea",
+        "id":"opening_hour",
+        "label":"Opening Hours"
+      },
+      {
+        "type":"textarea",
+        "id":"map-iframe",
+        "label":"Map iframe"
+      },
+      {
+        "type":"header",
+        "content":"Button 1"
+      },
+      {
+          "type":"select",
+          "id":"btn-style-1",
+          "options": [
+                      {
+                          "label": "Primary",
+                          "value": "btn btn-primary"
+                      },
+                      {
+                          "label": "Outline",
+                          "value": "btn btn-outline-primary"
+                      },
+                      {
+                          "label": "Animation",
+                          "value": "btn btn-outline-primary btn-animated"
+                      },
+                      {
+                          "label": "Link",
+                          "value": "btn btn-link"
+                      }
+          ],
+          "label":"Button Style",
+          "default":"btn btn-primary"
+      },
+      {
+          "type":"text",
+          "id":"btn-name-1",
+          "label":"Button Name"
+      },
+      {
+          "type":"url",
+          "id":"btn-link-1",
+          "label":"Button Link"
+      },
+      {
+        "type":"checkbox",
+        "id":"btn-target-1",
+        "label":"Button Open New Tab"
+      },
+      {
+        "type":"header",
+        "content":"Button 2"
+      },
+      {
+          "type":"select",
+          "id":"btn-style-2",
+          "options": [
+                      {
+                          "label": "Primary",
+                          "value": "btn btn-primary"
+                      },
+                      {
+                          "label": "Outline",
+                          "value": "btn btn-outline-primary"
+                      },
+                      {
+                          "label": "Animation",
+                          "value": "btn btn-outline-primary btn-animated"
+                      },
+                      {
+                          "label": "Link",
+                          "value": "btn btn-link"
+                      }
+          ],
+          "label":"Button Style",
+          "default":"btn btn-primary"
+      },
+      {
+          "type":"text",
+          "id":"btn-name-2",
+          "label":"Button Name"
+      },
+      {
+          "type":"url",
+          "id":"btn-link-2",
+          "label":"Button Link"
+      },
+      {
+        "type":"checkbox",
+        "id":"btn-target-2",
+        "label":"Button Open New Tab"
+      }
+    ]
+  },
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+        {
+          "type": "header",
+          "content": "Large\/Desktop Device"
+        },
+        {
+          "type": "range",
+          "id": "section_padding_top",
+          "min": 0,
+          "max": 500,
+          "step": 5,
+          "label": "Padding Top",
+          "unit": "px",
+          "default": 100
+        },
+        {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+        },
+        {
+        "type": "header",
+        "content": "Tablet Device"
+        },
+        {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+        },
+        {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+        },
+        {
+        "type": "header",
+        "content": "Mobile Device"
+        },
+        {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+        },
+        {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+        }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Find Showroom"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

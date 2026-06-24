@@ -1,0 +1,92 @@
+<div class="application_wrapper position-relative">
+    <div class="container">
+        <div class="application_wrapper_title text-center section_head_holder section_head_center_holder">
+            <h2 class="h3">{{section.settings.title}}</h2>
+        </div>
+
+        <div class="application_wrapper_container">
+            <div class="swiper application_slider">
+                <div class="swiper-wrapper">
+                {% for block in section.blocks %}
+                  <div class="swiper-slide">
+                    {% if block.settings.ap_link != blank %}
+                    <a href="{{ block.settings.ap_link }}" class="application_box d-block">
+
+                        {% assign image_url = block.settings.image %}
+                        {% assign image_name = image_url | split: '/' | last | split: '.' | first %}
+                        <img src="{{ image_url | img_url : '330x' }}" alt="{{ image_name }}" loading="lazy" width="100%" height="100%">
+
+                        {% if block.settings.ap_title %}
+                        <div class="application_box_content">
+                            {% if block.settings.ap_title != blank %}
+                                <h4 class="m-0">{{block.settings.ap_title}}</h4>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+
+                    </a>
+                    {% else %}
+                    <div class="application_box">
+
+                        {% assign image_url = block.settings.image %}
+                        {% assign image_name = image_url | split: '/' | last | split: '.' | first %}
+                        <img src="{{ image_url | img_url : '330x' }}" alt="{{ image_name }}" loading="lazy" width="100%" height="100%">
+
+                        {% if block.settings.ap_title %}
+                        <div class="application_box_content">
+                            {% if block.settings.ap_title != blank %}
+                                <h4 class="m-0">{{block.settings.ap_title}}</h4>
+                            {% endif %}
+                        </div>
+                        {% endif %}
+
+                    </div>
+                    {% endif %}
+
+                  </div>
+                {% endfor %}
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+  {
+    "name": "Who can apply",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+    ],
+    "blocks": [
+      {
+        "type": "catalogue_block",
+        "name": "Catalogue block",
+        "settings": [
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+                "type": "text",
+                "id": "ap_title",
+                "label": "Title"
+            },
+            {
+                "type": "url",
+                "id": "ap_link",
+                "label": "Link"
+            }
+        ]
+      }
+    ],
+    "presets" : [
+        {
+        "name" : "Who can apply"
+        }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,950 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cb_top_rate_K3PAXG": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Nation Wide Delivery",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "slideshow_iMgj4h": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_UfbfN4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hp_wk16_FarmhouseEdit.jpg",
+            "mobile_image": "shopify://shop_images/hpmobile_wk16_FarmhouseEdit.jpg",
+            "heading": "The Farmhouse Edit",
+            "heading_size": "h1",
+            "subheading": "Shop trusted farmhouse-inspired kitchen and bathroom pieces, combining timeless design, quality craftsmanship, and reliable performance for your home.",
+            "button_label": "Shop the Look",
+            "link": "shopify://collections/farmhouse-edit",
+            "button_style_secondary": false,
+            "box_align": "top-left",
+            "top_spacing": 0,
+            "bottom_spacing": 0,
+            "right_spacing": 0,
+            "left_spacing": 0,
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_Y83PCh": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Wk16_LuxuryBathroom.jpg",
+            "mobile_image": "shopify://shop_images/hpmobile_Wk16_LuxuryBathroom.jpg",
+            "heading": "Bring Luxury Into Your Bathroom",
+            "heading_size": "h1",
+            "subheading": "Discover premium bathroom fittings and fixtures crafted for refined living, combining high-end design, superior materials, and lasting performance you can trust.",
+            "button_label": "Shop Now",
+            "link": "shopify://collections/luxury-bathroom",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "top_spacing": 0,
+            "bottom_spacing": 0,
+            "right_spacing": 0,
+            "left_spacing": 0,
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_waCgFt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/hp_wk15_GoldenSanctuary.jpg",
+            "mobile_image": "shopify://shop_images/hpmobile_wk15_GoldenSanctuary.jpg",
+            "heading": "Golden Sanctuary Lookbook",
+            "heading_size": "h1",
+            "subheading": "Step inside and experience a Golden Sanctuary defined by layered textures, warm palettes, and refined gold accents.",
+            "button_label": "Get Inspired",
+            "link": "https://www.cookandbathe.com.au/blogs/inspiration/pascoe-vale-sanctuary",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "top_spacing": 0,
+            "bottom_spacing": 0,
+            "right_spacing": 0,
+            "left_spacing": 0,
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_kyFeyD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WebBanner_ReadToShip_dab1d879-c914-47a2-a5c5-a4f0eaa7d5a3.jpg",
+            "mobile_image": "shopify://shop_images/Mb_WebBanner_ReadToShip_1487b459-e9d0-4897-a3a1-f2b4e0166fa7.jpg",
+            "heading": "In Stock and Ready to Go",
+            "heading_size": "h1",
+            "subheading": "In-stock kitchen and bathroom essentials dispatched quickly across Australia.",
+            "button_label": "Explore Now",
+            "link": "shopify://collections/ready-to-ship",
+            "button_style_secondary": false,
+            "box_align": "bottom-right",
+            "top_spacing": 0,
+            "bottom_spacing": 0,
+            "right_spacing": 0,
+            "left_spacing": 0,
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_UfbfN4",
+        "slide_Y83PCh",
+        "slide_waCgFt",
+        "slide_kyFeyD"
+      ],
+      "custom_css": [
+        "{}"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "b086dc24-7aae-4fdd-9c72-1664714eeb4c": {
+      "type": "cb-featured-products",
+      "blocks": {
+        "1d5687e4-8eb3-411d-97f1-6e232660cfd8": {
+          "type": "title-style-3",
+          "settings": {
+            "heading-tag": "h2",
+            "title": "Best Selling Kitchen & Bathroom Products",
+            "btn-type": "large",
+            "btn-style": "btn btn-primary",
+            "btn-name": "View All Products",
+            "btn-link": "shopify://collections/all"
+          }
+        },
+        "c1323c4e-075f-4012-985a-d9fc673fcdc4": {
+          "type": "collection",
+          "settings": {
+            "coll": "catch-all"
+          }
+        }
+      },
+      "block_order": [
+        "1d5687e4-8eb3-411d-97f1-6e232660cfd8",
+        "c1323c4e-075f-4012-985a-d9fc673fcdc4"
+      ],
+      "settings": {
+        "columns_desktop": 4,
+        "product_show": 12,
+        "double_image": true,
+        "variant_enable": false,
+        "wishlist_enable": true,
+        "discount_enable": true,
+        "price_enable": true,
+        "addtocart": false,
+        "arrows": true
+      }
+    },
+    "d6224bc9-0d87-40f4-838e-69feabf6e8eb": {
+      "type": "cb-product-category-slider",
+      "blocks": {
+        "83ca8df2-8725-4f54-a623-029d2ee8b382": {
+          "type": "title-style-3",
+          "settings": {
+            "heading-tag": "h1",
+            "title": "Bathroom, Kitchen and Renovation Supplies in Melbourne",
+            "btn-type": "default",
+            "btn-style": "btn btn-link",
+            "btn-name": "View All Ranges",
+            "btn-link": "shopify://collections/all"
+          }
+        },
+        "4f626120-0363-4c4b-9435-6b880b07fd19": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_tapware.png",
+            "name": "Bathroom Tapware",
+            "link": "shopify://collections/tapware-bathroom"
+          }
+        },
+        "f87bc044-d711-4bc6-b260-ef548c014d89": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icons-08.svg",
+            "name": "Kitchen Tapware",
+            "link": "shopify://collections/kitchen-tapware"
+          }
+        },
+        "ba4fbce7-3edb-4efe-8b13-ff433fda178e": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_sinks.png",
+            "name": "Sinks",
+            "link": "shopify://collections/sinks"
+          }
+        },
+        "aae78f1c-c129-4da7-83ba-14822a1a495a": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_basins.svg",
+            "name": "Basins",
+            "link": "shopify://collections/basins"
+          }
+        },
+        "f0da2bc2-66b6-41e3-baea-f7ce971b3612": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_alfresco_appliances.png",
+            "name": "Appliances",
+            "link": "shopify://collections/appliances"
+          }
+        },
+        "f41f7ad8-06d5-4cd8-8c2d-5c6ccce3054d": {
+          "type": "category",
+          "settings": {
+            "icon": "shopify://shop_images/icon_laundry.svg",
+            "name": "Laundry",
+            "link": "shopify://collections/laundry"
+          }
+        }
+      },
+      "block_order": [
+        "83ca8df2-8725-4f54-a623-029d2ee8b382",
+        "4f626120-0363-4c4b-9435-6b880b07fd19",
+        "f87bc044-d711-4bc6-b260-ef548c014d89",
+        "ba4fbce7-3edb-4efe-8b13-ff433fda178e",
+        "aae78f1c-c129-4da7-83ba-14822a1a495a",
+        "f0da2bc2-66b6-41e3-baea-f7ce971b3612",
+        "f41f7ad8-06d5-4cd8-8c2d-5c6ccce3054d"
+      ],
+      "custom_css": [],
+      "settings": {}
+    },
+    "cb_brand_slider_6ypBCz": {
+      "type": "cb-brand-slider",
+      "blocks": {
+        "brand_block_dfMnK6": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Phoenix_325x60_logo.jpg"
+          }
+        },
+        "brand_block_eEjP69": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/caroma_325x60_logo.jpg"
+          }
+        },
+        "brand_block_RQPwPQ": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Feature-Brands_Franke_c8adc76b-3dd3-4345-bee3-54fce85b8421.png"
+          }
+        },
+        "brand_block_tUWxhk": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Brand_Logo_Smeg_Small_d78b91d7-a3bb-445c-b09a-fcd569d42ef2.jpg"
+          }
+        },
+        "brand_block_tcX9Tn": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Feature-Brands_Westinghouse_35f3fcb4-fc16-4eee-85c1-06c24cab0782.png"
+          }
+        },
+        "brand_block_4gnfxg": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/Feature-Brands_Electrolux_95c306c1-6a64-4b03-9f1e-69d26b012d0d.png"
+          }
+        },
+        "brand_block_4bmmFK": {
+          "type": "brand_block",
+          "settings": {
+            "brand_img": "shopify://shop_images/SEIMA_LOGO_Black.png"
+          }
+        }
+      },
+      "block_order": [
+        "brand_block_dfMnK6",
+        "brand_block_eEjP69",
+        "brand_block_RQPwPQ",
+        "brand_block_tUWxhk",
+        "brand_block_tcX9Tn",
+        "brand_block_4gnfxg",
+        "brand_block_4bmmFK"
+      ],
+      "settings": {
+        "title": "Premium Brands Backed by Reliability",
+        "full_slider": false
+      }
+    },
+    "image_with_text_WnCe3j": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_eTqGkr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Tapware – Free Shipping Over $299",
+            "heading_size": "h2"
+          }
+        },
+        "text_HNbWRT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Upgrade your kitchen or bathroom with our premium tapware and enjoy free delivery on selected tapware products over $299. Explore stylish mixers, pull-out sprays, and gooseneck designs to complete your renovation or refresh. Free shipping applies to eligible tapware products only; delivery fees for any other items in the same order will be calculated separately at checkout.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Lmygz7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/tapware"
+          }
+        }
+      },
+      "block_order": [
+        "heading_eTqGkr",
+        "text_HNbWRT",
+        "button_Lmygz7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/FreeShipping_Tapware_Square.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_rVgK3M": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HfhRE8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Build Your Dream Vanity",
+            "heading_size": "h2"
+          }
+        },
+        "text_JDaLrp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Create a vanity that suits your bathroom perfectly with our custom vanity builder. Choose your preferred size, finish, and storage configuration to match your space and style. Designed for flexibility and everyday practicality, it makes building a tailored vanity solution simple, confident, and seamless.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_taQrjg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Now",
+            "button_link": "shopify://collections/otti-vanities"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HfhRE8",
+        "text_JDaLrp",
+        "button_taQrjg"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/DSCF7927.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_FKcKDm": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_jcqhzc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Franke Sinks",
+            "heading_size": "h2"
+          }
+        },
+        "text_A6ANFB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Elevate your kitchen with premium Franke sinks, renowned for their durability, sleek design, and superior functionality. Perfect for modern Australian homes.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_gEhbkn": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Franke Sinks",
+            "button_link": "shopify://collections/franke-sinks"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jcqhzc",
+        "text_A6ANFB",
+        "button_gEhbkn"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/franke_homepage_3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_8JEHXn": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qzfMrC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hansgrohe",
+            "heading_size": "h2"
+          }
+        },
+        "text_BqaVEQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With over a century of innovation and craftsmanship, <strong>Hansgrohe</strong> continues to redefine the experience of water in the home. From timeless tapware to luxurious shower systems, every Hansgrohe creation blends precision engineering with elegant design; delivering quality, comfort, and style that stands the test of time.<br/></p>",
+            "text_style": "body"
+          }
+        },
+        "button_CgWaNw": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Hansgrohe",
+            "button_link": "shopify://collections/hansgrohe"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qzfMrC",
+        "text_BqaVEQ",
+        "button_CgWaNw"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/72804003_Black_Lifestyle.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_hzUzec": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GjzzQA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bella Vista",
+            "heading_size": "h2"
+          }
+        },
+        "text_BrFVer": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Bella Vista Collection brings together a carefully curated range of bathroom and kitchen products designed to suit modern Australian homes. Featuring tapware, showers, sinks, and accessories, the collection focuses on clean lines, contemporary finishes, and practical functionality. Each piece is designed to integrate seamlessly into both new builds and renovations, offering reliable performance for everyday use while maintaining a refined, cohesive aesthetic. Bella Vista is ideal for those seeking a balance of style, durability, and value across their kitchen and bathroom spaces.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_dDmLXp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Bella Vista",
+            "button_link": "shopify://collections/bella_vista"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GjzzQA",
+        "text_BrFVer",
+        "button_dDmLXp"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/BellaVista_HpTile_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "7f9ca9f3-5383-4788-a2b3-ab0e5c3c1696": {
+      "type": "cb-collage",
+      "blocks": {
+        "51ade415-13e4-4145-890b-1fa7cb17b3fe": {
+          "type": "title-style-2",
+          "settings": {
+            "heading-tag": "h6",
+            "title": "Explore and be Inspired",
+            "content": "<p>Cook & Bathe offers innovative products to fit any style and budget for your Kitchen, Bathroom & Laundry project.</p>"
+          }
+        },
+        "482e7b67-6f47-4a71-afac-b1e66842bcdc": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/hp_wk7_Kitchen_FeatureTile.jpg",
+            "name": "Kitchen",
+            "link": "shopify://collections/renovation-sale-kitchen"
+          }
+        },
+        "d537d3f0-4b67-4894-816b-347da71bb99d": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/hp_wk7_Bathroom_FeatureTile.jpg",
+            "name": "Bathroom",
+            "link": "shopify://collections/bathroom-renovation-sale-2025"
+          }
+        },
+        "642feb36-1466-4514-b22d-ce9be4e36297": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/hp_wk7_BestSellers_FeatureTile.jpg",
+            "name": "Best Sellers",
+            "link": "shopify://collections/best-sellers"
+          }
+        }
+      },
+      "block_order": [
+        "51ade415-13e4-4145-890b-1fa7cb17b3fe",
+        "482e7b67-6f47-4a71-afac-b1e66842bcdc",
+        "d537d3f0-4b67-4894-816b-347da71bb99d",
+        "642feb36-1466-4514-b22d-ce9be4e36297"
+      ],
+      "settings": {}
+    },
+    "5fda900f-99b8-418b-bf5d-c681cd6202b1": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "42e36894-ea0b-4dc9-995b-dc00724c5be0": {
+          "type": "title-style-2",
+          "settings": {
+            "heading-tag": "h4",
+            "title": "Find Your Showroom",
+            "content": "<p>Visit our Melbourne showrooms and you’ll be inspired by the large range of bathroom, <br/> kitchen, heating, laundry and water saving products and brands on display.</p>"
+          }
+        },
+        "8fbae794-4f02-44ee-b2d4-c0ad5cd7ea37": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "logo": "shopify://shop_images/flemington_banner.jpg",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745725594!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393762299",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/yE7ag6RUPCQWn1Kf6",
+            "btn-target-2": true
+          }
+        },
+        "5335d84e-afa4-41d3-9d48-7b0438204bb9": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "logo": "shopify://shop_images/fawkner_banner.jpg",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "https://maps.app.goo.gl/cRuiaDRb6RMjcf7J9",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393574900",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/q2o9qc5pKF4zz2xFA",
+            "btn-target-2": true
+          }
+        },
+        "86a76cca-ae6d-4795-986d-9e447c3866ed": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "logo": "shopify://shop_images/burwood_banner.jpg",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "https://goo.gl/maps/kFjQC5RGWhM6gvYv6",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0391165788",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/kFjQC5RGWhM6gvYv6",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "42e36894-ea0b-4dc9-995b-dc00724c5be0",
+        "8fbae794-4f02-44ee-b2d4-c0ad5cd7ea37",
+        "5335d84e-afa4-41d3-9d48-7b0438204bb9",
+        "86a76cca-ae6d-4795-986d-9e447c3866ed"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "f6bff682-1847-42a9-9d79-3645070e9f20": {
+      "type": "cb-image-with-content",
+      "settings": {
+        "image": "shopify://shop_images/Cumberland_1.jpg",
+        "layout": "image_first",
+        "heading-tag": "h4",
+        "title": "About Us",
+        "description": "<p>Cook & Bathe are a family-run business with over 30 years of experience providing wholesale bathroom supplies in Melbourne as well as laundry and kitchen accessories.</p><p>In 2015 the family refocused on the kitchen and bathroom as central points of the home, which has led to the creation of Cook & Bathe as a provider of tailored bathrooms and kitchen designs. Find products online or visit the bathroom and kitchen showrooms in Burwood, Fawkner, and Flemington to benefit from the team’s extensive experience and knowledge.</p>",
+        "btn-style": "btn btn-outline-primary",
+        "btn-name": "Visit Our Stores",
+        "btn-link": "shopify://pages/store-locations"
+      }
+    },
+    "bb3644d0-5423-424c-baac-485244877a92": {
+      "type": "cb-blog-post",
+      "blocks": {
+        "c231cbad-145e-490d-bfe1-7222ad39c436": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h3",
+            "text-style": "center",
+            "title": "Discover Our Home Renovation Blog"
+          }
+        },
+        "c18fa70d-6538-4ddb-b057-8f98f3e7e6f4": {
+          "type": "blog",
+          "settings": {
+            "blogs": "news"
+          }
+        }
+      },
+      "block_order": [
+        "c231cbad-145e-490d-bfe1-7222ad39c436",
+        "c18fa70d-6538-4ddb-b057-8f98f3e7e6f4"
+      ],
+      "settings": {}
+    },
+    "173257784844f2efcd": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "7e517c7a-ce9c-4456-81b5-c950d406fb76": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": true,
+        "image-mobile": "shopify://shop_images/about-img.png",
+        "heading-tag": "div",
+        "heading-class": "h2",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $799 and delivery within Metro Melbourne</p>"
+      }
+    },
+    "17321506360e41da89": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "289ec035-6678-4407-a55e-48bebaecf945": {
+      "type": "cb-instagram-posts",
+      "settings": {
+        "heading-tag": "div",
+        "title": "Our Insta Inspo",
+        "btn-style": "btn btn-link",
+        "btn-name": "Follow @cookandbathe",
+        "btnlink": ""
+      }
+    },
+    "1678073106faa33ccd": {
+      "type": "apps",
+      "blocks": {
+        "7d110d33-22ac-480a-8010-0c3ef2c8952e": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 0,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 0,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 100
+          }
+        }
+      },
+      "block_order": [
+        "7d110d33-22ac-480a-8010-0c3ef2c8952e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 28,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Talk about your brand</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "collage": {
+      "type": "collage",
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "product": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "product",
+        "collection-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Multimedia collage",
+        "heading_size": "h2",
+        "desktop_layout": "left",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video": {
+      "type": "video",
+      "disabled": true,
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column3": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column1",
+        "column2",
+        "column3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "cb_top_rate_K3PAXG",
+    "slideshow_iMgj4h",
+    "b086dc24-7aae-4fdd-9c72-1664714eeb4c",
+    "d6224bc9-0d87-40f4-838e-69feabf6e8eb",
+    "cb_brand_slider_6ypBCz",
+    "image_with_text_WnCe3j",
+    "image_with_text_rVgK3M",
+    "image_with_text_FKcKDm",
+    "image_with_text_8JEHXn",
+    "image_with_text_hzUzec",
+    "7f9ca9f3-5383-4788-a2b3-ab0e5c3c1696",
+    "5fda900f-99b8-418b-bf5d-c681cd6202b1",
+    "f6bff682-1847-42a9-9d79-3645070e9f20",
+    "bb3644d0-5423-424c-baac-485244877a92",
+    "173257784844f2efcd",
+    "7e517c7a-ce9c-4456-81b5-c950d406fb76",
+    "17321506360e41da89",
+    "289ec035-6678-4407-a55e-48bebaecf945",
+    "1678073106faa33ccd",
+    "featured_collection",
+    "rich_text",
+    "collage",
+    "video",
+    "multicolumn"
+  ]
+}

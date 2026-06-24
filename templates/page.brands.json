@@ -1,0 +1,388 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "disabled": true,
+      "settings": {
+        "label-1": "Trusted by 35K Customers",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "4.8 Stars on Google",
+        "label-4": "3 Years Warranty"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/inspiration-mobile-banner.png"
+      }
+    },
+    "d04c5c64-b233-4647-b815-fe7850fb3c7b": {
+      "type": "cb-brands",
+      "blocks": {
+        "b14647e7-5e29-4529-ba40-4c4902dc8d86": {
+          "type": "brand",
+          "settings": {
+            "col": "ablaze"
+          }
+        },
+        "25080293-f45f-467d-89a2-c8a0a4c12b9d": {
+          "type": "brand",
+          "settings": {
+            "col": "akril"
+          }
+        },
+        "2f35094a-6d0a-469a-94de-6848bcf432e7": {
+          "type": "brand",
+          "settings": {
+            "col": "argent"
+          }
+        },
+        "bb6f2228-33ff-4f74-b946-72ea9b1c8d1b": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "col": "bad-und-kuche"
+          }
+        },
+        "brand_dchyUX": {
+          "type": "brand",
+          "settings": {
+            "col": "bella_vista"
+          }
+        },
+        "2e60246b-d3f4-410d-ba25-23406b3c5ce5": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "col": "bette"
+          }
+        },
+        "805d4dd2-4e90-4ed4-9d9b-c220c11a1461": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "col": "bnk"
+          }
+        },
+        "brand_BziQt8": {
+          "type": "brand",
+          "settings": {
+            "col": "bora"
+          }
+        },
+        "f0bc2a7c-3de8-416a-b79b-676dfc44b5a3": {
+          "type": "brand",
+          "settings": {
+            "col": "bourne"
+          }
+        },
+        "2e6a0432-4117-40e3-89f3-eb849a7ec7cb": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "col": "billi"
+          }
+        },
+        "06c9d4b9-880a-4000-a8e6-b2f506ed3300": {
+          "type": "brand",
+          "settings": {
+            "col": "brodware"
+          }
+        },
+        "c277ea25-5940-46a4-bbc9-3ec4303b0411": {
+          "type": "brand",
+          "settings": {
+            "col": "caroma"
+          }
+        },
+        "5cc89786-6d26-4949-b708-389042ca0d9c": {
+          "type": "brand",
+          "settings": {
+            "col": "decina"
+          }
+        },
+        "3213e331-a6f8-4a28-9068-04102c000b2e": {
+          "type": "brand",
+          "settings": {
+            "col": "domus-living"
+          }
+        },
+        "8565f4d8-aee6-465c-8d9a-8c0df126791f": {
+          "type": "brand",
+          "settings": {
+            "col": "electrolux"
+          }
+        },
+        "c5aab04a-6b91-47de-b477-172d6821ec0a": {
+          "type": "brand",
+          "settings": {
+            "col": "euro-appliances"
+          }
+        },
+        "451d6fc2-9b4d-4d7e-9505-67ab607f1e41": {
+          "type": "brand",
+          "settings": {
+            "col": "euro-alfresco"
+          }
+        },
+        "208c8fbe-7c08-423b-93cf-12a57fcfeeb6": {
+          "type": "brand",
+          "settings": {
+            "col": "faucet-strommen"
+          }
+        },
+        "30c18c1a-b2f4-498b-814d-d775104ab6f1": {
+          "type": "brand",
+          "settings": {
+            "col": "fienza"
+          }
+        },
+        "64e1373e-4620-4f08-a198-cf26463f6716": {
+          "type": "brand",
+          "settings": {
+            "col": "franke"
+          }
+        },
+        "d7cf5456-b55e-40c3-885e-11a663a393b0": {
+          "type": "brand",
+          "settings": {
+            "col": "geberit"
+          }
+        },
+        "2b922076-be43-4cee-8b14-9b6b380a6035": {
+          "type": "brand",
+          "settings": {
+            "col": "greens"
+          }
+        },
+        "bac7fce9-032a-4edb-8311-f92b73691747": {
+          "type": "brand",
+          "settings": {
+            "col": "hansgrohe"
+          }
+        },
+        "0dab0a36-ba29-4974-a77e-ace4435e220d": {
+          "type": "brand",
+          "settings": {
+            "col": "ikon"
+          }
+        },
+        "fbbf15fa-c31c-4828-8073-e16ac8620897": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "col": "johnson-suisse"
+          }
+        },
+        "71b9794d-5878-4ba7-9892-74d12f414664": {
+          "type": "brand",
+          "settings": {
+            "col": "kleenmaid"
+          }
+        },
+        "edf9c9c6-73f4-49e0-a203-4d2792cc8622": {
+          "type": "brand",
+          "settings": {
+            "col": "marbletrend"
+          }
+        },
+        "brand_rM74kq": {
+          "type": "brand",
+          "settings": {
+            "col": "midea"
+          }
+        },
+        "brand_7q3xgi": {
+          "type": "brand",
+          "settings": {
+            "col": "omega"
+          }
+        },
+        "06dd7b69-2105-4f67-9818-04bf67a94773": {
+          "type": "brand",
+          "settings": {
+            "col": "otti"
+          }
+        },
+        "brand_aBXyGC": {
+          "type": "brand",
+          "settings": {
+            "col": "peppy-taps"
+          }
+        },
+        "8b0a786c-9d0b-484b-ba54-6ab486d4bb6c": {
+          "type": "brand",
+          "settings": {
+            "col": "phoenix"
+          }
+        },
+        "435df048-23a3-4c9e-bf90-6bcdb0b44ebe": {
+          "type": "brand",
+          "settings": {
+            "col": "rinnai"
+          }
+        },
+        "298f8d5b-00da-4692-bcae-7cc6d2b29832": {
+          "type": "brand",
+          "settings": {
+            "col": "schweigen"
+          }
+        },
+        "ff81c9e5-7911-4834-add3-6c1e111193ee": {
+          "type": "brand",
+          "settings": {
+            "col": "seima"
+          }
+        },
+        "c7cdef84-fd4d-45b0-b6a0-60b97d48272a": {
+          "type": "brand",
+          "settings": {
+            "col": "smeg"
+          }
+        },
+        "brand_qDcWKy": {
+          "type": "brand",
+          "settings": {
+            "col": "st-george"
+          }
+        },
+        "brand_jTpyba": {
+          "type": "brand",
+          "settings": {
+            "col": "technika"
+          }
+        },
+        "brand_Key9Ub": {
+          "type": "brand",
+          "settings": {
+            "col": "teka"
+          }
+        },
+        "089a46f3-1b93-4446-8c8d-85db73de99bc": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "col": "the-hammock-bath-company"
+          }
+        },
+        "4d8e459b-40b0-4d96-b32f-e887dbf8314a": {
+          "type": "brand",
+          "settings": {
+            "col": "thermorail"
+          }
+        },
+        "93f6656c-fc2a-4142-a306-ef411e84f46d": {
+          "type": "brand",
+          "disabled": true,
+          "settings": {
+            "col": "timberline"
+          }
+        },
+        "850ba437-186d-423e-80cd-8b0dc1e0518f": {
+          "type": "brand",
+          "settings": {
+            "col": "villeroy-boch"
+          }
+        },
+        "brand_ywDgQd": {
+          "type": "brand",
+          "settings": {
+            "col": "westinghouse"
+          }
+        }
+      },
+      "block_order": [
+        "b14647e7-5e29-4529-ba40-4c4902dc8d86",
+        "25080293-f45f-467d-89a2-c8a0a4c12b9d",
+        "2f35094a-6d0a-469a-94de-6848bcf432e7",
+        "bb6f2228-33ff-4f74-b946-72ea9b1c8d1b",
+        "brand_dchyUX",
+        "2e60246b-d3f4-410d-ba25-23406b3c5ce5",
+        "805d4dd2-4e90-4ed4-9d9b-c220c11a1461",
+        "brand_BziQt8",
+        "f0bc2a7c-3de8-416a-b79b-676dfc44b5a3",
+        "2e6a0432-4117-40e3-89f3-eb849a7ec7cb",
+        "06c9d4b9-880a-4000-a8e6-b2f506ed3300",
+        "c277ea25-5940-46a4-bbc9-3ec4303b0411",
+        "5cc89786-6d26-4949-b708-389042ca0d9c",
+        "3213e331-a6f8-4a28-9068-04102c000b2e",
+        "8565f4d8-aee6-465c-8d9a-8c0df126791f",
+        "c5aab04a-6b91-47de-b477-172d6821ec0a",
+        "451d6fc2-9b4d-4d7e-9505-67ab607f1e41",
+        "208c8fbe-7c08-423b-93cf-12a57fcfeeb6",
+        "30c18c1a-b2f4-498b-814d-d775104ab6f1",
+        "64e1373e-4620-4f08-a198-cf26463f6716",
+        "d7cf5456-b55e-40c3-885e-11a663a393b0",
+        "2b922076-be43-4cee-8b14-9b6b380a6035",
+        "bac7fce9-032a-4edb-8311-f92b73691747",
+        "0dab0a36-ba29-4974-a77e-ace4435e220d",
+        "fbbf15fa-c31c-4828-8073-e16ac8620897",
+        "71b9794d-5878-4ba7-9892-74d12f414664",
+        "edf9c9c6-73f4-49e0-a203-4d2792cc8622",
+        "brand_rM74kq",
+        "brand_7q3xgi",
+        "06dd7b69-2105-4f67-9818-04bf67a94773",
+        "brand_aBXyGC",
+        "8b0a786c-9d0b-484b-ba54-6ab486d4bb6c",
+        "435df048-23a3-4c9e-bf90-6bcdb0b44ebe",
+        "298f8d5b-00da-4692-bcae-7cc6d2b29832",
+        "ff81c9e5-7911-4834-add3-6c1e111193ee",
+        "c7cdef84-fd4d-45b0-b6a0-60b97d48272a",
+        "brand_qDcWKy",
+        "brand_jTpyba",
+        "brand_Key9Ub",
+        "089a46f3-1b93-4446-8c8d-85db73de99bc",
+        "4d8e459b-40b0-4d96-b32f-e887dbf8314a",
+        "93f6656c-fc2a-4142-a306-ef411e84f46d",
+        "850ba437-186d-423e-80cd-8b0dc1e0518f",
+        "brand_ywDgQd"
+      ],
+      "settings": {
+        "title": "Brands"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "173258256420dafa42": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "d04c5c64-b233-4647-b815-fe7850fb3c7b",
+    "main",
+    "173258256420dafa42",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

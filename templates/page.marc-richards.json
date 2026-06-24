@@ -1,0 +1,200 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "disabled": true,
+      "settings": {
+        "label-1": "30 Years Industry Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c": {
+      "type": "cb-range-banner",
+      "settings": {
+        "image": "shopify://shop_images/7CooperStreetEssendon_Kitchen6.jpg"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_zKNKhG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_g8PkQ7": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Marc Richards Process",
+            "heading_size": "h1"
+          }
+        },
+        "text_W8MGmm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The Marc Richards kitchen design service is tailored to provide you with a hassle-free experience from start to finish. The team at Marc Richards understand that your kitchen is the heart of your home, and that’s why their expert team is dedicated to creating a space that not only meets but exceeds your expectations. </p><p>During the initial consultation, the experienced team work closely with you to understand your vision and requirements, ensuring every detail is captured. From a full range of colour selections along with carefully crafted cabinetry layouts and designs, they leave no stone unturned to bring your dream kitchen to life. You’ll receive a comprehensive quote that outlines every aspect of the project, so you can make informed decisions with confidence. </p><p>The Marc Richards dedication to custom design and client personalisation guarantees that each kitchen is a unique reflection of its owner, tailored to fit their lifestyle seamlessly. With a passion for craftsmanship and an eye for detail, taking pride in transforming spaces into cherished havens, exceeding expectations with every finished project.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_cAiiUR": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn more",
+            "button_link": "https://www.marcrichards.com.au/"
+          }
+        }
+      },
+      "block_order": [
+        "heading_g8PkQ7",
+        "text_W8MGmm",
+        "button_cAiiUR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Buleen_Kitchen-4.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1736482601c148ea03": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "image_with_text_qpeRLG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zPVEg7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Marc Richards Display",
+            "heading_size": "h2"
+          }
+        },
+        "text_renVUb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Visit our Burwood showroom to see the concept design by Marc Richards and experience the height of precision at our Burwood Showroom. </p>",
+            "text_style": "body"
+          }
+        },
+        "button_P6ULLx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Burwood Showroom",
+            "button_link": "shopify://pages/cook-bathe-burwood"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zPVEg7",
+        "text_renVUb",
+        "button_P6ULLx"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/MR_CTA-Banner_Image.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_qBtYb7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rGEzYx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet Monica",
+            "heading_size": "h2"
+          }
+        },
+        "text_mdgYpi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Monica is a dedicated and highly skilled design consultant at Marc Richards, known for her expertise in guiding clients through the process of creating bespoke kitchens. With a keen eye for design and meticulous attention to detail, she ensures that every project reflects the unique preferences and lifestyles of her clients. Monica’s approach combines professionalism with creativity, making the journey to a custom-built kitchen both seamless and rewarding.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rGEzYx",
+        "text_mdgYpi"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Monica.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "18839657-34a5-4e7d-b4e1-957607926aff": {
+      "type": "cb-range-image-with-content",
+      "settings": {}
+    },
+    "1732582740afa1bc90": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "div",
+        "heading-class": "h2",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within <a href=\"https://www.cookandbathe.com.au/pages/terms-and-conditions\">Metro Melbourne</a></p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c",
+    "main",
+    "image_with_text_zKNKhG",
+    "1736482601c148ea03",
+    "image_with_text_qpeRLG",
+    "image_with_text_qBtYb7",
+    "18839657-34a5-4e7d-b4e1-957607926aff",
+    "1732582740afa1bc90",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

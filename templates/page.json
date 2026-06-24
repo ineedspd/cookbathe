@@ -1,0 +1,270 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "collapsible_content_mkWGDM": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_MtD8DR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where are Cook & Bathe’s Melbourne showrooms located, and do you deliver nationally?",
+            "icon": "none",
+            "row_content": "<p>Cook & Bathe has three conveniently located Melbourne showrooms, where customers can experience our full range of kitchen, bathroom, and laundry appliances, tapware, vanities, and accessories:</p><p><strong>Burwood Showroom</strong></p><p>📍 42–46 Burwood Hwy, Burwood VIC 3125</p><p>📞 (03) 9116 5788</p><p><strong>Fawkner Showroom</strong></p><p>📍 1329 Sydney Road, Fawkner VIC 3060</p><p>📞 (03) 9357 4900</p><p><strong>Flemington Showroom</strong></p><p>📍 31 Ascot Vale Road, Flemington VIC 3031</p><p>📞 (03) 9376 2299</p><p>Our expert team is ready to help with your renovation or upgrade, offering in-person advice on products from leading brands such as Smeg, Phoenix Tapware, Caroma, Franke, Timberline, and more.</p><p>Not located in Melbourne? Cook & Bathe delivers nationally across Australia<strong> - </strong> including to Sydney, Brisbane, Adelaide, Perth, and regional areas. Shop online with confidence and get premium home products delivered direct to your door.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_jnJPQ9": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What brands does Cook & Bathe stock for kitchen, bathroom, and laundry renovations?",
+            "icon": "none",
+            "row_content": "<p>Cook & Bathe offers a premium selection of trusted brands including <a href=\"https://www.cookandbathe.com.au/collections/smeg\" title=\"https://www.cookandbathe.com.au/collections/smeg\">Smeg</a>, <a href=\"https://www.cookandbathe.com.au/collections/franke\" title=\"https://www.cookandbathe.com.au/collections/franke\">Franke</a>, <a href=\"https://www.cookandbathe.com.au/collections/phoenix\" title=\"https://www.cookandbathe.com.au/collections/phoenix\">Phoenix Tapware</a>, <a href=\"https://www.cookandbathe.com.au/collections/caroma\" title=\"https://www.cookandbathe.com.au/collections/caroma\">Caroma</a>, <a href=\"https://www.cookandbathe.com.au/collections/hansgrohe\" title=\"https://www.cookandbathe.com.au/collections/hansgrohe\">Hansgrohe</a>, <a href=\"https://www.cookandbathe.com.au/collections/otti\" title=\"https://www.cookandbathe.com.au/collections/otti\">Otti Australia</a>, and more. Whether you’re renovating your kitchen, upgrading your bathroom, or improving your laundry, you’ll find high-quality appliances, tapware, sinks, and accessories from Australia’s leading manufacturers.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_grD9K7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer trade discounts for builders, designers, or developers?",
+            "icon": "none",
+            "row_content": "<p>Yes, we support the trade industry with exclusive pricing and service through our Trade Program. Builders, architects, designers, and property developers can register to access trade discounts on kitchen, bathroom, and laundry products.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_7jQdTC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I get advice or speak to a sales consultant before purchasing?",
+            "icon": "none",
+            "row_content": "<p>Absolutely. Our expert consultants are available in-store or via phone and email to help guide your renovation decisions. Whether you’re choosing a freestanding bath, selecting the right kitchen tap, or designing a custom vanity, we provide personalised advice tailored to your needs.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_J9MFKC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is Cook & Bathe’s returns policy for bathroom, kitchen, and laundry products?",
+            "icon": "none",
+            "row_content": "<p>At Cook & Bathe, we accept returns on stocked items if you’ve changed your mind, ordered the wrong product, or ordered too many - provided the return meets the following conditions:</p><ul><li>The product must be returned at your own expense. </li><li>Returns must be made within 7 days of acquiring the product. </li><li>Items must be in original condition with packaging intact and unmarked.</li></ul><p>For non-stocked products, a 25% restocking fee applies and the same return conditions must be met. Special orders, such as custom colours or configurations, are not eligible for return.</p><p>Please note: Damaged products must be reported within 48 hours of delivery or pickup. Damage claims made after this period will not be eligible for refund or exchange.</p><p>For more details, contact our team at <a href=\"mailto:enquiries@cookandbathe.com.au\">enquiries@cookandbathe.com.au</a>.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_GtCEJ6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How do I know if a product is in stock or ready for delivery?",
+            "icon": "none",
+            "row_content": "<p>Each product page provides estimated availability. For urgent projects or trades, we recommend contacting our customer service team to confirm real-time stock and delivery times for products.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XwhdBp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I buy products online and pick them up in-store?",
+            "icon": "none",
+            "row_content": "<p>Yes, we offer Click & Collect from our Melbourne warehouse in Campbellfield. During checkout, simply select “Pick up” as your delivery method. We’ll notify you when your order is ready.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XqmAmW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do your products come with warranties?",
+            "icon": "none",
+            "row_content": "<p>Yes. All our products come with full manufacturer warranties. Specific warranty periods vary by brand and product type, such as tapware, basins, appliances, or accessories. Warranty details are listed on each product page.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_cU3cg4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer installation services for kitchen and bathroom products?",
+            "icon": "none",
+            "row_content": "<p>Cook & Bathe is a trusted supplier of premium kitchen, bathroom, and laundry products, but we do not offer installation services. We recommend hiring a licensed tradesperson or installer to ensure your appliances, tapware, or plumbing fixtures are fitted correctly and in compliance with Australian standards.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tBPTy7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What payment methods do you accept online and in-store?",
+            "icon": "none",
+            "row_content": "<p>We accept <strong>Visa, Mastercard, American Express, Union Pay</strong>, and <strong>JCB </strong>for flexible shopping. In-store, you can also pay via EFTPOS or bank transfer. All payments are processed securely for your peace of mind.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_MtD8DR",
+        "collapsible_row_jnJPQ9",
+        "collapsible_row_grD9K7",
+        "collapsible_row_7jQdTC",
+        "collapsible_row_J9MFKC",
+        "collapsible_row_GtCEJ6",
+        "collapsible_row_XwhdBp",
+        "collapsible_row_XqmAmW",
+        "collapsible_row_cU3cg4",
+        "collapsible_row_tBPTy7"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "470d66d1-ac12-44e8-8b33-7169079e03e9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Coming Soon!</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "173948753494c948f2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "collapsible_content_mkWGDM",
+    "cb_find_showroom_PQG6UA",
+    "470d66d1-ac12-44e8-8b33-7169079e03e9",
+    "173948753494c948f2",
+    "main"
+  ]
+}

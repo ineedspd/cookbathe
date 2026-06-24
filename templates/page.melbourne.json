@@ -1,0 +1,397 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "cb_page_banner_GVr8D4": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/melbourne_banner_img.png"
+      }
+    },
+    "rich_text_NwMFRx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RPFkqC": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Our Melbourne Showrooms</h2>",
+            "heading_size": "h2"
+          }
+        },
+        "text_ihxcdn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Step into our Melbourne showrooms and experience innovative kitchen and bathroom displays that bring inspiration to life.</p>"
+          }
+        },
+        "button_tCRCMU": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RPFkqC",
+        "text_ihxcdn",
+        "button_tCRCMU"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 44,
+        "padding_bottom": 24
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "https://goo.gl/maps/kFjQC5RGWhM6gvYv6",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "Mon-Fri 9AM - 5PM <br>\nSaturday 10AM - 3PM <br>\nSunday Closed <br>",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0391165788",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/kFjQC5RGWhM6gvYv6",
+            "btn-target-2": true
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "https://maps.app.goo.gl/cRuiaDRb6RMjcf7J9",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "Mon-Fri 9AM - 5PM <br>\nSaturday 10AM - 3PM <br>\nSunday Closed <br>",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393574900",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/q2o9qc5pKF4zz2xFA",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "Mon-Fri 9AM - 5PM <br>\nSaturday 10AM - 3PM <br>\nSunday Closed <br>",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393762299",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/yE7ag6RUPCQWn1Kf6",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "custom_css": [
+        ".find_showroom_wrapper {padding: 0;}",
+        "@media (min-width: 1200px) {.find_showroom_wrapper {padding: 0; }}"
+      ],
+      "settings": {
+        "show_map_full": true
+      }
+    },
+    "cb_image_with_content_DGmnfT": {
+      "type": "cb-image-with-content",
+      "settings": {
+        "image": "shopify://shop_images/unique-siplay-img.png",
+        "layout": "image_first",
+        "heading-tag": "h2",
+        "title": "Unique Displays",
+        "description": "<p>Step into our Melbourne showrooms and experience innovative kitchen and bathroom displays that bring inspiration to life. Each setup showcases the latest trends and design options, from modern to classic styles, helping you envision your ideal space. See, touch, and compare materials, finishes, and layouts to find the perfect fit for your home.</p>",
+        "btn-style": "btn btn-primary",
+        "btn-name": "",
+        "btn-link": ""
+      }
+    },
+    "cb_image_with_content_VKC8bR": {
+      "type": "cb-image-with-content",
+      "settings": {
+        "image": "shopify://shop_images/expert-staff-img.png",
+        "layout": "text_first",
+        "heading-tag": "h2",
+        "title": "Expert Staff",
+        "description": "<p>Our knowledgeable and friendly staff are here to guide you at every step. With extensive industry experience, they’ll help you choose the best products and solutions tailored to your needs. Whether you’re after design advice or technical insights, our team is committed to making your showroom visit insightful and enjoyable.</p>",
+        "btn-style": "btn btn-primary",
+        "btn-name": "",
+        "btn-link": ""
+      }
+    },
+    "cb_image_with_content_PchPRm": {
+      "type": "cb-image-with-content",
+      "settings": {
+        "image": "shopify://shop_images/exclusive-product-lines-img.png",
+        "layout": "image_first",
+        "heading-tag": "h2",
+        "title": "Exclusive Product Lines",
+        "description": "<p>Cook & Bathe are a family-run business with over 30 years ofexperience providing wholesale bathroom supplies in Melbourneas well as laundry and kitchen accessories.</p><p>In 2005 the family refocused on the kitchen and bathroom ascentral points of the home, which has led to the creation of Cook& Bathe as a provider of tailored bathrooms and kitchen designs.Find products online or visit the bathroom and kitchen showroomin Flemington to benefit from the team’s extensive experience andknowledge.</p>",
+        "btn-style": "btn btn-outline-primary",
+        "btn-name": "Visit Our Stores",
+        "btn-link": "shopify://collections/all"
+      }
+    },
+    "cb_gallery_PKtaNE": {
+      "type": "cb-gallery",
+      "blocks": {
+        "title_style_1_bVEfVj": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "center",
+            "title": "Gallery"
+          }
+        },
+        "gallery_zcBVwR": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/exclusive-product-lines-img.png"
+          }
+        },
+        "gallery_7DkjQT": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/unique-siplay-img.png"
+          }
+        },
+        "gallery_XY4jcL": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/expert-staff-img.png"
+          }
+        },
+        "gallery_F7cUeF": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/GooseneckMixers_mobile_1080x594_83646356-ff6a-45a8-8c89-5330dddbc8c6.jpg"
+          }
+        },
+        "gallery_QUTtgb": {
+          "type": "gallery",
+          "settings": {
+            "image": "shopify://shop_images/MRG220-35SG-B_lifestyle.jpg"
+          }
+        },
+        "section_padding_zHiqXw": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 100,
+            "section_padding_top_md": 60,
+            "section_padding_bottom_md": 80,
+            "section_padding_top_xs": 60,
+            "section_padding_bottom_xs": 50
+          }
+        }
+      },
+      "block_order": [
+        "title_style_1_bVEfVj",
+        "gallery_zcBVwR",
+        "gallery_7DkjQT",
+        "gallery_XY4jcL",
+        "gallery_F7cUeF",
+        "gallery_QUTtgb",
+        "section_padding_zHiqXw"
+      ],
+      "settings": {
+        "layout": "full_with"
+      }
+    },
+    "image_banner_jq64XT": {
+      "type": "image-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/review-img.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "17339998271799b555": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "cb_accordion_VNFtHt": {
+      "type": "cb-accordion",
+      "blocks": {
+        "accordion_item_RFnjjY": {
+          "type": "accordion_item",
+          "settings": {
+            "heading": "Which Melbourne Showroom Has Kitchen Displays?",
+            "row_content": "<p>At Cook & Bathe, we’re proud to showcase our premium kitchen displays across all three of our Melbourne showrooms - Burwood, Fawkner, and Flemington. Each showroom is thoughtfully designed to provide an immersive, hands-on experience with our cutting-edge kitchen collections. Whether you’re renovating your existing space or building a new home, visiting our showrooms can you help you find the style for your new dream space.</p><h4>Why Visit Cook & Bathe’s Kitchen Displays?</h4><p>Our kitchen displays are more than just beautiful setups - they’re functional spaces crafted to inspire your next project. By experiencing these displays firsthand, you can:</p><p><span style=\"text-decoration:underline\">Visualise Different Layouts:</span> See how various kitchen layouts - such as island benches, galley kitchens, or open-plan designs - could fit within your own home.</p><p><span style=\"text-decoration:underline\">Interact with Premium Products:</span> Test and feel top brands like <strong>Franke</strong>, <strong>Phoenix</strong>, <strong>Hansgrohe</strong>, and more, including tapware, sinks, appliances, and cabinetry solutions.</p><p><span style=\"text-decoration:underline\">Explore Material Finishes:</span> See the = different countertop materials, cabinetry textures, and colour schemes we have on offer to see how they work together under natural and artificial lighting.</p><p><span style=\"text-decoration:underline\">Understand Practical Design</span><strong>:</strong> Discover clever storage solutions, ergonomic designs, and appliance integrations that enhance both the style and luxury of your new project. </p><h4>Expert Guidance to Design Your Dream Kitchen</h4><p>When you visit our showrooms, you’re not just viewing static displays - you’re gaining access to our team of knowledgable team of showroom consultants. Our experts are on hand to:</p><p>\t•\tProvide personalised recommendations tailored to your lifestyle and design preferences</p><p>\t•\tOffer insights on the latest kitchen trends, designs, styles, and sustainable solutions</p><p>\t•\tHelp you select products that meet your budget without compromising on quality or style.</p><h4>Visit Us Today</h4><p>Explore the full potential of your kitchen renovation at Cook & Bathe’s Burwood, Fawkner, and Flemington showrooms. Our kitchen displays are designed to inspire and assist you in making confident decisions about your home. Visit us today to start turning your dream kitchen into a reality.</p>"
+          }
+        },
+        "accordion_item_DPqEFb": {
+          "type": "accordion_item",
+          "settings": {
+            "heading": "Which Melbourne Showroom Has Bathroom Displays?",
+            "row_content": "<p>At Cook & Bathe, all three of our Melbourne showrooms - Burwood, Fawkner, and Flemington -<strong> </strong>feature an extensive range of bathroom displays designed to inspire your next renovation or new build. Our curated bathroom setups showcase the latest trends in modern design, innovative fixtures, and luxurious finishes, allowing you to experience the perfect blend of style and functionality firsthand.</p><h4>Why Visit Cook & Bathe’s Bathroom Displays?</h4><p>Our bathroom displays go beyond aesthetics - they offer a fully immersive experience where you can:</p><p><span style=\"text-decoration:underline\">Visualise Complete Bathroom Setups:</span> See how vanities, tapware, basins, baths, showers, and accessories come together in cohesive, functional designs.</p><p><span style=\"text-decoration:underline\">Experience Premium Products:</span> Interact with products from leading brands like <strong>Caroma</strong>, <strong>Phoenix</strong>, <strong>Franke</strong>, and <strong>Hansgrohe</strong>, testing the quality, feel, and operation of fixtures before making a decision.</p><p><span style=\"text-decoration:underline\">Explore Material Finishes:</span> Compare a variety of textures, colours, and materials for tiles, vanities, and tapware, ensuring your choices complement your vision.</p><p><span style=\"text-decoration:underline\">Discover Space-Saving Solutions:</span> Get inspired by clever layouts designed for bathrooms of all sizes, from compact ensuites to luxury master bathrooms.</p><h4>Expert Guidance to Design Your Dream Bathroom</h4><p>When you visit our Burwood, Fawkner, or Flemington showrooms, you’ll have access to our knowledgeable team of sales consultants:</p><p>\t•\tOffer tailored advice to suit your personal style, space, and budget</p><p>\t•\tHelp you select water-efficient fixtures that meet sustainability standards without compromising on design</p><p>\t•\tProvide insights into the latest bathroom trends, from matte black tapware to freestanding baths and minimalist vanities</p><h4>Visit Us Today</h4><p>Whether you’re updating a small powder room or designing a spa-like retreat, Cook & Bathe’s bathroom displays in Burwood, Fawkner, and Flemington are here to spark your creativity. Explore different layouts, experience product quality, and receive expert advice to help you make confident decisions for your home.</p>"
+          }
+        },
+        "accordion_item_Gqanb8": {
+          "type": "accordion_item",
+          "settings": {
+            "heading": "What Brands are on Display?",
+            "row_content": "<ul><li><strong>Phoenix Tapware</strong> – all about blending style with<br/>practicality. Phoenix designs are sleek and modern, perfect for anyone looking<br/>to add a contemporary edge to their bathroom or kitchen. What sets them apart<br/>is their attention to detail and commitment to durability—you get products that<br/>not only look good but last.</li><li><strong>Franke</strong> – Known for their Swiss precision, Franke creates<br/>kitchen solutions that are both functional and beautifully designed. Whether<br/>it’s their meticulously crafted sinks, taps, or accessories, Franke products<br/>are built to make your kitchen work smarter, all while adding a touch of<br/>understated elegance.</li><li><strong>Otti Australia</strong> – Otti Australia focuses on bathroom pieces<br/>that feel as good as they look. Their vanities, mirrors, and basins carry a<br/>clean, minimalist vibe, perfect for creating a spa-like atmosphere at home.<br/>They’re all about thoughtful design, with simple lines and natural textures<br/>that bring warmth to any space.</li><li><strong>Caroma</strong> – practically a household name in Australia, and for<br/>good reason. They’ve been creating sustainable bathroom solutions for decades,<br/>from innovative toilets to sleek tapware and basins. What really stands out is<br/>their focus on water efficiency, helping Aussies save water without<br/>compromising on style.</li><li><strong>Hansgrohe</strong> – When it comes to combining luxury with<br/>efficiency, Hansgrohe does it best. German engineering shines through in every<br/>detail of their tapware and showers. Not only do they look stunning, but they<br/>also use advanced technology to reduce water consumption—perfect for<br/>eco-conscious homes.</li><li><strong>Kleenmaid</strong> – For over 40 years, Kleenmaid has been a trusted<br/>name in Australian kitchens. Their appliances are built with everyday life in<br/>mind, blending thoughtful design with reliability. They’re one of those brands<br/>that families stick with for generations because their products just work, year<br/>after year.</li><li><strong>Electrolux</strong> – Electrolux brings a little bit of that<br/>Scandinavian flair into your kitchen. Known for sleek, modern designs and smart<br/>technology, their appliances are designed to make cooking and cleaning easier<br/>while adding a touch of elegance to your home.</li><li><strong>Westinghouse</strong> – Westinghouse is one of those classic Aussie<br/>brands that’s been around forever—and it’s not going anywhere. Known for making<br/>appliances that are simple, reliable, and built to last, Westinghouse products<br/>are perfect for busy households that need things to just work, no fuss<br/>required.</li><li><strong>Brodware</strong> – a brand that takes pride in creating tapware and<br/>bathroom fittings that are as durable as they are stylish. Brodware products<br/>are handcrafted with meticulous attention to detail, giving off a timeless vibe<br/>that fits both traditional and modern spaces. It’s the kind of quality you can<br/>feel every time you turn on the tap.</li><li><strong>Euro Appliances</strong> – Euro Appliances brings a slice of European<br/>sophistication into Australian homes. Their ovens, cooktops, and rangehoods are<br/>designed to make cooking feel effortless, with sleek, modern lines and features<br/>that cater to both everyday meals and gourmet adventures.</li><li><strong>Faucet Strommen</strong> – An Australian brand through and through,<br/>Faucet Strommen focuses on creating tapware that’s not just functional but<br/>beautifully crafted. Their products have a solid, high-end feel with designs<br/>that range from classic to contemporary—perfect for adding a touch of elegance<br/>to any space.</li><li><strong>Fienza Bathware</strong> – All about style and practicality. The<br/>Fienza range of vanities, basins, and tapware come in sleek, contemporary<br/>designs that work beautifully in modern bathrooms. They focus on making<br/>products that aren’t just good-looking but also built to last.</li><li><strong>Greens</strong> – Greens is where innovative design meets<br/>sustainability. They’ve got a wide range of tapware and shower solutions that<br/>look great and help you save water. Perfect for those who want to add a modern<br/>touch to their home while being eco-friendly.</li><li><strong>Ikon</strong> – Ikon is bold, modern, and unapologetically stylish.<br/>Their kitchen and bathroom products are designed to make a statement, with<br/>sharp lines, standout finishes, and a focus on functionality. If you want your<br/>space to feel cutting-edge, Ikon is the way to go.</li><li><strong>Oliveri</strong> – An  Australian icon when it comes to sinks and<br/>kitchen solutions. Their stainless steel sinks are known for being tough,<br/>practical, and beautifully designed. Whether you’re renovating or building from<br/>scratch, Oliveri products bring both style and reliability to the heart of your<br/>home.</li><li><strong>Rinnai</strong> – Rinnai has been a go-to brand for heating, cooling,<br/>and hot water solutions in Australia. Rinnai products are designed with energy<br/>efficiency in mind, helping to keep your home comfortable while reducing your<br/>environmental footprint.</li><li><strong>Seima</strong> – Seima is all about minimalist design with a focus on<br/>sustainability. Their sinks, basins, and tapware are sleek and modern, crafted<br/>from eco-friendly materials that suit contemporary homes looking for that<br/>clean, streamlined aesthetic.</li><li><strong>Thermorail</strong> – Thermorail adds a little bit of luxury to your<br/>bathroom with their heated towel rails. There’s nothing quite like stepping out<br/>of the shower to a warm towel, and their energy-efficient designs make it easy<br/>to enjoy that hotel-like comfort at home.</li><li><strong>Villeroy & Boch</strong> – With a history that dates back<br/>centuries, Villeroy & Boch is known for timeless elegance and top-notch<br/>craftsmanship. Their bathroom collections blend classic European style with<br/>modern functionality, creating spaces that feel both luxurious and inviting.</li></ul>"
+          }
+        },
+        "accordion_item_k9Lzty": {
+          "type": "accordion_item",
+          "settings": {
+            "heading": "Does Cook & Bathe Offer Customisable Products and Fixtures?",
+            "row_content": "<p>Yes, Cook & Bathe proudly offers a wide range of customisable products and fixtures, allowing you to design spaces that are as unique as your personal style. Whether you’re renovating a bathroom or designing a new kitchen, we provide flexible solutions to help you achieve the look and functionality you desire.</p><h4>Customisable Bathroom Options</h4><p>Brands like <a href=\"https://www.cookandbathe.com.au/collections/otti\">Otti</a> and <a href=\"https://www.cookandbathe.com.au/pages/timberline-range\">Timberline</a> specialise in customisable bathroom products that allow you to personalise every detail. You can choose from a variety of:</p><p><span style=\"text-decoration:underline\">Vanities:</span> Select from different sizes, finishes, colours, and handle options to create a vanity that suits your bathroom’s aesthetic.</p><p><span style=\"text-decoration:underline\">Tapware:</span> Customise finishes, styles, and configurations to complement your bathroom décor, with options like matte black, brushed brass, or classic chrome.</p><p><span style=\"text-decoration:underline\">Basins:</span> Choose from a wide range of shapes, colours, and materials to match your vanity and overall bathroom design.</p><p><span style=\"text-decoration:underline\">Cabinetry & Handles:</span> Tailor cabinet finishes and handle styles to achieve a cohesive and polished look.</p><h4>Custom Kitchen Designs with Marc Richards</h4><p>For kitchens, we collaborate with <a href=\"https://www.marcrichards.com.au/\">Marc Richards</a>, a leader in custom kitchen design and joinery. This partnership allows us to offer:</p><p><span style=\"text-decoration:underline\">Bespoke Kitchen Layouts:</span> Tailored designs that maximise space, functionality, and style, ensuring your kitchen works for your lifestyle.</p><p><span style=\"text-decoration:underline\">Custom Joinery:</span> High-quality, handcrafted cabinetry and storage solutions that fit seamlessly into your home.</p><p><span style=\"text-decoration:underline\">Personalised Finishes:</span> A broad range of materials, colours, and hardware options to reflect your individual taste.</p><h4>Why Choose Customisable Products?</h4><p>Customisable products not only enhance the aesthetics of your home but also improve functionality. By tailoring your fixtures and fittings, you can:</p><p><span style=\"text-decoration:underline\">Maximise Space:</span> Ensure every inch of your bathroom or kitchen is used efficiently.</p><p><span style=\"text-decoration:underline\">Reflect Your Style:</span> Choose designs, colours, and finishes that align with your personal taste.</p><p><span style=\"text-decoration:underline\">Improve Functionality:</span> Create layouts and features that suit your daily routines and needs.</p><p>At Cook & Bathe, we’re committed to helping you create spaces that feel truly your own. Visit one of our Melbourne showrooms to explore customisation options in person and speak with our expert team about bringing your vision to life.</p>"
+          }
+        },
+        "accordion_item_KKwH33": {
+          "type": "accordion_item",
+          "settings": {
+            "heading": "Does Cook & Bathe Do Product Deliveries in Melbourne?",
+            "row_content": "<p>Yes, Cook & Bathe offers reliable product delivery services across Melbourne to ensure your purchases arrive safely and efficiently.</p><h4>Melbourne Deliveries</h4><p>For local deliveries within Melbourne, we offer two convenient options:</p><p>1.\t<strong>In-House Delivery Service:</strong></p><p>\t•\tOur dedicated in-house delivery team handles Melbourne-based orders with care and efficiency.</p><p>\t•\tThis service ensures personalised handling, timely deliveries, and expert support throughout the process.</p><p>2.\t<strong>Big Post (External Courier):</strong></p><p>\t•\tFor larger or more complex deliveries, we partner with <a href=\"https://bigpost.com.au/\">Big Post</a>, a trusted courier service known for secure and professional handling.</p><p>\t•\tBig Post helps us manage deliveries beyond our in-house capacity, ensuring products reach you safely and on time.</p><p>No matter the size or type of your order, we are committed to providing smooth and secure delivery experiences across Melbourne.</p>"
+          }
+        },
+        "accordion_item_EWMQw9": {
+          "type": "accordion_item",
+          "settings": {
+            "heading": "What is the Cook & Bathe Returns Policy?",
+            "row_content": "<p>At Cook & Bathe, we aim to make your shopping experience hassle-free. If you’ve ordered too much, selected the wrong item, or simply changed your mind, we’re happy to accept returns under the following conditions:</p><h4>Returns for Stocked Products:</h4><p><span style=\"text-decoration:underline\">Return Window:</span> Products must be returned within 7 days of receiving them.</p><p><span style=\"text-decoration:underline\">Condition:</span> Items must be in their original condition, with packaging intact and unmarked.</p><p><span style=\"text-decoration:underline\">Return Costs:</span> Returns are made at your own expense.</p><h4>Returns for Non-Stocked Products:</h4><p><span style=\"text-decoration:underline\">Restocking Fee:</span> A 25% restocking fee applies to all non-stocked items.</p><p><span style=\"text-decoration:underline\">Return Window:</span> Items must be returned within 7 days of receiving them.</p><p><span style=\"text-decoration:underline\">Condition:</span> Products must be in their original condition with unmarked, intact packaging.</p><p><span style=\"text-decoration:underline\">Special Orders</span>: Custom orders (e.g., special colours, custom configurations) cannot be returned.</p><h4>Product Damages Policy:</h4><p>If your product arrives damaged:</p><p><span style=\"text-decoration:underline\">Notification Period:</span> You must report any damages within 48 hours of collection or delivery.</p><p><span style=\"text-decoration:underline\">Late Claims:</span> Damage claims made after 48 hours will not be eligible for exchange or refund.</p><p>For further details or to initiate a return, please contact us at <a href=\"mailto:enquiries@cookandbathe.com.au\"><strong>enquiries@cookandbathe.com.au</strong></a>.</p>"
+          }
+        },
+        "accordion_item_bXAGG9": {
+          "type": "accordion_item",
+          "settings": {
+            "heading": "How Do I Track My Cook & Bathe Order?",
+            "row_content": "<p>Tracking your Cook & Bathe order is simple and hassle-free. Once your order has been dispatched, you will receive a <strong>confirmation email</strong> containing all the necessary tracking details. This email will include a <strong>tracking link</strong> that allows you to monitor your delivery in real-time, from dispatch to arrival at your doorstep.</p><h4>Tracking for Standard Deliveries:</h4><p>For orders delivered via our trusted courier partner, Big Post, the tracking link provided in your confirmation email will redirect you to their tracking portal. Here, you can view:</p><p>•\tThe current status of your delivery</p><p>•\tEstimated delivery date and time</p><p>•\tAny transit updates or delays</p><h4>Need Assistance with Your Order?</h4><p>If you haven’t received a confirmation email, are unable to access your tracking link, or have concerns about your delivery status, please reach out to our Customer Service Team.</p><p><strong>Email:</strong> <a href=\"mailto:enquiries@cookandbathe.com.au\">enquiries@cookandbathe.com.au</a></p><p><strong>Phone:</strong> Available on our <a href=\"https://www.cookandbathe.com.au/pages/contact\" target=\"_blank\" title=\"https://www.cookandbathe.com.au/pages/contact\">Contact Us page</a></p><p><strong>What to Include:</strong> Please provide your order number for faster assistance.</p><p>We’re here to ensure your Cook & Bathe experience is seamless from start to finish.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_RFnjjY",
+        "accordion_item_DPqEFb",
+        "accordion_item_Gqanb8",
+        "accordion_item_k9Lzty",
+        "accordion_item_KKwH33",
+        "accordion_item_EWMQw9",
+        "accordion_item_bXAGG9"
+      ],
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "heading-tag": "h2",
+        "text-style": "center",
+        "open_first_accordion_row": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1739488377b40a8dce": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "cb_page_banner_GVr8D4",
+    "rich_text_NwMFRx",
+    "cb_find_showroom_PQG6UA",
+    "cb_image_with_content_DGmnfT",
+    "cb_image_with_content_VKC8bR",
+    "cb_image_with_content_PchPRm",
+    "cb_gallery_PKtaNE",
+    "image_banner_jq64XT",
+    "17339998271799b555",
+    "cb_accordion_VNFtHt",
+    "1739488377b40a8dce",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

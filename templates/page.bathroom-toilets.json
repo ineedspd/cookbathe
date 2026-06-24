@@ -1,0 +1,628 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "disabled": true,
+      "settings": {
+        "label-1": "30 Years Industry Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c": {
+      "type": "cb-range-banner",
+      "settings": {
+        "image": "shopify://shop_images/inspiration-mobile-banner.png"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_YC4RwD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_WYUpRY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Argent.jpg",
+            "title": "Argent",
+            "text": "<p>Argent offers a premium selection of <strong>toilets</strong> that combine sleek European design with everyday functionality. As the exclusive Australian distributor of leading international bathroom brands like <strong>Villeroy & Boch</strong> and <strong>Bette</strong>, Argent delivers quality, innovation, and water efficiency across its toilet range. Designed to suit modern Australian homes and commercial projects alike, Argent toilets balance aesthetics with long-lasting performance.</p>",
+            "link_label": "Argent Toilets",
+            "link": "shopify://collections/argent-toilets"
+          }
+        },
+        "column_7peE9M": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Feature-Brands_Caroma_13fec2f7-afe1-45fe-b34c-0663f878a211.png",
+            "title": "Caroma",
+            "text": "<p>Caroma is an iconic Australian brand known for pioneering water-saving toilet technology without compromising on style or comfort. Their range of toilets is designed for modern Australian homes, with options that include rimless bowls, soft-close seats, and superior flushing performance. Backed by decades of innovation and local expertise, Caroma toilets deliver durability, efficiency, and timeless design for every bathroom.</p>",
+            "link_label": "Caroma Toilets",
+            "link": "shopify://collections/caroma-toilets"
+          }
+        },
+        "column_h3caVL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fienza-logo.png",
+            "title": "Fienza",
+            "text": "<p>Fienza combines modern aesthetics with practical design across its range of toilets, offering stylish solutions for Australian bathrooms. With a focus on clean lines, comfort, and efficient flushing, Fienza toilets are crafted to suit both contemporary and classic interiors. The brand is known for its attention to detail, quality finishes, and options that include rimless designs, soft-close seats, and space-saving configurations—making Fienza a reliable choice for residential and commercial projects.</p>",
+            "link_label": "Fienza Toilets",
+            "link": "shopify://collections/fienza-toilets"
+          }
+        },
+        "column_AKMnGW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEIMA_LOGO_Black_327e24c1-eab7-4410-802c-a0c0b35441e9.png",
+            "title": "Seima",
+            "text": "<p>Seima offers a refined collection of toilets that blend minimalist Australian design with advanced performance. Known for its commitment to form and function, Seima toilets feature rimless bowls, hygienic glazing, and soft-close seats to enhance comfort and cleanliness. With options in wall-faced, back-to-wall, and in-wall concealed configurations, Seima delivers versatile toilet solutions that suit both contemporary and classic bathroom spaces.</p>",
+            "link_label": "Seima Toilets",
+            "link": "shopify://collections/seima-toilets"
+          }
+        },
+        "column_L4wHB8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/StGeorge_Logo_7b3fc39c-c64e-4f09-92d2-74117131b31f.png",
+            "title": "St George",
+            "text": "<p>St George delivers advanced bathroom technology through its Concord Smart Toilet range, blending modern design with intelligent features. The Concord model offers rear and female cleansing functions, adjustable seat temperature, a warm air dryer, UV nozzle disinfection, and an automatic lid. With a WELS 4-star rating and an average flush of 3.4L, it ensures water efficiency without compromising performance. The toilet also includes a soft nightlight and premium remote control for enhanced user convenience. </p>",
+            "link_label": "St George Toilets",
+            "link": "shopify://collections/st-george"
+          }
+        },
+        "column_maJQGd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Brand_Logo_VilleroyandBoch_b7e128fb-ccf8-46ba-a7c2-540a792794bc.jpg",
+            "title": "Villeroy & Boch",
+            "text": "<p>Established in 1748, Villeroy & Boch is a renowned European brand celebrated for its exceptional craftsmanship and innovative bathroom solutions. Their toilet collections, including popular ranges like Subway, Architectura, and O.novo, seamlessly blend timeless design with modern functionality. Features such as rimless DirectFlush technology, soft-close seats, and water-efficient systems ensure both hygiene and comfort. Whether you’re seeking wall-hung, back-to-wall, or floor-standing models, Villeroy & Boch offers a diverse selection to complement any bathroom aesthetic.</p>",
+            "link_label": "Villeroy & Boch Toilets",
+            "link": "shopify://collections/villeroy-boch-toilets"
+          }
+        }
+      },
+      "block_order": [
+        "column_WYUpRY",
+        "column_7peE9M",
+        "column_h3caVL",
+        "column_AKMnGW",
+        "column_L4wHB8",
+        "column_maJQGd"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Explore Top Range Toilet Brands",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Explore All Brands",
+        "button_link": "https://www.cookandbathe.com.au/pages/brands",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_YmjFkV": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VpJWcw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Back to Wall Toilets",
+            "heading_size": "h2"
+          }
+        },
+        "text_n3Ehkw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Back to wall toilets are a popular choice for modern Australian bathrooms, thanks to their clean lines and space-saving design. With the cistern either exposed and positioned directly behind the pan or built into the wall (via concealed cistern systems), these toilets sit flush against the rear wall — eliminating gaps where dust and grime typically collect.</p><p>This configuration not only enhances the visual simplicity of the space but also makes cleaning easier and more hygienic. Back to wall toilets are ideal for households that prioritise low-maintenance living, as they reduce exposed pipework and streamline the bathroom aesthetic.</p><p>In terms of functionality, they are often paired with soft-close seats, dual-flush buttons, and water-saving features — making them a practical yet stylish choice for both renovations and new builds. Whether you’re designing an urban apartment or a minimalist master suite, a back to wall toilet offers the right blend of form and function.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_nCzpwi": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Back to Wall Toilets",
+            "button_link": "shopify://collections/back-to-wall-toilets"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VpJWcw",
+        "text_n3Ehkw",
+        "button_nCzpwi"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Urbane_Toilet_Suite.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_dLeNVc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CMMNXA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Close Coupled Toilets",
+            "heading_size": "h2"
+          }
+        },
+        "text_n8gDHM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Close coupled toilets feature the cistern sitting directly atop the toilet pan in one compact unit. This configuration has long been favoured in Australian homes for its traditional design, straightforward installation, and reliable performance.</p><p>While close coupled toilets may present a more conventional look than wall-hung or in-wall options, modern designs now offer cleaner silhouettes, slimline cisterns, and updated features that suit both classic and transitional bathroom styles.</p><p>They’re ideal for renovations where existing plumbing needs to be retained, or for homeowners looking for a cost-effective toilet that still delivers on performance. Many models include dual-flush buttons to support water conservation, as well as soft-close seats and ergonomic pan shapes for user comfort.</p><p>Close coupled toilets remain a practical and accessible option for families, rental properties, and multi-bathroom homes — especially where functionality and ease of maintenance are key priorities.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_7XpRcQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Closed Coupled Toilets",
+            "button_link": "shopify://collections/close-coupled"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CMMNXA",
+        "text_n8gDHM",
+        "button_7XpRcQ"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/985400W.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_HEmJMW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Jkt4NN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Wall Hung Toilets",
+            "heading_size": "h2"
+          }
+        },
+        "text_GFWUpd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wall hung toilets — sometimes referred to as floating toilets — are a premium choice for contemporary and architecturally-designed bathrooms. With the toilet pan mounted directly to the wall and the cistern hidden behind a wall cavity or within cabinetry, these models create the illusion of a more spacious bathroom by exposing the floor underneath.</p><p>This design not only looks sleek and modern but also allows for easy floor cleaning and reduces contact points — a benefit for hygiene-conscious homeowners. The installation requires a sturdy in-wall frame and proper wall reinforcement, making wall hung toilets better suited to new builds or major renovations.</p><p>Their minimalist aesthetic can be further enhanced with flush plates in brushed metal or matte black finishes, and many models feature rimless bowls and advanced flushing systems for greater hygiene. With options from brands like Geberit and Villeroy & Boch, wall hung toilets bring a refined, designer touch to premium bathroom spaces.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Ga6L8m": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Wall Hung Toilets",
+            "button_link": "shopify://collections/wall-hung-toilets"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Jkt4NN",
+        "text_GFWUpd",
+        "button_Ga6L8m"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/K2376W_lifestyle.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_9dBPy7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_7nb9pW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Smart Toilets",
+            "heading_size": "h2"
+          }
+        },
+        "text_APqfWz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Smart toilets represent the next evolution in bathroom comfort and hygiene. These advanced models incorporate intelligent technology that automates and enhances everyday use, transforming the toilet into a wellness experience.</p><p>Key features typically include:</p><ul><li><strong>Integrated bidet</strong> with adjustable water pressure and temperature<br/></li><li><strong>Heated seats </strong>for comfort, especially during colder months<br/></li><li><strong>Warm air drying</strong> and UV sterilisation for superior cleanliness<br/></li><li><strong>Motion-activated lids</strong>, automatic flushing, and soft-close systems<br/></li><li><strong>Nights lights </strong>for low-light use<br/></li><li><strong>Remote controls </strong>or wall-mounted panels for customisation<br/></li></ul><p>Smart toilets are perfect for modern households that value convenience, luxury, and accessibility. They’re especially beneficial for multigenerational homes, people with limited mobility, and anyone seeking a more hygienic alternative to traditional toilet paper.</p><p>Brands like St George are leading the way in affordable luxury smart toilet options in Australia, bringing the kind of features once exclusive to high-end hotels and resorts into everyday bathrooms.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_nPVfY7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Smart Toilets",
+            "button_link": "shopify://collections/smart-toilets"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7nb9pW",
+        "text_APqfWz",
+        "button_nPVfY7"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/af523500wb_lifestyle7_web.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "collection_list_WtT3Wd": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_Rj7caj": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cisterns"
+          }
+        },
+        "featured_collection_hqpVJH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "buttons-cisterns"
+          }
+        },
+        "featured_collection_aDiMa4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bidet-tapware"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_Rj7caj",
+        "featured_collection_hqpVJH",
+        "featured_collection_aDiMa4"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Citerns, Flush Plates & Buttons, Bidets",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_TYp7jw": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Buttons & Cisterns",
+        "heading_size": "h1",
+        "description": "<p>Discover in-wall and concealed cistern systems designed for space efficiency and long-term reliability. Whether you’re installing a wall hung or back to wall toilet, our premium cisterns from brands like Geberit and Caroma deliver powerful, quiet performance and support a cleaner bathroom aesthetic. Pair with compatible push plates and toilet pans for a cohesive look.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cisterns",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_rjV9Q4": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Flush Plates",
+        "heading_size": "h1",
+        "description": "<p>Functional meets refined with our range of flush plates and buttons. Available in brushed metal, matte black, chrome, and white finishes, these designs bring a minimalist, tactile touch to your bathroom. Whether you’re matching modern interiors or adding subtle contrast, flush plates are an easy yet striking finishing choice.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "buttons-cisterns",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_nb4mMP": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Bidet Tapware",
+        "heading_size": "h1",
+        "description": "<p>Enhance comfort and hygiene with our range of bidet tapware. Choose from contemporary mixers, handheld sprays, and bidet taps designed to complement your bathroom’s aesthetic. Our bidet solutions combine practical function with the same premium finishes you’ll find across our basin and shower tapware ranges.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bidet-tapware",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_nL3AgH": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "Design Inspiration",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_PJG9x7": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_ma8wfz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is the best type of toilet to buy for a modern bathroom?",
+            "icon": "none",
+            "row_content": "<p>The best toilet for a modern bathroom depends on your space, plumbing, and aesthetic preferences. Popular choices include <strong>back to wall toilets</strong> for a sleek, minimalist look, and <strong>wall hung toilets</strong> for a floating effect that makes cleaning easier. For smart functionality, <strong>intelligent toilets</strong> offer features like heated seats, automatic flushing, and built-in bidets.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iKBBCK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where can I buy high-quality toilets online in Australia?",
+            "icon": "none",
+            "row_content": "<p>You can buy premium toilets online at <a href=\"https://www.cookandbathe.com.au/collections/toilets\">Cook & Bathe</a>, where we offer a curated range of <strong>wall hung</strong>, <strong>close coupled</strong>, <strong>back to wall toilets</strong> and <strong>smart toilets </strong>from top Australian and European brands. We deliver nationwide with trusted courier services.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EWaYD3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is a rimless toilet and is it worth it?",
+            "icon": "none",
+            "row_content": "<p>A <strong>rimless toilet</strong> is designed without the traditional rim inside the bowl, making it easier to clean and more hygienic. The direct flush technology improves water flow and reduces bacterial buildup. Rimless toilets are a great investment for both <strong>residential</strong> and <strong>commercial bathrooms</strong> in Australia.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yKgqwM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are wall hung toilets safe and durable?",
+            "icon": "none",
+            "row_content": "<p>Yes, <strong>wall hung toilets</strong> are extremely safe and durable when installed with a quality in-wall cistern and frame system (like those from <strong>Geberit</strong> or <strong>Caroma</strong>). They’re weight-rated and engineered to support standard and above-average loads.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_aPxxTQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need a specific cistern for a wall hung or back to wall toilet?",
+            "icon": "none",
+            "row_content": "<p>Yes, wall hung and some <strong>back to wall toilets</strong> require an <strong>in-wall cistern</strong>. These cisterns are concealed inside the wall cavity or within cabinetry. At Cook & Bathe, we stock compatible <strong>flush plates</strong> and <strong>concealed cisterns</strong> to match your selected toilet pan.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XCcxcT": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What’s the most water-efficient toilet available in Australia?",
+            "icon": "none",
+            "row_content": "<p>Look for toilets with a <strong>WELS 4-star or 5-star rating</strong> for maximum water efficiency. Brands like <strong>Caroma</strong>, <strong>Villeroy & Boch</strong>, and <strong>Seima</strong> offer dual flush systems with average flush volumes as low as 3.5L. These options help reduce water bills and support sustainable living.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mYVgWV": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I buy smart toilets in Australia?",
+            "icon": "none",
+            "row_content": "<p>Absolutely. Smart toilets with features like bidet spray, heated seating, auto lids, and hands-free flushing are available from brands like <strong>St George</strong>. Browse our collection of <strong>smart toilets online</strong> or visit our showrooms to experience them in person.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_j6Mz9j": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What’s the difference between a close coupled toilet and a back to wall toilet?",
+            "icon": "none",
+            "row_content": "<p>A <strong>close coupled toilet</strong> has a visible cistern directly mounted on the toilet pan, making it compact and easy to install. A <strong>back to wall toilet</strong> sits flush against the wall and can have a concealed or exposed cistern. Back to wall designs provide a more streamlined appearance and are easier to clean around.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_h9tCKP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I install a new toilet using my existing plumbing?",
+            "icon": "none",
+            "row_content": "<p>In many cases, yes. <strong>Close coupled toilets</strong> are ideal for using existing plumbing positions. If you’re upgrading to a <strong>wall hung</strong> or <strong>in-wall cistern system</strong>, additional plumbing modifications may be required. Speak with your installer or contact our showroom team for advice.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JJhpVM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do toilets come with a seat included?",
+            "icon": "none",
+            "row_content": "<p>Most toilets include a <strong>matching soft-close seat</strong>, but always check the product listing to confirm. Some premium toilets allow for custom seat upgrades, including antibacterial finishes or quick-release mechanisms for easier cleaning.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_M8fwm6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What toilet brands do you stock at Cook & Bathe?",
+            "icon": "none",
+            "row_content": "<p>We proudly stock <strong>Caroma</strong>, <strong>Villeroy & Boch</strong>, <strong>Fienza</strong>, <strong>Geberit</strong>, <strong>Seima</strong>, and <strong>St George</strong>, offering one of the most diverse toilet ranges in Australia. From <strong>budget-friendly options</strong> to <strong>designer European models</strong>, we help you find the right toilet for your style and budget.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_ma8wfz",
+        "collapsible_row_iKBBCK",
+        "collapsible_row_EWaYD3",
+        "collapsible_row_yKgqwM",
+        "collapsible_row_aPxxTQ",
+        "collapsible_row_XCcxcT",
+        "collapsible_row_mYVgWV",
+        "collapsible_row_j6Mz9j",
+        "collapsible_row_h9tCKP",
+        "collapsible_row_JJhpVM",
+        "collapsible_row_M8fwm6"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1732583306f23c3554": {
+      "type": "apps",
+      "custom_css": [
+        "{padding-top: 50px;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "div",
+        "heading-class": "h2",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within <a href=\"https://www.cookandbathe.com.au/pages/terms-and-conditions\">Metro Melbourne</a></p>"
+      }
+    },
+    "1749683430f9f7584b": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c",
+    "main",
+    "multicolumn_YC4RwD",
+    "image_with_text_YmjFkV",
+    "image_with_text_dLeNVc",
+    "image_with_text_HEmJMW",
+    "image_with_text_9dBPy7",
+    "collection_list_WtT3Wd",
+    "featured_collection_TYp7jw",
+    "featured_collection_rjV9Q4",
+    "featured_collection_nb4mMP",
+    "featured_blog_nL3AgH",
+    "collapsible_content_PJG9x7",
+    "1732583306f23c3554",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144",
+    "1749683430f9f7584b"
+  ]
+}

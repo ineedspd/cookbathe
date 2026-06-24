@@ -1,0 +1,225 @@
+<div class="collections_breadcrumb breadcrumb_wrapper position-relative">
+  <div class="container">
+    <div aria-label="breadcrumb" class="d-flex align-items-center">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ shop.url }}">Home</a></li>
+        {% if collection.handle == 'all' %}
+          <li class="breadcrumb-item active" aria-current="page">Shop</li>
+        {% else %}
+          <li class="breadcrumb-item active" aria-current="page">{{ collection.title }}</li>
+        {% endif %}
+        {% comment %}
+          <li class="breadcrumb-item"><a href="#">Bathroom</a></li>
+          <li class="breadcrumb-item"><a href="#">Shower</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Shower Heads</li>
+        {% endcomment %}
+      </ol>
+    </div>
+  </div>
+</div>
+{% assign check_banner = false %}
+{% for block in section.blocks %}
+  {% if block.settings.coll == collection.handle %}
+    {% assign check_banner = true %}
+    {% assign image = collection.metafields.custom.banner_image | img_url :'master'  %}    
+    {% if block.settings.image.size != blank %}
+      {% assign img_url = block.settings.image | img_url: 'master' %}
+    {% elsif image != '//cdn.shopify.com/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c.gif' %}
+      {% assign img_url = collection.metafields.custom.banner_image | img_url :'master' %}  
+    {% else %}
+      {% assign img_url = section.settings.image | img_url: 'master' %}
+    {% endif %}
+    {% assign desk_image = img_url %}
+    {% if collection.metafields.custom.banner_image_for_mobile != blank %}
+      {% assign mob_image = collection.metafields.custom.banner_image_for_mobile | img_url: 'master' %}
+    {% else %}
+      {% assign mob_image = img_url  %}
+    {% endif %}
+    <style>
+      .collections_banner {
+        background-image: url({{ mob_image }});
+      }
+      @media (min-width: 768px) {
+        .collections_banner {
+          background-image: url({{ desk_image }});
+        }
+      }
+    </style>
+    <div class="collections_banner position-relative bg_cover d-flex align-items-center align-items-md-end">
+      <div class="collections_banner_content d-flex align-items-end justify-content-between w-100">
+            {% comment %}
+        <div class="collections_banner_content_inner">
+             {%- if collection.handle == "sinks" and current_tags contains "black" -%}
+             <h1 class="h2">Black Sinks</h1>
+          {% else %}
+          <h1 class="h2">{{ collection.title }}</h1>
+          {% endif %}
+        
+            <p>Shop a wide selection of shapes, sizes and finishes.</p>
+         
+    {% if collection.metafields.custom.sub_text != blank %}
+          <p>{{ collection.metafields.custom.sub_text}}</p>
+      {% endif %}
+        </div>
+     {% endcomment %}
+        {% if collection.metafields.custom.show_menu_list != false %}
+          <div class="collections_other_listing d-none d-lg-block">
+            <ul class="list-unstyled d-flex flex-wrap align-items-center">             
+              {% if block.settings.menu != blank %}
+                {% assign menu_slug = block.settings.menu %}
+              {% elsif collection.metafields.custom.menu_name != blank %}
+                {% assign menu_slug = collection.metafields.custom.menu_name %}
+              {% else %}  
+                {% assign menu_slug = section.settings.menu %}
+              {% endif %}
+              {% for link in linklists[menu_slug].links %}
+                <li>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+         {% endif %} 
+      </div>
+    </div>
+  {% endif %}
+{% endfor %}
+{% if check_banner == false %}
+  {{ collection.metafields.custom.banner_image.size }}
+  {% assign image = collection.metafields.custom.banner_image | img_url :'master'  %}
+  {% if image != '//cdn.shopify.com/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c.gif' %}
+    {% assign img_url = collection.metafields.custom.banner_image | img_url :'1375X' %}
+  {% else %}
+    {% assign img_url = section.settings.image | img_url:'1375X' %}
+  {% endif %}  
+    {% assign desk_image = img_url %}
+    {% if collection.metafields.custom.banner_image_for_mobile != blank %}
+      {% assign mob_image = collection.metafields.custom.banner_image_for_mobile | img_url: '400X' %}
+    {% else %}
+      {% assign mob_image = img_url  %}
+    {% endif %}
+
+    <style>
+      .collections_banner_image_wrapper {
+        background-image: url({{ mob_image }});
+      }
+      .collection_all {
+        background-image: url({{ section.settings.all_image | img_url:'master' }}) !important;  
+      }
+      @media (min-width: 768px) {
+        .collections_banner_image_wrapper {
+          background-image: url({{ desk_image }});
+        }
+      }
+    </style>
+  
+  <div class="collections_banner {% if collection.handle == 'all' %} collection_all lazy-bg {% endif %}  position-relative bg_cover d-flex align-items-center align-items-md-end collections_banner_image_wrapper" {% if collection.handle == 'all' %}data-bg="{{ section.settings.all_image | img_url:'master' }}"{% endif %}>
+    <div class="collections_banner_content d-flex align-items-end justify-content-between w-100">
+       {% comment %}
+      <div class="collections_banner_content_inner">
+        <h1 class="h2">
+          {% if collection.handle == 'all' and section.settings.title != blank %}
+            {{ section.settings.title }}
+             {%- elsif collection.handle == "sinks" and current_tags contains "black" -%}
+             Black Sinks
+          {% else %}
+            {{ collection.title }}
+          {% endif %}
+        </h1>
+        {% if collection.handle == 'all' and section.settings.description != blank %}
+          {{ section.settings.description }}
+        {% else %}
+              {% if collection.metafields.custom.sub_text != blank %}
+          <p>{{ collection.metafields.custom.sub_text}}</p>
+      {% endif %}
+        {% endif %}
+      </div>
+    {% endcomment %}
+      {% if collection.metafields.custom.show_menu_list != false %}
+        <div class="collections_other_listing d-none d-lg-block">
+        <ul class="list-unstyled d-flex flex-wrap align-items-center">
+          
+          {% if collection.metafields.custom.menu_name != blank %}
+            {% assign menu_slug = collection.metafields.custom.menu_name %}
+          {% else %}  
+            {% assign menu_slug = section.settings.menu %}
+          {% endif %}
+          {% for link in linklists[menu_slug].links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}  
+    </div>
+  </div>
+{% endif %}
+{% schema %}
+{
+"name": "Collections Banner",
+"tag": "section",
+"class": "cb-collections-banner",
+"settings": [
+  {
+    "type":"image_picker",
+    "id":"all_image",
+    "label":"Collection All Image"
+  },
+  {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Image"
+  },
+  {
+    "type":"link_list",
+    "id":"menu",
+    "label":"Select Menu"
+  },
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Title"
+  },
+  {
+    "type":"richtext",
+    "id":"description",
+    "label":"Description"
+  }
+],
+"blocks":[
+  {
+    "type":"collection",
+    "name":"Collections",
+    "settings":[
+      {
+        "type":"collection",
+        "id":"coll",
+        "label":"Select Collection"
+      },
+      {
+        "type":"image_picker",
+        "id":"image",
+        "label":"Image"
+      },
+      {
+        "type":"link_list",
+        "id":"menu",
+        "label":"Select Menu"
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Collections Banner"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

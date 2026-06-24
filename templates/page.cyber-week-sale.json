@@ -1,0 +1,917 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "image_banner_AArBjw": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Cyber_mobile_1080x594_5ea480f3-5859-46d1-b18b-bf16873199b4.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": true,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_6TzcaK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EJnLaE": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1><strong>Cyberweek Sale </strong></h1><h2><strong>Unmissable Deals on Premium Kitchen & Bathroom Products</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_YLcdnT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience up to <strong>60% off</strong> on selected products across top brands. Don’t miss this limited-time offer, valid until Sunday 8/12/24, 11:59pm!</p><p>Transform your home with exclusive Cyberweek offers at Cook & Bathe. Whether you’re upgrading your kitchen or enhancing your bathroom, now is the time to shop our premium collection of appliances, tapware, sinks, and accessories.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EJnLaE",
+        "text_YLcdnT"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_6jHUVf": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Bathroom Cyberweek sale",
+        "heading_size": "h2",
+        "description": "<p>Explore a range of bathroom essentials, from basins and tapware to mirrors and vanities, crafted to blend functionality with style.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cyberweek-bathroom-sale",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_pHtdV3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gVwPkT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Kitchen Tapware",
+            "heading_size": "h1"
+          }
+        },
+        "text_a94Xww": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Upgrade your kitchen with premium tapware from <a href=\"/collections/franke-tapware\" title=\"Franke Tapware\"><strong>Franke</strong></a>, <a href=\"/collections/kitchen-tapware-by-phoenix\" title=\"Kitchen Tapware by Phoenix\"><strong>Phoenix Tapware</strong></a>, and <a href=\"/collections/villeroy-boch-kitchen-tapware\" title=\"Villeroy & Boch Kitchen Tapware\"><strong>Villeroy & Boch</strong></a>. Choose from sleek gooseneck mixers, pull-out taps, and modern designs that blend functionality with style. Perfect for a contemporary or classic kitchen makeover.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_GUHmVr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Kitchen Tapware",
+            "button_link": "https://www.cookandbathe.com.au/collections/kitchen-tapware"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gVwPkT",
+        "text_a94Xww",
+        "button_GUHmVr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Cyberweek1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_Vy6wqA": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3EddPM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sinks & Basins",
+            "heading_size": "h1"
+          }
+        },
+        "text_P6hAgP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover a wide variety of sinks and basins on sale from trusted names like <strong>Franke</strong>, <a href=\"/collections/bourne\" title=\"Bourne\"><strong>Bourne</strong></a>, and <strong>Villeroy & Boch</strong>. Whether you’re after a classic stainless-steel sink or a modern ceramic basin, our range has something for every home.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_8bGdtq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Sinks & Basins",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_3EddPM",
+        "text_P6hAgP",
+        "button_8bGdtq"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Cyberweek2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_9kHwED": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_f3P9Wm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bathroom Accessories",
+            "heading_size": "h1"
+          }
+        },
+        "text_HDNU8h": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add the finishing touches to your bathroom with accessories from <strong>Phoenix Tapware</strong>, <a href=\"/collections/fienza\" title=\"Fienza\"><strong>Fienza</strong></a>, and <a href=\"/collections/otti\" title=\"Otti\"><strong>Otti</strong></a>. From towel rails and soap dishes to stylish shower niches, these essentials will elevate the look and feel of your space.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_MRePjk": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Bathroom Accessories",
+            "button_link": "https://www.cookandbathe.com.au/collections/accessories-bathroom"
+          }
+        }
+      },
+      "block_order": [
+        "heading_f3P9Wm",
+        "text_HDNU8h",
+        "button_MRePjk"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Cyberweek3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_JMdYiQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_TmYcUV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Laundry Products",
+            "heading_size": "h1"
+          }
+        },
+        "text_peAhcR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Refresh your laundry with top-tier sinks, tapware, and accessories from brands like <strong>Franke</strong>, <strong>Bourne</strong>, and <strong>Timberline</strong>. With innovative designs and durable materials, these products are built to last.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_NCjMHF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Laundry Products",
+            "button_link": "https://www.cookandbathe.com.au/collections/laundry"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TmYcUV",
+        "text_peAhcR",
+        "button_NCjMHF"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Cyberweek4.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_QWinjf": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_xby3kU": {
+          "type": "heading",
+          "settings": {
+            "heading": "Showers",
+            "heading_size": "h1"
+          }
+        },
+        "text_ibkBpM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Upgrade your bathroom with premium shower options from <strong>Phoenix Tapware</strong>, <strong>Fienza</strong>, and <a href=\"/collections/caroma\" title=\"Caroma\"><strong>Caroma</strong></a>. Explore rain showers, handheld options, and sleek wall-mounted designs that combine functionality with luxury. Perfect for creating a relaxing, spa-like experience at home.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_GLUKFr": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Showers",
+            "button_link": "https://www.cookandbathe.com.au/collections/showers"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xby3kU",
+        "text_ibkBpM",
+        "button_GLUKFr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Cyberweek5.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_3zM7w6": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9BGdwM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shower Bases & Shower Floors",
+            "heading_size": "h1"
+          }
+        },
+        "text_gkcENY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Complete your shower setup with durable shower bases and stylish shower floors from <a href=\"/collections/domus-living\" title=\"Domus Living\"><strong>Domus Living,</strong></a> <a href=\"/collections/marbletrend\" title=\"Marbletrend Shower Bases\"><strong>Marbletrend</strong></a>. Crafted for long-lasting performance, these products ensure a seamless and watertight foundation for any shower design.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_D7cMN9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Shower Bases & Shower Floors",
+            "button_link": "https://www.cookandbathe.com.au/collections/shower-bases"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9BGdwM",
+        "text_gkcENY",
+        "button_D7cMN9"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/353x410_domus_living3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_Cd99VT": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_WVn9jA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Baths",
+            "heading_size": "h1"
+          }
+        },
+        "text_Pxa8mw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Indulge in elegance with freestanding and built-in baths from <strong>Phoenix Tapware</strong>, <strong>Fienza</strong>, and <strong>Caroma</strong>. Designed for ultimate comfort and style, these baths are the perfect centrepiece for any bathroom.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_k6Xnmb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Baths",
+            "button_link": "https://www.cookandbathe.com.au/collections/baths"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WVn9jA",
+        "text_Pxa8mw",
+        "button_k6Xnmb"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Cyberweek6.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_FBzUca": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LkUjHd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Vanities",
+            "heading_size": "h1"
+          }
+        },
+        "text_LBBnKQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Elevate your bathroom with stunning vanities from <strong>Timberline</strong>, <strong>Fienza</strong>, and <strong>Bourne</strong>. Choose from compact single vanities to luxurious double vanities, all featuring soft-close drawers and premium finishes like solid surface tops. Perfect for any bathroom style or size.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_KPhKGF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Vanities",
+            "button_link": "https://www.cookandbathe.com.au/collections/vanity-units"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LkUjHd",
+        "text_LBBnKQ",
+        "button_KPhKGF"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/cyberweek7.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_RgR3wB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_x7Xm8F": {
+          "type": "heading",
+          "settings": {
+            "heading": "Ovens",
+            "heading_size": "h1"
+          }
+        },
+        "text_U86bpi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Elevate your bathroom with stunning vanities from <strong>Timberline</strong>, <strong>Fienza</strong>, and <strong>Bourne</strong>. Choose from compact single vanities to luxurious double vanities, all featuring soft-close drawers and premium finishes like solid surface tops. Perfect for any bathroom style or size.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_dAprm6": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Ovens",
+            "button_link": "https://www.cookandbathe.com.au/collections/ovens"
+          }
+        }
+      },
+      "block_order": [
+        "heading_x7Xm8F",
+        "text_U86bpi",
+        "button_dAprm6"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/cyberweek8.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_y4mHKi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RBx8zr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cooktops",
+            "heading_size": "h1"
+          }
+        },
+        "text_9rAxzj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Take control of your cooking with high-quality cooktops, including induction, gas, and ceramic options. Brands like <strong>Smeg</strong>, <strong>Euro Appliances</strong>, and <strong>Electrolux</strong> offer sleek designs and advanced technology for every type of kitchen.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_DFktnx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Cooktops",
+            "button_link": "https://www.cookandbathe.com.au/collections/cooktops"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RBx8zr",
+        "text_9rAxzj",
+        "button_DFktnx"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/cyberweek9.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_gG7n66": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_88yLMg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Rangehoods",
+            "heading_size": "h1"
+          }
+        },
+        "text_ArMHdq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Keep your kitchen fresh and odour-free with rangehoods from <strong>Smeg</strong>, <strong>Euro Appliances</strong>, and <strong>Electrolux</strong>. Explore undermount, canopy, and wall-mounted designs that combine powerful performance with modern aesthetics.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_xYRMjD": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Rangehoods",
+            "button_link": "https://www.cookandbathe.com.au/collections/rangehoods"
+          }
+        }
+      },
+      "block_order": [
+        "heading_88yLMg",
+        "text_ArMHdq",
+        "button_xYRMjD"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/cyberweek10.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_6nBamd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fqcbYR": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Whats on Sale?</strong></h2>",
+            "heading_size": "h2"
+          }
+        },
+        "text_Ej4Nxy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Take advantage of Cyberweek savings across our entire range of premium products. Explore top-quality designs from industry-leading brands, all at discounted prices:</p><p>\t•\t<a href=\"/collections/kitchen-tapware\" title=\"Kitchen Tapware & Mixers\"><strong>Kitchen Tapware</strong></a>:</p><p>Upgrade your kitchen with premium tapware from <a href=\"/collections/franke-tapware\" title=\"Franke Tapware\"><strong>Franke</strong></a>, <a href=\"/collections/kitchen-tapware-by-phoenix\" title=\"Kitchen Tapware by Phoenix\"><strong>Phoenix Tapware</strong></a>, and <a href=\"/collections/villeroy-boch-kitchen-tapware\" title=\"Villeroy & Boch Kitchen Tapware\"><strong>Villeroy & Boch</strong></a>. Choose from sleek gooseneck mixers, pull-out taps, and modern designs that blend functionality with style. Perfect for a contemporary or classic kitchen makeover.</p><p>\t•\t<a href=\"/collections/basins-and-sinks\" title=\"Basins and Sinks\"><strong>Sinks & Basins</strong></a>:</p><p>Discover a wide variety of sinks and basins on sale from trusted names like <strong>Franke</strong>, <a href=\"/collections/bourne\" title=\"Bourne\"><strong>Bourne</strong></a>, and <strong>Villeroy & Boch</strong>. Whether you’re after a classic stainless-steel sink or a modern ceramic basin, our range has something for every home.</p><p>\t•\t<strong>Bathroom Accessories</strong>:</p><p>Add the finishing touches to your bathroom with accessories from <a href=\"/collections/phoenix-bathroom-accessories\" title=\"Phoenix Bathroom Accessories\"><strong>Phoenix Tapware</strong></a>, <a href=\"/collections/fienza\" title=\"Fienza\"><strong>Fienza</strong></a>, and <a href=\"/collections/otti\" title=\"Otti\"><strong>Otti</strong></a>. From towel rails and soap dishes to stylish shower niches, these essentials will elevate the look and feel of your space.</p><p>\t•\t<a href=\"/collections/laundry\" title=\"Laundry\"><strong>Laundry Products</strong></a>:</p><p>Refresh your laundry with top-tier sinks, tapware, and accessories from brands like <strong>Franke</strong>, <strong>Bourne</strong>, and <strong>Timberline</strong>. With innovative designs and durable materials, these products are built to last.</p><p>\t•\t<a href=\"/collections/showers\" title=\"Showers\"><strong>Showers</strong></a>:</p><p>Upgrade your bathroom with premium shower options from <strong>Phoenix Tapware</strong>, <strong>Fienza</strong>, and <a href=\"/collections/caroma\" title=\"Caroma\"><strong>Caroma</strong></a>. Explore rain showers, handheld options, and sleek wall-mounted designs that combine functionality with luxury. Perfect for creating a relaxing, spa-like experience at home.</p><p>\t•\t<a href=\"/collections/shower-bases\" title=\"Shower Bases\"><strong>Shower Bases & Shower Floors</strong>:</a></p><p>Complete your shower setup with durable shower bases and stylish shower floors from <a href=\"/collections/domus-living\" title=\"Domus Living\"><strong>Domus Living,</strong></a> <a href=\"/collections/marbletrend\" title=\"Marbletrend Shower Bases\"><strong>Marbletrend</strong></a>. Crafted for long-lasting performance, these products ensure a seamless and watertight foundation for any shower design.</p><p>\t•\t<a href=\"/collections/baths\" title=\"Baths\"><strong>Baths</strong></a>:</p><p>Indulge in elegance with freestanding and built-in baths from <strong>Phoenix Tapware</strong>, <strong>Fienza</strong>, and <strong>Caroma</strong>. Designed for ultimate comfort and style, these baths are the perfect centrepiece for any bathroom.</p><p>\t•\t<a href=\"/collections/vanity-units\" title=\"Vanities\"><strong>Vanities</strong></a>:</p><p>Elevate your bathroom with stunning vanities from <strong>Timberline</strong>, <strong>Fienza</strong>, and <strong>Bourne</strong>. Choose from compact single vanities to luxurious double vanities, all featuring soft-close drawers and premium finishes like solid surface tops. Perfect for any bathroom style or size.</p><p>\t•\t<a href=\"/collections/ovens\" title=\"Ovens\"><strong>Ovens</strong></a>:</p><p>Experience precision cooking with our range of ovens from <strong>Smeg</strong>, <strong>Electrolux</strong>, and <strong>Euro Appliances</strong>. Choose from multifunction ovens, pyrolytic self-cleaning options, and compact models designed for efficiency and style. Perfect for both home cooks and gourmet chefs.</p><p>\t•\t<a href=\"/collections/cooktops\" title=\"Cooktops\"><strong>Cooktops</strong></a>:</p><p>Take control of your cooking with high-quality cooktops, including induction, gas, and ceramic options. Brands like <strong>Smeg</strong>, <strong>Euro Appliances</strong>, and <strong>Electrolux</strong> offer sleek designs and advanced technology for every type of kitchen.</p><p>\t•\t<a href=\"/collections/rangehoods\" title=\"Rangehoods\"><strong>Rangehoods</strong></a>:</p><p>Keep your kitchen fresh and odour-free with rangehoods from <strong>Smeg</strong>, <strong>Euro Appliances</strong>, and <strong>Electrolux</strong>. Explore undermount, canopy, and wall-mounted designs that combine powerful performance with modern aesthetics.</p><p>\t•\t<a href=\"/collections/dishwashers\" title=\"Dishwashers\"><strong>Dishwashers</strong></a>:</p><p>Simplify your cleaning routine with energy-efficient dishwashers from <strong>Smeg</strong>, <strong>Euro Appliances</strong>, and <strong>Electrolux</strong>. With spacious designs, quiet operation, and water-saving technology, these dishwashers are built to handle even the busiest kitchens.</p><p>\t•\t<a href=\"/collections/microwaves\" title=\"Microwaves\"><strong>Microwaves</strong></a>:</p><p>Find versatile microwaves from <strong>Smeg</strong>, <strong>Euro Appliances</strong>, and <strong>Electrolux</strong> that offer quick heating, defrosting, and advanced cooking features. Perfect for busy households needing fast and reliable solutions.</p><p>\t•\t<a href=\"/collections/freestanding-ovens\" title=\"Freestanding Ovens\"><strong>Freestanding Ovens</strong></a><strong>:</strong></p><p>Combine oven and cooktop functionality with stylish freestanding cookers from <strong>Smeg</strong> and <strong>Euro Appliances</strong>. Available in various sizes and finishes, these cookers deliver convenience and elegance in one appliance.</p><p>\t•\t<a href=\"/collections/fridges-kitchen\" title=\"Fridges\"><strong>Fridges</strong></a>:</p><p>Preserve your food in style with modern fridges and freezers from <strong>Electrolux</strong> and <strong>Euro Appliances</strong>. From sleek French-door designs to compact upright freezers, find options that meet your storage needs and energy efficiency goals.</p><p>\t•\t<a href=\"/collections/tapware-bathroom\" title=\"Bathroom Tapware\"><strong>Bathroom Tapware</strong></a>:</p><p>Upgrade your bathroom with stylish tapware from <strong>Phoenix Tapware</strong>, <strong>Fienza</strong>, and <strong>Caroma</strong>. Explore elegant basin mixers, wall-mounted taps, and freestanding bath spouts, all crafted for durability and timeless design.</p><p>\t•\t<a href=\"/collections/mirrors\" title=\"Mirrors\"><strong>Mirrors</strong></a>:</p><p>Add functionality and style to your space with mirrors from <strong>Otti</strong> and <strong>Timberline</strong>. Choose from LED-lit designs, copper-free options, or classic frameless styles to suit any decor. Perfect for adding light and depth to your bathroom or dressing area.</p><p>\t•\t<a href=\"/collections/toilets\" title=\"Modern Toilets & Cisterns\"><strong>Toilets</strong></a>:</p><p>Discover premium toilets from <strong>Villeroy & Boch</strong>, <strong>Fienza</strong>, and <strong>Caroma</strong> at Cyberweek prices. From compact wall-faced designs to rimless technology for effortless cleaning, these toilets combine comfort and style for every bathroom.</p><p>\t•\t<strong>Accessories & Finishing Touches</strong>:</p><p>Complete your renovation with discounted accessories from <strong>Phoenix Tapware</strong>, <strong>Franke</strong>, and <strong>Timberline</strong>. Explore soap dispensers, kitchen racks, and bathroom organizers designed to enhance functionality and aesthetic appeal.</p><p><br/></p><p>With exclusive discounts on these collections and more, there’s no better time to shop at Cook & Bathe.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fqcbYR",
+        "text_Ej4Nxy"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_texU6j": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_ETfW4P": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bathroom"
+          }
+        },
+        "featured_collection_AdGAUY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "sinks"
+          }
+        },
+        "featured_collection_Vnb7Vh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kitchen"
+          }
+        },
+        "featured_collection_QeDqpi": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "shower-bases"
+          }
+        },
+        "featured_collection_FndRap": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "vanity-units"
+          }
+        },
+        "featured_collection_EJbHwn": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "baths"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_ETfW4P",
+        "featured_collection_AdGAUY",
+        "featured_collection_Vnb7Vh",
+        "featured_collection_QeDqpi",
+        "featured_collection_FndRap",
+        "featured_collection_EJbHwn"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_WmzUFr": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Kitchen Cyberweek sale",
+        "heading_size": "h2",
+        "description": "<p>A curated selection of everything you need for the kitchen, from essential fixtures to accessories that complete the look.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "cyberweek-kitchen-sale",
+        "products_to_show": 12,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3FidG9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VrPgyz": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p><strong>Shop Online or Visit Our Showroom</strong></p>",
+            "heading_size": "h2"
+          }
+        },
+        "text_b9Ffxh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enjoy a seamless shopping experience tailored to your needs. Browse our extensive collections online from the comfort of your home, or visit our showroom to explore the products in person. Our knowledgeable consultants are ready to assist you in finding the perfect solutions for your kitchen, bathroom, or laundry. Whether you’re undertaking a complete renovation or simply refreshing a space, <strong>Cook & Bathe’s Cyberweek Sale</strong> has everything you need to bring your vision to life.</p><p>We also offer a reliable <strong>national delivery service</strong>, ensuring your purchases arrive promptly and safely, no matter where you are in Australia.</p><p>For personalised advice or to see our products up close, visit our showroom or <a href=\"/pages/contact\" title=\"Contact\"><strong>contact us here</strong> </a>to speak with our friendly team.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VrPgyz",
+        "text_b9Ffxh"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_ELEVMc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EnRWYG": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3><strong>Hurry, These Offers Won’t Last!</strong></h3>",
+            "heading_size": "h2"
+          }
+        },
+        "text_wJyJyt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Take advantage of these incredible discounts before they’re gone! With up to <strong>60% off kitchen, bathroom, and laundry essentials</strong>, now is the perfect time to invest in quality upgrades that will enhance your home for years to come. Whether you shop online or in-store, <strong>Cook & Bathe</strong> is your destination for premium products at unbeatable prices.</p><p><strong>Shop now</strong> and enjoy our national delivery service, bringing exceptional value and convenience directly to your door. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EnRWYG",
+        "text_wJyJyt"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "470d66d1-ac12-44e8-8b33-7169079e03e9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Coming Soon!</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1732582639ca96dec8": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "image_banner_AArBjw",
+    "rich_text_6TzcaK",
+    "featured_collection_6jHUVf",
+    "image_with_text_pHtdV3",
+    "image_with_text_Vy6wqA",
+    "image_with_text_9kHwED",
+    "image_with_text_JMdYiQ",
+    "image_with_text_QWinjf",
+    "image_with_text_3zM7w6",
+    "image_with_text_Cd99VT",
+    "image_with_text_FBzUca",
+    "image_with_text_RgR3wB",
+    "image_with_text_y4mHKi",
+    "image_with_text_gG7n66",
+    "rich_text_6nBamd",
+    "collection_list_texU6j",
+    "featured_collection_WmzUFr",
+    "rich_text_3FidG9",
+    "rich_text_ELEVMc",
+    "cb_find_showroom_PQG6UA",
+    "470d66d1-ac12-44e8-8b33-7169079e03e9",
+    "main",
+    "1732582639ca96dec8",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

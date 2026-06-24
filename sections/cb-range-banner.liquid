@@ -1,0 +1,59 @@
+
+<div
+  class="terms_conditions_banner position-relative bg_cover banner_image_wrapper"  
+>
+  <div class="container">
+    <div class="terms_conditions_banner_content">
+      <h1 class="h2">{{ page.title }}</h1>
+    </div>
+  </div>
+</div>
+  {% if page.metafields.banner.image != blank %}
+    {% assign img_url = page.metafields.banner.image %} 
+  {% else %}
+    {% assign img_url = section.settings.image | img_url :'master' %}
+  {% endif %}
+  
+  {% assign desk_image = img_url %}
+  {% if page.metafields.mobile.banner-image != blank %}
+    {% assign mob_image = page.metafields.mobile.banner-image %}
+  {% else %}
+    {% assign mob_image = img_url %}
+  {% endif %}
+
+<style>
+  .terms_conditions_banner {
+    background-image: url({{ mob_image }});
+  }
+  @media (min-width: 768px) {
+    .terms_conditions_banner {
+      background-image: url({{ desk_image }});
+    }
+  }
+</style>
+
+{% schema %}
+{
+"name": "Range Banner",
+"tag": "section",
+"class": "cb-page-banner",
+"settings": [
+  {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Image"
+  }
+],
+"presets": [
+  {
+    "name": "Range Banner"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,232 @@
+
+<div class="about_banner_wrapper position-relative bg_cover">
+  <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/contact_banner_cover.png" alt="{{ section.settings.title }}" class="d-none d-md-block">
+  <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/contact_banner_cover_mobile.png" alt="{{ section.settings.title }}" class="d-md-none">
+</div>
+<div class="about_banner_content">
+  <div class="container">
+    <div class="about_banner_content_inner">
+      <h1 class="h2">{{ section.settings.title }}</h1>
+      <div class="about_banner_content_txt">
+        {{ section.settings.description }}
+      </div>
+    </div>
+  </div>
+</div>
+{% render 'cb-style' %}
+{% assign desk_image = section.settings.image | img_url: 'master' %}
+{% if section.settings['image-mobile'].size != blank %}
+  {% assign mob_image = section.settings['image-mobile'] | img_url: 'master' %}
+{% else %}
+  {% assign mob_image = section.settings.image | img_url: 'master' %}
+{% endif %}
+<style>
+  .about_banner_wrapper {
+    background-image: url({{ mob_image }});
+  }
+  @media (min-width: 768px) {
+    .about_banner_wrapper {
+      background-image: url({{ desk_image }});
+    }
+  }
+</style>
+{% schema %}
+{
+"name": "About Banner",
+"tag": "section",
+"class": "cb-about-banner",
+"settings": [
+  {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Desktop Image"
+  },
+  {
+    "type":"image_picker",
+    "id":"image-mobile",
+    "label":"Mobile Image"
+  },
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Title"
+  },
+  {
+    "type":"richtext",
+    "id":"description",
+    "label":"Description"
+  }
+],
+"blocks":[
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "About Banner"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

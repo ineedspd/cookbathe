@@ -1,0 +1,58 @@
+<div class="terms_conditions_banner position-relative bg_cover">
+  <div class="container">
+    <div class="terms_conditions_banner_content">
+      <h1 class="h2">{{ section.settings.title }}</h1>
+    </div>
+  </div>
+</div>
+{% assign desk_image = section.settings.image | img_url: 'master' %}
+{% if section.settings['image-mobile'].size != blank %}
+  {% assign mob_image = section.settings['image-mobile'] | img_url: 'master' %}
+{% else %}
+  {% assign mob_image = section.settings.image | img_url: 'master' %}
+{% endif %}
+<style>
+  .terms_conditions_banner {
+    background-image: url({{ mob_image }});
+  }
+  @media (min-width: 768px) {
+    .terms_conditions_banner {
+      background-image: url({{ desk_image }});
+    }
+  }
+</style>
+{% schema %}
+{
+"name": "Terms Conditions Banner",
+"tag": "section",
+"class": "cb-terms-conditions-banner",
+"settings": [
+    {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Desktop Image"
+  },
+  {
+    "type":"image_picker",
+    "id":"image-mobile",
+    "label":"Mobile Image"
+  },
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Title"
+  }
+],
+"presets": [
+  {
+    "name": "Terms Conditions Banner"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

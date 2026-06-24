@@ -1,0 +1,275 @@
+{% if article.metafields.oddevent.image.size != blank %}
+  <div class="inspiration_odd_even_block">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12">
+          {% assign count = article.metafields.oddevent.image.size | minus: 1 %}
+          {% for i in (0..['count']) %}
+            <div class="inspiration_odd_even_card">
+              <div class="row align-items-center {% cycle '','flex-row-reverse' %}">
+                <div class="col-md-6 col-12">
+                  <div class="inspiration_odd_even_card_img bg_cover position-relative" style="background-image: url({{ article.metafields.oddevent.image[i] }});">
+           
+                    {% if article.metafields.position.left1[i] != blank and article.metafields.position.right1[i] != blank and  article.metafields.point.product1[i] != blank  %}             
+                      <button type="button"  class="pointer_product" data-bs-toggle="popover"  data-bs-content="<div class='popover_product'><h3 class='product_title'>{{ all_products[article.metafields.point.product1[i]].title }}</h3><img src='{{all_products[article.metafields.point.product1[i]].featured_image | img_url:'300*300'}}'><div class='product_price'>{{ all_products[article.metafields.point.product1[i]].price | times: 1.1 | money }}</div><a href='/products/{{ article.metafields.point.product1[i] }}' class='btn btn-outline-primary'>View More</a></div>" style="left: {{article.metafields.position.left1[i]}}%; top: {{article.metafields.position.right1[i]}}%;"></button>
+                    {% endif %}
+                    {% if article.metafields.position.left2[i] != blank and article.metafields.position.right2[i] != blank and article.metafields.point.product2[i] != blank  %}
+                      <button type="button"  class="pointer_product" data-bs-toggle="popover"  data-bs-content="<div class='popover_product'><h3 class='product_title'>{{ all_products[article.metafields.point.product2[i]].title }}</h3><img src='{{all_products[article.metafields.point.product2[i]].featured_image | img_url:'300*300'}}'><div class='product_price'>{{ all_products[article.metafields.point.product2[i]].price | times: 1.1 | money }}</div><a href='/products/{{ article.metafields.point.product2[i] }}' class='btn btn-outline-primary'>View More</a></div>" style="left: {{article.metafields.position.left2[i]}}%; top: {{article.metafields.position.right2[i]}}%;"></button>
+                    {% endif %}
+                    {% if article.metafields.position.left3[i] != blank and article.metafields.position.right3[i] != blank and article.metafields.point.product3[i] != blank  %}
+                      <button type="button"  class="pointer_product" data-bs-toggle="popover"  data-bs-content="<div class='popover_product'><h3 class='product_title'>{{ all_products[article.metafields.point.product3[i]].title }}</h3><img src='{{all_products[article.metafields.point.product3[i]].featured_image | img_url:'300*300'}}'><div class='product_price'>{{ all_products[article.metafields.point.product3[i]].price | times: 1.1 | money }}</div><a href='/products/{{ article.metafields.point.product3[i] }}' class='btn btn-outline-primary'>View More</a></div>" style="left: {{article.metafields.position.left3[i]}}%; top: {{article.metafields.position.right3[i]}}%;"></button>
+                    {% endif %}
+                    {% if article.metafields.position.left4[i] != blank and article.metafields.position.right4[i] != blank and article.metafields.point.product4[i] != blank  %}
+                      <button type="button"  class="pointer_product" data-bs-toggle="popover"  data-bs-content="<div class='popover_product'><h3 class='product_title'>{{ all_products[article.metafields.point.product4[i]].title }}</h3><img src='{{all_products[article.metafields.point.product4[i]].featured_image | img_url:'300*300'}}'><div class='product_price'>{{ all_products[article.metafields.point.product4[i]].price | times: 1.1 | money }}</div><a href='/products/{{ article.metafields.point.product4[i] }}' class='btn btn-outline-primary'>View More</a></div>" style="left: {{article.metafields.position.left4[i]}}%; top: {{article.metafields.position.right4[i]}}%;"></button>
+                    {% endif %}
+                    {% if article.metafields.position.left5[i] != blank and article.metafields.position.right5[i] != blank and article.metafields.point.product5[i] != blank  %}
+                      <button type="button"  class="pointer_product" data-bs-toggle="popover"  data-bs-content="<div class='popover_product'><h3 class='product_title'>{{ all_products[article.metafields.point.product5[i]].title }}</h3><img src='{{all_products[article.metafields.point.product5[i]].featured_image | img_url:'300*300'}}'><div class='product_price'>{{ all_products[article.metafields.point.product5[i]].price | times: 1.1 | money }}</div><a href='/products/{{ article.metafields.point.product5[i] }}' class='btn btn-outline-primary'>View More</a></div>" style="left: {{article.metafields.position.left5[i]}}%; top: {{article.metafields.position.right5[i]}}%;"></button>
+                    {% endif %}
+                    <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/inspiration_odd_even_card_cover.png" alt="{{ article.title |append : '-'| append : i}}">
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="inspiration_odd_even_card_text">
+                    <h2 class="h4">{{ article.metafields.oddevent.title[i] }}</h2>
+                    {{ article.metafields.oddevent.content[i] }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% render 'cb-style' %}
+{% endif %}
+{% schema %}
+{
+"name": "Inspiration OddEven Block",
+"tag": "section",
+"class": "cb-inspiration-odd-even-block",
+"settings": [],
+"blocks":[
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Inspiration OddEven Block"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+  
+  .pointer_product {
+    position: absolute;
+    z-index: 9;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, .60);
+    padding: 0;
+}
+.pointer_product:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: var(--bs-black);
+    border-radius: 100%;
+    z-index: -2;
+    width: 25px;
+    height: 25px;
+    opacity: 0.1;
+    transform: translate(-50%, -50%);
+}
+  
+.popover_product {
+    text-align: center;
+    padding: 10px;
+}
+.popover_product .product_title {
+    line-height: 20px;
+}
+.popover_product img {
+    max-height: 150px;
+}
+.popover_product .product_price {
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--bs-orange);
+}
+.popover_product .product_price::before {
+    display: none;
+}
+.popover_product .btn {
+    width: 100%;
+}
+{% endstylesheet %}
+
+{% javascript %}
+  
+
+
+
+{% endjavascript %}

@@ -1,0 +1,41 @@
+# Repository files
+.git/
+.github/
+.gitignore
+README.md
+
+# Local Shopify and tooling state
+.shopify/
+.theme-check/
+node_modules/
+package-lock.json
+
+# Local-only evidence and temporary artifacts
+screenshots/
+test-results/
+playwright-report/
+qa_scripts/
+backups/
+reports/
+*.log
+*.tmp
+*.temp
+*.bak
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Secrets and local environment files
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_rsa.*

@@ -1,0 +1,582 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "disabled": true,
+      "settings": {
+        "label-1": "30 Years Industry Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c": {
+      "type": "cb-range-banner",
+      "settings": {
+        "image": "shopify://shop_images/inspiration-mobile-banner.png"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "custom_css": [],
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_YC4RwD": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_WYUpRY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/phoenix-logo-Black_NEW.png",
+            "title": "Phoenix",
+            "text": "<p>Phoenix delivers award-winning <strong>tapware, showers, and accessories</strong> that combine sleek aesthetics with superior functionality. Engineered for durability and water efficiency, Phoenix products bring timeless style to modern Australian bathrooms and kitchens.</p>",
+            "link_label": "Phoenix",
+            "link": "shopify://collections/phoenix-bathroom-tapware"
+          }
+        },
+        "column_7peE9M": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Hansgrohe-Logo.png",
+            "title": "Hansgrohe",
+            "text": "<p>Hansgrohe offers premium <strong>tapware, showers, and mixers</strong> crafted with precision engineering and cutting-edge design. Known for water-saving technology and sleek aesthetics, Hansgrohe products bring lasting performance and modern elegance to Australian bathrooms and kitchens.</p>",
+            "link_label": "Hansgrohe",
+            "link": "shopify://collections/hansgrohe"
+          }
+        },
+        "column_h3caVL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BourneLogo.png",
+            "title": "Bourne",
+            "text": "<p>Bourne delivers reliable and stylish bathroom and kitchen solutions designed to meet everyday needs. With a focus on functionality, durability, and contemporary design, Bourne offers a wide range of <strong>tapware, basins, toilets, and accessories</strong> that suit both classic and modern interiors.</p>",
+            "link_label": "Bourne",
+            "link": "shopify://collections/bourne"
+          }
+        },
+        "column_AKMnGW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SEIMA_LOGO_Black_327e24c1-eab7-4410-802c-a0c0b35441e9.png",
+            "title": "Seima",
+            "text": "<p>Seima offers a refined collection of <strong>basins, sinks, toilets, and accessories</strong> that blend modern aesthetics with smart functionality. Known for clean lines, quality materials, and space-conscious design, Seima products are ideal for creating sleek, minimalist bathrooms and kitchens in Australian homes.</p>",
+            "link_label": "Seima",
+            "link": "shopify://collections/seima"
+          }
+        },
+        "column_L4wHB8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bella_Vista_logo_print_RGB_Inline_Peach_R_large_use.svg",
+            "title": "Bella Vista",
+            "text": "<p>Bella Vista delivers stylish and functional bathroom and kitchen solutions crafted for the modern Australian home. From sleek <strong>tapware</strong> to innovative<strong> sinks and accessories</strong>, each product combines on-trend design with durability and practicality - perfect for both renovations and new builds.</p>",
+            "link_label": "Bella Vista",
+            "link": "shopify://collections/bella_vista"
+          }
+        },
+        "column_maJQGd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/DOMUS_LIVING.png",
+            "title": "Domus Living",
+            "text": "<p>Domus Living specialises in innovative <strong>shower bases and baths </strong>designed to optimise space and functionality. With a focus on clean lines, quality materials, and practical design, Domus Living products offer stylish, durable solutions ideal for contemporary Australian bathrooms.</p>",
+            "link_label": "Domus Living",
+            "link": "shopify://collections/domus-living"
+          }
+        }
+      },
+      "block_order": [
+        "column_WYUpRY",
+        "column_7peE9M",
+        "column_h3caVL",
+        "column_AKMnGW",
+        "column_L4wHB8",
+        "column_maJQGd"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Explore Premium Bathroom Brands",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Explore All Brands",
+        "button_link": "https://www.cookandbathe.com.au/pages/brands",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_YmjFkV": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_VpJWcw": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bathroom Tapware: The Finishing Touch of Luxury",
+            "heading_size": "h2"
+          }
+        },
+        "text_n3Ehkw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Refine your bathroom with high-quality tapware that pairs aesthetic appeal with everyday performance. At Cook & Bathe, our extensive range of bathroom tapware includes basin mixers, bath spouts, wall mixers, and shower tapware available in stylish finishes like matte black, brushed gold, brushed nickel, and chrome - ideal for modern, classic, or minimalist interiors.</p><p>We stock premium brands renowned for their quality, innovation, and design versatility:</p><p><a href=\"https://www.cookandbathe.com.au/collections/phoenix\" title=\"https://www.cookandbathe.com.au/collections/phoenix\">Phoenix Tapware</a> – Sleek, elegant designs crafted for the demands of Australian bathrooms</p><p><a href=\"https://www.cookandbathe.com.au/collections/hansgrohe\" title=\"https://www.cookandbathe.com.au/collections/hansgrohe\">Hansgrohe</a> – German-engineered tapware offering cutting-edge form and water-saving functionality</p><p><a href=\"https://www.cookandbathe.com.au/collections/bella-vista-1\" title=\"https://www.cookandbathe.com.au/collections/bella-vista-1\">Bella Vista</a> – Affordable, high-style bathroom tapware with contemporary finishes</p><p><a href=\"https://www.cookandbathe.com.au/collections/bourne\" title=\"https://www.cookandbathe.com.au/collections/bourne\">Bourne</a> – Practical yet stylish tapware options designed for everyday Australian homes</p><p>Whether you’re designing a new bathroom or upgrading your fixtures, our designer bathroom taps deliver reliability, visual harmony, and efficient water flow.</p><p>Explore the full bathroom tapware collection online or visit our showroom to experience our curated selection in person.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_nCzpwi": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Bathroom Tapware",
+            "button_link": "shopify://collections/tapware-bathroom"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VpJWcw",
+        "text_n3Ehkw",
+        "button_nCzpwi"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/MartinStPascoeVale_Bathroom_5.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_dLeNVc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CMMNXA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bathroom Basins: Style That Starts at the Sink",
+            "heading_size": "h2"
+          }
+        },
+        "text_n8gDHM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enhance your bathroom with a premium basin that combines beautiful design with everyday practicality. At Cook & Bathe, our wide selection of bathroom basins caters to all interior styles and space requirements - from minimalist powder rooms to luxurious master ensuites. Crafted from durable materials and available in a variety of shapes and finishes, our basins are designed to complement modern and classic bathrooms alike.</p><p>Choose from a variety of functional and stylish basin types:</p><p><a href=\"https://www.cookandbathe.com.au/collections/above-counter\" title=\"https://www.cookandbathe.com.au/collections/above-counter\">Above Counter Basins</a> – A popular choice for contemporary bathrooms, these basins sit proudly on top of the vanity to create a bold visual statement. Available in round, oval, square, and rectangular shapes.</p><p><a href=\"https://www.cookandbathe.com.au/collections/under-counter\" title=\"https://www.cookandbathe.com.au/collections/under-counter\">Under Counter Basins</a> – Installed beneath the benchtop for a sleek, integrated look. These basins offer a smooth surface and are ideal for minimalist spaces.</p><p><a href=\"https://www.cookandbathe.com.au/collections/inset\" title=\"https://www.cookandbathe.com.au/collections/inset\">Inset Basins</a> – Partially recessed into the vanity, inset basins provide the best of both worlds—clean lines and a subtle design feature that suits many bathroom styles.</p><p><a href=\"https://www.cookandbathe.com.au/collections/wall-hung-basins\" title=\"https://www.cookandbathe.com.au/collections/wall-hung-basins\">Wall Hung Basins</a> – A space-saving solution perfect for small bathrooms, powder rooms, and ensuites. These basins are mounted directly to the wall for a floating, modern effect.</p><p>Whether you’re renovating, building new, or simply upgrading your vanity, our range of designer bathroom basins ensures durability, ease of maintenance, and a refined finish.</p><p>Explore our full collection online or visit our showroom to find the perfect basin for your next bathroom project.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_7XpRcQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Basins",
+            "button_link": "shopify://collections/basins-and-sinks"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CMMNXA",
+        "text_n8gDHM",
+        "button_7XpRcQ"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/23YorkStPascoeVale-11.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_HEmJMW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Jkt4NN": {
+          "type": "heading",
+          "settings": {
+            "heading": "Showers: Elevate Your Everyday Ritual",
+            "heading_size": "h2"
+          }
+        },
+        "text_GFWUpd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Upgrade your bathroom with a stylish and functional shower system that enhances your daily routine. At Cook & Bathe, our extensive range of showers includes everything from minimalist designs to luxurious twin shower systems - perfect for every type of bathroom and lifestyle. Whether you’re planning a full renovation or simply updating your fixtures, our shower solutions offer comfort, performance, and visual appeal.</p><p>Explore our collection of premium shower types:</p><p><a href=\"https://www.cookandbathe.com.au/collections/rail-showers\" title=\"https://www.cookandbathe.com.au/collections/rail-showers\">Rail Showers</a> – Adjustable and practical, rail showers are ideal for shared bathrooms or households with varying height requirements. Slide the shower head along the rail to customise your experience and enjoy flexible water delivery.</p><p><a href=\"https://www.cookandbathe.com.au/collections/twin-showers\" title=\"https://www.cookandbathe.com.au/collections/twin-showers\">Twin Showers</a> – Designed for luxury and versatility, twin showers combine an overhead rain shower with a detachable hand shower. Enjoy the best of both worlds with this all-in-one setup - ideal for family bathrooms or spa-style ensuites.</p><p><a href=\"https://www.cookandbathe.com.au/collections/shower-heads\" title=\"https://www.cookandbathe.com.au/collections/shower-heads\">Shower Heads</a> – Create a relaxing escape with our range of fixed shower heads, available in round or square styles and multiple finishes. From ultra-modern ceiling-mounted designs to wall-mounted classics, find the perfect piece to match your aesthetic.</p><p><a href=\"https://www.cookandbathe.com.au/collections/hand-showers\" title=\"https://www.cookandbathe.com.au/collections/hand-showers\">Hand Showers</a> – Offering convenience and flexibility, handheld showers are perfect for targeted washing, rinsing, or cleaning. Pair them with wall brackets or rail systems for added functionality and easy control.</p><p><a href=\"https://www.cookandbathe.com.au/collections/domus-living\" title=\"https://www.cookandbathe.com.au/collections/domus-living\">Shower Floors by Domus Living</a> – Finish your space with high-quality shower floors designed by Domus Living. These bases offer durability, slip resistance, and a sleek appearance that works seamlessly with frameless or semi-frameless enclosures. Ideal for creating a clean, low-profile shower zone.</p><p>Whether you’re designing a modern wet room or a classic family bathroom, our shower collection provides everything you need to build a beautiful and highly functional space.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Ga6L8m": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover Showers",
+            "button_link": "shopify://collections/showers"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Jkt4NN",
+        "text_GFWUpd",
+        "button_Ga6L8m"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/28HellerSt_Bathroom_9.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_9dBPy7": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_7nb9pW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Toilets: Comfort, Innovation & Clean Design",
+            "heading_size": "h2"
+          }
+        },
+        "text_APqfWz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Upgrade your bathroom with our premium range of toilets designed for modern Australian living. At Cook & Bathe, we offer a variety of styles to suit every space, from minimalist powder rooms to luxury ensuites. Combining water efficiency, sleek design, and hygienic features, our toilet collection delivers both form and function.</p><p>Explore our most popular toilet types:</p><p><a href=\"https://www.cookandbathe.com.au/collections/smart-toilets\" title=\"https://www.cookandbathe.com.au/collections/smart-toilets\">Smart Toilets</a> – Experience the future of bathroom comfort with advanced features like bidet functionality, heated seats, and automatic flushing. Perfect for those who value hygiene and innovation.</p><p><a href=\"https://www.cookandbathe.com.au/collections/back-to-wall-toilets\" title=\"https://www.cookandbathe.com.au/collections/back-to-wall-toilets\">Back to Wall Toilets</a> – With the cistern concealed within the wall or a vanity unit, these toilets offer a clean, streamlined look and are easy to maintain.</p><p><a href=\"https://www.cookandbathe.com.au/collections/wall-faced\" title=\"https://www.cookandbathe.com.au/collections/wall-faced\">Wall Faced Toilets</a> – Designed to sit flush against the wall, wall faced toilets provide a neat finish while hiding pipework for a clutter-free appearance.</p><p><a href=\"https://www.cookandbathe.com.au/collections/wall-hung-toilets\" title=\"https://www.cookandbathe.com.au/collections/wall-hung-toilets\">Wall Hung Toilets</a> – Ideal for space-saving layouts, wall hung toilets are mounted directly to the wall with a concealed cistern, creating a modern, floating effect that’s easy to clean beneath.</p><p>Crafted by trusted brands and built for long-term performance, our toilets combine cutting-edge design with reliable functionality.</p><p>Browse the full toilet collection online or visit our showroom to find the perfect solution for your bathroom project.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_nPVfY7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Browse Toilets",
+            "button_link": "shopify://collections/toilets"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7nb9pW",
+        "text_APqfWz",
+        "button_nPVfY7"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Unit3GlenroyRd_bathroom_28.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_MwjKV4": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_D9fUY8": {
+          "type": "heading",
+          "settings": {
+            "heading": "Baths: The Centrepiece of Relaxation",
+            "heading_size": "h2"
+          }
+        },
+        "text_kDEd9j": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Transform your bathroom into a luxurious retreat with Cook & Bathe’s curated collection of premium baths. Whether you’re creating a spa-inspired sanctuary or updating a functional family space, our selection offers comfort, quality, and timeless style. Designed to suit a variety of bathroom layouts, our baths are available in a range of sizes, shapes, and finishes to elevate any interior.</p><p>Explore our most popular bath styles:</p><p><a href=\"https://www.cookandbathe.com.au/collections/freestanding-bath-tubs\" title=\"https://www.cookandbathe.com.au/collections/freestanding-bath-tubs\">Freestanding Baths</a> – Make a bold design statement with a freestanding bath, perfect for open-plan bathrooms and luxury renovations. With sculptural forms and elegant curves, these baths become the focal point of any space - ideal for soaking, relaxing, and unwinding.</p><p><a href=\"https://www.cookandbathe.com.au/collections/inset-baths\" title=\"https://www.cookandbathe.com.au/collections/inset-baths\">Inset Baths</a> – Built into a hob or surround, inset baths are a classic choice for both modern and traditional bathrooms. Their sleek integration into your cabinetry or tiled space offers a clean, seamless look that’s easy to maintain and space-efficient.</p><p><a href=\"https://www.cookandbathe.com.au/collections/back-to-wall\" title=\"https://www.cookandbathe.com.au/collections/back-to-wall\">Back to Wall Baths</a> – Offering the visual impact of a freestanding bath with the practicality of wall installation, back-to-wall baths sit flush against the wall to maximise space and simplify cleaning. These baths are perfect for smaller bathrooms or streamlined layouts without compromising on design impact.</p><p>Each bath in our collection is crafted from durable, high-quality materials that retain heat and resist wear - ensuring long-lasting performance and comfort. With options to suit minimalist, coastal, or contemporary interiors, you’ll find the perfect bath to match your vision.</p><p>Shop the full range of baths online or visit our Melbourne showrooms to experience our collection in person. Whether you’re designing a master ensuite or upgrading a family bathroom, Cook & Bathe helps you bathe beautifully.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_TpTkCJ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover Baths",
+            "button_link": "shopify://collections/baths"
+          }
+        }
+      },
+      "block_order": [
+        "heading_D9fUY8",
+        "text_kDEd9j",
+        "button_TpTkCJ"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/hadfield_bathroom11.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_D4pneR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_Fm8WkK": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bathroom Vanities: Style, Storage & Sophistication",
+            "heading_size": "h2"
+          }
+        },
+        "text_LTFPD8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Complete your bathroom with a designer vanity that combines everyday functionality with timeless style. At Cook & Bathe, our collection of bathroom vanities is crafted to meet the demands of modern Australian living - offering practical storage, beautiful finishes, and quality construction. Whether you’re furnishing a compact ensuite or designing a luxurious main bathroom, our range includes sizes, styles, and configurations to suit every space.</p><p>Choose from top-tier brands known for quality and innovation:</p><p><a href=\"https://www.cookandbathe.com.au/collections/otti\" title=\"https://www.cookandbathe.com.au/collections/otti\">Otti</a> – Sleek, contemporary vanities in matte and timber-look finishes, featuring soft-close drawers, integrated basins, and space-saving designs ideal for modern homes.</p><p><a href=\"https://www.cookandbathe.com.au/pages/timberline-range\" title=\"https://www.cookandbathe.com.au/pages/timberline-range\">Timberline</a> – Proudly Australian made, Timberline vanities offer fully customisable options with premium materials, solid surface tops, and smart storage solutions. Ideal for those seeking both beauty and durability.</p><p><a href=\"https://www.cookandbathe.com.au/collections/fienza\" title=\"https://www.cookandbathe.com.au/collections/fienza\">Fienza</a> – Affordable, functional vanities with clean lines and versatile design. Perfect for budget-friendly renovations that don’t compromise on quality or aesthetics.</p><p>Our bathroom vanities are available in wall-hung, floor-standing, and double-basin formats, with a wide range of finishes including classic white, natural oak, matte black, and more. Many styles come with matching mirrors or mirrored shaving cabinets to create a complete and cohesive look.</p><p>Explore our full collection of vanities online or visit our Melbourne showrooms to speak with our experienced consultants and find the perfect piece for your bathroom.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_jTatKj": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Vanities",
+            "button_link": "shopify://collections/vanity-units"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Fm8WkK",
+        "text_LTFPD8",
+        "button_jTatKj"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Unit3GlenroyRd_bathroom_5.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_yAQJ8g": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_FERUMi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Bathroom Accessories: Refined Details That Complete Your Space",
+            "heading_size": "h2"
+          }
+        },
+        "text_LhaDhc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Finish your bathroom with elegant, functional accessories that elevate both style and usability. At Cook & Bathe, our curated range of bathroom accessories brings cohesion, convenience, and luxury to your space - proving that the smallest details often make the biggest impact. Whether you’re renovating or upgrading, our collection is designed to complement modern and traditional bathrooms alike.</p><p>Explore a wide selection of essential accessories including:</p><p><a href=\"https://www.cookandbathe.com.au/collections/towel-rail\" title=\"https://www.cookandbathe.com.au/collections/towel-rail\">Towel Rails & Rings</a> – Available in single, double, and heated styles, our towel rails offer everyday practicality while matching your chosen tapware finish for a seamless look.</p><p><a href=\"https://www.cookandbathe.com.au/collections/toilet-roll-holder\" title=\"https://www.cookandbathe.com.au/collections/toilet-roll-holder\">Toilet Roll Holders</a> – A must-have for every bathroom, these fixtures come in sleek minimalist styles or more traditional forms to match your space.</p><p><a href=\"https://www.cookandbathe.com.au/collections/robe-hook\" title=\"https://www.cookandbathe.com.au/collections/robe-hook\">Robe Hooks</a> – Compact yet functional, robe hooks keep garments and towels off the floor, adding order to your layout without compromising aesthetics.</p><p><a href=\"https://www.cookandbathe.com.au/collections/soap-dish-dispenser\" title=\"https://www.cookandbathe.com.au/collections/soap-dish-dispenser\">Soap Dishes & Dispensers</a> – Keep your vanity area organised and hygienic with wall-mounted or bench-top options that suit any bathroom style.</p><p>Available in a variety of finishes such as chrome, brushed nickel, brushed gold, and matte black, our bathroom accessories are designed to coordinate with your tapware, basin, and other fittings - bringing balance and visual consistency to your bathroom.</p><p>Shop the full bathroom accessories range online or visit our Melbourne showrooms to explore the collection in person and complete your space with lasting style.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_7yrjNp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Discover Bathroom Accessories",
+            "button_link": "shopify://collections/accessories-bathroom"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FERUMi",
+        "text_LhaDhc",
+        "button_7yrjNp"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/DaylesfordHotel_24.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "1c932d4d-9445-49f3-a96e-cde914b20c5b": {
+      "type": "cb-range-featured-products",
+      "settings": {
+        "columns_desktop": 4,
+        "product_show": 4,
+        "double_image": false,
+        "variant_enable": false,
+        "wishlist_enable": true,
+        "discount_enable": true,
+        "price_enable": true,
+        "addtocart": false,
+        "arrows": false
+      }
+    },
+    "featured_blog_nL3AgH": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "Design Inspiration",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_PJG9x7": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_ma8wfz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What types of bathroom products can I find at Cook & Bathe?",
+            "icon": "none",
+            "row_content": "<p>At Cook & Bathe, we offer a comprehensive selection of premium bathroom products including <strong>vanity units</strong>, <strong>freestanding and back-to-wall bathtubs</strong>, <strong>shower systems</strong>, <strong>basins</strong>, <strong>toilets</strong>, <strong>bathroom tapware</strong>, <strong>heated towel rails</strong>, <strong>mirrors</strong>, and <strong>accessories</strong>. Whether you’re updating a powder room or undertaking a full <strong>bathroom renovation</strong>, our curated collection is designed to suit both classic and contemporary spaces.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_iKBBCK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you provide advice for bathroom renovations?",
+            "icon": "none",
+            "row_content": "<p>Yes. Our experienced team can help you plan your <strong>bathroom renovation</strong> with expert advice on choosing the right <strong>fixtures, fittings, layout</strong>, and <strong>colour scheme</strong>. Visit one of our showrooms or contact us online for personalised support.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_EWaYD3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer water-efficient bathroom tapware and fixtures?",
+            "icon": "none",
+            "row_content": "<p>Yes. Many of our <strong>bathroom taps</strong>, <strong>toilets</strong>, and <strong>shower heads</strong> are <strong>WELS-rated</strong> to support <strong>water efficiency</strong> without compromising on performance. Look for the WELS label on our product pages to compare eco-friendly options for your bathroom.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_yKgqwM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are your bathroom products suitable for trade customers or builders?",
+            "icon": "none",
+            "row_content": "<p>Yes. Cook & Bathe supplies <strong>builders, designers, and trade professionals</strong> with high-quality bathroom fixtures and fittings. We offer <strong>competitive trade pricing</strong>, <strong>bulk order solutions</strong>, and expert support with <strong>product selection and availability</strong>. To learn more or register your interest, visit our <a href=\"https://www.cookandbathe.com.au/pages/on-specs\" title=\"https://www.cookandbathe.com.au/pages/on-specs\">Trade Customers page</a>.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_ma8wfz",
+        "collapsible_row_iKBBCK",
+        "collapsible_row_EWaYD3",
+        "collapsible_row_yKgqwM"
+      ],
+      "name": "t:sections.collapsible_content.presets.name",
+      "settings": {
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1732583306f23c3554": {
+      "type": "apps",
+      "custom_css": [
+        "{padding-top: 50px;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "div",
+        "heading-class": "h2",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within <a href=\"https://www.cookandbathe.com.au/pages/terms-and-conditions\">Metro Melbourne</a></p>"
+      }
+    },
+    "1749683430f9f7584b": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c",
+    "main",
+    "multicolumn_YC4RwD",
+    "image_with_text_YmjFkV",
+    "image_with_text_dLeNVc",
+    "image_with_text_HEmJMW",
+    "image_with_text_9dBPy7",
+    "image_with_text_MwjKV4",
+    "image_with_text_D4pneR",
+    "image_with_text_yAQJ8g",
+    "1c932d4d-9445-49f3-a96e-cde914b20c5b",
+    "featured_blog_nL3AgH",
+    "collapsible_content_PJG9x7",
+    "1732583306f23c3554",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144",
+    "1749683430f9f7584b"
+  ]
+}

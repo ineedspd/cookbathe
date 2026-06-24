@@ -1,0 +1,443 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "image_with_text_azACDi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9WERmc": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shower Heads for Style, Comfort & Water Efficiency",
+            "heading_size": "h1"
+          }
+        },
+        "text_gLyb6H": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore Cook & Bathe’s wide range of shower heads designed to elevate your daily routine with style, comfort, and efficiency. Whether you’re after a rainfall shower head, wall-mounted design, or ceiling-mounted option, our collection offers high-quality finishes and water-saving performance to suit any bathroom. With styles available in chrome, matte black, brushed gold, and brushed nickel, our shower heads combine aesthetic appeal with reliable functionality - perfect for contemporary and classic Australian homes.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9WERmc",
+        "text_gLyb6H"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/shower_head_landing_page.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_tNccMV": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Discover Our Shower Head Collection",
+        "heading_size": "h1",
+        "description": "<p>Find the perfect balance of design and functionality with our curated range of <strong>shower heads</strong>. From luxurious <strong>rain showers</strong> to sleek <strong>wall-mounted options</strong>, each style offers exceptional water flow, modern finishes, and reliable performance for Australian bathrooms.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "shower-heads",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_k8JM3N": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wnXAxr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/phoenix-logo-Black_NEW.png",
+            "title": "Phoenix",
+            "text": "<p>Phoenix shower heads combine elegant design with cutting-edge functionality, delivering a luxurious shower experience every time. With sleek profiles, water-saving technology, and a variety of finishes, Phoenix offers the perfect balance of form and function for modern Australian bathrooms.</p>",
+            "link_label": "Phoenix",
+            "link": "shopify://collections/phoenix-showers"
+          }
+        },
+        "column_4WDitK": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/BourneLogo.png",
+            "title": "Bourne",
+            "text": "<p>Bourne shower heads are designed with practicality and performance in mind, offering dependable water flow and easy maintenance. With clean lines and versatile styles, Bourne delivers affordable, functional shower solutions ideal for everyday Australian bathrooms.</p>",
+            "link_label": "Bourne",
+            "link": "shopify://collections/bourne"
+          }
+        },
+        "column_agtwAi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Hansgrohe-Logo-2.svg",
+            "title": "Hansgrohe",
+            "text": "<p>Experience precision, performance, and luxury with Hansgrohe shower heads. Designed with advanced spray technology and sleek aesthetics, Hansgrohe delivers a spa-quality experience at home - featuring water-saving innovation and premium finishes ideal for modern Australian bathrooms.</p>",
+            "link_label": "Hansgrohe",
+            "link": "shopify://collections/hansgrohe-showers"
+          }
+        },
+        "column_AFMHez": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Bella_Vista_logo_print_RGB_Inline_Peach_R_large_use.svg",
+            "title": "Bella Vista",
+            "text": "<p>Bella Vista shower heads combine modern design with reliable performance, offering stylish and practical solutions for any bathroom. With a range of contemporary finishes and easy-clean designs, Bella Vista delivers comfort, durability, and value for Australian homes.</p>",
+            "link_label": "Bella Vista",
+            "link": "shopify://collections/bella-vista-bathroom"
+          }
+        },
+        "column_dmJqyt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Feature-Brands_Caroma_13fec2f7-afe1-45fe-b34c-0663f878a211.png",
+            "title": "Caroma",
+            "text": "<p>Caroma shower heads blend contemporary design with water-saving innovation, tailored for Australian conditions. Known for quality and sustainability, Caroma offers a range of stylish, high-performance shower heads that deliver comfort, efficiency, and durability for modern bathrooms.</p>",
+            "link_label": "Caroma",
+            "link": "shopify://collections/caroma-showers"
+          }
+        },
+        "column_wk89a7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/IKON_logo_black.png",
+            "title": "Ikon",
+            "text": "<p>Ikon shower heads offer a sleek, modern look paired with reliable performance, making them a smart choice for Australian bathrooms. With clean lines, durable finishes, and efficient water flow, Ikon delivers stylish and affordable solutions for both renovations and new builds.</p>",
+            "link_label": "Ikon",
+            "link": "shopify://collections/ikon-bathroom-tapware"
+          }
+        }
+      },
+      "block_order": [
+        "column_wnXAxr",
+        "column_4WDitK",
+        "column_agtwAi",
+        "column_AFMHez",
+        "column_dmJqyt",
+        "column_wk89a7"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Explore Premium Shower Head Brands",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Explore Brands",
+        "button_link": "https://www.cookandbathe.com.au/pages/brands",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_P8zKaA": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_X3g3RY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Why Buy Shower Heads from Cook & Bathe? Quality, Style & Trusted Brands",
+            "heading_size": "h2"
+          }
+        },
+        "text_XVxgmr": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Explore a wide range of premium shower heads, including rain, wall mounted, and hand held styles</li><li>Available in modern finishes like matte black, chrome, brushed nickel, brushed gold</li><li>Featuring trusted brands such as Phoenix, Hansgrohe, Bella Vista and Bourne</li><li>Designed for water efficiency, durability, and everyday comfort in Australian bathrooms</li><li>Shop online or in-store with expert advice and Australia-wide delivery available</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_X3g3RY",
+        "text_XVxgmr"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/28HellerSt_Bathroom_9.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_3YkMXn": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_AfwzQH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Chrome Shower Heads for a Timeless Bathroom Look",
+            "heading_size": "h2"
+          }
+        },
+        "text_LVMVda": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover our range of sleek and durable chrome shower heads that offer a polished finish, reliable performance, and universal appeal - perfect for any Australian bathroom style.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_Fxfncp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Chrome Shower Heads",
+            "button_link": "https://www.cookandbathe.com.au/collections/shower-heads/chrome"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AfwzQH",
+        "text_LVMVda",
+        "button_Fxfncp"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/shower_head_landing_page1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_6zXLrA": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_T7mBDk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Matte Black Shower Heads for Bold, Modern Bathrooms",
+            "heading_size": "h2"
+          }
+        },
+        "text_azTbie": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Add contrast and contemporary edge to your space with our collection of matte black shower heads - designed for style, durability, and standout performance in any Australian bathroom.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_MfNA4X": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Matte Black Shower Heads",
+            "button_link": "https://www.cookandbathe.com.au/collections/shower-heads/black"
+          }
+        }
+      },
+      "block_order": [
+        "heading_T7mBDk",
+        "text_azTbie",
+        "button_MfNA4X"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/shower_head_landingpage_2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "video_FxEXjW": {
+      "type": "video",
+      "name": "t:sections.video.presets.name",
+      "settings": {
+        "heading": "Discover Phoenix Luxe XP",
+        "heading_size": "h1",
+        "cover_image": "shopify://shop_images/phoenix_luxe_XP_header.jpg",
+        "video_url": "https://vimeo.com/872422366",
+        "description": "The Phoenix LuxeXP collection redefines the shower experience with innovative spray technology, refined aesthetics, and precise performance. Engineered for luxury, LuxeXP features advanced nozzle design for fuller, more immersive water coverage while maintaining water efficiency. With sleek silhouettes and premium finishes, each LuxeXP shower head and hand shower is crafted to deliver indulgence without compromise - perfect for modern Australian bathrooms seeking both style and functionality. Discover the difference of LuxeXP by Phoenix, where everyday showering becomes a personalised retreat.",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "470d66d1-ac12-44e8-8b33-7169079e03e9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Coming Soon!</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "173948753494c948f2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "image_with_text_azACDi",
+    "featured_collection_tNccMV",
+    "multicolumn_k8JM3N",
+    "image_with_text_P8zKaA",
+    "image_with_text_3YkMXn",
+    "image_with_text_6zXLrA",
+    "video_FxEXjW",
+    "cb_find_showroom_PQG6UA",
+    "470d66d1-ac12-44e8-8b33-7169079e03e9",
+    "173948753494c948f2",
+    "main"
+  ]
+}

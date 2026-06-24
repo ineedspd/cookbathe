@@ -1,0 +1,494 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "disabled": true,
+      "settings": {
+        "label-1": "30 Years Industry Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c": {
+      "type": "cb-range-banner",
+      "settings": {
+        "image": "shopify://shop_images/header_banner_frankesinks_1080x594_bc00e800-519a-4bee-9a5c-de88a1135a84.jpg"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "7701ff03-b470-43b2-84ac-584ae97799ee": {
+      "type": "cb-range-category",
+      "settings": {}
+    },
+    "1c932d4d-9445-49f3-a96e-cde914b20c5b": {
+      "type": "cb-range-featured-products",
+      "settings": {
+        "columns_desktop": 4,
+        "product_show": 4,
+        "double_image": false,
+        "variant_enable": false,
+        "wishlist_enable": true,
+        "discount_enable": true,
+        "price_enable": true,
+        "addtocart": false,
+        "arrows": false
+      }
+    },
+    "rich_text_KfGj7K": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wFPXMM": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>A Franke Faucet; High Quality Elegance</h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_KGXbeM": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Why Choose Franke for Your Kitchen?</h3><p>Franke’s dedication to excellence has made them a go-to brand for discerning homeowners. Designed with both beauty and practicality in mind, Franke products are perfect for Australian kitchens where both aesthetics and efficiency matter. Whether you're renovating your kitchen or simply upgrading, you can count on Franke for innovative designs, sustainable solutions, and enduring quality.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wFPXMM",
+        "text_KGXbeM"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_EWtVMG": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LCAtDY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Franke Sinks: Superior Craftsmanship Meets Functionality",
+            "heading_size": "h2"
+          }
+        },
+        "text_bCHpqV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Franke sinks are designed to withstand the demands of the modern kitchen, offering both style and practicality. Made from high-quality stainless steel, granite, or ceramic, these sinks are not only durable but also resistant to stains and scratches, ensuring they maintain their sleek appearance for years to come. Whether you need a single bowl or double bowl configuration, Franke has a solution tailored to your kitchen's needs.</p><p><a href=\"https://www.cookandbathe.com.au/collections/sinks-by-franke\" title=\"Franke Sink Collection\">Explore our selection of Franke sinks</a> and discover the perfect fit for your kitchen.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_mzgrB9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Franke Sinks",
+            "button_link": "https://www.cookandbathe.com.au/collections/sinks-by-franke"
+          }
+        }
+      },
+      "block_order": [
+        "heading_LCAtDY",
+        "text_bCHpqV",
+        "button_mzgrB9"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Franke_353x4102_8ed65da0-3486-4270-8abc-375c1cfbcda0.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_McfYeY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gEdnY9": {
+          "type": "heading",
+          "settings": {
+            "heading": "Franke Taps: Precision and Innovation",
+            "heading_size": "h2"
+          }
+        },
+        "text_mDWNMP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Franke taps offer a perfect balance between form and function, with sleek designs and advanced features such as water-saving technology and flexible spouts. Made with Swiss precision, Franke kitchen taps are a testament to their commitment to sustainability and efficiency. Whether you're looking for minimalist aesthetics or bold statements, there's a Franke tap for every kitchen.</p><p><a href=\"https://www.cookandbathe.com.au/collections/tapware-by-franke\" title=\"Franke Taps\">Browse our range of Franke taps</a> to enhance your kitchen setup.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_YEpeaF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Franke Taps",
+            "button_link": "https://www.cookandbathe.com.au/collections/tapware-by-franke"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gEdnY9",
+        "text_mDWNMP",
+        "button_YEpeaF"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/FrankeIcon_mobile_1080x594_cacb93f7-adcb-4b5c-9c33-372c95447ee3.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_x9GbRc": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_m69FPd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Franke Sink Mixers: Versatile and Stylish",
+            "heading_size": "h2"
+          }
+        },
+        "text_idNfWC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Franke sink mixers are the perfect combination of modern style and practical use. With various designs to suit any kitchen aesthetic, Franke sink mixers provide reliable water flow and easy temperature control, making them a must-have for any kitchen upgrade.</p><p><a href=\"https://www.cookandbathe.com.au/collections/sink-mixers-by-franke\">Shop Franke sink mixers</a> to elevate your kitchen space.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_f4RTzN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Franke Sink Mixers",
+            "button_link": "https://www.cookandbathe.com.au/collections/sink-mixers-by-franke"
+          }
+        }
+      },
+      "block_order": [
+        "heading_m69FPd",
+        "text_idNfWC",
+        "button_f4RTzN"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Franke_353x4104_83bb0daf-fbaf-4724-9ee1-eb62492c8fef.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_iCNxmi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_wcEc3z": {
+          "type": "heading",
+          "settings": {
+            "heading": "Franke Accessories: Finishing Touches for Your Kitchen",
+            "heading_size": "h2"
+          }
+        },
+        "text_RxBKhq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Franke also offers a wide range of kitchen accessories to complement your sink and tap setup. From cutting boards designed to fit perfectly over your sink to stainless steel drainer baskets, these accessories not only add functionality but also elevate the overall kitchen experience.</p><p><a href=\"https://www.cookandbathe.com.au/collections/accessories-by-franke\" title=\"Franke Accessories\">Explore our Franke kitchen accessories</a> to complete your kitchen.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_V4JGbp": {
+          "type": "button",
+          "settings": {
+            "button_label": "Franke Accessories",
+            "button_link": "https://www.cookandbathe.com.au/collections/accessories-by-franke"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wcEc3z",
+        "text_RxBKhq",
+        "button_V4JGbp"
+      ],
+      "custom_css": [],
+      "settings": {
+        "image": "shopify://shop_images/Tile_franke_sink_accessories_435x636_73fb45f1-b578-4b8d-a30b-af340f685061.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_ywUiN8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9YwM8t": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>Why Franke is Perfect for Australian Homes</h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_MwUaz6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Franke products are designed with Australian kitchens in mind, combining practical innovation with contemporary design. Their focus on water efficiency and durable materials makes them a natural fit for the Australian lifestyle, where sustainability is key. Whether you are located in Melbourne or anywhere across Australia, Franke’s sleek, functional products will elevate your kitchen space.</p><p><a href=\"https://www.cookandbathe.com.au/collections/franke\" title=\"Franke Kitchen\">Check out our full range of Franke kitchen products</a> to find the perfect match for your home.</p>"
+          }
+        },
+        "button_eLajAx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Franke Kitchen",
+            "button_link": "https://www.cookandbathe.com.au/collections/franke",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9YwM8t",
+        "text_MwUaz6",
+        "button_eLajAx"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_AURFX8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_KUb9ik": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>Discover More with Cook & Bathe</h3>",
+            "heading_size": "h1"
+          }
+        },
+        "text_qdDewi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Cook & Bathe, we offer an extensive range of premium kitchen solutions from top brands. In addition to Franke, explore our collections from other leading brands that pair perfectly with Franke products.</p>"
+          }
+        },
+        "button_whBVpm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Explore Smeg Appliances",
+            "button_link": "shopify://collections/smeg",
+            "button_style_secondary": true,
+            "button_label_2": "Explore Euro Appliances",
+            "button_link_2": "shopify://collections/euro-appliances",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_KUb9ik",
+        "text_qdDewi",
+        "button_whBVpm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_CFefpc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PfMpiy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Video: Franke Kitchen Solutions in Action</h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_kMA8Ac": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enhance your kitchen with the very best in design and technology. Watch this video to see how Franke’s innovative solutions can transform your kitchen.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_PfMpiy",
+        "text_kMA8Ac"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_ztyhEw": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"display: flex; justify-content: center;\">\n    <iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/oYHwruKRe1k?si=UJdM0rsVxVxfGclu\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</div>\n<div style=\"display: flex; justify-content: center;\">\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/J3OMZtfeJCU?si=_WiP2SK1dvZhCRdj\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</div>\n<div style=\"display: flex; justify-content: center;\">\n<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/qRsGSqYxaDg?si=VgrTWe4DBHuffsgV\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</div>\n<div style=\"display: flex; justify-content: center;\"><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/VPV8YvED_bQ?si=H3CmDBs6NiJKojKf\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>\n</div>",
+        "color_scheme": "background-1",
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "cb_find_showroom_CqJ3bj": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_AT7Key": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/kFjQC5RGWhM6gvYv6",
+            "btn-target-2": false
+          }
+        },
+        "showroom_h8J3iR": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "https://maps.app.goo.gl/cRuiaDRb6RMjcf7J9",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393574900",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/q2o9qc5pKF4zz2xFA",
+            "btn-target-2": false
+          }
+        },
+        "showroom_hKD9QM": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393762299",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/yE7ag6RUPCQWn1Kf6",
+            "btn-target-2": false
+          }
+        }
+      },
+      "block_order": [
+        "showroom_AT7Key",
+        "showroom_h8J3iR",
+        "showroom_hKD9QM"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "17325826721ab3d3e6": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "div",
+        "heading-class": "h2",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within <a href=\"https://www.cookandbathe.com.au/pages/terms-and-conditions\">Metro Melbourne</a></p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "a54961c2-7f17-4439-8cdf-0edf4aba4f2c",
+    "main",
+    "7701ff03-b470-43b2-84ac-584ae97799ee",
+    "1c932d4d-9445-49f3-a96e-cde914b20c5b",
+    "rich_text_KfGj7K",
+    "image_with_text_EWtVMG",
+    "image_with_text_McfYeY",
+    "image_with_text_x9GbRc",
+    "image_with_text_iCNxmi",
+    "rich_text_ywUiN8",
+    "rich_text_AURFX8",
+    "rich_text_CFefpc",
+    "custom_liquid_ztyhEw",
+    "cb_find_showroom_CqJ3bj",
+    "17325826721ab3d3e6",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

@@ -1,0 +1,111 @@
+<div class="delivery_wrapper position-relative">
+    <div class="container section-container">
+        <div class="delivery_title">
+            {% if section.settings.title != blank %}
+            <h2>{{ section.settings.title }}</h2>
+            {% endif %}
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6 col-12">
+                <div class="delivery_content">
+                    {% if section.settings.content-1 != blank %}
+                    <div class="para">
+                        {{ section.settings.content-1 }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <div class="delivery_content">
+                    {% if section.settings.content-2 != blank %}
+                    <div class="para">
+                        {{ section.settings.content-2 }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="delivery_img_wrapper">
+            {% for block in section.blocks %}
+            {% if block.settings.delivery-img != blank %}
+            <div class="delivery_img_box position-relative">
+                <img src="{{ block.settings.delivery-img | img_url:'master' }}" class="w-100" alt="Delivery">
+
+              <div class="common_el_wrapper d-flex align-items-center justify-content-end mt-3">
+                  {% if block.settings.logistic != blank %}
+                  <div class="common_el logistic_el">
+                      <img src="{{ block.settings.logistic | img_url:'master' }}" alt="Cutting edge logistics">
+                  </div>
+                  {% endif %}
+                  {% if block.settings.delivery-boxes != blank %}
+                  <div class="common_el boxes_el">
+                      <img src="{{ block.settings.delivery-boxes | img_url:'master' }}" alt="Boxes">
+                  </div>
+                  {% endif %}
+              </div>
+              
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Delivery",
+    "tag": "section",
+    "class": "cb_delivery",
+    "settings": [
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"richtext",
+        "id":"content-1",
+        "label":"Content"
+      },
+      {
+        "type":"richtext",
+        "id":"content-2",
+        "label":"Content"
+      }
+    ],
+    "blocks": [
+    {
+      "type": "image",
+      "name": "Delivery image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "delivery-img",
+          "label": "Delivery image"
+        },
+        {
+          "type": "image_picker",
+          "id": "logistic",
+          "label": "Element image"
+        },
+        {
+          "type": "image_picker",
+          "id": "delivery-boxes",
+          "label": "Element image"
+        }
+      ]
+    }
+  ],
+    "presets": [
+      {
+        "name": "Delivery"
+      }
+    ]
+    }
+    {% endschema %}

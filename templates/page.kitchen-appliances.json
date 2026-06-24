@@ -1,0 +1,694 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_i6aRkn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TGHNNy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Refrigeration: Engineered to Preserve, Designed to Impress</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Tgm7iC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Choosing the right fridge is one of the most important decisions in designing a functional kitchen. At Cook & Bathe, our refrigeration collection is designed to meet a broad range of lifestyle needs, spatial requirements, and design preferences. Whether you’re upgrading your primary fridge or adding a secondary unit to your home bar or wine cellar, our selection offers tailored solutions that combine energy efficiency, smart storage, and refined finishes.</p><p>Our <a href=\"https://www.cookandbathe.com.au/collections/fridges\">Fridges collection</a> includes a broad spectrum of sizes and configurations, ensuring there’s an option suited to every kitchen—from compact apartments to large family homes. Each model is built with modern refrigeration technology to maintain consistent temperatures, reduce frost build-up, and support food longevity. Whether you’re after spacious internal layouts, adjustable shelving, or dedicated humidity-controlled compartments, you’ll find a fridge designed to enhance both form and function.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TGHNNy",
+        "text_Tgm7iC"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multicolumn_RN4nb9": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tKKNd8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_fridge.svg",
+            "title": "Freestanding Fridges",
+            "text": "<p><a href=\"https://www.cookandbathe.com.au/collections/freestanding-fridges\">Freestanding fridges</a> are a popular choice for homeowners who value flexibility and ease of installation. Available in a variety of heights, widths, and capacities, these models allow you to place your fridge wherever suits your kitchen layout. Many include split configurations such as top or bottom-mounted freezers, side-by-side doors, or French-door designs. Freestanding units offer accessibility and storage versatility, with features like reversible doors, LED lighting, and spacious crispers to accommodate large grocery hauls or growing families.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/freestanding-fridges"
+          }
+        },
+        "column_zV8BR3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_fridge.svg",
+            "title": "Integrated Fridges",
+            "text": "<p>If you’re after a clean, seamless kitchen aesthetic, our <a href=\"https://www.cookandbathe.com.au/collections/integrated-fridges\">integrated fridges</a> are engineered to blend into your cabinetry. These models are ideal for modern, minimalist kitchen designs, allowing you to maintain visual consistency across cupboards and panels. Integrated fridges are available in multiple sizes and are designed with flush-fit doors and concealed ventilation, making them a preferred choice for luxury renovations and premium kitchen builds.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/integrated-fridges"
+          }
+        },
+        "column_X346kn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_barfridges.png",
+            "title": "Bar Fridges",
+            "text": "<p>Our range of <a href=\"https://www.cookandbathe.com.au/collections/bar-fridges\">bar fridges</a> offers compact convenience for secondary storage. These units are ideal for guest areas, entertainment spaces, office kitchens, or apartment living. Despite their size, bar fridges can include dedicated compartments for cans and bottles, adjustable shelves, and internal lighting. They’re perfect for storing beverages, snacks, or overflow items without taking up the space of a full-sized appliance.</p>",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/bar-fridges"
+          }
+        }
+      },
+      "block_order": [
+        "column_tKKNd8",
+        "column_zV8BR3",
+        "column_X346kn"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Refrigeration: Engineered to Preserve, Designed to Impress",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Shop Fridges",
+        "button_link": "shopify://collections/fridges-kitchen",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_3qAx9n": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3tWCM3": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Ovens & Cooktops</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_Tq7myG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cooking appliances are the heart of any kitchen. Whether you’re a daily home cook or an occasional entertainer, your choice of oven and cooktop determines not just what you can prepare, but how efficiently and precisely you can do it. At Cook & Bathe, we offer a premium selection of ovens and cooktops that prioritise performance, style, and integration—so you can craft meals with confidence.</p><p>Explore our complete <a href=\"https://www.cookandbathe.com.au/collections/ovens\">Ovens</a> and <a href=\"https://www.cookandbathe.com.au/collections/cooktops\">Cooktops</a> collections to find the ideal match for your kitchen layout, culinary habits, and personal preferences.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3tWCM3",
+        "text_Tq7myG"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_THfhdg": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_9xFXBB": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "inbuilt-electric"
+          }
+        },
+        "featured_collection_AEqk3A": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "freestanding-ovens"
+          }
+        },
+        "featured_collection_PCMCnp": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "microwaves"
+          }
+        },
+        "featured_collection_HiJRHY": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "gas-cooktops-stove"
+          }
+        },
+        "featured_collection_4NBm3D": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "induction"
+          }
+        },
+        "featured_collection_MfxYi6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ibuilt-electric"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_9xFXBB",
+        "featured_collection_AEqk3A",
+        "featured_collection_PCMCnp",
+        "featured_collection_HiJRHY",
+        "featured_collection_4NBm3D",
+        "featured_collection_MfxYi6"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Ovens and Cooktops",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_CQwnLV": {
+      "type": "rich-text",
+      "blocks": {
+        "text_n4gY8q": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p><h3><strong>InBuilt Electric Ovens</strong></h3><p>Our <a href=\"https://www.cookandbathe.com.au/collections/inbuilt-electric-ovens\">inbuilt electric ovens</a> are designed for kitchens that value a seamless and integrated look. Installed directly into cabinetry, these ovens align with modern design standards while offering ergonomic access—often at eye-level or below your cooktop.</p><p>Built with precision heating elements and fan-forced functionality, these ovens offer consistent heat distribution—ideal for baking, roasting, and grilling. Many models also include programmable timers, multi-function modes, cool-touch doors, and even pyrolytic self-cleaning cycles. If precision and consistency are key to your cooking, an inbuilt electric oven offers reliability and ease.</p><h3><strong>Freestanding Ovens</strong></h3><p><a href=\"https://www.cookandbathe.com.au/collections/freestanding-ovens\">Freestanding ovens</a> combine oven and cooktop into a single unit—ideal for homes without built-in cabinetry or for those wanting a standalone feature appliance. These models are available in standard 60cm sizes for compact kitchens, as well as larger 90cm options suited to growing families or entertainers.</p><p>Freestanding ovens typically include generous internal capacity, built-in grill functionality, and high-powered cooktops. With the added flexibility of installation and robust performance, they remain a favourite for households that require an all-in-one cooking solution.</p><h3><strong>Microwave Ovens</strong></h3><p><a href=\"https://www.cookandbathe.com.au/collections/microwave-ovens\">Microwave ovens</a> are essential for efficient, fast-paced kitchens. They provide quick reheating, defrosting, and in many cases, multi-function features such as grilling or baking. Models within our collection feature user-friendly digital interfaces, inverter technology for even heating, and sleek designs that complement any kitchen aesthetic.</p><p>Whether used daily or as a secondary appliance, a high-quality microwave oven can elevate convenience without compromising style.</p><h3><strong>Gas Cooktops</strong></h3><p>For chefs who value intuitive control, <a href=\"https://www.cookandbathe.com.au/collections/gas-cooktops\">gas cooktops</a> remain the gold standard. With visible flames and rapid heat response, they allow for precise temperature adjustments in real time. Our gas cooktops come equipped with safety features such as flame failure protection, as well as durable cast iron trivets and high-output wok burners for more advanced cooking needs.</p><p>Gas cooktops are available in multiple configurations—from compact two-burner models to expansive five-burner layouts—offering a versatile solution for both small and large kitchens.</p><h3><strong>Electric Cooktops</strong></h3><p><a href=\"https://www.cookandbathe.com.au/collections/electric-cooktops\">Electric cooktops</a> offer a smooth, flat cooking surface that is easy to clean and fits beautifully into minimalist kitchen designs. They use radiant heating beneath a glass-ceramic surface to evenly distribute heat, making them ideal for low-maintenance, everyday cooking.</p><p>These models typically include touch or dial controls, residual heat indicators, and multiple cooking zones. For households that value simplicity and sleek aesthetics, an electric cooktop is a practical and attractive option.</p><h3><strong>Induction Cooktops</strong></h3><p><a href=\"https://www.cookandbathe.com.au/collections/induction-cooktops\">Induction cooktops</a> represent the next generation of kitchen technology. These units heat pots and pans directly via electromagnetic energy, resulting in ultra-fast heating, exceptional energy efficiency, and enhanced safety. The surface remains cool to the touch, making it ideal for families or open-plan kitchens.</p><p>With advanced features such as child locks, boost functions, bridge zones, and precise power adjustment, induction cooktops offer control and convenience tailored for the modern cook.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_n4gY8q"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_MaTWry": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hDJLan": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Rangehoods: Style That Clears the Air</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_ifrdDc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A high-quality rangehood is essential for maintaining clean air, reducing lingering odours, and protecting your kitchen cabinetry from excess moisture and grease. At Cook & Bathe, our <a href=\"https://www.cookandbathe.com.au/collections/rangehoods\">Rangehoods collection</a> offers solutions tailored to a wide range of kitchen layouts, cooking styles, and aesthetic preferences.</p><p>Whether you need a bold feature piece or a subtle design that disappears into your cabinetry, our collection is built around performance, durability, and style. Each model is engineered for powerful extraction, low noise levels, and easy maintenance—giving you a kitchen that not only looks better, but functions better too.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hDJLan",
+        "text_ifrdDc"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_7ExbAM": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_BB4kN4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "canopy"
+          }
+        },
+        "featured_collection_iMnHLa": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "undermount-rangehoods"
+          }
+        },
+        "featured_collection_RYndXx": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "cassette-rangehoods"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_BB4kN4",
+        "featured_collection_iMnHLa",
+        "featured_collection_RYndXx"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Rangehoods",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_TLdbgj": {
+      "type": "rich-text",
+      "blocks": {
+        "text_j3fLqQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A dependable rangehood is essential for a cleaner, more comfortable kitchen environment. Whether you’re cooking daily meals or preparing larger feasts, proper ventilation helps reduce steam, smoke, and odours while protecting your cabinetry from grease build-up. The <a href=\"https://www.cookandbathe.com.au/collections/rangehoods\">Rangehoods collection</a> at Cook & Bathe includes options for various kitchen layouts and cabinetry styles, so you can choose a model that fits your space and functional needs.</p><p>Each rangehood in our selection is chosen for its performance, durability, and integration potential—supporting both traditional and contemporary kitchens with effective airflow management.</p><h3><strong>Wall Canopy Rangehoods</strong></h3><p><a href=\"https://www.cookandbathe.com.au/collections/wall-canopy-rangehoods\">Wall Canopy Rangehoods</a> are mounted directly to the wall above your cooktop and offer a prominent visual presence in the kitchen. These models are suitable for a range of kitchen designs and provide strong air extraction performance with simple, easy-to-access operation.</p><p>Available in a variety of widths and finishes, they suit standard cooking configurations and are a reliable choice for effective kitchen ventilation.</p><h3><strong>Undermount Rangehoods</strong></h3><p><a href=\"https://www.cookandbathe.com.au/collections/undermount-rangehoods\">Undermount Rangehoods</a> are designed to be built into your cabinetry, allowing for a clean, minimalist appearance. They are especially well-suited to kitchens with a focus on seamless design, providing ventilation while remaining discreet. These units integrate neatly into overhead cupboards and help maintain consistent airflow without disrupting the kitchen’s visual layout.</p><h3><strong>Cassette Rangehoods</strong></h3><p><a href=\"https://www.cookandbathe.com.au/collections/cassette-rangehoods\"> Cassette Rangehoods</a> offer a streamlined solution for those looking to maintain an open or integrated kitchen design. Built to sit flush with the ceiling or overhead cabinetry, cassette rangehoods are an alternative for specific kitchen configurations where traditional wall-mounted or undermount units are not suitable.</p><p>They offer essential ventilation performance while preserving overhead space, contributing to a modern and uncluttered kitchen finish.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_j3fLqQ"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_dQbDaC": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "BORA",
+        "heading_size": "h1",
+        "description": "<p>BORA offers a distinctive approach to kitchen ventilation and cooking design. Known for combining cooktops with integrated extraction, Bora solutions are engineered for precision, efficiency, and a cleaner kitchen layout.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bora",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_XKUHmE": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Electrolux",
+        "heading_size": "h1",
+        "description": "<p>Electrolux delivers reliable, user-friendly appliances that support everyday living. Their ovens, cooktops, and rangehoods are designed with practical features, making them a trusted choice for Australian households.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "electrolux",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_a7qCcf": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Euro Appliances",
+        "heading_size": "h1",
+        "description": "<p>Euro Appliances offer stylish and functional solutions across ovens, cooktops, rangehoods, and refrigeration. The range is suited to both new builds and renovations, balancing affordability with consistent performance.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "euro-appliances",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_JLbUeE": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Franke",
+        "heading_size": "h1",
+        "description": "<p>Franke is known for elegant kitchen design across appliances, sinks, and accessories. Their kitchen appliances deliver form and function for customers who value a premium look supported by dependable operation.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "franke-appliances",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_XHUDee": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Kleenmaid",
+        "heading_size": "h1",
+        "description": "<p>Kleenmaid combines performance with simplicity, offering a selection of cooktops, ovens, and rangehoods designed for the modern kitchen. The brand is built on reliability and straightforward functionality.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "kleenmaid",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_fqVMkx": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Smeg",
+        "heading_size": "h1",
+        "description": "<p>Smeg is a leader in design-driven kitchen appliances, offering retro and contemporary styles across their full range. From iconic small appliances to high-performance ovens and cooktops, Smeg brings personality and polish to every kitchen.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "smeg",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_ejRAKE": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Westinghouse",
+        "heading_size": "h1",
+        "description": "<p>Westinghouse is a trusted name in Australian homes, offering accessible, everyday appliances that perform. Their range includes ovens, cooktops, fridges, and dishwashers—built for reliability, ease of use, and long-term value.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "westinghouse",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_xUqC8f": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ihENJh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2><strong>Shop Kitchen Appliances Online or Visit Our Showrooms</strong></h2>",
+            "heading_size": "h1"
+          }
+        },
+        "text_EEVVCH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Looking to upgrade your kitchen? Explore our full collection of high-performance kitchen appliances online, or visit one of our Melbourne showrooms to see the quality and craftsmanship in person. From ovens and cooktops to refrigeration and rangehoods, our team is here to guide you every step of the way.</p><p><a href=\"https://www.cookandbathe.com.au/collections/appliances\">Shop Kitchen Appliances Now</a> or <a href=\"https://www.cookandbathe.com.au/pages/contact-us\">Contact Our Showroom Consultants</a> to get started.</p>"
+          }
+        },
+        "button_dFVyJP": {
+          "type": "button",
+          "settings": {
+            "button_label": "Find Showrooms",
+            "button_link": "shopify://pages/store-locations",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ihENJh",
+        "text_EEVVCH",
+        "button_dFVyJP"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_blog_YqrJzW": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "173948753494c948f2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "main",
+    "rich_text_i6aRkn",
+    "multicolumn_RN4nb9",
+    "rich_text_3qAx9n",
+    "collection_list_THfhdg",
+    "rich_text_CQwnLV",
+    "rich_text_MaTWry",
+    "collection_list_7ExbAM",
+    "rich_text_TLdbgj",
+    "featured_collection_dQbDaC",
+    "featured_collection_XKUHmE",
+    "featured_collection_a7qCcf",
+    "featured_collection_JLbUeE",
+    "featured_collection_XHUDee",
+    "featured_collection_fqVMkx",
+    "featured_collection_ejRAKE",
+    "rich_text_xUqC8f",
+    "featured_blog_YqrJzW",
+    "cb_find_showroom_PQG6UA",
+    "173948753494c948f2"
+  ]
+}

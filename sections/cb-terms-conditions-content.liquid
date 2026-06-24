@@ -1,0 +1,69 @@
+<div class="terms_conditions_content_block">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-md-8 col-12">
+        <div class="terms_conditions_content_inner">
+          {% for block in section.blocks %}
+            <h6 id="{{ block.settings.title | handle }}">
+              {{ forloop.index }}
+              {{ block.settings.title }}
+            </h6>
+            {{ block.settings.content }}
+          {% endfor %}
+        </div>
+      </div>
+      <div class="col-xl-3 col-md-4 col-12">
+        <div class="terms_conditions_sidebar">
+          <h6>Table of Contents</h6>
+          <ul class="list-unstyled">
+            {% for block in section.blocks %}
+              <li>
+                <a href="#{{ block.settings.title | handle }}">
+                  {{- forloop.index }}.
+                  {{ block.settings.title -}}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+"name": "Terms Conditions Content",
+"tag": "section",
+"class": "cb-terms-conditions-content",
+"settings": [],
+"blocks":[
+  {
+    "type":"section",
+    "name":"Terms",
+    "settings":[
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Title"
+        },
+        {
+          "type":"richtext",
+          "id":"content",
+          "label":"Content"
+        }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Terms Conditions Content"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

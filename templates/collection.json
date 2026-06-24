@@ -1,0 +1,287 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "f2246d84-0d16-4239-a945-d25ffb36671e": {
+      "type": "cb-collections-banner",
+      "blocks": {
+        "collection_k8xApQ": {
+          "type": "collection",
+          "settings": {
+            "coll": "",
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_k8xApQ"
+      ],
+      "settings": {
+        "all_image": "shopify://shop_images/image002.jpg",
+        "image": "shopify://shop_images/collection-banner.png",
+        "menu": "",
+        "title": "Shop",
+        "description": "<p>Shop a wids selections of shapes, sizes and finishes.</p>"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 3,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": false,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 60,
+        "padding_bottom": 36,
+        "btn-name-talk": "Talk to a Salesperson",
+        "btn-link-talk": "tel:(03) 9376 2299"
+      }
+    },
+    "340b4436-77a0-4666-8008-e4470ec535d0": {
+      "type": "cb-featured-products",
+      "blocks": {
+        "27a18e81-b6db-4363-ab2b-ea75715e7375": {
+          "type": "title-style-1",
+          "disabled": true,
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "left",
+            "title": "Recently Viewed"
+          }
+        },
+        "bf8bd930-4ab1-480e-b0ee-810dd348c830": {
+          "type": "title-style-3",
+          "settings": {
+            "heading-tag": "h2",
+            "title": "Recently Viewed",
+            "btn-type": "default",
+            "btn-style": "btn btn-link",
+            "btn-name": "View all Product",
+            "btn-link": "shopify://collections/all"
+          }
+        },
+        "34d19195-9d72-4076-a6c2-6ce803bac9d3": {
+          "type": "collection",
+          "settings": {
+            "coll": "bathroom"
+          }
+        }
+      },
+      "block_order": [
+        "27a18e81-b6db-4363-ab2b-ea75715e7375",
+        "bf8bd930-4ab1-480e-b0ee-810dd348c830",
+        "34d19195-9d72-4076-a6c2-6ce803bac9d3"
+      ],
+      "disabled": true,
+      "settings": {
+        "columns_desktop": 4,
+        "product_show": 4,
+        "double_image": false,
+        "variant_enable": true,
+        "wishlist_enable": true,
+        "discount_enable": true,
+        "price_enable": true,
+        "addtocart": false,
+        "arrows": false
+      }
+    },
+    "26c69349-bbb9-4f66-8b56-bd8635f07368": {
+      "type": "cb-rich-text",
+      "settings": {}
+    },
+    "4e472b45-90c0-4e33-a6b9-18fe1aef901d": {
+      "type": "cb-product-recommendations",
+      "blocks": {
+        "d56d77aa-3175-4bdc-8a2d-263dfc5f693e": {
+          "type": "title-style-3",
+          "settings": {
+            "heading-tag": "h2",
+            "title": "Related Products",
+            "btn-type": "default",
+            "btn-style": "btn btn-link",
+            "btn-name": "View all Product",
+            "btn-link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "d56d77aa-3175-4bdc-8a2d-263dfc5f693e"
+      ],
+      "settings": {
+        "columns_desktop": 4,
+        "product_show": 8,
+        "double_image": true,
+        "variant_enable": true,
+        "wishlist_enable": true,
+        "discount_enable": true,
+        "price_enable": true,
+        "addtocart": false,
+        "arrows": false
+      }
+    },
+    "1732582398ef9807a8": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "e9b770ae-a02b-4678-8ac9-0093f95858d4": {
+      "type": "cb-blog-post",
+      "blocks": {
+        "b93dd329-76bf-463c-bd6b-857cd89e8bc5": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "left",
+            "title": "Inspire Yourself"
+          }
+        },
+        "56a5dfeb-93c3-4f72-80cf-2ce47728ad9d": {
+          "type": "blog",
+          "settings": {
+            "blogs": "inspiration"
+          }
+        }
+      },
+      "block_order": [
+        "b93dd329-76bf-463c-bd6b-857cd89e8bc5",
+        "56a5dfeb-93c3-4f72-80cf-2ce47728ad9d"
+      ],
+      "settings": {}
+    },
+    "1a06945a-4d94-4778-96ee-543cb7e18bcf": {
+      "type": "cb-collage",
+      "blocks": {
+        "76796a5d-8d8c-4438-aec9-2dddb0b32e91": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "center",
+            "title": "Explore and be Inspired"
+          }
+        },
+        "78edbfab-1280-459b-8310-12d5295569e9": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_bathroom_phoenixtapware_banner.jpg",
+            "name": "Bathroom",
+            "link": "shopify://collections/bathroom"
+          }
+        },
+        "4f217b63-69d4-4ec5-befb-2f4807a87c4a": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_kitchen_banner.jpg",
+            "name": "Kitchen",
+            "link": "shopify://collections/kitchen"
+          }
+        },
+        "3d75132e-0dbe-42eb-8004-3e4a8d0a2202": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_laundry_franke_banner.jpg",
+            "name": "Laundry",
+            "link": "shopify://collections/laundry"
+          }
+        }
+      },
+      "block_order": [
+        "76796a5d-8d8c-4438-aec9-2dddb0b32e91",
+        "78edbfab-1280-459b-8310-12d5295569e9",
+        "4f217b63-69d4-4ec5-befb-2f4807a87c4a",
+        "3d75132e-0dbe-42eb-8004-3e4a8d0a2202"
+      ],
+      "settings": {}
+    },
+    "d43b2be5-61cb-4c6c-9caa-674ad3e84136": {
+      "type": "cb-about-content-block",
+      "blocks": {
+        "3a5ba2f6-e57e-4f74-ac0f-785e2759a8da": {
+          "type": "content",
+          "settings": {
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "3a5ba2f6-e57e-4f74-ac0f-785e2759a8da"
+      ],
+      "disabled": true,
+      "settings": {}
+    },
+    "ad0b70ec-f307-4412-a954-84c838d99635": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $799 and delivery within Metro Melbourne</p>"
+      }
+    },
+    "cb_accordion_adegrL": {
+      "type": "cb-accordion",
+      "blocks": {
+        "accordion_item_cMDrcf": {
+          "type": "accordion_item",
+          "repeater": "{{ collection.metafields.custom.bottom_faq.value }}",
+          "settings": {
+            "heading": "{{ block.repeater.question.value }}",
+            "row_content": "{{ block.repeater.answer | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_cMDrcf"
+      ],
+      "name": "CB Accordion",
+      "settings": {
+        "heading": "Frequently Asked Questions",
+        "heading-tag": "h2",
+        "text-style": "left",
+        "open_first_accordion_row": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "f2246d84-0d16-4239-a945-d25ffb36671e",
+    "banner",
+    "product-grid",
+    "340b4436-77a0-4666-8008-e4470ec535d0",
+    "26c69349-bbb9-4f66-8b56-bd8635f07368",
+    "4e472b45-90c0-4e33-a6b9-18fe1aef901d",
+    "1732582398ef9807a8",
+    "e9b770ae-a02b-4678-8ac9-0093f95858d4",
+    "1a06945a-4d94-4778-96ee-543cb7e18bcf",
+    "d43b2be5-61cb-4c6c-9caa-674ad3e84136",
+    "ad0b70ec-f307-4412-a954-84c838d99635",
+    "cb_accordion_adegrL"
+  ]
+}

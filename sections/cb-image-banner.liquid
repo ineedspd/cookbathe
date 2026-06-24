@@ -1,0 +1,193 @@
+<div class="banner_image_wrapper bg_cover position-relative">
+  <div class="container banner_container">
+    <div class="banner_content bg-white">
+      <{{ section.settings.heading-tag }} {% if section.settings.heading-class != 'none' %}class="{{ section.settings.heading-class }}"{% endif %}>{{ section.settings.title }}</{{ section.settings.heading-tag }}>
+      <p class="lead">{{ section.settings.description }}</p>
+      {% if section.settings['btn-name'] != blank %}
+        <a
+          href="{{ section.settings.btn-link }}"
+          class="{{ section.settings.btn-style }} {% if section.settings.btn-type == 'large' %}btn-lg{% endif %}"
+        >
+          {{- section.settings['btn-name'] -}}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% assign desk_image = section.settings.image | img_url: 'master' %}
+{% if section.settings['image-mobile'].size != blank %}
+  {% assign mob_image = section.settings['image-mobile'] | img_url: 'master' %}
+{% else %}
+  {% assign mob_image = section.settings.image | img_url: 'master' %}
+{% endif %}
+<style>
+  .banner_image_wrapper {
+    background-image: url({{ mob_image }});
+  }
+  @media (min-width: 768px) {
+    .banner_image_wrapper {
+      background-image: url({{ desk_image }});
+    }
+  }
+</style>
+{% schema %}
+{
+"name": "Banner Image",
+"tag": "section",
+"class": "cb-image-banner",
+"settings": [
+    {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Desktop Image"
+  },
+  {
+    "type":"image_picker",
+    "id":"image-mobile",
+    "label":"Mobile Image"
+  },
+  {
+    "type":"select",
+    "id":"heading-tag",
+    "options":[
+      {
+        "label":"Div",
+        "value":"div"
+      },
+      {
+        "label":"Paragraph",
+        "value":"p"
+      },
+      {
+        "label":"H1",
+        "value":"h1"
+      },
+      {
+        "label":"H2",
+        "value":"h2"
+      },
+      {
+        "label":"H3",
+        "value":"h3"
+      },
+      {
+        "label":"H4",
+        "value":"h4"
+      },
+      {
+        "label":"H5",
+        "value":"h5"
+      },
+      {
+        "label":"H6",
+        "value":"h6"
+      }      
+    ],
+    "label":"Heading Tag",
+    "default":"h1"
+  },
+  {
+    "type":"select",
+    "id":"heading-class",
+    "options":[  
+      {
+        "label":"None",
+        "value":"none"
+      },
+      {
+        "label":"H1",
+        "value":"h1"
+      },
+      {
+        "label":"H2",
+        "value":"h2"
+      },
+      {
+        "label":"H3",
+        "value":"h3"
+      },
+      {
+        "label":"H4",
+        "value":"h4"
+      },
+      {
+        "label":"H5",
+        "value":"h5"
+      },
+      {
+        "label":"H6",
+        "value":"h6"
+      }      
+    ],
+    "label":"Heading Class",
+    "default":"none"
+  },
+   {
+     "type":"text",
+     "id":"title",
+     "label":"Title"
+   },
+   {
+     "type":"textarea",
+     "id":"description",
+     "label":"Description"
+   },
+   {
+        "type":"select",
+        "id":"btn-type",
+        "options": [
+                        {
+                          "label": "Default",
+                          "value": "default"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "large"
+                        }
+        ],
+        "label":"Button Type"
+    },
+    {
+        "type":"select",
+        "id":"btn-style",
+        "options": [
+                    {
+                        "label": "Primary",
+                        "value": "btn btn-primary"
+                    },
+                    {
+                        "label": "Outline",
+                        "value": "btn btn-outline-primary"
+                    },
+                    {
+                        "label": "Animation",
+                        "value": "btn btn-outline-primary btn-animated"
+                    },
+                    {
+                        "label": "Link",
+                        "value": "btn btn-link"
+                    }
+        ],
+        "label":"Button Style",
+        "default":"btn btn-primary"
+    },
+    {
+        "type":"text",
+        "id":"btn-name",
+        "label":"Button Name"
+    },
+    {
+        "type":"url",
+        "id":"btn-link",
+        "label":"Button Link"
+    }
+],
+"presets": [
+  {
+    "name": "Banner Image"
+  }
+]
+}
+{% endschema %}
+{% javascript %}
+{% endjavascript %}

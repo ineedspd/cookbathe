@@ -1,0 +1,31 @@
+{% if count < 150 %}
+  {{ '1min' }}
+{% elsif count > 150 and count < 300 %}
+  {{ '2min' }}
+{% elsif count > 299 and count < 450 %}
+  {{ '3min' }}
+{% elsif count > 449 and count < 600 %}
+  {{ '4min' }}
+{% elsif count > 599 and count < 750 %}
+  {{ '5min' }}
+{% elsif count > 749 and count < 900 %}
+  {{ '6min' }}
+{% elsif count > 899 and count < 1050 %}
+  {{ '7min' }}
+{% elsif count > 1049 and count < 1200 %}
+  {{ '8min' }}
+{% elsif count > 1199 and count < 1400 %}
+  {{ '9min' }}
+{% elsif count > 1399 and count < 1600 %}
+  {{ '10min' }}
+{% elsif count > 1599 and count < 1800 %}
+  {{ '11min' }}
+{% elsif count > 1799 and count < 2000 %}
+  {{ '12min' }}
+{% elsif count > 1999 and count < 2400 %}
+  {{ '13min' }}
+{% elsif count > 2399 and count < 2600 %}
+  {{ '14min' }}
+{% elsif count > 2600 %}
+  {{ '15min' }}
+{% endif %}

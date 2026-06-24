@@ -1,0 +1,1689 @@
+{%- assign product_form_id = 'product-form-' | append: section.id -%}
+{%- assign selected_tile_variant = product.selected_variant | default: product.selected_or_first_available_variant -%}
+{%- assign product_sqm_per_box = product.metafields.custom.sqm_per_box.value | default: 0 -%}
+{%- assign product_price_per_sqm = product.metafields.custom.price_per_sqm.value | default: 0 -%}
+{%- assign selected_tile_sqm_per_box = selected_tile_variant.metafields.custom.variant_sqm_per_box.value | default: product_sqm_per_box -%}
+{%- assign selected_tile_sqm_per_box_number = selected_tile_sqm_per_box | plus: 0 -%}
+{%- assign selected_tile_variant_title = selected_tile_variant.title | strip -%}
+{%- assign selected_tile_display_title = product.title -%}
+{%- if selected_tile_variant_title != blank and selected_tile_variant_title != 'Default Title' -%}
+  {%- assign selected_tile_display_title = product.title | append: ' - ' | append: selected_tile_variant_title -%}
+{%- endif -%}
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+<style>
+  @media (max-width: 768px) {
+  .product_media_block .swiper-slide a[data-pin-do="buttonBookmark"] {
+        position: absolute;
+        display: flex;
+        right: 2px;
+  }
+}
+</style>
+<div class="breadcrumb_wrapper position-relative">
+  {% if product.compare_at_price %}<span class="on_sale_item d-md-none">On Sale</span>{% endif %}
+  <div class="container">
+    <div aria-label="breadcrumb" class="d-flex align-items-center">
+      <a href="/collections/{{ product.collections[0].title | handle }}" class="product_back_btn d-none d-md-inline-block">
+        {%- render 'icon-back' -%} 
+      </a> 
+      {% assign found_breadcrumb = false %}
+      {% for cls_link in linklists['breadcrumb'].links %}
+        {% for sublinks in cls_link.links %}
+          {% for cls in product.collections %}
+          
+            {% if cls.url ==  sublinks.url %}
+              {% assign found_breadcrumb = true %}
+              {% assign parent_name = cls_link.title %}
+              {% assign parent_link = cls_link.url %}
+              {% assign child_name = cls.title %}
+              {% assign child_link = cls.url %}
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+      {% endfor %}
+      {% if found_breadcrumb %}
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ shop.url }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ parent_link }}">{{ parent_name }}</a></li>
+        <li class="breadcrumb-item"><a href="{{ child_link }}">{{ child_name }}</a></li>
+        <li class="breadcrumb-item active" aria-current="page">{{ product.title }}</li>
+      </ol>
+      {% else %}
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{{ shop.url }}">Home</a></li>
+        {% if product.collections[0].title  != blank %}
+        <li class="breadcrumb-item"><a href="{{ product.collections[0].url }}">{{ product.collections[0].title }}</a></li>
+        {% endif %}  
+        <li class="breadcrumb-item active" aria-current="page">{{ product.title }}</li>
+      </ol>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="main_product_information_wrapper position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-7 col-lg-6 col-12">
+        <p class="mobile_product_title display-3 d-md-none position-relative h2 js-tile-product-title" data-product-title="{{ product.title | escape }}">{{ selected_tile_display_title }}
+          <div class="wishlist_share d-md-none">
+          {% render 'wishlisthero-collection-product' with product: product %}
+          <!-- popover start -->
+            <button id="popover-btn-mobile" type="button" class="product_share border-0 p-0 bg-white" data-bs-toggle="popover" data-bs-title="Share this product">{% render 'icon-share' %}</button>
+            <div hidden>
+                <div data-name="popover-content">
+                  <div class="blog_article_share_block">
+                    <ul class="list-unstyled d-flex align-items-center">
+                      <li class="mb-0">
+                        <a href="https://pinterest.com/pin/create/button/?url={{ shop.url }}{{ product.url }}&description={{ product.title }}" target="_blank">
+                          {%- render 'ic-social-pinterest' -%}
+                        </a>
+                      </li>
+                      <li class="mb-0">
+                        <a href="https://www.facebook.com/sharer.php?u={{ shop.url }}{{ product.url }}&p={{ product.title }}" target="_blank">
+                          {%- render 'ic-social-facebook' -%}
+                        </a>
+                      </li>
+                      <li class="mb-0">
+                        <a href="https://www.linkedin.com/shareArticle?url={{ shop.url }}{{ product.url }}&title={{ product.title }}&summary={{ product.excerpt }}" target="_blank">
+                          {%- render 'icon-linkedin' -%}
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          <!-- popover end -->
+          </div>
+        </p>
+        <div class="product_media_block">
+          {% if product.metafields.custom.enable_lead_free_watermark_image == true %}
+            <div class="lead_free_watermark_logo">
+              <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/watermark-lead-free-logo.svg?v=1750246474" alt="Lead Free watermark logo">
+            </div>
+          {% endif %}
+          <div class="swiper gallery_main">
+            <div class="swiper-wrapper">
+              {% for image in product.media %}
+                <div class="swiper-slide">
+                  <div class="gallery_main_card bg_cover lazy-bg w-100 h-100" data-bg="{{ image | img_url:'master' }}">
+                    <a data-pin-do="buttonBookmark" target="_blank" href="https://www.pinterest.com/pin/create/button/?url={{ shop.url }}{{ product.url }}&media={{ image | img_url: 'master' }}&description={{ product.title }}" style="background:#fff;padding: 5px 10px; border-radius: 5px; box-shadow: 2px 5px 5px #0000001a;">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42 20" style="pointer-events: none;transition: transform .2s ease;height: auto;width: 30px;fill: red;">
+                        <path d="M16.853,6.345 C17.632,6.345 18.38,5.702 18.51,4.909 C18.664,4.138 18.135,3.494 17.357,3.494 C16.578,3.494 15.83,4.138 15.698,4.909 C15.546,5.702 16.053,6.345 16.853,6.345 Z M7.458,0 C2.5,0 0,3.522 0,6.459 C0,8.237 0.68,9.819 2.137,10.409 C2.376,10.505 2.59,10.412 2.66,10.15 C2.708,9.969 2.822,9.511 2.873,9.32 C2.943,9.061 2.916,8.97 2.723,8.744 C2.302,8.253 2.034,7.617 2.034,6.716 C2.034,4.104 4.007,1.765 7.172,1.765 C9.975,1.765 11.514,3.461 11.514,5.726 C11.514,8.708 10.183,11.18 8.206,11.18 C7.114,11.18 6.297,10.329 6.559,9.233 C6.872,7.922 7.48,6.509 7.48,5.564 C7.48,4.717 7.022,4.011 6.072,4.011 C4.956,4.011 4.06,5.155 4.06,6.687 C4.06,7.663 4.393,8.323 4.393,8.323 C4.393,8.323 3.251,13.117 3.051,13.957 C2.652,15.629 2.991,17.679 3.019,17.886 C3.036,18.009 3.195,18.038 3.267,17.946 C3.37,17.812 4.7,16.187 5.151,14.562 C5.279,14.102 5.885,11.72 5.885,11.72 C6.248,12.406 7.308,13.009 8.435,13.009 C11.79,13.009 14.066,9.979 14.066,5.923 C14.066,2.857 11.444,0 7.458,0 Z M26.896,14.189 C26.348,14.189 26.117,13.915 26.117,13.328 C26.117,12.404 27.035,10.091 27.035,9.041 C27.035,7.638 26.276,6.826 24.72,6.826 C23.739,6.826 22.722,7.453 22.291,8.003 C22.291,8.003 22.422,7.553 22.467,7.38 C22.515,7.196 22.415,6.884 22.173,6.884 L20.651,6.884 C20.328,6.884 20.238,7.055 20.191,7.244 C20.172,7.32 19.624,9.584 19.098,11.632 C18.738,13.034 17.863,14.205 16.928,14.205 C16.447,14.205 16.233,13.906 16.233,13.399 C16.233,12.959 16.519,11.877 16.86,10.534 C17.276,8.898 17.642,7.551 17.681,7.394 C17.732,7.192 17.642,7.017 17.379,7.017 L15.849,7.017 C15.572,7.017 15.473,7.161 15.414,7.361 C15.414,7.361 14.983,8.977 14.527,10.775 C14.196,12.079 13.83,13.409 13.83,14.034 C13.83,15.148 14.336,15.944 15.724,15.944 C16.796,15.944 17.644,15.45 18.292,14.764 C18.197,15.135 18.136,15.414 18.13,15.439 C18.074,15.65 18.142,15.838 18.394,15.838 L19.961,15.838 C20.233,15.838 20.337,15.73 20.394,15.494 C20.449,15.269 21.619,10.667 21.619,10.667 C21.928,9.443 22.692,8.632 23.768,8.632 C24.279,8.632 24.72,8.967 24.669,9.618 C24.612,10.333 23.741,12.903 23.741,14.031 C23.741,14.884 24.06,15.945 25.683,15.945 C26.789,15.945 27.603,15.464 28.195,14.786 L27.489,13.941 C27.311,14.094 27.114,14.189 26.896,14.189 Z M41.701,6.873 L40.134,6.873 C40.134,6.873 40.856,4.109 40.873,4.035 C40.942,3.745 40.698,3.578 40.441,3.631 C40.441,3.631 39.23,3.866 39.005,3.913 C38.779,3.958 38.604,4.081 38.522,4.403 C38.512,4.445 37.88,6.873 37.88,6.873 L36.622,6.873 C36.385,6.873 36.245,6.968 36.192,7.188 C36.115,7.504 35.975,8.145 35.936,8.297 C35.885,8.494 36,8.644 36.222,8.644 L37.457,8.644 C37.448,8.677 37.064,10.125 36.725,11.521 L36.724,11.516 C36.72,11.532 36.716,11.546 36.712,11.562 L36.712,11.556 C36.712,11.556 36.708,11.571 36.702,11.598 C36.324,12.968 35.118,14.209 34.201,14.209 C33.721,14.209 33.506,13.909 33.506,13.402 C33.506,12.963 33.792,11.88 34.134,10.537 C34.549,8.901 34.915,7.555 34.955,7.397 C35.006,7.196 34.915,7.02 34.652,7.02 L33.122,7.02 C32.845,7.02 32.746,7.164 32.687,7.364 C32.687,7.364 32.257,8.98 31.8,10.778 C31.469,12.083 31.103,13.412 31.103,14.037 C31.103,15.151 31.609,15.948 32.997,15.948 C34.07,15.948 35.136,15.453 35.783,14.767 C35.783,14.767 36.011,14.521 36.23,14.229 C36.241,14.581 36.324,14.837 36.411,15.018 C36.458,15.119 36.515,15.215 36.581,15.303 C36.582,15.304 36.583,15.306 36.585,15.308 L36.585,15.308 C36.891,15.713 37.398,15.962 38.151,15.962 C39.894,15.962 40.944,14.938 41.562,13.909 L40.704,13.239 C40.333,13.774 39.839,14.175 39.324,14.175 C38.846,14.175 38.579,13.878 38.579,13.372 C38.579,12.935 38.889,11.868 39.229,10.53 C39.344,10.083 39.516,9.401 39.708,8.644 L41.302,8.644 C41.539,8.644 41.678,8.549 41.732,8.329 C41.808,8.012 41.948,7.372 41.988,7.221 C42.039,7.023 41.923,6.873 41.701,6.873 Z M34.126,6.348 C34.905,6.348 35.653,5.706 35.783,4.912 C35.937,4.141 35.409,3.498 34.63,3.498 C33.851,3.498 33.103,4.141 32.971,4.912 C32.819,5.706 33.326,6.348 34.126,6.348 Z"></path>
+                      </svg>
+                    </a>
+                    <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/main-product-cover.png" alt="{{ image.alt }}" loading="lazy">
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="swiper gallery_thumbs">
+            <div class="swiper-wrapper">
+              {% for image in product.media %}
+                <div class="swiper-slide">
+                  <div class="gallery_thumb_card bg_cover lazy-bg" data-bg="{{ image | img_url:'_100' }}">&nbsp;</div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+           <!-- Swiper Navigation Buttons -->
+           <div class="gallery_main_next swiper-button-next"></div>
+           <div class="gallery_main_prev swiper-button-prev"></div>
+        </div>
+      </div>
+      <div class="col-xl-5 col-lg-6 col-12">
+        <div class="product_info_block position-relative">
+          <div class="wishlist_share d-none d-md-flex">            
+            {% render 'wishlisthero-collection-product' with product: product %}
+            {% comment %}
+            <button
+              type="button"
+              class="product_share border-0 p-0 bg-white"
+              data-bs-toggle="modal"
+              data-bs-target="#ShareModal"
+            >
+              {% render 'icon-share' %}
+            </button>
+            {% endcomment %}
+            <!-- popover start -->
+            <button id="popover-btn" type="button" class="product_share border-0 p-0 bg-white" data-bs-toggle="popover" data-bs-title="Share this product">{% render 'icon-share' %}</button>
+            <div hidden >
+                <div data-name="popover-content">
+                  <div class="blog_article_share_block">
+                      <ul class="list-unstyled d-flex align-items-center">
+                        <li class="mb-0">
+                          <a href="https://pinterest.com/pin/create/button/?url={{ shop.url }}{{ product.url }}&description={{ product.title }}" target="_blank">
+                            {%- render 'ic-social-pinterest' -%}
+                          </a>
+                        </li>
+                        <li class="mb-0">
+                          <a href="https://www.facebook.com/sharer.php?u={{ shop.url }}{{ product.url }}&p={{ product.title }}" target="_blank">
+                            {%- render 'ic-social-facebook' -%}
+                          </a>
+                        </li>
+                        <li class="mb-0">
+                          <a href="https://www.linkedin.com/shareArticle?url={{ shop.url }}{{ product.url }}&title={{ product.title }}&summary={{ product.excerpt }}" target="_blank">
+                            {%- render 'icon-linkedin' -%}
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+            </div>
+          </div>
+          <!-- popover end -->
+          <!-- end popup -->
+          </div>
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'title' %}
+                <h1 class="display-3 d-none d-md-block js-tile-product-title" data-product-title="{{ product.title | escape }}">{{ selected_tile_display_title }}</h1>
+                {%- assign current_variant = selected_tile_variant -%}
+                <small class="mb-4 d-inline-block"><strong>SKU:</strong> <span id="variant-sku">{{ current_variant.sku }}</span></small>
+
+              {% when 'price' %}
+              <div class="price_block price_sale_block">
+                {% if product.compare_at_price != blank and product.compare_at_price != 0 %}
+                  <span class="regular_price text-decoration-line-through">
+                    {{- product.compare_at_price | times: 1 | money -}}
+                  </span>                    
+                {% endif %}              
+                  {% if product.price == 0 %}
+                    Price on Application
+                  {% else %}  
+                    <span class="{% if product.compare_at_price != blank and product.compare_at_price != 0 %}sale_price{% else %}regular_price{% endif %}">
+                      {{- product.price | times: 1 | money -}}
+                    </span>
+                  {% endif %}
+              </div>
+
+              <div class="price_block custom_price_block mt-4 fs-1">
+                <!-- PRICE PER SQM -->
+                <div class="price_per_sqm" id="price-per-sqm">
+                  {% if selected_tile_sqm_per_box_number > 0 %}
+                    {{ selected_tile_variant.price | divided_by: selected_tile_sqm_per_box_number | money }}
+                    <span>per sqm</span>
+                  {% else %}
+                    <span>per sqm unavailable</span>
+                  {% endif %}
+                </div>
+                <!-- PRICE PER BOX -->
+                <div class="price_per_box text-muted" id="price-per-box">
+                  {{ selected_tile_variant.price | money }}
+                  <span>per box</span>
+                </div>
+              </div>
+
+                
+              {% when 'afterpay' %}
+              <div class="payment_txt_block d-flex align-items-center">
+                {% assign price = product.price | times: 1 | money %}
+                <afterpay-placement data-locale="en_AU" data-currency="AUD" data-amount="{{price}}"></afterpay-placement>
+                {% comment %}
+                  <div class="payment_logo d-flex align-items-center">
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/Logo__Afterpay.svg" alt="Logo__Afterpay"></a>
+                    <a href="#"><img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/Logo__PayPal.svg" alt="Logo__PayPal"></a>
+                  </div>
+                {% endcomment %}
+              </div>
+              
+              {% when 'variant' %}
+               {% unless product.price == 0 %}
+                {% if product.variants.size > 1 or product.metafields.custom.addon_1_label != blank or product.metafields.custom.addon_2_label != blank or product.metafields.custom.addon_3_label != blank  %}
+                      <div class="product_colour_variant product_variants_block product_variants_block_new">
+                        {% if product.variants.size > 1 %}
+                            {% for option in product.options %}
+                              {% assign firstloop = forloop.index0 %}
+                                <div class="col-12">
+                                    <div class="pcv_wrapper position-relative"> 
+                                      <div class="pcv_title" id="SingleOptionSelector-{{forloop.index0}}"> {{ option }} </div>
+                                      <select     
+                                        id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                                        name="options[{{ option | escape }}]"
+                                        form="{{ product_form_id }}" id="SingleOptionSelector-{{forloop.index0}}" class="single-option-selector single-option-selector-product-template product-form__input variant-select" >
+                                      {% capture option_index %}option{{ forloop.index }}{% endcapture %} 
+                                      {% assign option_values = product.variants | map: option_index | uniq %}
+                                      {% assign selected_option_value = selected_tile_variant.options[firstloop] %}
+                                          {% for choice in option_values %}
+                                            <option value="{{ choice }}" {% if choice == selected_option_value %}selected="selected"{% endif %}> {{ choice }} </option>
+                                          {% endfor %}
+                                      </select>
+                                    </div>  
+                                </div>
+                            {% endfor %}
+                    
+                            <select id="ProductSelect-product-template" class="product-form__variants id_select no-js" name="id" data-productid="{{product.id}}">
+                            {% for option in product.variants %}
+                            <option
+                              data-available="{{ option.available }}"
+                              value="{{option.id}}"
+                              data-sku="{{ option.sku }}"
+                              data-value="{{option.title}}"
+                              data-title="{{ option.title | escape }}"
+                              data-url="{{ product.url }}?variant={{ option.id }}"
+                              data-price="{{ option.price | times: 1 | money_without_currency }}"
+                              data-sale="{{ option.compare_at_price | times: 1 | money_without_currency }}"
+                              data-variant-sqm="{{ option.metafields.custom.variant_price_per_sqm.value | default: product_price_per_sqm }}"
+                              data-variant-sqm-box="{{ option.metafields.custom.variant_sqm_per_box.value | default: product_sqm_per_box }}"
+                              {% if option.image %} data-image="{{ option.image | img_url: 'master' }}" {% endif %}
+                              {% if option.id == selected_tile_variant.id %}selected="selected"{% endif %}
+                            >{{option.title}}</option>
+                            {% endfor %}
+                            </select>
+                        {% endif %}
+                    
+                        {% if product.metafields.custom.addon_1_label != blank and product.metafields.custom.addon_1_product != blank %}
+                            <div class="col-12">
+                                <div class="pcv_wrapper position-relative"> 
+                                    <div class="pcv_title">{{ product.metafields.custom.addon_1_label }}</div>
+                                    <select class="single-option-selector addonproduct single-option-selector-product-template product-form__input" id="main-addon-product">
+                                        <option value="">{{ product.metafields.custom.addon_1_label }}</option>
+                                        {% for product_related in product.metafields.custom.addon_1_product.value %}
+                                          {% unless product_related.tags contains 'hide-from-addons' %}
+                                            {% if product_related.available %}
+                                                <option value="{{ product_related.first_available_variant.id }}" data-price="{{ product_related.price | times: 1 | money_without_currency }}" data-sale="{% if product_related.compare_at_price and product_related.compare_at_price > product_related.price %}{{ product_related.compare_at_price | times: 1 | money_without_currency }}{% else %}{{ product_related.price | times: 1 | money_without_currency }}{% endif %}"
+                                                data-image="{{ product_related.featured_image | img_url:'master' }}"
+                                                {% if product_related.metafields.custom.addons_properties_text != blank %}
+                                                  data-proptext="{{ product_related.metafields.custom.addons_properties_text | escape }}"
+                                                {% endif %}
+                                                >
+                                                    {{ product_related.title }}
+                                                </option>
+                                              {% endif %}
+                                            {% endunless %}
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                            </div>
+                        {% endif %}
+                    
+                        {% if product.metafields.custom.addon_2_label != blank and  product.metafields.custom.addon_2_product != blank %}
+                          <div class="col-12">
+                           <div class="pcv_wrapper position-relative"> 
+                            <div class="pcv_title">{{ product.metafields.custom.addon_2_label }}</div>
+                                <select  class="single-option-selector addonproduct single-option-selector-product-template product-form__input" id="main-addon-product-2">
+                                    <option value="">{{ product.metafields.custom.addon_2_label }}</option>
+                                    {% for product_related in product.metafields.custom.addon_2_product.value %}
+                                       {% unless product_related.tags contains 'hide-from-addons' %}
+                                              <option value="{{ product_related.first_available_variant.id }}" data-price="{{ product_related.price | times: 1 | money_without_currency }}" data-sale="{% if product_related.compare_at_price and product_related.compare_at_price > product_related.price %}{{ product_related.compare_at_price | times: 1 | money_without_currency }}{% else %}{{ product_related.price | times: 1 | money_without_currency }}
+                                                {% endif %}"
+                                                 data-image="{{ product_related.featured_image | img_url:'master' }}"
+                                                {% if product_related.metafields.custom.addons_properties_text != blank %}
+                                                  data-proptext="{{ product_related.metafields.custom.addons_properties_text | escape }}"
+                                                {% endif %}>
+                                                {{ product_related.title }}
+                                              </option>
+                                            {% endunless %} 
+                                      {% endfor %}
+                                </select>
+                            </div>
+                            </div>
+                        {% endif %}
+                    
+                        {% if product.metafields.custom.addon_3_label != blank and  product.metafields.custom.addon_3_product != blank %}
+                          <div class="col-12">
+                           <div class="pcv_wrapper position-relative"> 
+                            <div class="pcv_title">{{ product.metafields.custom.addon_3_label }}</div>
+                                <select  class="single-option-selector addonproduct single-option-selector-product-template product-form__input" id="main-addon-product-3">
+                                    <option value="">{{ product.metafields.custom.addon_3_label }}</option>
+                                        {% for product_related in product.metafields.custom.addon_3_product.value %}
+                                           {% unless product_related.tags contains 'hide-from-addons' %}
+                                              <option value="{{ product_related.first_available_variant.id }}" data-price="{{ product_related.price | times: 1 | money_without_currency }}" data-sale="{% if product_related.compare_at_price and product_related.compare_at_price > product_related.price %}{{ product_related.compare_at_price | times: 1 | money_without_currency }}{% else %}{{ product_related.price | times: 1 | money_without_currency }}
+                                                {% endif %}"
+                                                 data-image="{{ product_related.featured_image | img_url:'master' }}"
+                                                {% if product_related.metafields.custom.addons_properties_text != blank %}
+                                                  data-proptext="{{ product_related.metafields.custom.addons_properties_text | escape }}"
+                                                {% endif %}>
+                                                {{ product_related.title }}
+                                              </option>
+                                            {% endunless %} 
+                                      {% endfor %}
+                                </select>
+                            </div>
+                            </div>
+                       
+                        {% endif %}
+                      </div>
+                {% endif %}
+                {% comment %} <div id="variant-data" class="product_variants_block d-flex flex-wrap flex-sm-nowrap justify-content-sm-between">
+                  <div class="product_quantity_variant">
+                    <div class="variants_label">Quantity</div>
+                    {% assign current_variant = product.selected_or_first_available_variant %}     
+                    {% if current_variant.inventory_quantity < 10 %}
+                        {% assign qty_limit = current_variant.inventory_quantity %}
+                    {% else %}
+                        {% assign qty_limit = 10 %}
+                    {% endif %}  
+                   
+                    <select class="form-select quantity__input" id="Quantity-{{ section.id }}" aria-label="Quantity" name="quantity" form="{{ product_form_id }}">
+                      {% for i in (1..qty_limit) %}
+                        <option value="{{ i }}" {% if i == 1 %}selected{% endif %}>{{ i }}</option>
+                      {% endfor %}
+                    </select>
+                  </div>
+                  <div class="product_addcart">
+                   <a id="static-specification" target="_blank" data-href="{{ product.first_available_variant.sku | append: '_product_specification_sheet.pdf' | file_url }}"  data-href1="{{ product.first_available_variant.sku | append: '_spec_sheet.pdf' | file_url }}" class=" btn btn-outline-primary d-none">Specification</a>
+                    {% assign for_sale = product.metafields.global['for-sale'] | default: '' | strip %}
+                    {% if product.available == true %}
+                      {% if for_sale != 'No' %}
+                        <button id="add-to-cart" data-id="{{ product.first_available_variant.id }}" data-price="{{ product.price | times: 1 | money_without_currency }}" data-sale="{{ product.compare_at_price | times: 1 | money_without_currency }}" data-sku="{{ product.sku }}" class="btn btn-primary add-to-cart">
+                          {% render 'icon-plus' %}
+                          <span>Add to Cart</span>
+                        </button>
+                      {% else %}
+                        <button id="enquire" data-id="{{ product.first_available_variant.id }}" class="btn btn-primary add-to-cart" data-bs-toggle="modal" data-bs-target="#enquireModal">
+                          {% comment %}
+                            {% render 'icon-plus' %}
+                          {% endcomment %}
+                          <span>Enquire</span>
+                        </button>
+                      {% endif %}
+                    {% else %}
+                      <button id="sold-out" disabled data-id="{{ product.first_available_variant.id }}" class="btn btn-primary add-to-cart">
+                        {% render 'icon-plus' %} Sold Out
+                      </button>
+                    {% endif %}
+                  </div>
+                </div> {% endcomment %}
+                {% endunless %}
+                <nibble-placeholder product-form-selector="div.main_product_information_wrapper"></nibble-placeholder>
+              {% when 'notice' %}
+                {% if product.tags contains block.settings.tag_name  %}
+                  <div class="notice_description d-flex align-items-center gap-3">
+                    <img src="{{ block.settings.icon_option | img_url }}">
+                    {{ block.settings.notice }}
+                  </div>
+                {% endif %}
+              {% when 'description' %}
+                {% comment %}
+                  {% if product.metafields.custom.shipping_text != blank %}
+                    <div class="notice_description d-flex align-items-center gap-3">
+                    {% if product.metafields.custom.shipping_icon_order_or_ship_ %}{%- render 'icon-order' %}{% else %}{%- render 'icon-shipping' %}{% endif %}
+                    {{ product.metafields.custom.shipping_text | metafield_tag }}
+                    </div>
+                  {% endif %}
+                {% endcomment %}
+                <div class="product_description">
+                  {% comment %} {{ product.content }} {% endcomment %}
+                  {% if block.settings.description != blank %}
+                    {{ block.settings.description }}
+                  {% else %}
+                    {{ block.settings.custom_liquid }}
+                  {% endif %}
+                </div>
+              {% when 'showroom' %}
+                <div class="metreage_holder">
+                  <h5 class="text-center">Calculate Your Square Metreage</h5>
+                  <div class="area_options_block_content">
+                    <div class="row">
+                      <div class="col-sm-6 col-12">
+                        <div id="area-option-known" class="area_options_block_card">
+                          <div class="area-option-icon">
+                              <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/metersquare-ic.svg?v=1774090243" alt="metersquare-ic">
+                          </div>
+                          <div class="area-option-content">
+                              <h6>I know the exact square metreage I require</h6>
+                              <p>You already have your square metreage from a professional tradesperson.</p>
+                              <a href="javascript:void(0)" id="area-known" class="btn btn-outline-primary gap-2">
+                                  Continue {% render 'icon-arrow' %}
+                              </a>
+                          </div>
+                        </div>
+                                              
+                      </div>
+                      <div class="col-sm-6 col-12">
+                        <div id="area-option-to-calculate" class="area_options_block_card">
+                          <div class="area-option-icon">
+                                <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/calculatemetersquare-ic.svg?v=1774090878" alt="calculatemetersquare-ic">
+                          </div>
+                          <div class="area-option-content">
+                              <h6>I need the square metreage calculated for me</h6>
+                              <p>Enter the measurements to calculate your square metreage.</p>
+                              <a href="javascript:void(0)" id="area-to-calculate" class="btn btn-outline-primary gap-2">
+                                  Continue {% render 'icon-arrow' %}
+                              </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="your_square_metre d-none" id="input-area">
+                          <h6>Enter Your Square Metre</h6>
+                          <p>Measurement(square metres)</p>
+                          <input class="form-control tile-known-sqm-input" id="area-input" type="text" inputmode="decimal" maxlength="8" placeholder="Enter your measurements in square metres">
+                          <div class="wastage_cards_container bg-white rounded p-3 my-3">
+                            <div class="wastage_cards_head">
+                              <p>We round up your required square metres to the nearest whole box. Additionally, we suggest ordering an extra 15% to cover any wastage that may occur during tile cutting.</p>
+                              <p>Selected wastage option: <strong class="wastage_percent">15%</strong>.</p>
+                              <div class="wastage_note d-none">
+                                <div class="wastage_note_inner d-flex align-items-start gap-2">
+                                  <div class="wastage_note_icon">{% render 'icon-info' %}</div>
+                                  <p class="mb-0"><strong>Please Note:</strong> You have selected No Wastage, meaning you'll receive no extra tiles for cuts or future damages. We recommend ordering an additional 15% to cover potential wastage during tile-cutting.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="wastage_card border border-light p-3 rounded text-center">
+                                  <input class="form-check-input" type="radio" name="wastage" id="wastage1" value="0">
+                                  <strong>No Wastage</strong>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="wastage_card border border-light p-3 rounded text-center active">
+                                  <input class="form-check-input" type="radio" name="wastage" id="wastage2" value="15" checked>
+                                  <strong>15%</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="measurement_output_wrapper mt-5">
+                            <div class="measurement_info_wrapper row">
+                              <div class="col-6">
+                                <div class="bg-white rounded d-flex flex-column align-items-center justify-content-center p-4 calculated-info-wrapper h-100"> 
+                                    <div class="h2 m-0" id="total-option-area-known">0</div>
+                                    <hr class="w-50 my-3">     
+                                    <p class="mb-0">SQM Needed</p>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="bg-white rounded d-flex flex-column align-items-center justify-content-center p-4 calculated-info-wrapper h-100"> 
+                                    <div class="h2 m-0" id="final-total-option-area-known">0.00</div>
+                                    <hr class="w-50 my-3">     
+                                    <p class="d-flex gap-2 mb-0"><span>SQM Included</span>
+                                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="We round up your required square metres to the nearest whole box.">
+                                      <button class="border-0 p-0 bg-transparent" type="button">{% render 'icon-info' %}</button>
+                                    </span>
+                                    </p>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="bg-white rounded d-flex flex-column align-items-center justify-content-center p-4 calculated-info-wrapper h-100">
+                                  <div class="h2 m-0" id="total-box-option-area-known">0</div>
+                                  <hr class="w-50 my-3">
+                                  <p class="mb-0">Total Boxes</p>        
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="bg-white rounded d-flex flex-column align-items-center justify-content-center p-4 calculated-info-wrapper h-100">
+                                    <div class="h2 m-0" id="total-price-option-area-known">$0.00</div>
+                                    <hr class="w-50 my-3">
+                                    <p class="mb-0">Total Price</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="calculate_square_metre d-none" id="calculate-area">  
+                           <h6>How to Calculate</h6>
+                          <p>1 - Measure the length and width of your areas. <br> 2 - Enter the room's measurements below in metres. Add area name / sections.</p>
+                          <div class="tile_calculation_areas">
+                            <div class="tile_calculation_area_card border rounded p-3 mb-3">
+                              <div class="area_holder">
+                                <legend>AREA</legend>
+                                <input class="form-control tile-area-name-input" type="text" maxlength="40" placeholder="Example: Kitchen">
+                              </div>
+                              <div class="tile_calculation_area_info d-flex flex-wrap align-items-end justify-content-between gap-3 mt-4">
+                                <div class="length_holder">
+                                  <legend>LENGTH (m)</legend>
+                                  <input class="form-control tile-measurement-input" type="text" inputmode="decimal" maxlength="8" placeholder="0 metre">
+                                </div>
+                                <span class="d-inline-block mb-3">{{ 'close-ic.svg' | inline_asset_content }}</span>
+                                <div class="width_holder">
+                                  <legend>WIDTH (m)</legend>
+                                  <input class="form-control tile-measurement-input" type="text" inputmode="decimal" maxlength="8" placeholder="0 metre">
+                                </div>
+                                <span class="equals_item d-inline-block mb-sm-3">{{ 'equal-ic.svg' | inline_asset_content }}</span>
+                                <div class="tile_output_holder">
+                                  <legend>SQM</legend>
+                                  <div class="tile_area_output">0</div>
+                                </div>
+                                <div class="tile_calculation_area_card_cta d-flex align-items-center gap-3">
+                                  <button type="button"class="delete_area_calculator border-0 bg-white rounded">{{ 'delete-ic.svg' | inline_asset_content }}</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="tile_calculation_areas_cta d-flex justify-content-center gap-3 mt-4">
+                              <button type="button" class="add_new_area_calculator btn btn-outline-primary gap-2">Add Room {{ 'plus-ic.svg' | inline_asset_content }}</button>
+                              <button type="button" class="calculate_btn btn btn-outline-primary gap-2">Calculate {% render 'icon-arrow' %}</button>
+                            </div>
+                            <div id="tile-room-calculator-error" class="alert alert-warning mt-3 d-none" role="alert"></div>
+                          </div>
+                          <div class="wastage_cards_container bg-white rounded p-3 my-3">
+                            <div class="wastage_cards_head">
+                              <p>We round up your required square metres to the nearest whole box. Additionally, we suggest ordering an extra 15% to cover any wastage that may occur during tile cutting.</p>
+                              <p>Selected wastage option: <strong class="wastage_percent">15%</strong>.</p>
+                              <div class="wastage_note d-none">
+                                <div class="wastage_note_inner d-flex align-items-start gap-2">
+                                  <div class="wastage_note_icon">{% render 'icon-info' %}</div>
+                                  <small class="mb-0"><strong>Please Note:</strong> You have selected No Wastage, meaning you'll receive no extra tiles for cuts or future damages. We recommend ordering an additional 15% to cover potential wastage during tile-cutting.</small>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-6">
+                                <div class="wastage_card border border-light p-3 rounded text-center">
+                                  <input class="form-check-input" type="radio" name="wastage_calc" id="wastagecalc1" value="0">
+                                  <strong>No Wastage</strong>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="wastage_card border border-light p-3 rounded text-center active">
+                                  <input class="form-check-input" type="radio" name="wastage_calc" id="wastagecalc2" value="15" checked>
+                                  <strong>15%</strong>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="measurement_output_wrapper mt-5">
+                            <div class="measurement_info_wrapper row">
+                              <div class="col-12">
+                                <div id="show-calculation-summary"></div>
+                              </div>
+                              <div class="col-6">
+                                <div class="bg-white rounded d-flex flex-column align-items-center justify-content-center p-4 calculated-info-wrapper h-100"> 
+                                    <div class="h2 m-0" id="total-option-area-calc">0</div>
+                                    <hr class="w-50 my-3">     
+                                    <p class="mb-0">SQM Needed</p>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="bg-white rounded d-flex flex-column align-items-center justify-content-center p-4 calculated-info-wrapper h-100"> 
+                                    <div class="h2 m-0" id="final-total-option-area-calc">0.00</div>
+                                    <hr class="w-50 my-3">     
+                                    <p class="d-flex gap-2 mb-0"><span>SQM Included</span>
+                                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="We round up your required square metres to the nearest whole box.">
+                                      <button class="border-0 p-0 bg-transparent" type="button">{% render 'icon-info' %}</button>
+                                    </span>
+                                    </p>
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="bg-white rounded d-flex flex-column align-items-center justify-content-center p-4 calculated-info-wrapper h-100">
+                                  <div class="h2 m-0" id="total-box-option-area-calc">0</div>
+                                  <hr class="w-50 my-3">
+                                  <p class="mb-0">Total Boxes</p>        
+                                </div>
+                              </div>
+                              <div class="col-6">
+                                <div class="bg-white rounded d-flex flex-column align-items-center justify-content-center p-4 calculated-info-wrapper h-100">
+                                    <div class="h2 m-0" id="total-price-option-area-calc">$0.00</div>
+                                    <hr class="w-50 my-3">
+                                    <p class="mb-0">Total Price</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="cart_cta">
+                          <div id="tile-calculator-error" class="alert alert-warning mt-3 d-none" role="alert"></div>
+                          {% unless product.price == 0 %}
+                          <div id="variant-data" class="product_variants_block d-flex flex-wrap flex-sm-nowrap justify-content-sm-center border-0 py-0">
+                            <div class="product_quantity_variant" id="tile-qty-wrapper" style="display:none;">
+                              <div class="variants_label">Quantity</div>
+                              <input
+                                type="number"
+                                class="form-control quantity__input"
+                                id="Quantity-{{ section.id }}"
+                                aria-label="Quantity"
+                                name="quantity"
+                                form="{{ product_form_id }}"
+                                value="1"
+                                min="1"
+                                style="width:100px;"
+                              >
+                            </div>
+                            <div class="product_addcart">
+                            <a id="static-specification" target="_blank" data-href="{{ product.first_available_variant.sku | append: '_product_specification_sheet.pdf' | file_url }}"  data-href1="{{ product.first_available_variant.sku | append: '_spec_sheet.pdf' | file_url }}" class=" btn btn-outline-primary d-none">Specification</a>
+                              {% assign for_sale = product.metafields.global['for-sale'] | default: '' | strip %}
+                              {% if product.available == true %}
+                                {% if for_sale != 'No' %}
+                                  <button
+                                    id="add-to-cart"
+                                    data-id="{{ selected_tile_variant.id }}"
+                                    data-price="{{ selected_tile_variant.price | times: 1 | money_without_currency }}"
+                                    data-sale="{{ selected_tile_variant.compare_at_price | times: 1 | money_without_currency }}"
+                                    data-sku="{{ selected_tile_variant.sku }}"
+                                    class="btn btn-primary add-to-cart"
+                                  >
+                                    {% render 'icon-plus' %}
+                                    <span>Add to Cart</span>
+                                  </button>
+                                  <span class="cart-btn-loader"></span>
+                                {% else %}
+                                  <button
+                                    id="enquire"
+                                    data-id="{{ selected_tile_variant.id }}"
+                                    class="btn btn-primary add-to-cart"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#enquireModal"
+                                  >
+                                    {% comment %}
+                                      {% render 'icon-plus' %}
+                                    {% endcomment %}
+                                    <span>Enquire</span>
+                                  </button>
+                                {% endif %}
+                              {% else %}
+                                <button
+                                  id="sold-out"
+                                  disabled
+                                  data-id="{{ selected_tile_variant.id }}"
+                                  class="btn btn-primary add-to-cart"
+                                >
+                                  {% render 'icon-plus' %} Sold Out
+                                </button>
+                              {% endif %}
+                            </div>
+                          </div>
+                          {% endunless %}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product_other_cta d-flex flex-column flex-sm-row">
+                  {% if block.settings['btn-name-1'] != blank %}
+                    <a href="{{ block.settings.btn-link-1 }}" class="btn btn-outline-primary order-2 order-sm-1">
+                      {%- render 'icon-location' -%}
+                      {{- block.settings['btn-name-1'] -}}
+                    </a>
+                  {% endif %}
+                  {% if block.settings['btn-name-2'] != blank %}
+                    <a href="{{ block.settings['btn-link-2'] }}" class="btn btn-outline-primary order-1 order-sm-2">
+                      {%- render 'icon-call' %}
+                      {{ block.settings['btn-name-2'] -}}
+                    </a>
+                  {% endif %}
+                </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div
+    class="product_share_modal modal fade"
+    id="enquireModal"
+    tabindex="-1"
+    aria-labelledby="enquireModal"
+    aria-hidden="true"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="blog_article_share_block">
+            <div class="title_block position-relative">
+              <p class="bg-white mb-0 d-inline-block1 text-center h3">Enquire product</p>
+            </div>
+            <div class="contact_form">
+              {% form 'contact', id: 'ContactForm' %}
+                {%- if form.posted_successfully? -%}
+                  <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+                    {% render 'icon-success' %}
+                    {{ 'templates.contact.form.post_success' | t }}
+                  </h2>
+                {%- elsif form.errors -%}
+                  <div class="form__message">
+                    <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+                      {% render 'icon-error' %}
+                      {{ 'templates.contact.form.error_heading' | t }}
+                    </h2>
+                  </div>
+                  <ul class="form-status-list caption-large" role="list">
+                    <li>
+                      <a href="#ContactForm-email" class="link">
+                        {{ form.errors.translated_fields.email | capitalize }}
+                        {{ form.errors.messages.email }}
+                      </a>
+                    </li>
+                  </ul>
+                {%- endif -%}
+                <input type="hidden" class="form-control" id="product-name" name="contact[product_name]" value="{{ product.title }}">
+                <input type="hidden" class="form-control" id="product-url" name="contact[product_url]" value="{{ shop.url }}{{ product.url }}">
+                <div class="row">
+                  <div class="col-lg-12 col-12">
+                    <div class="form_group">
+                      <label>First Name</label>
+                      <input type="text" class="form-control required" id="first-name" name="contact[first_name]">
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-12">
+                    <div class="form_group">
+                      <label>Last Name</label>
+                      <input type="text" name="contact[last_name]" id="last-name" class="form-control required">
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-12">
+                    <div class="form_group">
+                      <label>Email Address</label>
+                      <input type="email" class="form-control required email" name="contact[email]" id="email">
+                    </div>
+                  </div>
+      
+                  <div class="col-lg-12 col-12">
+                    <div class="form_group">
+                      <label>Phone Number</label>
+                      <input type="tel" name="contact[phone]" id="phone" class="form-control required number phone_limit">
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-12">
+                    <div class="form_group">
+                      <label>Message</label>
+                      <textarea name="contact[body]" id="message" class="form-control required"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-4 container-fluid">
+                    <div class="form_group">
+                      <input type="submit" class="btn btn-primary" value="Send Message">
+                    </div>
+                  </div>
+                </div>
+              {% endform %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "Tile Product Information",
+"tag": "section",
+"class": "cb-main-product",
+"settings": [],
+"blocks":[
+  {
+    "type":"title",
+    "name":"Title",
+    "limit":1,
+    "settings":[]
+  },
+  {
+    "type":"price",
+    "name":"Price",
+    "limit":1,
+    "settings":[]
+  },
+  {
+    "type":"afterpay",
+    "name":"After Pay",
+    "limit":1,
+    "settings":[]
+  },
+  {
+    "type":"variant",
+    "name":"Variant",
+    "limit":1,
+    "settings":[]
+  },
+  {
+    "type":"description",
+    "name":"Description",
+    "limit":1,
+    "settings":[
+      {
+        "type":"richtext",
+        "id":"description",
+        "label":"Description"
+      },
+      {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.label",
+          "info": "t:sections.main-product.blocks.custom_liquid.settings.custom_liquid.info"
+      }
+    ]
+  },
+    {
+    "type":"notice",
+    "name":"Notice",
+    "settings":[
+       {
+      "type": "image_picker",
+      "label": "Item Icon",
+      "id": "icon_option"
+    },
+      {
+        "type":"richtext",
+        "id":"notice",
+        "label":"Notice"
+      }
+      ,
+      {
+        "type":"text",
+        "id":"tag_name",
+        "label":"Tag"
+      }
+    ]
+  },
+  {
+    "type":"showroom",
+    "name":"Showroom Detail",
+    "limit":1,
+    "settings":[
+      {
+        "type":"text",
+        "id":"btn-name-1",
+        "label":"Button Name 1",
+        "default":" Locate Showroom"
+      },
+      {
+        "type":"url",
+        "id":"btn-link-1",
+        "label":"Button Link"
+      },
+      {
+        "type":"text",
+        "id":"btn-name-2",
+        "label":"Button Name 2",
+        "default":"Talk to an Expert"
+      },
+      {
+        "type":"url",
+        "id":"btn-link-2",
+        "label":"Button Link 2"
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Tile Product Information"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+  
+  // var galleryThumbs = new Swiper(".gallery_thumbs", {
+  //   // centeredSlides: true,
+  //   // centeredSlidesBounds: true,
+  //   slidesPerView: 3,
+  //   spaceBetween: 6,
+  //   watchOverflow: true,
+  //   watchSlidesVisibility: true,
+  //   watchSlidesProgress: true,
+  //   direction: 'vertical'
+  // });
+  if (typeof Swiper === "function" && document.querySelector(".gallery_thumbs") && document.querySelector(".gallery_main")) {
+  var galleryThumbs = new Swiper(".gallery_thumbs", {
+    // centeredSlides: true,
+    centeredSlidesBounds: true, 
+    direction: "vertical",
+    spaceBetween: 6,
+    slidesPerView: 3,
+    // freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    watchOverflow: true,
+    mousewheel: false,
+    // simulateTouch:false,
+    allowTouchMove: false
+  });
+  var galleryMain = new Swiper(".gallery_main", {
+    watchOverflow: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    preventInteractionOnTransition: true,
+    direction: 'vertical',
+    mousewheel: false,
+    // simulateTouch:false,
+    allowTouchMove: false,
+    navigation: {
+      nextEl: '.gallery_main_next',
+      prevEl: '.gallery_main_prev' },
+
+    // effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+  galleryMain.on('slideChangeTransitionStart', function () {
+    galleryThumbs.slideTo(galleryMain.activeIndex);
+  });
+
+  galleryThumbs.on('transitionStart', function () {
+    galleryMain.slideTo(galleryThumbs.activeIndex);
+  });
+  }
+
+      
+// Share product popover
+if (window.jQuery) {
+$(document).ready(function() {
+    if (!window.bootstrap || !bootstrap.Popover) return;
+
+    var shareButtons = [
+      document.getElementById('popover-btn'),
+      document.getElementById('popover-btn-mobile')
+    ].filter(Boolean);
+
+    if (!shareButtons.length) return;
+
+    function getShareContent(button) {
+      var wrapper = button.closest('.wishlist_share');
+      var content = wrapper ? wrapper.querySelector('[data-name="popover-content"]') : null;
+      return content ? content.innerHTML : "";
+    }
+
+    function hideProductSharePopovers(exceptButton) {
+      shareButtons.forEach(function (button) {
+        if (button === exceptButton) return;
+        var instance = bootstrap.Popover.getInstance(button);
+        if (instance) instance.hide();
+      });
+    }
+
+    var options = {
+        html: true,
+        container: 'body',
+        customClass: 'product-share-popover',
+        trigger: 'click',
+        placement: window.matchMedia("(max-width: 767px)").matches ? 'bottom' : 'auto'
+    };
+
+    shareButtons.forEach(function (button) {
+      var buttonOptions = Object.assign({}, options, {
+        content: getShareContent(button)
+      });
+      new bootstrap.Popover(button, buttonOptions);
+      button.addEventListener('show.bs.popover', function () {
+        hideProductSharePopovers(button);
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      if (event.target.closest('.product_share') || event.target.closest('.product-share-popover')) return;
+      hideProductSharePopovers();
+    });
+
+    document.addEventListener('keyup', function (event) {
+      if (event.code === 'Escape') hideProductSharePopovers();
+    });
+
+    window.CB_HIDE_PRODUCT_SHARE_POPOVERS = hideProductSharePopovers;
+});
+}
+
+if (window.matchMedia("(min-width: 992px)").matches) {
+  document.querySelectorAll(".gallery_main_card").forEach(container => {
+    const bgUrl = container.getAttribute("data-bg");
+    if (bgUrl) {
+      container.style.backgroundImage = `url(${bgUrl})`;
+      container.style.backgroundSize = "contain";
+      container.style.backgroundPosition = "center";
+      container.style.transition = "background-position 0.6s ease-out, background-size 0.6s ease-out";
+    }
+
+    let animationFrame;
+
+    const onMouseMove = (e) => {
+      if (animationFrame) cancelAnimationFrame(animationFrame);
+      animationFrame = requestAnimationFrame(() => {
+        const { left, top, width, height } = container.getBoundingClientRect();
+        const x = ((e.clientX - left) / width) * 100;
+        const y = ((e.clientY - top) / height) * 100;
+
+        container.style.backgroundPosition = `${x}% ${y}%`;
+      });
+    };
+
+    const onMouseEnter = () => {
+      container.style.transition = "background-position 0.4s ease-out, background-size 0.6s ease";
+      container.style.backgroundSize = "150%";
+    };
+
+    const onMouseLeave = () => {
+      container.style.transition = "background-position 0.6s ease, background-size 0.8s ease";
+      container.style.backgroundSize = "contain";
+      container.style.backgroundPosition = "center";
+    };
+
+    container.addEventListener("mouseenter", onMouseEnter);
+    container.addEventListener("mousemove", onMouseMove);
+    container.addEventListener("mouseleave", onMouseLeave);
+  });
+}
+
+{% endjavascript %}
+<script>
+  window.productData = {
+    pricePerSqm: {{ product_price_per_sqm | default: 0 | json }},
+    sqmPerBox: {{ product_sqm_per_box | default: 0 | json }},
+    selectedVariantSqmPerBox: {{ selected_tile_sqm_per_box_number | default: 0 | json }}
+  };
+</script>
+<script>
+  (function () {
+    function onReady(callback) {
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", callback);
+      } else {
+        callback();
+      }
+    }
+
+    function parseNumber(value) {
+      if (value === null || value === undefined || value === "") return 0;
+      return parseFloat(String(value).replace(/[^0-9.-]/g, "")) || 0;
+    }
+
+    function formatNumber(value) {
+      var number = Number(value);
+      if (!Number.isFinite(number)) return "0";
+      return Number.isInteger(number) ? String(number) : number.toFixed(2);
+    }
+
+    function formatMoney(value) {
+      var number = Number(value);
+      if (!Number.isFinite(number)) return "$0.00";
+      return "$" + number.toFixed(2);
+    }
+
+    function initTileCalculator() {
+      var root = document.querySelector(".main_product_information_wrapper");
+      if (!root) return;
+
+      var productData = window.productData || {};
+      var areaInput = root.querySelector("#area-input");
+      var addToCartBtn = root.querySelector("#add-to-cart");
+      var variantSelect = root.querySelector("#ProductSelect-product-template");
+      var calcBtn = root.querySelector(".tile_calculation_areas_cta .calculate_btn");
+      var areaKnownBtn = root.querySelector("#area-known");
+      var areaCalculateBtn = root.querySelector("#area-to-calculate");
+      var squareMetreBlock = root.querySelector(".your_square_metre");
+      var calculateSquareBlock = root.querySelector(".calculate_square_metre");
+      var optionCards = root.querySelectorAll(".area_options_block_card");
+      var calculatorError = root.querySelector("#tile-calculator-error");
+      var roomCalculatorError = root.querySelector("#tile-room-calculator-error");
+      var qtyWrapper = root.querySelector("#tile-qty-wrapper");
+      var qtyInput = qtyWrapper ? qtyWrapper.querySelector("input.quantity__input") : null;
+      var MAX_CALCULATOR_SQM = 99999;
+      var MAX_CALCULATOR_SQM_MESSAGE = "Please enter a smaller square metre value.";
+      var KNOWN_VALIDATION_MESSAGE = "Please enter a valid measurement.";
+      var ROOM_VALIDATION_MESSAGE = "Please enter a valid measurement.";
+      var ROOM_MAX_MESSAGE = "Please enter a smaller measurement.";
+
+      if (!areaInput) return;
+
+      var knownTargets = {
+        needed: root.querySelector("#total-option-area-known"),
+        included: root.querySelector("#final-total-option-area-known"),
+        boxes: root.querySelector("#total-box-option-area-known"),
+        price: root.querySelector("#total-price-option-area-known")
+      };
+      var calcTargets = {
+        needed: root.querySelector("#total-option-area-calc"),
+        included: root.querySelector("#final-total-option-area-calc"),
+        boxes: root.querySelector("#total-box-option-area-calc"),
+        price: root.querySelector("#total-price-option-area-calc")
+      };
+      var wastageRadios = root.querySelectorAll("input[name='wastage']");
+      var wastageCalcRadios = root.querySelectorAll("input[name='wastage_calc']");
+      var wastagePercentText = root.querySelectorAll(".wastage_percent");
+
+      function getSelectedOption() {
+        if (!variantSelect || variantSelect.selectedIndex < 0) return null;
+        return variantSelect.options[variantSelect.selectedIndex] || null;
+      }
+
+      function getSqmPerBox() {
+        var selectedOption = getSelectedOption();
+        var variantSqm = parseNumber(selectedOption && selectedOption.dataset.variantSqmBox);
+        var productSqm = parseNumber(productData.sqmPerBox);
+        if (!selectedOption) {
+          var selectedVariantSqm = parseNumber(productData.selectedVariantSqmPerBox);
+          return selectedVariantSqm > 0 ? selectedVariantSqm : productSqm;
+        }
+        return variantSqm > 0 ? variantSqm : productSqm;
+      }
+
+      function getVariantPrice() {
+        var selectedOption = getSelectedOption();
+        var optionPrice = parseNumber(selectedOption && selectedOption.dataset.price);
+        var buttonPrice = parseNumber(addToCartBtn && addToCartBtn.dataset.price);
+        return optionPrice > 0 ? optionPrice : buttonPrice;
+      }
+
+      function setCalculatorError(message) {
+        if (!calculatorError) return;
+        calculatorError.textContent = message || "";
+        calculatorError.classList.toggle("d-none", !message);
+      }
+
+      function setRoomCalculatorError(message) {
+        if (!roomCalculatorError) return;
+        roomCalculatorError.textContent = message || "";
+        roomCalculatorError.classList.toggle("d-none", !message);
+      }
+
+      function escapeHtml(value) {
+        var map = {
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#039;"
+        };
+        return String(value || "").replace(/[&<>"']/g, function (char) {
+          return map[char];
+        });
+      }
+
+      function cleanDecimalValue(value) {
+        var clean = String(value || "").replace(/,/g, ".").replace(/[^0-9.]/g, "");
+        var firstDotIndex = clean.indexOf(".");
+        if (firstDotIndex !== -1) {
+          clean = clean.slice(0, firstDotIndex + 1) + clean.slice(firstDotIndex + 1).replace(/\./g, "");
+        }
+        return clean;
+      }
+
+      function sanitizeDecimalInput(input) {
+        if (!input) return false;
+        var original = input.value;
+        var clean = cleanDecimalValue(original);
+        if (clean !== original) {
+          input.value = clean;
+          return true;
+        }
+        return false;
+      }
+
+      function parseDecimalInput(input) {
+        if (!input) return { value: 0, invalid: false };
+        var raw = String(input.value || "").trim();
+        if (raw === "") return { value: 0, invalid: false };
+        if (raw === "." || !/^\d+(?:\.\d*)?$/.test(raw)) {
+          return { value: 0, invalid: true };
+        }
+
+        var number = parseFloat(raw);
+        if (!Number.isFinite(number) || number < 0) {
+          return { value: 0, invalid: true };
+        }
+
+        return { value: number, invalid: false };
+      }
+
+      function allowDecimalKey(event) {
+        if (event.ctrlKey || event.metaKey || event.altKey) return true;
+        var allowedKeys = ["Backspace", "Delete", "Tab", "Escape", "Enter", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End"];
+        if (allowedKeys.indexOf(event.key) !== -1) return true;
+        if (/^\d$/.test(event.key)) return true;
+        if (event.key === "." && event.target.value.indexOf(".") === -1) return true;
+        return false;
+      }
+
+      function getVariantDisplayTitle(selectedOption) {
+        var titleNode = root.querySelector(".js-tile-product-title");
+        var productTitle = titleNode && titleNode.dataset.productTitle ? titleNode.dataset.productTitle : document.title;
+        var variantTitle = selectedOption && (selectedOption.dataset.title || selectedOption.dataset.value) ? (selectedOption.dataset.title || selectedOption.dataset.value) : "";
+
+        if (!variantTitle || variantTitle === "Default Title") return productTitle;
+        return productTitle + " - " + variantTitle;
+      }
+
+      function updateVariantTitle(selectedOption) {
+        var displayTitle = getVariantDisplayTitle(selectedOption);
+        root.querySelectorAll(".js-tile-product-title").forEach(function (titleNode) {
+          titleNode.textContent = displayTitle;
+        });
+      }
+
+      function updateVariantUrl(selectedOption) {
+        if (!selectedOption || !selectedOption.dataset.url || !window.history || !window.history.replaceState) return;
+        window.history.replaceState({}, "", selectedOption.dataset.url);
+      }
+
+      function setAddToCartReady(isReady, boxes) {
+        var cleanBoxes = parseInt(boxes, 10) || 0;
+        if (addToCartBtn) addToCartBtn.style.display = isReady ? "inline-block" : "none";
+        if (qtyWrapper) qtyWrapper.style.display = "none";
+        if (qtyInput) qtyInput.value = isReady ? Math.max(1, cleanBoxes) : 1;
+      }
+
+      function setResult(targets, result) {
+        if (!targets) return;
+        if (targets.needed) targets.needed.textContent = formatNumber(result.area);
+        if (targets.included) targets.included.textContent = formatNumber(result.finalSqm);
+        if (targets.boxes) targets.boxes.textContent = result.boxes ? String(result.boxes) : "0";
+        if (targets.price) targets.price.textContent = formatMoney(result.price);
+      }
+
+      function blankResult(area) {
+        return { area: area || 0, finalSqm: 0, boxes: 0, price: 0, valid: false };
+      }
+
+      function doCalculation(area, wastage) {
+        var cleanArea = parseNumber(area);
+        var cleanWastage = parseNumber(wastage);
+        if (cleanArea <= 0) return blankResult(0);
+
+        if (cleanArea > MAX_CALCULATOR_SQM) {
+          var tooLarge = blankResult(0);
+          tooLarge.error = MAX_CALCULATOR_SQM_MESSAGE;
+          return tooLarge;
+        }
+
+        var sqmPerBox = getSqmPerBox();
+        if (sqmPerBox <= 0) {
+          var missingSqm = blankResult(cleanArea);
+          missingSqm.error = "SQM per box is missing for this tile. Please set the product or variant SQM per box before using the calculator.";
+          return missingSqm;
+        }
+
+        var variantPrice = getVariantPrice();
+        if (variantPrice <= 0) {
+          var missingPrice = blankResult(cleanArea);
+          missingPrice.error = "The selected tile price is not available, so the total price cannot be calculated.";
+          return missingPrice;
+        }
+
+        var totalWithWastage = cleanArea * (1 + cleanWastage / 100);
+        var boxes = Math.ceil(totalWithWastage / sqmPerBox);
+        var finalSqm = boxes * sqmPerBox;
+        var price = boxes * variantPrice;
+
+        return { area: cleanArea, finalSqm: finalSqm, boxes: boxes, price: price, valid: boxes > 0 };
+      }
+
+      function setActiveWastage(radios) {
+        radios.forEach(function (radio) {
+          var card = radio.closest(".wastage_card");
+          if (card) card.classList.toggle("active", radio.checked);
+        });
+      }
+
+      function updateWastageNote(type, value) {
+        root.querySelectorAll(".wastage_note").forEach(function (note) {
+          note.classList.add("d-none");
+        });
+        if (parseNumber(value) !== 0) return;
+
+        var selector = type === "known" ? ".your_square_metre .wastage_note" : ".calculate_square_metre .wastage_note";
+        var note = root.querySelector(selector);
+        if (note) note.classList.remove("d-none");
+      }
+
+      function formatWastageLabel(value) {
+        return parseNumber(value) === 0 ? "No Wastage" : parseNumber(value) + "%";
+      }
+
+      function updateCustomPrices(syncUrl) {
+        var selectedOption = getSelectedOption();
+        if (selectedOption) {
+          if (addToCartBtn) {
+            addToCartBtn.dataset.id = selectedOption.value;
+            addToCartBtn.dataset.price = selectedOption.dataset.price || "";
+            addToCartBtn.dataset.sale = selectedOption.dataset.sale || "";
+            addToCartBtn.dataset.sku = selectedOption.dataset.sku || "";
+          }
+          updateVariantTitle(selectedOption);
+          if (syncUrl) updateVariantUrl(selectedOption);
+
+          var skuElement = root.querySelector("#variant-sku");
+          if (skuElement) skuElement.textContent = selectedOption.dataset.sku || "";
+        }
+
+        var variantPrice = getVariantPrice();
+        var sqmPerBox = getSqmPerBox();
+        var priceBoxEl = root.querySelector("#price-per-box");
+        var priceSqmEl = root.querySelector("#price-per-sqm");
+
+        if (priceBoxEl) {
+          priceBoxEl.innerHTML = formatMoney(variantPrice) + " <span>per box</span>";
+        }
+        if (priceSqmEl) {
+          priceSqmEl.innerHTML = sqmPerBox > 0
+            ? formatMoney(variantPrice / sqmPerBox) + " <span>per sqm</span>"
+            : "<span>per sqm unavailable</span>";
+        }
+      }
+
+      function syncVisibleOptionsFromVariant() {
+        var selectedOption = getSelectedOption();
+        if (!selectedOption || !selectedOption.dataset.value) return;
+
+        var selectedValues = selectedOption.dataset.value.split(" / ");
+        root.querySelectorAll(".variant-select").forEach(function (select, index) {
+          if (selectedValues[index] && select.value !== selectedValues[index]) {
+            select.value = selectedValues[index];
+          }
+        });
+      }
+
+      function updateDeleteButtons() {
+        root.querySelectorAll(".tile_calculation_area_card").forEach(function (card, index) {
+          var button = card.querySelector(".delete_area_calculator");
+          if (button) button.style.display = index === 0 ? "none" : "block";
+        });
+      }
+
+      function calculateMultiArea() {
+        var totalArea = 0;
+        var valid = false;
+        var summaryRows = [];
+        var hasInvalidMeasurement = false;
+        var hasTooLargeMeasurement = false;
+
+        root.querySelectorAll(".tile_calculation_area_card").forEach(function (card) {
+          var lengthInput = card.querySelector(".length_holder input");
+          var widthInput = card.querySelector(".width_holder input");
+          var lengthResult = parseDecimalInput(lengthInput);
+          var widthResult = parseDecimalInput(widthInput);
+          var length = lengthResult.value;
+          var width = widthResult.value;
+          var roomNameInput = card.querySelector(".area_holder input");
+          var roomName = roomNameInput && roomNameInput.value.trim() ? roomNameInput.value.trim() : "Area";
+          var area = length * width;
+          var output = card.querySelector(".tile_area_output");
+
+          if (lengthResult.invalid || widthResult.invalid) {
+            hasInvalidMeasurement = true;
+            area = 0;
+          }
+
+          if (area > MAX_CALCULATOR_SQM) {
+            hasTooLargeMeasurement = true;
+            area = 0;
+          }
+
+          if (!hasInvalidMeasurement && !hasTooLargeMeasurement && length > 0 && width > 0) valid = true;
+          totalArea += area;
+          if (output) output.textContent = formatNumber(area);
+
+          if (area > 0) {
+            summaryRows.push(
+              '<div class="calc-summary-row d-flex justify-content-between align-items-center py-1 border-bottom">' +
+                '<span class="text-muted text-break">' + escapeHtml(roomName) + '</span>' +
+                '<span>' + formatNumber(length) + 'm &times; ' + formatNumber(width) + 'm = <strong>' + formatNumber(area) + ' sqm</strong></span>' +
+              '</div>'
+            );
+          }
+        });
+
+        if (hasInvalidMeasurement) {
+          setRoomCalculatorError(ROOM_VALIDATION_MESSAGE);
+          if (calcBtn) calcBtn.disabled = true;
+          return 0;
+        }
+
+        if (hasTooLargeMeasurement || totalArea > MAX_CALCULATOR_SQM) {
+          setRoomCalculatorError(ROOM_MAX_MESSAGE);
+          if (calcBtn) calcBtn.disabled = true;
+          return 0;
+        }
+
+        setRoomCalculatorError("");
+
+        var summaryEl = root.querySelector("#show-calculation-summary");
+        if (summaryEl) {
+          summaryEl.innerHTML = summaryRows.length
+            ? '<div class="calc-summary-block bg-white rounded p-3 mb-3">' +
+                '<p class="fw-bold mb-2">Area Breakdown</p>' +
+                summaryRows.join("") +
+                '<div class="d-flex justify-content-between align-items-center pt-2 mt-1">' +
+                  '<strong>Total</strong>' +
+                  '<strong>' + formatNumber(totalArea) + ' sqm</strong>' +
+                '</div>' +
+              '</div>'
+            : "";
+        }
+
+        if (calcBtn) calcBtn.disabled = !valid;
+        return totalArea;
+      }
+
+      function calculateKnown() {
+        updateCustomPrices();
+        var areaResult = parseDecimalInput(areaInput);
+        var wastageInput = root.querySelector("input[name='wastage']:checked");
+        var wastage = parseNumber(wastageInput && wastageInput.value);
+        if (areaResult.invalid) {
+          setResult(knownTargets, blankResult(0));
+          wastagePercentText.forEach(function (el) { el.textContent = formatWastageLabel(wastage); });
+          updateWastageNote("known", wastage);
+          setCalculatorError(KNOWN_VALIDATION_MESSAGE);
+          setAddToCartReady(false, 0);
+          return;
+        }
+        var area = areaResult.value;
+        var result = doCalculation(area, wastage);
+
+        setResult(knownTargets, result);
+        wastagePercentText.forEach(function (el) { el.textContent = formatWastageLabel(wastage); });
+        updateWastageNote("known", wastage);
+        setCalculatorError(result.error || "");
+        setAddToCartReady(result.valid, result.boxes);
+      }
+
+      function calculateCalc() {
+        updateCustomPrices();
+        var area = calculateMultiArea();
+        var wastageInput = root.querySelector("input[name='wastage_calc']:checked");
+        var wastage = parseNumber(wastageInput && wastageInput.value);
+        var result = doCalculation(area, wastage);
+
+        setResult(calcTargets, result);
+        wastagePercentText.forEach(function (el) { el.textContent = formatWastageLabel(wastage); });
+        updateWastageNote("calc", wastage);
+        setCalculatorError(result.error || "");
+        setAddToCartReady(result.valid, result.boxes);
+      }
+
+      function resetKnown() {
+        areaInput.value = "";
+        setResult(knownTargets, blankResult(0));
+        wastageRadios.forEach(function (radio) { radio.checked = radio.value === "15"; });
+        setActiveWastage(wastageRadios);
+        wastagePercentText.forEach(function (el) { el.textContent = formatWastageLabel(15); });
+        updateWastageNote("known", 15);
+        setCalculatorError("");
+        setAddToCartReady(false, 0);
+      }
+
+      function resetCalc() {
+        root.querySelectorAll(".tile_calculation_area_card").forEach(function (card, index) {
+          if (index > 0) {
+            card.remove();
+            return;
+          }
+          card.querySelectorAll("input").forEach(function (input) { input.value = ""; });
+          var output = card.querySelector(".tile_area_output");
+          if (output) output.textContent = "0";
+        });
+
+        var summaryEl = root.querySelector("#show-calculation-summary");
+        if (summaryEl) summaryEl.innerHTML = "";
+        setResult(calcTargets, blankResult(0));
+        wastageCalcRadios.forEach(function (radio) { radio.checked = radio.value === "15"; });
+        setActiveWastage(wastageCalcRadios);
+        wastagePercentText.forEach(function (el) { el.textContent = formatWastageLabel(15); });
+        updateWastageNote("calc", 15);
+        updateDeleteButtons();
+        if (calcBtn) calcBtn.disabled = true;
+        setRoomCalculatorError("");
+        setCalculatorError("");
+        setAddToCartReady(false, 0);
+      }
+
+      function scrollToResults(selector) {
+        var element = root.querySelector(selector);
+        if (!element) return;
+        window.scrollTo({
+          top: element.getBoundingClientRect().top + window.scrollY - 10,
+          behavior: "smooth"
+        });
+      }
+
+      function addRoom() {
+        var container = root.querySelector(".tile_calculation_areas");
+        var firstCard = root.querySelector(".tile_calculation_area_card");
+        var cta = root.querySelector(".tile_calculation_areas_cta");
+        if (!container || !firstCard || !cta) return;
+
+        var clone = firstCard.cloneNode(true);
+        clone.classList.add("new_area");
+        clone.querySelectorAll("input").forEach(function (input) { input.value = ""; });
+        var output = clone.querySelector(".tile_area_output");
+        if (output) output.textContent = "0";
+
+        container.insertBefore(clone, cta);
+        updateDeleteButtons();
+        if (calculateMultiArea() > 0) {
+          calculateCalc();
+        } else {
+          setAddToCartReady(false, 0);
+        }
+      }
+
+      function deleteRoom(target) {
+        var cards = root.querySelectorAll(".tile_calculation_area_card");
+        if (cards.length <= 1) return;
+
+        var card = target.closest(".tile_calculation_area_card");
+        if (!card) return;
+
+        card.remove();
+        updateDeleteButtons();
+        calculateMultiArea();
+        calculateCalc();
+      }
+
+      if (areaKnownBtn) {
+        areaKnownBtn.addEventListener("click", function () {
+          if (squareMetreBlock) squareMetreBlock.classList.remove("d-none");
+          if (calculateSquareBlock) calculateSquareBlock.classList.add("d-none");
+          optionCards.forEach(function (card) { card.classList.remove("active"); });
+          var activeCard = this.closest(".area_options_block_card");
+          if (activeCard) activeCard.classList.add("active");
+          resetCalc();
+          scrollToResults("#input-area");
+        });
+      }
+
+      if (areaCalculateBtn) {
+        areaCalculateBtn.addEventListener("click", function () {
+          if (calculateSquareBlock) calculateSquareBlock.classList.remove("d-none");
+          if (squareMetreBlock) squareMetreBlock.classList.add("d-none");
+          optionCards.forEach(function (card) { card.classList.remove("active"); });
+          var activeCard = this.closest(".area_options_block_card");
+          if (activeCard) activeCard.classList.add("active");
+          resetKnown();
+          scrollToResults("#calculate-area");
+        });
+      }
+
+      root.querySelectorAll(".wastage_card").forEach(function (card) {
+        card.addEventListener("click", function () {
+          var radio = card.querySelector("input[type='radio']");
+          if (!radio || radio.disabled) return;
+          radio.checked = true;
+
+          var groupRadios = root.querySelectorAll('input[name="' + radio.name + '"]');
+          setActiveWastage(groupRadios);
+
+          if (radio.name === "wastage") calculateKnown();
+          if (radio.name === "wastage_calc") calculateCalc();
+        });
+      });
+
+      wastageRadios.forEach(function (radio) { radio.addEventListener("change", calculateKnown); });
+      wastageCalcRadios.forEach(function (radio) { radio.addEventListener("change", calculateCalc); });
+      areaInput.addEventListener("input", function () {
+        var hadInvalidCharacters = sanitizeDecimalInput(areaInput);
+        if (hadInvalidCharacters) {
+          setCalculatorError(KNOWN_VALIDATION_MESSAGE);
+          setResult(knownTargets, blankResult(0));
+          setAddToCartReady(false, 0);
+          return;
+        }
+        calculateKnown();
+      });
+
+      if (variantSelect) {
+        variantSelect.addEventListener("change", function () {
+          updateCustomPrices(true);
+          if (parseDecimalInput(areaInput).value > 0) calculateKnown();
+          if (calculateMultiArea() > 0) calculateCalc();
+        });
+      }
+
+      areaInput.addEventListener("keydown", function (event) {
+        if (allowDecimalKey(event)) return;
+        event.preventDefault();
+        setCalculatorError(KNOWN_VALIDATION_MESSAGE);
+      });
+
+      root.addEventListener("input", function (event) {
+        if (!event.target.closest(".tile_calculation_area_card")) return;
+        var hadInvalidCharacters = false;
+
+        if (event.target.classList.contains("tile-measurement-input")) {
+          hadInvalidCharacters = sanitizeDecimalInput(event.target);
+        }
+
+        if (event.target.classList.contains("tile-area-name-input") && event.target.value.length > 40) {
+          event.target.value = event.target.value.slice(0, 40);
+        }
+
+        var area = calculateMultiArea();
+        if (hadInvalidCharacters) {
+          setRoomCalculatorError(ROOM_VALIDATION_MESSAGE);
+          setResult(calcTargets, blankResult(0));
+          setAddToCartReady(false, 0);
+          return;
+        }
+
+        if (area > 0) {
+          calculateCalc();
+        } else {
+          setResult(calcTargets, blankResult(0));
+          setAddToCartReady(false, 0);
+        }
+      });
+
+      root.addEventListener("keydown", function (event) {
+        if (!event.target.classList || !event.target.classList.contains("tile-measurement-input")) return;
+        if (allowDecimalKey(event)) return;
+        event.preventDefault();
+        setRoomCalculatorError(ROOM_VALIDATION_MESSAGE);
+      });
+
+      root.addEventListener("click", function (event) {
+        if (event.target.closest(".add_new_area_calculator")) {
+          addRoom();
+          return;
+        }
+        if (event.target.closest(".delete_area_calculator")) {
+          deleteRoom(event.target);
+        }
+      });
+
+      if (calcBtn) calcBtn.addEventListener("click", calculateCalc);
+
+      syncVisibleOptionsFromVariant();
+      updateCustomPrices();
+      resetKnown();
+      resetCalc();
+    }
+
+    onReady(initTileCalculator);
+  })();
+</script>

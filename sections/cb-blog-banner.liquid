@@ -1,0 +1,231 @@
+<div class="blog_banner position-relative bg_cover">
+  <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/blog-page-banner-mobile-cover.png" alt="{{ section.settings['sub-title'] }}" class="d-md-none">
+  <div class="container">
+    <div class="blog_content bg-white">
+      {% if section.settings.title != blank %}
+        <p>{{ section.settings.title }}</p>
+      {% endif %}
+      {% if section.settings['sub-title'] != blank %}
+        <h1 class="mb-0">{{ section.settings['sub-title'] }}</h1>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% render 'cb-style' %}
+{% assign desk_image = section.settings.image | img_url: 'master' %}
+{% if section.settings['image-mobile'].size != blank %}
+  {% assign mob_image = section.settings['image-mobile'] | img_url: 'master' %}
+{% else %}
+  {% assign mob_image = section.settings.image | img_url: 'master' %}
+{% endif %}
+<style>
+  .blog_banner {
+    background-image: url({{ mob_image }});
+  }
+  @media (min-width: 768px) {
+    .blog_banner {
+      background-image: url({{ desk_image }});
+    }
+  }
+</style>
+{% schema %}
+{
+"name": "Blog Banner",
+"tag": "section",
+"class": "cb-blog-banner",
+"settings": [
+  {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Desktop Image"
+  },
+  {
+    "type":"image_picker",
+    "id":"image-mobile",
+    "label":"Mobile Image"
+  },
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Title"
+  },
+  {
+    "type":"text",
+    "id":"sub-title",
+    "label":"Sub Title"
+  }
+],
+"blocks":[
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Blog Banner"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

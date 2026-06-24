@@ -1,0 +1,62 @@
+<a href="https://www.cookandbathe.com.au/pages/terms-and-conditions" class="announcement_bar-link">
+  <div class="announcement_bar text-center bg-dark d-md-block">
+    <div class="container d-flex justify-content-center align-items-center">
+      {{ section.settings.title }}
+      <span class="arrow-icon">➔</span>
+    </div>
+  </div>
+</a>
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "class": "cb-announcement-bar",
+  "settings": [
+    {
+      "type":"richtext",
+      "id":"title",
+      "label":"Content"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+.announcement_bar-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.announcement_bar {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 10px 0; /* Adjust the padding as necessary */
+}
+
+.announcement_bar-link:hover .announcement_bar {
+  background-color: #555; /* Change to a slightly different color */
+  transform: scale(1.02); /* Slightly enlarge the announcement bar */
+}
+
+.announcement_bar .arrow-icon {
+  margin-left: 10px;
+  font-size: 16px; /* Adjust size as needed */
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.announcement_bar-link:hover .arrow-icon {
+  transform: translateX(5px); /* Slightly move the arrow to the right */
+}
+
+.announcement_bar a {
+  color: black;
+}
+
+/* If you want to change the font size or other styles, you can add them here */
+.announcement_bar {
+  font-size: 16px; /* Adjust as needed */
+}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

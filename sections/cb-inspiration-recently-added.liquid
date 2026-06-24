@@ -1,0 +1,277 @@
+<div class="inspiration-recently-added_wrapper">
+  <div class="container">
+    <div class="inspiration_listing_items">
+      <div class="title_block position-relative">
+        <p class="bg-white mb-0 d-inline-block">{{ section.settings.title }}</p>
+      </div>
+      <div class="row">
+        {% assign num_rec = 0 %}
+        {% for article in blogs[blog.handle].articles limit: 6 %}
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="inspiration_card position-relative overflow-hidden">
+              <a
+                href="{{ article.url }}"
+                class="d-block inspiration_card_cover bg_cover"
+                style="background-image: url({{ article.image | img_url :'master' }});"
+              >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/inspiration_cover.png"
+                  alt="{{ article.title }}"
+                  class="d-none d-md-block"
+                >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/inspiration_mobile_cover.png"
+                  alt="{{ article.title }}"
+                  class="d-md-none"
+                >
+              </a>
+              <div class="inspiration_card_content">
+                <h6>{{ article.title }}</h6>
+                <p>{{ article.content | strip_html | truncate: 40, ' ...' }}</p>
+                <div class="inspiration_card_cta">
+                  <a href="{{ article.url }}" class="btn btn-outline-primary">Get Inspired</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% assign num_rec = num_rec | plus: 1 %}
+        {% endfor %}
+      </div>
+    </div>
+    {% comment %}
+      <div class="pagination_results_recommended_perpage d-flex align-items-center justify-content-between">
+        <div class="recommended_perpage_block d-flex align-items-center">
+          <div class="perpage_block">
+            <select class="form-select" aria-label="Per Pages">
+              <option value="12" slected>12 per page</option>
+              <option value="24">24 per page</option>
+              <option value="36">36 per page</option>
+              <option value="48">48 per page</option>
+              <option value="60">60 per page</option>
+            </select>
+          </div>
+          <div class="recommended_block">
+            <select class="form-select" aria-label="Recommended">
+              <option value="1" selected>Alphabetically, A-Z</option>
+              <option value="2">Alphabetically, Z-A</option>
+            </select>
+          </div>
+        </div>
+        {% if num_rec >= 12 %}
+          {% assign count = 12 %}
+        {% else %}
+          {% assign count = num_rec %}
+        {% else %}
+
+        {% endif %}
+
+        <div class="pagination_results_block d-flex align-items-center">
+          <div class="results_block">1 - {{ count }} of {{ num_rec }} Results</div>
+          {% if num_rec >= 12 %}
+            <div class="pagination_block">
+              <nav aria-label="Page navigation">
+                <ul class="pagination">
+                  <li class="page-item page_prev">
+                    <a class="page-link" href="#">{% render 'icon-left-arrow' %}</a>
+                  </li>
+                  <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item page_next">
+                    <a class="page-link" href="#">{% render 'icon-right-arrow' %}</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endcomment %}
+  </div>
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "Inspiration Recently",
+"tag": "section",
+"class": "cb-inspiration-recently-added",
+"settings": [
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Title"
+  }
+],
+"blocks":[
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Inspiration Recently"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

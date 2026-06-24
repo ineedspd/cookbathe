@@ -1,0 +1,185 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ade25c85-2b0e-471b-a21d-fe6d2a139922": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "173275900856dbbd75": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "98de05d7-b432-4c85-9374-0d14f397596b": {
+      "type": "cb-contact-form",
+      "disabled": true,
+      "settings": {
+        "title": "Contact Us",
+        "number": "(03) 93762299",
+        "image": "shopify://shop_images/1700x300_Banner.jpg"
+      }
+    },
+    "74b6df4d-8580-460b-bcf6-4c9975fb8b08": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "c964b40a-e974-4e6d-8f2c-502a5902ab63": {
+          "type": "title-style-3",
+          "settings": {
+            "heading-tag": "h2",
+            "title": "Visit Our Showrooms",
+            "btn-type": "default",
+            "btn-style": "btn btn-outline-primary",
+            "btn-name": "(03) 93762299",
+            "btn-link": "tel:0393762299"
+          }
+        },
+        "a8f89c94-d838-43ab-a76b-0ef1c5f93189": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "logo": "shopify://shop_images/flemington_banner.jpg",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393762299",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/bu3b85fUu3hH7GCW6",
+            "btn-target-2": true
+          }
+        },
+        "f875660a-fc5c-4eac-bcbf-59dc894a9c8b": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "logo": "shopify://shop_images/fawkner_banner.jpg",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "https://maps.app.goo.gl/cRuiaDRb6RMjcf7J9",
+            "phone": "(03) 9357 4900",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393574900",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/rC67CpEGkksbL7SA8",
+            "btn-target-2": true
+          }
+        },
+        "36041a23-d7ad-4691-a03f-67a11917f3f6": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "logo": "shopify://shop_images/burwood_banner.jpg",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "https://goo.gl/maps/ft2uwknpyB8FoCQJ6",
+            "phone": "(03)9116 5788",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0391165788",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/ft2uwknpyB8FoCQJ6",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "c964b40a-e974-4e6d-8f2c-502a5902ab63",
+        "a8f89c94-d838-43ab-a76b-0ef1c5f93189",
+        "f875660a-fc5c-4eac-bcbf-59dc894a9c8b",
+        "36041a23-d7ad-4691-a03f-67a11917f3f6"
+      ],
+      "custom_css": [
+        "{padding-top: 20px;}"
+      ],
+      "settings": {}
+    },
+    "f3e59d4c-4f53-41be-a6fd-1f7029e5bcd6": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    },
+    "ff71ac46-df84-4392-b5b3-353e9ad1fae3": {
+      "type": "cb-instagram-posts",
+      "settings": {
+        "heading-tag": "h2",
+        "title": "Our Insta Inspo",
+        "btn-style": "btn btn-link",
+        "btn-name": "Follow @cookandbathe",
+        "btnlink": "https://www.instagram.com/cookandbathe/"
+      }
+    },
+    "167807488128afd22b": {
+      "type": "apps",
+      "blocks": {
+        "bd24ad66-9627-4565-a600-4975003d1bff": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 100,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 80,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 50
+          }
+        }
+      },
+      "block_order": [
+        "bd24ad66-9627-4565-a600-4975003d1bff"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ade25c85-2b0e-471b-a21d-fe6d2a139922",
+    "173275900856dbbd75",
+    "98de05d7-b432-4c85-9374-0d14f397596b",
+    "74b6df4d-8580-460b-bcf6-4c9975fb8b08",
+    "f3e59d4c-4f53-41be-a6fd-1f7029e5bcd6",
+    "ff71ac46-df84-4392-b5b3-353e9ad1fae3",
+    "167807488128afd22b"
+  ]
+}

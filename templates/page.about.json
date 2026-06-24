@@ -1,0 +1,414 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "f6f59d23-22e3-47d0-9700-1fa77fee883c": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "image_with_text_iz4rU8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_hrYrei": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Cook & Bathe",
+            "heading_size": "h1"
+          }
+        },
+        "text_z6d7GK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Welcome to Cook & Bathe – Melbourne’s trusted destination for premium kitchens, bathrooms and renovation supplies. As a proud family-owned business with over 30 years of experience, we combine industry expertise with personalised service to help you create spaces you’ll love. We believe kitchens and bathrooms are the heart of every home, so our curated range features only the highest-quality products from leading Australian and international brands. With three Melbourne showrooms and a seamless online store, our team is here to guide you from inspiration to installation, ensuring every project is stylish, functional and built to last.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hrYrei",
+        "text_z6d7GK"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Leo.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 48,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_bzNwR3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jtYGyf": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>What We Do</p>",
+            "heading_size": "h2"
+          }
+        },
+        "text_DtBxCM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Comprehensive Product Range:</strong> From tapware, showers, vanities, and baths to kitchen appliances, sinks, ovens, and more, we stock products suited to every style, budget, and need. You can browse by room, brand, colour, price or design style.  </p><p><strong>Trusted Brands:</strong> We partner with well-known and reliable names like Phoenix, Hansgrohe, Smeg, Franke and others to ensure quality, performance, and design excellence.  </p><p><strong>Showrooms & Inspiration:</strong> Visit our Melbourne showrooms (Flemington, Fawkner, Burwood)<em> </em>to see products in real spaces. Get inspired, test finishes, and imagine what your renovated kitchen or bathroom could become.  </p><p><strong>Design & Support:</strong> It’s not just about products. With decades of experience, our team helps you with knowledge, guidance, and after-sales support, making your renovation or build smoother.  </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jtYGyf",
+        "text_DtBxCM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 28,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_7TbaiW": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QCXCFd": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Makes Us Different?",
+            "heading_size": "h2"
+          }
+        },
+        "text_h8D8ky": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Family-Run & Local:</strong> As an Australian-owned business deeply rooted in Melbourne, we understand local styles, climate, and what works for homeowners here.</p><p><br/><strong>Quality, Style & Value:</strong> Whether you’re after something minimal, traditional, luxe or hotel-inspired, we have options that look beautiful and last.</p><p><br/><strong>Easy Shopping & Service:</strong> We offer free shipping for online orders over a certain amount (within Metro Melbourne), fast dispatch for many in-stock items, and helpful showrooms to visit. </p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QCXCFd",
+        "text_h8D8ky"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/57McPhersonSt_Kitchen_2.jpg",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 32,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_w8KdBr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_iEiUkm": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Our Promise</p>",
+            "heading_size": "h2"
+          }
+        },
+        "text_T98r4m": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Cook & Bathe, we believe your kitchen or bathroom should be more than just functional - it should be a space that brings joy, makes life easier, reflects your taste, and stands the test of time. We promise to deliver products and services that live up to that.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iEiUkm",
+        "text_T98r4m"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_DzTmJk": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_e6rUG3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kitchen"
+          }
+        },
+        "featured_collection_Wwq9Vc": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bathroom"
+          }
+        },
+        "featured_collection_4Lfq9Y": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "laundry"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_e6rUG3",
+        "featured_collection_Wwq9Vc",
+        "featured_collection_4Lfq9Y"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Upgrade Your Home with Cook & Bathe",
+        "heading_size": "h2",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "b2eed665-026f-40c7-8b79-1b1d4482fd96": {
+      "type": "cb-about-banner",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Banner_aboutus_1920x253_10254222-4a26-499a-ab87-49d2fa996788.jpg",
+        "title": "About Us",
+        "description": "<p> Cook & Bathe are a family-run business with over 30 years of experience providing wholesale bathroom supplies in Melbourne as well as laundry and kitchen accessories.</p><p>In 2005 the family refocused on the kitchen and bathroom as central points of the home, which has led to the creation of Cook & Bathe as a provider of tailored bathrooms and kitchen designs. Find products online or visit the bathroom and kitchen showroom in Flemington to benefit from the team’s extensive experience and knowledge.<br/>        </p>"
+      }
+    },
+    "0f268e91-367e-4089-b4f6-67df4cefbe99": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18084493689132__0f268e91-367e-4089-b4f6-67df4cefbe99-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "template--18084493689132__0f268e91-367e-4089-b4f6-67df4cefbe99-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>At Cook & Bathe, customer service is at the heart of everything we do, and we recognize its utmost importance in building strong and lasting relationships with our valued customers.</p><p>Our commitment lies in creating the best experience for each individual who walks through our doors. We take pride in offering expert knowledge and advice, guiding our customers through their decision-making process to find the perfect solutions for their specific needs. Whether they are revamping their Kitchen, Bathroom or Laundry, our team is dedicated to providing the necessary inspiration and ideas to fuel their creativity and turn their vision into reality.</p>",
+            "text_style": "body"
+          }
+        },
+        "template--18084493689132__0f268e91-367e-4089-b4f6-67df4cefbe99-button-1": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Visit Us Today!",
+            "button_link": "shopify://pages/store-locations"
+          }
+        }
+      },
+      "block_order": [
+        "template--18084493689132__0f268e91-367e-4089-b4f6-67df4cefbe99-heading-1",
+        "template--18084493689132__0f268e91-367e-4089-b4f6-67df4cefbe99-text-1",
+        "template--18084493689132__0f268e91-367e-4089-b4f6-67df4cefbe99-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Leo_Customer.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "635fa357-6355-4824-9912-b865ce0000bb": {
+      "type": "cb-full-image-block",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/full-screen-img.png"
+      }
+    },
+    "4f013501-2a37-469b-a155-b2f490e0b28b": {
+      "type": "cb-about-content-block",
+      "blocks": {
+        "2271ca84-a954-47b9-a625-f7e057da05cb": {
+          "type": "box",
+          "settings": {
+            "image": "shopify://shop_images/about-odd-small-img.png",
+            "content": "<p>The bathroom is where we both begin and end our day, so Cook & Bathe guides its customers through forming bathroom designs that aim to create a sanctuary within the home. A suite of bathroom accessories from Australian and international brands – including Villeroy and Boch, Caroma, Phoenix Tapware, and more – allows you to indulge in the process of creating a luxury retreat.</p>"
+          }
+        },
+        "b5c99eb4-6a1f-4eb3-83d4-ecc2294b27cc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/about-content-img.png"
+          }
+        },
+        "b26b5f18-616c-4c91-80af-a79c6dd46574": {
+          "type": "content",
+          "settings": {
+            "content": "<p>The kitchen is the modern day fireplace, a communal space around which we gather and connect over a common love for food. Cook & Bathe works with kitchen appliances from Smeg, Euro Appliances, Kleenmaid and other renowned brands to create fitted kitchens that offer a seamless cooking experience, turning the everyday cook into a professional chef. Their process of forming an ideal kitchen design focuses on the interplay of functionality with form to create a space in which the act of cooking centralises the kitchen’s role within the home.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "2271ca84-a954-47b9-a625-f7e057da05cb",
+        "b5c99eb4-6a1f-4eb3-83d4-ecc2294b27cc",
+        "b26b5f18-616c-4c91-80af-a79c6dd46574"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "56a50da1-1c46-4e98-b763-336d95cd7ccb": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    },
+    "17325825144541dba4": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "featured_blog_jR8Y6L": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "Looking for Inspiration?",
+        "heading_size": "h2",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 28,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_Pry66h": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AFwADc": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Follow Us On Instagram </p>",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AFwADc"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "47451df3-05c1-4f84-9e49-e646e77e119f": {
+      "type": "cb-instagram-posts",
+      "settings": {
+        "heading-tag": "h2",
+        "title": "Our Insta Inspo",
+        "btn-style": "btn btn-link",
+        "btn-name": "Follow @cookandbathe",
+        "btnlink": ""
+      }
+    },
+    "167807497010eb0e94": {
+      "type": "apps",
+      "blocks": {
+        "1be624f3-e735-4a50-87f9-e6bab82fe839": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 100,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 80,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 50
+          }
+        }
+      },
+      "block_order": [
+        "1be624f3-e735-4a50-87f9-e6bab82fe839"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "f6f59d23-22e3-47d0-9700-1fa77fee883c",
+    "image_with_text_iz4rU8",
+    "rich_text_bzNwR3",
+    "image_with_text_7TbaiW",
+    "rich_text_w8KdBr",
+    "collection_list_DzTmJk",
+    "b2eed665-026f-40c7-8b79-1b1d4482fd96",
+    "0f268e91-367e-4089-b4f6-67df4cefbe99",
+    "635fa357-6355-4824-9912-b865ce0000bb",
+    "4f013501-2a37-469b-a155-b2f490e0b28b",
+    "main",
+    "56a50da1-1c46-4e98-b763-336d95cd7ccb",
+    "17325825144541dba4",
+    "featured_blog_jR8Y6L",
+    "rich_text_Pry66h",
+    "47451df3-05c1-4f84-9e49-e646e77e119f",
+    "167807497010eb0e94"
+  ]
+}

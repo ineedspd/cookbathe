@@ -1,0 +1,1208 @@
+<!-- start navbar wrapper -->
+<div class="navbar_wrapper position-relative {{ template }}">
+  <nav class="navbar navbar-expand-lg flex-wrap">
+    <div class="container">
+      <div class="navbar_top">
+        <a class="navbar-brand position-relative" href="{{ routes.root_url }}">
+          <img
+            src="{{ section.settings.logo | img_url :"master" }}"
+            alt="{{ section.settings.logo.alt }}" loading="lazy"
+          >
+        </a>
+        {% if template == 'cart' %}
+          <a class="back_link d-lg-none" href="{{ shop.url }}">
+            {%- render 'icon-back' %}
+          </a>
+        {% endif %}
+        <botton class="return_menu_link d-lg-none" data-level="0">{% render 'icon-back' %} Return</botton>
+        <span class="mega_menu_label d-lg-none d-none">Shop by</span>
+        {% if template != 'cart' %}
+          <div class="navbar_top_mobile_inner d-lg-none">
+            <button class="search_btn" aria-label="Search">{% render 'icon-search' %}</button>
+            <a class="cart_link" href="/cart">
+              {%- render 'icon-cart' %}
+              <span>0</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar"
+              aria-controls="navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="mobile_search_popup d-lg-none">
+              <form action="{{ routes.search_url }}" class="search_form_head position-relative">
+                <input
+                  type="search"
+                  name="q"
+                  value="{{ search.terms | escape }}"
+                  class="search_field"
+                  placeholder="Search"
+                >
+                <button type="submit" class="search_btn" aria-label="Search">{% render 'icon-search' %}</button>
+              </form>
+            </div>
+          </div>
+        {% endif %}
+        <div class="collapse navbar-collapse" id="navbar-top">
+          <ul class="navbar-nav navbar-top-nav ms-lg-auto align-items-lg-center w-100 justify-content-end">
+            {% if template == 'cart' %}
+              <li class="nav-item d-flex justify-content-end">
+                <a class="back_link" href="{{ shop.url }}">
+                  {%- render 'icon-back' %}
+                  <span>Back To Shopping</span>
+                </a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                <form action="{{ routes.search_url }}" class="search_form_head position-relative">
+                  <input
+                    type="search"
+                    name="q"
+                    value="{{ search.terms | escape }}"
+                    class="search_field"
+                    placeholder="Search"
+                  >
+                  <button type="submit" class="search_btn" aria-label="Search">{% render 'icon-search' %}</button>
+                </form>
+              </li>
+              <li class="nav-item">
+                <a href="/pages/contact" class="nav-link">{% render 'icon-contact' %} Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a href="/account" class="nav-link">
+                  {%- render 'icon-account' %}
+                  {% if customer %} Hi, {{ customer.first_name }} {% else %}My Account{% endif -%}
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="cart_link" href="/cart">
+                  {%- render 'icon-cart' %}
+                  <span>0</span></a
+                >
+              </li>
+            {% endif %}
+          </ul>
+        </div>
+      </div>
+    </div>
+    {% if template != 'cart' %}
+      <div class="full_navbar_block w-100 bg-white">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mx-auto w-100 justify-content-between">
+              {% if section.settings['mega-menu'] == true %}
+  <li class="nav-item">
+    <a class="nav-link submenu-toggle  active" aria-current="page" href="/collections/all">
+       <span class="smt_icon">{%- render 'icon-toggle' %}
+      {% render 'icon-down-arrow' %} </span>         
+      
+      <span>Shop</span></a
+    >
+    <div class="mega_menu">
+      <div class="mega_menu_inner">
+        <div class="container">
+          <div class="mega_menu_content d-flex position-relative">
+            <div class="mega_menu_left_block">
+              <p class="h2">Shop by</p>
+              <ul class="sub_menu list-unstyled">
+                {% for link in linklists['shop-by'].links %}
+                  <li
+                    class="sub_menu_item"
+                    data-name="{{ link.title }}"
+                    data-target="{{ link.title | handle }}-submenu-main"
+                  >
+                    <a href="{{ link.url }}">
+                      {{- link.title }}
+                      {% render 'icon-right-arrow', classses: 'd-none d-lg-block' -%}
+                    </a>
+                    {% render 'icon-plus', classses: 'd-lg-none' -%}
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+            <div class="mega_menu_right_block d-flex flex-column">
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'level-3' %}
+                    <div class="sub_menu_child" id="{{ block.settings.parent-name | handle }}-submenu-main">
+                      <div class="sub_menu_child_inner submenu_style_one d-flex">
+                        <div class="style_one_left_block">
+                          <div class="room_one_listing">
+                            <p class="h3">{{ block.settings['parent-name'] }}</p>
+                            <ul class="list-unstyled">
+                              {% for link in linklists[block.settings['menu-link']].links %}
+                                <li
+                                  data-name="{{ link.title }}"
+                                  room-data-target="{{ link.title | handle }}"
+                                >
+                                  <a href="{{link.url}}" room-data-target="{{ link.title | handle }}">
+                                    {{- link.title -}}
+                                  </a>
+                                  {% render 'icon-plus', classses: 'd-lg-none' -%}
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </div>
+                          <div
+                            class="room_step_one_img bg_cover lazy-bg"
+                            data-bg="{{ block.settings.image-level-1 | img_url :'master' }}"
+                          >
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/room-menu-cover.png"
+                              alt="room" loading="lazy"
+                            >
+                          </div>
+                        </div>
+                        <div class="style_one_center_block">
+                          {% for link in linklists[block.settings['menu-link']].links %}
+                            <div class="room_one_sub_listing" id="{{ link.title | handle }}">
+                              <p class="h3">{{ link.title }}</p>
+                              {% if link.links.size > 0 %}
+                                <ul class="list-unstyled">
+                                  {% for item in link.links %}
+                                    <li
+                                      data-name="{{ item.title }}"
+                                      room-sub-data-target="{{ item.title | handle }}"
+                                    >
+                                      <a
+                                        href="{{item.url}}"
+                                        room-sub-data-target="{{ item.title | handle }}"
+                                      >
+                                        {{- item.title -}}
+                                      </a>
+                                      {% if item.links.size > 0 %}
+                                        {% render 'icon-plus', classses: 'd-lg-none' -%}
+                                      {% endif %}
+                                    </li>
+                                  {% endfor %}
+                                </ul>
+                              {% endif %}
+                            </div>
+                          {% endfor %}
+                          <div
+                            class="room_step_two_img bg_cover lazy-bg"
+                            data-bg="{{ block.settings.image-level-2 | img_url :'master' }}"
+                          >
+                            <img
+                              src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/room-menu-sub-cover.png"
+                              alt="room-sub-img" loading="lazy"
+                            >
+                          </div>
+                        </div>
+                        <div class="style_one_right_block">
+                          {% for link in linklists[block.settings['menu-link']].links %}
+                            {% if link.links.size > 0 %}
+                              {% for item in link.links %}
+                                {% if item.links.size > 0 %}
+                                  <div class="room_one_sub_inner_listing" id="{{ item.title | handle }}">
+                                    <p class="h3">{{ item.title }}</p>
+
+                                    <ul class="list-unstyled">
+                                      {% for child in item.links %}
+                                        <li>
+                                          <a href="{{ child.url }}">{{ child.title }}</a>
+                                          {% comment %}
+                                            {% render 'icon-right-arrow', classses: 'd-lg-none' -%}
+                                          {% endcomment %}
+                                        </li>
+                                      {% endfor %}
+                                    </ul>
+                                  </div>
+                                {% endif %}
+                              {% endfor %}
+                            {% endif %}
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  {% when 'brand' %}
+                    <div class="sub_menu_child" id="{{ block.settings.parent-name | handle }}-submenu-main">
+                      <div class="sub_menu_child_inner submenu_style_two d-flex flex-column flex-md-row justify-content-between">
+                        <div class="style_two_left_block">
+                          <div class="style_two_head d-flex align-items-center">
+                            <p class="mb-0 h3">{{ block.settings['parent-name'] }}</p>
+                            <a href="{{ block.settings.btn-link }}" class="btn btn-outline-primary"
+                              >View All</a
+                            >
+                          </div>
+                          <div class="style_two_listing">
+                            <ul class="list-unstyled d-md-none">
+                              {% assign num = linklists[block.settings['menu-link']].links.size
+                                | divided_by: 3
+                              %}
+                              {% assign mod = linklists[block.settings['menu-link']].links.size
+                                | modulo: 2
+                              %}
+                              {% if mod == 0 %}
+                                {% assign level_num = num %}
+                              {% else %}
+                                {% assign level_num = num | plus: 1 %}
+                              {% endif %}
+                              {% for link in linklists[block.settings['menu-link']].links %}
+                                {% if forloop.index <= level_num %}
+                                  <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                  </li>
+                                  {% assign level_2_num = forloop.index %}
+                                {% endif %}
+                              {% endfor %}
+                              {% for link in linklists[block.settings['menu-link']].links %}
+                                {% assign plus_num = level_num | plus: level_2_num %}
+                                {% if forloop.index > level_2_num and forloop.index <= plus_num %}
+                                  <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                  </li>
+                                  {% assign level_3_num = forloop.index %}
+                                {% endif %}
+                              {% endfor %}
+                              {% for link in linklists[block.settings['menu-link']].links %}
+                                {% assign plus_num = level_num | plus: level_3_num %}
+                                {% if forloop.index > level_3_num and forloop.index <= plus_num %}
+                                  <li>
+                                    <a href="{{ link.url }}">{{ link.title }}</a>
+                                  </li>
+                                {% endif %}
+                              {% endfor %}
+                              {% assign level_4_num = forloop.index %}
+                            </ul>
+                            <div class="row justify-content-between d-none d-md-flex">
+                              {% assign num = linklists[block.settings['menu-link']].links.size
+                                | divided_by: 3
+                              %}
+                              {% assign mod = linklists[block.settings['menu-link']].links.size
+                                | modulo: 2
+                              %}
+                              {% if mod == 0 %}
+                                {% assign level_num = num %}
+                              {% else %}
+                                {% assign level_num = num | plus: 1 %}
+                              {% endif %}
+
+                              <div class="col-auto">
+                                <ul class="list-unstyled">
+                                  {% for link in linklists[block.settings['menu-link']].links %}
+                                    {% if forloop.index <= level_num %}
+                                      <li>
+                                        <a href="{{ link.url }}">{{ link.title }}</a>
+                                      </li>
+                                      {% assign level_2_num = forloop.index %}
+                                    {% endif %}
+                                  {% endfor %}
+                                </ul>
+                              </div>
+                              <div class="col-auto">
+                                <ul class="list-unstyled">
+                                  {% for link in linklists[block.settings['menu-link']].links %}
+                                    {% assign plus_num = level_num | plus: level_2_num %}
+                                    {% if forloop.index > level_2_num and forloop.index <= plus_num %}
+                                      <li>
+                                        <a href="{{ link.url }}">{{ link.title }}</a>
+                                      </li>
+                                      {% assign level_3_num = forloop.index %}
+                                    {% endif %}
+                                  {% endfor %}
+                                </ul>
+                              </div>
+                              <div class="col-auto">
+                                <ul class="list-unstyled">
+                                  {% for link in linklists[block.settings['menu-link']].links %}
+                                    {% assign plus_num = level_num | plus: level_3_num %}
+                                    {% if forloop.index > level_3_num and forloop.index <= plus_num %}
+                                      <li>
+                                        <a href="{{ link.url }}">{{ link.title }}</a>
+                                      </li>
+                                    {% endif %}
+                                  {% endfor %}
+                                  {% assign level_4_num = forloop.index %}
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="style_two_right_block">
+                          <div class="style_two_imgs">
+                            {% if block.settings['image-1'].size != blank %}
+                              <a href="{{ block.settings.image-1-link }}" class="brand_card">
+                                <img src="{{ block.settings.image-1 | img_url:'master'}}" alt="{{ block.settings.image-1.alt }}" loading="lazy">
+                              </a>
+                            {% endif %}
+                            {% if block.settings['image-2'].size != blank %}
+                              <a href="{{ block.settings.image-2-link }}" class="brand_card">
+                              <img src="{{ block.settings.image-2 | img_url:'master'}}" alt="{{ block.settings.image-2.alt }}" loading="lazy">
+                              </a>
+                            {% endif %}
+                            {% if block.settings['image-3'].size != blank %}
+                              <a href="{{ block.settings.image-3-link }}" class="brand_card">
+                                <img src="{{ block.settings.image-3 | img_url:'master'}}" alt="{{ block.settings.image-3.alt }}" loading="lazy">
+                              </a>
+                            {% endif %}
+                            {% if block.settings['image-4'].size != blank %}
+                              <a href="{{ block.settings.image-4-link }}" class="brand_card">
+                                <img src="{{ block.settings.image-4 | img_url:'master'}}" alt="{{ block.settings.image-4.alt }}" loading="lazy">
+                              </a>
+                            {% endif %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% when 'category' %}
+                    <div class="sub_menu_child" id="{{ block.settings.parent-name | handle }}-submenu-main">
+                      <div class="sub_menu_child_inner submenu_style_three">
+                        <div class="style_three_head d-flex align-items-center">
+                          {% if block.settings['parent-name'] == 'Category' %}
+                          <p class="mb-0 h3">Popular Categories</p>
+                          {% else %}
+                            <p class="mb-0 h3">{{ block.settings['parent-name'] }}</p>
+                          {% endif %}  
+                          <a href="/collections/" class="btn btn-outline-primary">View All</a>
+                        </div>
+                        <div class="category_submenu_listing">
+                          <div class="category_submenu_listing_inner">
+                            <div class="row">
+                              {% for link in linklists[block.settings['menu-link']].links %}
+                                <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+                                  <a
+                                    href="{{ link.url }}"
+                                    class="category_card d-flex flex-column align-items-center justify-content-end"
+                                  >
+                                    {% assign link_split = link.url | split: '/' %}
+                                    {% assign collection = link_split[2] %}
+                                    <img
+                                      src="{{ collections[collection].metafields.custom.icon | img_url: 'master'}}"
+                                      alt="{{ link.title }}" loading="lazy"
+                                    >
+                                    <p>{{ link.title }}</p>
+                                  </a>
+                                </div>
+                              {% endfor %}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  {% when 'color-list' %}
+                    <div class="sub_menu_child" id="{{ block.settings.parent-name | handle }}-submenu-main">
+                      <div class="sub_menu_child_inner submenu_style_four d-flex">
+                        <div class="color_four_left_block">
+                          <div class="color_four_head d-flex align-items-center">
+                            <p class="mb-0 h3" >{{ block.settings['parent-name'] }}</p>
+                            <a
+                              href="{{ block.settings.btn-link }}"
+                              class="btn btn-outline-primary d-none d-lg-inline-flex"
+                              >View All</a
+                            >
+                          </div>
+               <div class="color_four_listing">
+                            {% for link in linklists[block.settings['menu-link']].links %}
+                              <div
+                                data-name="{{ block.settings['parent-name'] | handle }}"
+                                class="color_card d-flex align-items-center"
+                                color-data-target="{{ link.title | handle }}"
+                              >
+                                {% assign color-image = section.blocks | where: 'type', 'color-image' %}
+                                {% for color in color-image %}
+                                  {% assign title_1 = link.title | handle %}
+                                  {% assign title_2 = color.settings['parent-name'] | handle %}
+                                  {% if title_1 == title_2 %}
+                                    {% if color.settings.image.size != blank %}
+                                      <div
+                                        class="color_card_cover bg_cover lazy-bg"
+                                        data-bg="{{ color.settings.image | img_url : 'master' }}"
+                                      >
+                                        &nbsp;
+                                      </div>
+                                    {% else %}
+                                       <div
+                                        class="color_card_cover bg_cover"
+                                        style="background-color:{{ color.settings.color }};"
+                                      >
+                                        &nbsp;
+                                      </div>
+                                    {% endif %}
+                                  {% endif %}
+                                {% endfor %}
+                                {{ link.title }}
+                                {% render 'icon-right-arrow', classses: 'd-lg-none' -%}
+                              </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                        <div class="color_four_right_block">
+                          {% if block.settings.image.size != blank %}
+                           <div
+                              class="color_default_img bg_cover d-none d-lg-block lazy-bg"
+                              data-bg="{{ block.settings.image | img_url:'master' }}"
+                            >
+                              <img
+                                src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/color-default-cover.png"
+                                alt="Colour" loading="lazy"
+                              >
+                            </div>
+                          {% endif %}
+                          {% for link in linklists[block.settings['menu-link']].links %}
+                            <div class="color_four_sub_listing" id="{{ link.title | handle }}">
+                              <p class="h3">{{ link.title }}</p>
+                              {% if link.links.size > 0 %}
+                                <ul class="list-unstyled">
+                                  {% for item in link.links %}
+                                    <li>
+                                      <a href="{{ item.url }}">{{ item.title }}</a>
+                                      {% comment %}
+                                        {% render 'icon-right-arrow', classses: 'd-lg-none' -%}
+                                      {% endcomment %}
+                                    </li>
+                                  {% endfor %}
+                                </ul>
+                              {% endif %}
+                            </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  {% when 'price-list' %}
+                    <div class="sub_menu_child" id="{{ block.settings.parent-name | handle }}-submenu-main">
+                      <div class="sub_menu_child_inner submenu_style_five d-flex justify-content-between">
+                        <div class="price_five_left_block">
+                          <p class="h3">{{ block.settings['parent-name'] }}</p>
+                          <div class="price_type_listing row">
+                            {% for link in linklists[block.settings['menu-link']].links %}
+                              {% assign price-image = section.blocks | where: 'type', 'price-image' %}
+                              {% for price in price-image %}
+                                {% assign title_1 = link.title | handle %}
+                                {% assign title_2 = price.settings['parent-name'] | handle %}
+                                {% if title_1 == title_2 %}
+                                  {% if price.settings.image.size != blank %}
+                                    <div class="col-md-4 col-12">
+                                      <div
+                                        data-name="{{ block.settings['parent-name'] }}"
+                                        price-data-target="{{ link.title | handle }}"
+                                        class="price_type_card position-relative bg_cover lazy-bg"
+                                        data-bg="{{ price.settings.image | img_url :'master' }}"
+                                      >
+                                        <img
+                                          src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/price_type_card_cover.png"
+                                          alt="{{ link.title }}" loading="lazy"
+                                        >
+                                        <p>
+                                          {% for i in (1..['forloop'].index) %}
+                                            {% render 'icon-dollar' %}
+                                          {% endfor %}
+                                          {{ link.title }}
+                                        </p>
+                                      </div>
+                                    </div>
+                                  {% endif %}
+                                {% endif %}
+                              {% endfor %}
+                            {% endfor %}
+                          </div>
+                        </div>
+                        <div class="price_five_right_block">
+                          {% for link in linklists[block.settings['menu-link']].links %}
+                            <div class="price_type_sub_listing" id="{{ link.title | handle }}">
+                              <p class="h3">{{ link.title }}</p>
+                              {% if link.links.size > 0 %}
+                                <ul class="list-unstyled">
+                                  {% for item in link.links %}
+                                    <li>
+                                      <a href="{{ item.url }}">{{ item.title }}</a>
+                                      {% comment %}
+                                        {% render 'icon-right-arrow', classses: 'd-lg-none' -%}
+                                      {% endcomment %}
+                                    </li>
+                                  {% endfor %}
+                                </ul>
+                              {% endif %}
+                            </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  {% when 'style-list' %}
+                    <div class="sub_menu_child" id="{{ block.settings.parent-name | handle }}-submenu-main">
+                      <div class="sub_menu_child_inner submenu_style_six d-flex justify-content-between">
+                        <div class="style_six_left_block">
+                          <p class="h3">{{ block.settings['parent-name'] }}</p>
+                          <div class="style_category_listing row">
+                            {% for link in linklists[block.settings['menu-link']].links %}
+                              {% assign style-image = section.blocks | where: 'type', 'style-image' %}
+                              {% for style in style-image %}
+                                {% assign title_1 = link.title | handle %}
+                                {% assign title_2 = style.settings['parent-name'] | handle %}
+                                {% if title_1 == title_2 %}
+                                  {% if style.settings.image.size != blank %}
+                                    <div class="col-md-4 col-6">
+                                      <div
+                                        data-name="{{ block.settings['parent-name'] }}"
+                                        style-data-target="{{ link.title | handle }}"
+                                        class="style_category_card position-relative bg_cover lazy-bg"
+                                        data-bg="{{ style.settings.image | img_url:'master' }}"
+                                      >
+                                        <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/style_cate_card_cover.png" alt="{{ link.title | strip_html }}" loading="lazy">
+                                        <p>{{ link.title }}</p>
+                                      </div>
+                                    </div>
+                                  {% endif %}
+                                {% endif %}
+                              {% endfor %}
+                            {% endfor %}
+                          </div>
+                        </div>
+                        <div class="style_six_right_block">
+                          {% for link in linklists[block.settings['menu-link']].links %}
+                            <div class="style_category_sub_listing" id="{{ link.title | handle }}">
+                              <p class="h3">{{ link.title }}</p>
+                              {% if link.links.size > 0 %}
+                                <ul class="list-unstyled">
+                                  {% for item in link.links %}
+                                    <li>
+                                      <a href="{{ item.url }}">{{ item.title }}</a>
+                                      {% comment %}
+                                        {% render 'icon-right-arrow', classses: 'd-lg-none' -%}
+                                      {% endcomment %}
+                                    </li>
+                                  {% endfor %}
+                                </ul>
+                              {% endif %}
+                            </div>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                {% endcase %}
+              {% endfor %}
+
+              <div
+                class="default_mega_img bg_cover lazy-bg"
+                data-bg="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/mainbanner_307x167_09f412e7-53a1-42f1-b62b-10c01efe1f29.jpg?v=1683714166"
+              >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/shop-by-menu-img-cover.png"
+                  alt="shop-by" loading="lazy"
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="color_four_backside_listing">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'color-list' %}
+              {% for link in linklists[block.settings['menu-link']].links %}
+                {% assign color-image = section.blocks | where: 'type', 'color-image' %}
+                {% for color in color-image %}
+                  {% assign title_1 = link.title | handle %}
+                  {% assign title_2 = color.settings['parent-name'] | handle %}
+                  {% if title_1 == title_2 %}
+                    <div
+                      class="color_free_card bg_cover"
+                      color-data-target="{{ link.title | handle }}"                                    
+                      style="{% if color.settings.image != blank %}background-image: url({{ color.settings.image | img_url : 'master' }}{% else %}background-color:{{ color.settings.color }}{% endif %});"
+                    ></div>
+                  {% endif %}
+                {% endfor %}
+              {% endfor %}
+          {% endcase %}
+        {% endfor %}
+       
+      </div>
+    </div>
+  </li>
+{% endif %}
+              {%- if section.settings['mega-menu'] == true -%}
+                {%- for link in linklists['mega-menu-2-0'].links -%}
+                  {%- if link.links.size > 0 %}
+                    {% assign issub = false %}
+                    {%- for childlink in link.links -%}
+                      {%- for subchildlink in childlink.links -%}
+                        {% assign issub = true %}
+                      {%- endfor -%}
+                    {%- endfor -%}
+                    <li class="nav-item {%- if link.title == "Brands" -%} {%- else %} single_child_menu{%- endif -%}">
+                      <a class="nav-link submenu-toggle active" aria-current="page" href="{{ link.url }}">
+                        <span class="smt_icon">   {%- render 'icon-toggle' %}
+                        {% render 'icon-down-arrow' -%}</span>
+                      
+                      <span>{{- link.title -}}</span>
+                        
+                      </a>
+
+                      {%- if link.title == 'Brands' -%}
+                        <div class="mega_menu">
+                          <div class="mega_menu_inner">
+                            <div class="container">
+                              {%- if link.title != 'Brands' -%}
+                                <div class="mega_menu_content d-flex position-relative">
+                                  <div class="mega_menu_left_block">
+                                    <p class="h2">{{ link.title }}</p>
+                                    <ul class="sub_menu list-unstyled">
+                                      {%- for childlink in link.links -%}
+                                        <li
+                                          class="sub_menu_item"
+                                          data-name="{{ childlink.title }}"
+                                          data-target="{{ childlink.title | handle }}-submenu"
+                                        >
+                                          <a href="{{ childlink.url }}">
+                                            {{- childlink.title }}
+                                            {% render 'icon-right-arrow', classses: 'd-none d-lg-block' -%}
+                                          </a>
+                                          {% render 'icon-plus', classses: 'd-lg-none' -%}
+                                        </li>
+                                      {% endfor %}
+                                    </ul>
+                                  </div>
+
+                                  {%- if link.links.size > 0 and issub -%}
+                                    <div class="mega_menu_right_block d-flex flex-column {{ link.links.size }}--size">
+                                      {%- for childlink in link.links -%}
+                                        <div
+                                          class="sub_menu_child {{ childlink.title | handle }}-sub"
+                                          id="{{ childlink.title | handle }}-submenu"
+                                        >
+                                          <div class="sub_menu_child_inner submenu_style_one d-flex">
+                                            <div class="style_one_left_block">
+                                              <div class="room_one_listing">
+                                                <p class="h3">{{ childlink.title }}</p>
+                                                <ul class="list-unstyled">
+                                                  {%- for subchildlink in childlink.links -%}
+                                                    <li
+                                                      data-name="{{ subchildlink.title }}"
+                                                      room-data-target="{{ subchildlink.title | handle }}"
+                                                    >
+                                                      <a
+                                                        href="{{ subchildlink.url }}"
+                                                        room-data-target="{{ subchildlink.title | handle }}"
+                                                      >
+                                                        {{ subchildlink.title | escape }}
+                                                      </a>
+                                                      {% comment %}
+                                                        {% render 'icon-plus', classses: 'd-lg-none' -%}
+                                                      {% endcomment %}
+                                                    </li>
+                                                  {%- endfor -%}
+                                                </ul>
+                                              </div>
+                                             <div
+                                                class="room_step_one_img bg_cover lazy-bg"
+                                                data-bg="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/mainbanner_307x167_09f412e7-53a1-42f1-b62b-10c01efe1f29.jpg?v=1683714166"
+                                              >
+                                                <img
+                                                  src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/room-menu-cover.png"
+                                                  alt="room"
+                                                  loading="lazy"
+                                                >
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      {%- endfor -%}
+                                      <div
+                                        class="default_mega_img bg_cover lazy-bg"
+                                        data-bg="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/mainbanner_307x167_09f412e7-53a1-42f1-b62b-10c01efe1f29.jpg?v=1683714166"
+                                      >
+                                        <img
+                                          src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/shop-by-menu-img-cover.png"
+                                          alt="shop-by" loading="lazy"
+                                        >
+                                      </div>
+                                    </div>
+                                  {%- endif -%}
+                                </div>
+                              {%- else -%}
+                                <div class="mega_menu_content d-flex position-relative">
+                                  <div class="mega_menu_right_block d-flex flex-column">
+                                    {%- assign childlink = link -%}
+                                    {% for block in section.blocks %}
+                                      {% case block.type %}
+                                        {% when 'brand' %}
+                                          <div
+                                            class="sub_menu_child {{ childlink.title | handle }}-sub"
+                                            id="{{ childlink.title | handle }}-submenu"
+                                          >
+                                            <div class="sub_menu_child_inner submenu_style_two d-flex flex-column flex-md-row justify-content-between">
+                                              <div class="style_two_left_block">
+                                                <div class="style_two_head d-flex align-items-center">
+                                                  <p class="mb-0 h3">{{ childlink.title }}</p>
+                                                  <a
+                                                    href="{{ block.settings.btn-link }}"
+                                                    class="btn btn-outline-primary"
+                                                    >View All</a
+                                                  >
+                                                </div>
+                                                <div class="style_two_listing">
+                                                  <ul class="list-unstyled d-md-none">
+                                                    {% assign num = childlink.links.size | divided_by: 3 %}
+                                                    {% assign mod = childlink.links.size | modulo: 2 %}
+                                                    {% if mod == 0 %}
+                                                      {% assign level_num = num %}
+                                                    {% else %}
+                                                      {% assign level_num = num | plus: 1 %}
+                                                    {% endif %}
+                                                    {% for link in childlink.links %}
+                                                      {% if forloop.index <= level_num %}
+                                                        <li>
+                                                          <a href="{{ link.url }}">{{ link.title }}</a>
+                                                        </li>
+                                                        {% assign level_2_num = forloop.index %}
+                                                      {% endif %}
+                                                    {% endfor %}
+                                                    {% for subchildlink in childlink.links %}
+                                                      {% assign plus_num = level_num | plus: level_2_num %}
+                                                      {% if forloop.index > level_2_num and forloop.index <= plus_num %}
+                                                        <li>
+                                                          <a href="{{ subchildlink.url }}">{{ subchildlink.title }}</a>
+                                                        </li>
+                                                        {% assign level_3_num = forloop.index %}
+                                                      {% endif %}
+                                                    {% endfor %}
+                                                    {% for subchildlink in childlink.links %}
+                                                      {% assign plus_num = level_num | plus: level_3_num %}
+                                                      {% if forloop.index > level_3_num and forloop.index <= plus_num %}
+                                                        <li>
+                                                          <a href="{{ subchildlink.url }}">{{ subchildlink.title }}</a>
+                                                        </li>
+                                                      {% endif %}
+                                                    {% endfor %}
+                                                    {% assign level_4_num = forloop.index %}
+                                                  </ul>
+                                                  <div class="row justify-content-between d-none d-md-flex">
+                                                    {% assign num = childlink.links.size | divided_by: 3 %}
+                                                    {% assign mod = childlink.links.size | modulo: 2 %}
+                                                    {% if mod == 0 %}
+                                                      {% assign level_num = num %}
+                                                    {% else %}
+                                                      {% assign level_num = num | plus: 1 %}
+                                                    {% endif %}
+
+                                                    <div class="col-auto">
+                                                      <ul class="list-unstyled">
+                                                        {% for subchildlink in childlink.links %}
+                                                          {% if forloop.index <= level_num %}
+                                                            <li>
+                                                              <a href="{{ subchildlink.url }}">
+                                                                {{- subchildlink.title -}}
+                                                              </a>
+                                                            </li>
+                                                            {% assign level_2_num = forloop.index %}
+                                                          {% endif %}
+                                                        {% endfor %}
+                                                      </ul>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                      <ul class="list-unstyled">
+                                                        {% for subchildlink in childlink.links %}
+                                                          {% assign plus_num = level_num | plus: level_2_num %}
+                                                          {% if forloop.index > level_2_num
+                                                            and forloop.index <= plus_num
+                                                          %}
+                                                            <li>
+                                                              <a href="{{ subchildlink.url }}">
+                                                                {{- subchildlink.title -}}
+                                                              </a>
+                                                            </li>
+                                                            {% assign level_3_num = forloop.index %}
+                                                          {% endif %}
+                                                        {% endfor %}
+                                                      </ul>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                      <ul class="list-unstyled">
+                                                        {% for subchildlink in childlink.links %}
+                                                          {% assign plus_num = level_num | plus: level_3_num %}
+                                                          {% if forloop.index > level_3_num
+                                                            and forloop.index <= plus_num
+                                                          %}
+                                                            <li>
+                                                              <a href="{{ subchildlink.url }}">
+                                                                {{- subchildlink.title -}}
+                                                              </a>
+                                                            </li>
+                                                          {% endif %}
+                                                        {% endfor %}
+                                                        {% assign level_4_num = forloop.index %}
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="style_two_right_block">
+                                                <div class="style_two_imgs">
+                                                  {% if block.settings['image-1'].size != blank %}
+                                                    <a href="{{ block.settings.image-1-link }}" class="brand_card">
+                                                      <img
+                                                        src="{{ block.settings.image-1 | img_url:'master'}}"
+                                                        alt="{{ block.settings.image-1.alt }}" loading="lazy"
+                                                      >
+                                                    </a>
+                                                  {% endif %}
+                                                  {% if block.settings['image-2'].size != blank %}
+                                                    <a href="{{ block.settings.image-2-link }}" class="brand_card">
+                                                      <img
+                                                        src="{{ block.settings.image-2 | img_url:'master'}}"
+                                                        alt="{{ block.settings.image-2.alt }}" loading="lazy"
+                                                      >
+                                                    </a>
+                                                  {% endif %}
+                                                  {% if block.settings['image-3'].size != blank %}
+                                                    <a href="{{ block.settings.image-3-link }}" class="brand_card">
+                                                      <img
+                                                        src="{{ block.settings.image-3 | img_url:'master'}}"
+                                                        alt="{{ block.settings.image-3.alt }}" loading="lazy"
+                                                      >
+                                                    </a>
+                                                  {% endif %}
+                                                  {% if block.settings['image-4'].size != blank %}
+                                                    <a href="{{ block.settings.image-4-link }}" class="brand_card">
+                                                      <img
+                                                        src="{{ block.settings.image-4 | img_url:'master'}}"
+                                                        alt="{{ block.settings.image-4.alt }}" loading="lazy"
+                                                      >
+                                                    </a>
+                                                  {% endif %}
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      {% endcase %}
+                                    {% endfor %}
+                                  </div>
+                                </div>
+                              {%- endif -%}
+                            </div>
+                          </div>
+                        </div>
+                      {%- else -%}
+                        <div class="single_submenu mega_menu">
+                          <div class="mega_menu_inner">
+                            <div class="mega_menu_content d-flex position-relative pt-0 p-lg-0 w-100">
+                              <ul class="sub_menu list-unstyled w-100">
+                              {%- for childlink in link.links -%}
+                                <li class="sub_menu_item">
+                                  <a
+                                    class="{% if childlink.current %} nav_link_active{% endif %}"
+                                    href="{{ childlink.url }}"
+                                  >
+                                    {{- childlink.title | escape -}}
+                                     {%- if childlink.links.size > 0 %}
+                                      {% render 'icon-right-arrow', classses: 'd-none d-lg-block' -%}
+                                     {%- endif -%}
+                                  </a>
+                                    {%- if childlink.links.size > 0 %}
+                                  
+                                  {% render 'icon-plus', classses: 'd-lg-none' -%}
+                                    {%- endif -%}
+                                   {%- if childlink.links.size > 0 %}
+                                    <ul class="sub_sub_menu list-unstyled">
+                              {%- for childlink_childlink in childlink.links -%}
+                                <li class="sub_menu_item">
+                                  <a
+                                    class="{% if childlink_childlink.current %} nav_link_active{% endif %}"
+                                    href="{{ childlink_childlink.url }}"
+                                  >
+                                    {{- childlink_childlink.title | escape -}}
+                                  </a>
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                                      {%- endif -%}
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                            </div>
+                          </div>
+                        </div>
+                      {%- endif -%}
+                    </li>
+                  {% else %}
+                    <li class="nav-item">
+                      <a
+                        class="nav-link submenu-toggle{% if link.current %} nav_link_active{% endif %}"
+                        href="{{ link.url }}"
+                      >
+                          <span class="empt_link"> </span>
+                        <span>{{ link.title | escape }} </span>
+                      </a>
+                    </li>
+                  {% endif %}
+                {%- endfor -%}
+              {% endif %}
+
+              {% if section.settings['btn-name'] != blank %}
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-primary" href="{{ section.settings.btn-link }}">
+                    {{- section.settings['btn-name'] -}}
+                  </a>
+                </li>
+              {% endif %}
+            </ul>
+            <div class="mobile_menu_cta d-flex align-items-center d-lg-none">
+              <a href="/pages/contact" class="btn btn-outline-primary">{% render 'icon-contact' %} Contact Us</a>
+              <a href="/account" class="btn btn-outline-primary">
+                {%- render 'icon-account' %}
+                {% if customer %} Hi, {{ customer.first_name }} {% else %}My Account{% endif -%}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  </nav>
+</div>
+<!-- end navbar wrapper -->
+
+{% schema %}
+{
+"name": "Header",
+"class": "cb-header",
+"settings": [
+  {
+    "type":"image_picker",
+    "id":"logo",
+    "label":"Logo"
+  },
+  {
+    "type":"checkbox",
+    "id":"mega-menu",
+    "label":"Show Mega Menu",
+    "default":true
+  },
+  {
+    "type":"link_list",
+    "id":"menu-link",
+    "label":"Select Menu"
+  },
+  {
+    "type":"text",
+    "id":"btn-name",
+    "label":"Button Name"
+  },
+  {
+    "type":"url",
+    "id":"btn-link",
+    "label":"Button Link"
+  }
+],
+"blocks":[
+  {
+    "type":"level-3",
+    "name":"Level 3",
+    "settings":[
+      {
+        "type":"text",
+        "id":"parent-name",
+        "label":"Parent Menu Name"
+      },
+      {
+        "type":"link_list",
+        "id":"menu-link",
+        "label":"Select Menu"
+      },
+      {
+        "type":"image_picker",
+        "id":"image-level-1",
+        "label":"Image Level 1"
+      },
+      {
+        "type":"image_picker",
+        "id":"image-level-2",
+        "label":"Image Level 2"
+      }
+    ]
+  },
+  {
+    "type":"brand",
+    "name":"Brand",
+    "settings":[
+        {
+          "type":"text",
+          "id":"parent-name",
+          "label":"Parent Menu Name"
+        },
+        {
+          "type":"url",
+          "id":"btn-link",
+          "label":"View All Button Link"
+        },
+        {
+          "type":"link_list",
+          "id":"menu-link",
+          "label":"Select Menu"
+        },
+        {
+          "type":"image_picker",
+          "id":"image-1",
+          "label":"Image 1"
+        },
+        {
+          "type":"url",
+          "id":"image-1-link",
+          "label":"Image Link"
+        },
+        {
+          "type":"image_picker",
+          "id":"image-2",
+          "label":"Image 2"
+        },
+        {
+          "type":"url",
+          "id":"image-2-link",
+          "label":"Image Link"
+        },
+        {
+          "type":"image_picker",
+          "id":"image-3",
+          "label":"Image 3"
+        },
+        {
+          "type":"url",
+          "id":"image-3-link",
+          "label":"Image Link"
+        },
+         {
+          "type":"image_picker",
+          "id":"image-4",
+          "label":"Image 4"
+        },
+        {
+          "type":"url",
+          "id":"image-4-link",
+          "label":"Image Link"
+        }
+    ]
+  },
+  {
+    "type":"category",
+    "name":"Category",
+    "settings":[
+        {
+          "type":"text",
+          "id":"parent-name",
+          "label":"Parent Menu Name"
+        },
+        {
+          "type":"link_list",
+          "id":"menu-link",
+          "label":"Select Menu"
+        }
+    ]
+  },
+  {
+    "type":"color-list",
+    "name":"Color List",
+    "settings":[
+        {
+          "type":"text",
+          "id":"parent-name",
+          "label":"Parent Menu Name"
+        },
+        {
+          "type":"url",
+          "id":"btn-link",
+          "label":"View All Button Link"
+        },
+        {
+          "type":"link_list",
+          "id":"menu-link",
+          "label":"Select Menu"
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        }
+    ]
+  },
+  {
+    "type":"color-image",
+    "name":"Color Image",
+    "settings":[
+        {
+          "type":"text",
+          "id":"parent-name",
+          "label":"Parent Menu Name"
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        },
+        {
+          "type":"color",
+          "id":"color",
+          "label":"Select Color"
+        }
+    ]
+  },
+  {
+    "type":"price-list",
+    "name":"Price List",
+    "settings":[
+        {
+          "type":"text",
+          "id":"parent-name",
+          "label":"Parent Menu Name"
+        },
+        {
+          "type":"link_list",
+          "id":"menu-link",
+          "label":"Select Menu"
+        }
+    ]
+  },
+  {
+    "type":"price-image",
+    "name":"Price Image",
+    "settings":[
+        {
+          "type":"text",
+          "id":"parent-name",
+          "label":"Parent Menu Name"
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        }
+    ]
+  },
+  {
+    "type":"style-list",
+    "name":"Style List",
+    "settings":[
+        {
+          "type":"text",
+          "id":"parent-name",
+          "label":"Parent Menu Name"
+        },
+        {
+          "type":"link_list",
+          "id":"menu-link",
+          "label":"Select Menu"
+        }
+    ]
+  },
+  {
+    "type":"style-image",
+    "name":"style Image",
+    "settings":[
+        {
+          "type":"text",
+          "id":"parent-name",
+          "label":"Parent Menu Name"
+        },
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        }
+    ]
+  }
+]
+}
+{% endschema %}

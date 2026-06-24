@@ -1,0 +1,663 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "rich_text_EMjDRM": {
+      "type": "rich-text",
+      "blocks": {
+        "text_47XYxm": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Transform your bathroom with Otti Australia’s luxurious and thoughtfully crafted basins, baths, and LED mirrors. Known for their seamless blend of form and function, Otti fixtures offer premium quality and timeless design for modern Australian homes.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_47XYxm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_xKxRGp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nLJczm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Otti LED Mirrors – Style Meets Function with Built-In Illumination",
+            "heading_size": "h2"
+          }
+        },
+        "text_yXmqmR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Complete your bathroom design with Otti Australia's stunning mirrors. Our mirrors are designed to add both functionality and style to your space.</p><p><strong>LED Lighting:</strong> Integrated LED lights for optimal illumination. Otti mirrors are designed to add both functionality and style to your space. Explore our range of LED shaving cabinets, including the <a href=\"URL\">Otti LED Archie Shaving Cabinet Matte White</a>, for sleek and functional bathroom lighting solutions.”</p><p><strong>Anti-Fog Features:</strong> Ensures a clear reflection even in steamy conditions.</p><p><strong>Various Shapes and Sizes:</strong> Available in multiple configurations to fit your space.</p><p>Discover our collection of Otti mirrors to enhance your bathroom's functionality and aesthetics.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_fxV7PM": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Otti Mirrors",
+            "button_link": "shopify://collections/otti-mirrors"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nLJczm",
+        "text_yXmqmR",
+        "button_fxV7PM"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Otti2_1440x1778_mobilebanner.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_RdineA": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rjifGP": {
+          "type": "heading",
+          "settings": {
+            "heading": "Otti Basins – Contemporary Design and Lasting Craftsmanship",
+            "heading_size": "h2"
+          }
+        },
+        "text_pcz33R": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Otti Australia’s basins showcase a blend of contemporary design and superior craftsmanship. Each basin is meticulously crafted to deliver both aesthetic appeal and practical functionality, making them a top choice for homeowners and designers alike.</p><p><strong>Modern Designs</strong>: Sleek and elegant styles that seamlessly enhance any bathroom decor.</p><p><strong>Durable Materials</strong>: Constructed from high-quality materials to ensure longevity and withstand daily use.</p><p><strong>Variety of Finishes</strong>: Available in multiple finishes to suit your personal style, from matte to gloss.</p><p>Discover our range, including the versatile <a href=\"https://www.cookandbathe.com.au/products/otti-boston-butler-sink?variant=45647593668908\" title=\"Otti Boston Butler Sink\">Otti Boston Butler Sink</a>, perfect for adding a stylish and practical touch to both bathroom and kitchen spaces. Explore our collection of Otti basins to find the ideal fit for your home.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_HnmXRL": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Otti Basins",
+            "button_link": "shopify://collections/otti-basins"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rjifGP",
+        "text_pcz33R",
+        "button_HnmXRL"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/OT4000MW_Lifestyle2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_YT3zRh": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ijwtc4": {
+          "type": "heading",
+          "settings": {
+            "heading": "Otti Baths – Luxury and Comfort for Your Relaxation Space",
+            "heading_size": "h2"
+          }
+        },
+        "text_7Ncpcd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Indulge in luxury with Otti Australia's selection of baths. Designed to provide a relaxing and rejuvenating experience, our baths are the perfect centrepiece for any bathroom. Otti baths offer a relaxing and rejuvenating experience, serving as the centerpiece of any luxury bathroom. The <a href=\"URL\">Otti Attica Noosa Bath Gloss White 1700mm</a> combines elegance and comfort, perfect for creating a personal sanctuary in any bathroom.</p><p><strong>Spacious Designs:</strong> Deep and spacious to offer maximum comfort.</p><p><strong>Elegant Lines: </strong>Modern aesthetics that enhance your bathroom's appeal.</p><p><strong>High-Quality Materials: </strong>Built to withstand daily use while maintaining their beauty.</p><p>Browse our range of Otti baths to create your personal sanctuary.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_baNGGT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Otti Baths",
+            "button_link": "shopify://collections/otti-baths"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ijwtc4",
+        "text_7Ncpcd",
+        "button_baNGGT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/AKBT-1500_Lifestyle3_Web_d257425d-b041-46c2-8f89-b46e7aec502e.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_jikUeB": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wxxdmC": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Frequently Asked Questions (FAQs)</h2>",
+            "heading_size": "h0"
+          }
+        },
+        "text_4cz6dH": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_zJgiE8": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>What types of bathroom fixtures does Otti Australia offer?</h3>"
+          }
+        },
+        "text_Ky7QXr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Otti Australia provides a wide range of premium bathroom fixtures, including basins, baths, mirrors, and vanities. Each product is crafted with a focus on quality, design, and functionality to enhance any bathroom space.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wxxdmC",
+        "text_4cz6dH",
+        "text_zJgiE8",
+        "text_Ky7QXr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_YAPk9x": {
+      "type": "rich-text",
+      "blocks": {
+        "text_r86gW9": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>What makes Otti Australia bathroom fixtures unique compared to other brands?</h3>"
+          }
+        },
+        "text_pEhfwW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Otti Australia is dedicated to creating bathroom fixtures that combine aesthetic design, premium materials, and innovative features. Each product is crafted with meticulous attention to detail and functionality, ensuring both durability and elegance. Whether you’re looking for basins, baths, or LED mirrors, Otti fixtures add a luxurious touch to any bathroom space while meeting rigorous quality standards.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_r86gW9",
+        "text_pEhfwW"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_yRFtnF": {
+      "type": "rich-text",
+      "blocks": {
+        "text_dzJL9c": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Are Otti basins easy to clean and maintain?</h3>"
+          }
+        },
+        "text_nYw4Cj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Yes, Otti basins are designed to be low-maintenance and easy to clean. The materials used are resistant to staining, scratches, and other forms of wear, ensuring that they maintain their appearance over time. For best results, use a mild, non-abrasive cleaner and avoid harsh chemicals to preserve the finish and integrity of the basin.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_dzJL9c",
+        "text_nYw4Cj"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_hYmdKi": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Gf3PXg": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Are Otti basins available in different finishes?</h3>"
+          }
+        },
+        "text_LQqwwB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Yes, Otti basins come in a variety of finishes, allowing you to select the one that best complements your bathroom decor. Common finishes include matte, gloss, and textured surfaces for a unique aesthetic.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Gf3PXg",
+        "text_LQqwwB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_axy7Gc": {
+      "type": "rich-text",
+      "blocks": {
+        "text_4jCxxt": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Can Otti bathroom fixtures fit into a modern, minimalist design?</h3>"
+          }
+        },
+        "text_MXk9t7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Absolutely. Otti Australia offers a variety of minimalist-inspired designs that are perfect for contemporary bathrooms. Their basins, baths, and mirrors feature clean lines, neutral finishes, and streamlined shapes that enhance a modern aesthetic without overpowering the space. These fixtures are versatile and can fit into various bathroom designs, from minimalist to more eclectic styles.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_4jCxxt",
+        "text_MXk9t7"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_eEn9rT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_eVn3J9": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>What are the benefits of LED mirrors?</h3>"
+          }
+        },
+        "text_DGk4U3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Otti’s LED mirrors offer enhanced lighting for optimal visibility, ideal for grooming and makeup application. They often include anti-fog features, ensuring a clear reflection even in steamy conditions, adding both functionality and style to your bathroom.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_eVn3J9",
+        "text_DGk4U3"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_qnqpef": {
+      "type": "rich-text",
+      "blocks": {
+        "text_nyY7xr": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>What are the installation requirements for Otti baths and basins?</h3>"
+          }
+        },
+        "text_hxFJYN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Otti recommends professional installation for its baths and basins to ensure proper setup and compliance with warranty conditions. Basins often require secure mounting and sealing, while baths may need plumbing adjustments and a stable base. Professional installation guarantees that each fixture is fitted correctly, preventing potential issues down the line and ensuring a seamless look in your bathroom.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_nyY7xr",
+        "text_hxFJYN"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_Cb37qB": {
+      "type": "rich-text",
+      "blocks": {
+        "text_bwqUEk": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>What types of baths does Otti offer, and how do I select the right one for my bathroom?</h3>"
+          }
+        },
+        "text_i9d8ke": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Otti Australia offers a variety of bath types, including freestanding, back-to-wall, and inset baths, allowing flexibility in design and space usage. When choosing a bath, consider the size of your bathroom, the type of bathing experience you desire (e.g., deep soak vs. quick rinse), and the aesthetic you want to achieve. Freestanding baths make a statement in larger bathrooms, while back-to-wall baths can save space in more compact layouts.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_bwqUEk",
+        "text_i9d8ke"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_cyGJR9": {
+      "type": "rich-text",
+      "blocks": {
+        "text_7LNcKQ": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Are Otti products covered by a warranty?</h3>"
+          }
+        },
+        "text_iVNW6x": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Yes, Otti Australia offers warranties on their products to ensure quality and customer satisfaction. The specific warranty period may vary by product, so it's recommended to check the product details or contact customer support for more information.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_7LNcKQ",
+        "text_iVNW6x"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_AiE6zx": {
+      "type": "rich-text",
+      "blocks": {
+        "text_YxzGgP": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Can I install Otti bathroom fixtures myself?</h3>"
+          }
+        },
+        "text_pdLVpU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>While some fixtures can be installed by experienced DIY enthusiasts, we recommend professional installation for optimal results and to maintain warranty coverage, especially for complex installations like baths and basins.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_YxzGgP",
+        "text_pdLVpU"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_6VLmMn": {
+      "type": "rich-text",
+      "blocks": {
+        "text_qVTHj9": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>What warranties are provided with Otti bathroom fixtures?</h3>"
+          }
+        },
+        "text_tJ7RKx": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Otti Australia stands by the quality of its products and provides warranties to cover any manufacturing defects. The length and specifics of the warranty vary by product type, generally covering structural integrity and finish. It’s best to consult the warranty information provided with each item or speak to customer support for detailed warranty coverage for a particular product.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qVTHj9",
+        "text_tJ7RKx"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_9dUtqP": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fXNPR7": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Where can I view Otti products in person before making a purchase?</h3>"
+          }
+        },
+        "text_8E4zmC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Otti products are available to view at select showrooms across Australia, allowing customers to experience the quality and design firsthand. You can visit the Cook & Bathe website to find a <a href=\"https://www.cookandbathe.com.au/pages/store-locations\" title=\"Showroom locations\">showroom location</a> near you or contact customer support to arrange a visit. This way, you can see the finishes, size, and design details up close before making a purchase decision.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_fXNPR7",
+        "text_8E4zmC"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 20
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {}
+    },
+    "173258294952d0de49": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "rich_text_EMjDRM",
+    "image_with_text_xKxRGp",
+    "image_with_text_RdineA",
+    "image_with_text_YT3zRh",
+    "rich_text_jikUeB",
+    "rich_text_YAPk9x",
+    "rich_text_yRFtnF",
+    "rich_text_hYmdKi",
+    "rich_text_axy7Gc",
+    "rich_text_eEn9rT",
+    "rich_text_qnqpef",
+    "rich_text_Cb37qB",
+    "rich_text_cyGJR9",
+    "rich_text_AiE6zx",
+    "rich_text_6VLmMn",
+    "rich_text_9dUtqP",
+    "cb_find_showroom_PQG6UA",
+    "173258294952d0de49",
+    "main",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

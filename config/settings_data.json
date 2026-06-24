@@ -1,0 +1,48 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "sections": {
+      "cb-announcement-bar": {
+        "type": "cb-announcement-bar",
+        "settings": {
+          "title": ""
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify://shop_images/cook-and-bathh-brand.svg",
+          "mega-menu": true,
+          "menu-link": "",
+          "btn-name": "",
+          "btn-link": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "subscribe_newsletter_show": false,
+          "title-subs": "Subscribe to our Newsletter",
+          "sub-title-subs": "Get instant access to the latest trends",
+          "title-help": "",
+          "sub-title-help": "",
+          "link-help": "",
+          "social": true,
+          "phone": "",
+          "title-show": "Click to get directions to our Showrooms",
+          "content-term": "",
+          "content-term-1": ""
+        }
+      }
+    },
+    "content_for_index": []
+  }
+}

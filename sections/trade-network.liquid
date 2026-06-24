@@ -1,0 +1,94 @@
+<div class="trade_network position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                    <div class="trade_network_content">
+                        {% if section.settings.title != blank %}
+                        <div class="tnc_title  section_head_holder ">
+                            <h2 class="h3">{{section.settings.title}}</h2>
+                        </div>
+                        {% endif %}
+                        {% if section.settings.sub_title != blank %}
+                            <h6>{{section.settings.sub_title}}</h6>
+                        {% endif %}
+                        {% if section.settings.content != blank %}
+                            <div class="para">{{section.settings.content}}</div>
+                        {% endif %}
+
+                        <div class="quick_application d-flex align-items-center">
+                            {% if section.settings.icon != blank %}
+                            <div class="qac_icon">
+                                {% assign image_url = section.settings.icon %}
+                                {% assign image_name = image_url | split: '/' | last | split: '.' | first %}
+                                <img src="{{ image_url | img_url : '48x' }}" alt="{{ image_name }}" loading="lazy" width="100%" height="100%">
+                            </div>
+                            {% endif %}
+                            <div class="qac_content">
+                                {% if section.settings.qac_title != blank %}
+                                    <h6>{{section.settings.qac_title}}</h6>
+                                {% endif %}
+                                {% if section.settings.qac_content != blank %}
+                                    <div class="para">{{section.settings.qac_content}}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-lg-6 col-12" id="applicationForm">
+                <div class="trade_network_form">
+                    {% comment %}
+                    {% if section.settings.form_title != blank %}
+                      <h4>{{section.settings.form_title}}</h4>
+                    {% endif %}
+                    {% endcomment %}
+                    <div class="trade_main_form"><div class="klaviyo-form-RaEgVF"></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Trade network",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "sub_title",
+            "label": "Sub title"
+        },
+        {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+        },
+        { "type": "header", "content": "Quick and easy application" },
+        {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+        },
+        {
+            "type": "text",
+            "id": "qac_title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "qac_content",
+            "label": "Content"
+        }
+    ],
+    "presets" : [
+        {
+        "name" : "Trade network"
+        }
+    ]
+  }
+{% endschema %}

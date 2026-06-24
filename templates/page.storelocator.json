@@ -1,0 +1,203 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Trusted by 35K Customers",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "4.8 Stars on Google",
+        "label-4": "3 Years Warranty"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_showroomlocations_1920x253_3b426f54-fc90-4a4c-9aa4-9f0f4ea0c6c9.jpg"
+      }
+    },
+    "rich_text_qnLQeb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_p9BRnh": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Burwood, Flemington, & Fawkner</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_mwrb3x": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Visit our Melbourne showrooms and you’ll be inspired by the large range of bathroom, kitchen, heating, laundry and water saving products and brands on display. Take your time to browse through a vast range of taps, bathroom vanities, cooktops, baths, ovens and much, much more …</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_p9BRnh",
+        "text_mwrb3x"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 0
+      }
+    },
+    "473de89d-93fa-4d18-b506-ebe13af9b76c": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "c10fcfd8-99c6-49d8-b1c6-389519483ef3": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "logo": "shopify://shop_images/burwood_banner.jpg",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0391165788",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/kFjQC5RGWhM6gvYv6",
+            "btn-target-2": true
+          }
+        },
+        "133b03b1-803b-4c7d-a19a-716751145158": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "logo": "shopify://shop_images/fawkner_banner.jpg",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "https://maps.app.goo.gl/cRuiaDRb6RMjcf7J9",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393574900",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/q2o9qc5pKF4zz2xFA",
+            "btn-target-2": true
+          }
+        },
+        "f1448b0c-7175-4d4f-8bfc-79b523ff1c58": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "logo": "shopify://shop_images/flemington_banner.jpg",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "tel:0393762299",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "https://goo.gl/maps/yE7ag6RUPCQWn1Kf6",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "c10fcfd8-99c6-49d8-b1c6-389519483ef3",
+        "133b03b1-803b-4c7d-a19a-716751145158",
+        "f1448b0c-7175-4d4f-8bfc-79b523ff1c58"
+      ],
+      "custom_css": [
+        "#locate-showroom {padding-top: 0; padding-bottom: 0;}"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "20413d55-b7ce-4fbb-9298-55aeb4463e7c": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18465257324844__20413d55-b7ce-4fbb-9298-55aeb4463e7c-1679752067312c6f0b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h3>OPENING HOURS</h3>",
+            "heading_size": "h2"
+          }
+        },
+        "template--18465257324844__20413d55-b7ce-4fbb-9298-55aeb4463e7c-1679752067312c6f0b-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Monday   9AM – 5PM<br/>Tuesday   9AM – 5PM<br/>Wednesday   9AM – 5PM<br/>Thursday  9AM – 5PM<br/>Friday  9AM – 5PM<br/>Saturday  10AM - 3PM<br/>Sunday  CLOSED</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18465257324844__20413d55-b7ce-4fbb-9298-55aeb4463e7c-1679752067312c6f0b-0",
+        "template--18465257324844__20413d55-b7ce-4fbb-9298-55aeb4463e7c-1679752067312c6f0b-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "17325835744f3c3eb8": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "rich_text_qnLQeb",
+    "main",
+    "473de89d-93fa-4d18-b506-ebe13af9b76c",
+    "20413d55-b7ce-4fbb-9298-55aeb4463e7c",
+    "17325835744f3c3eb8",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

@@ -1,0 +1,110 @@
+<div class="inspiration_listing_wrapper">
+  <div class="container">
+    <div class="inspiration_listing_cate d-flex align-item-center justify-content-between">
+      <ul class="d-flex align-items-center list-unstyled">
+        <li class="mb-0">
+          <a
+            href="{{ blog.url }}"
+            {% if blog.tags.size != 1 %}
+              class="active"
+            {% endif %}
+            >View All</a
+          >
+        </li>
+        {% for tag in blog.all_tags %}
+          {% assign tag_handle = tag | handle %}
+          {% assign tag_current = blog.tags[0] | handle %}
+          <li class="mb-0">
+            <a
+              href="{{ blog.url }}/tagged/{{ tag | handle }}"
+              {% if blog.tags.size == 1 and tag_handle == tag_current %}
+                class="active"
+              {% endif %}
+            >
+              {{- tag -}}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <a href="#" id="surprise-me-btn" class="btn btn-outline-primary surprise_btn">{% render 'icon-surprise' %} Surprise Me</a>
+    </div>
+
+    {% assign count = blog.articles.size %}
+    {%- paginate blog.articles by 6 -%}
+      <div class="inspiration_listing_items">
+        <div class="row">
+          {% if blog.articles.size > 0 %}
+            {% for article in blog.articles %}
+              <div id="order-box" class="col-lg-4 col-md-6 col-12">
+                <div class="inspiration_card position-relative overflow-hidden">
+                  <a
+                    href="{{ article.url }}"
+                    class="d-block inspiration_card_cover bg_cover"
+                    style="background-image: url({{ article.image | img_url :'master'  }});"
+                  >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/inspiration_cover.png"
+                      alt="{{ article.title }}"
+                      class="d-none d-md-block"
+                    >
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/inspiration_mobile_cover.png"
+                      alt="{{ article.title }}"
+                      class="d-md-none"
+                    >
+                  </a>
+                  <div class="inspiration_card_content">
+                    <h6>{{ article.title }}</h6>
+                    <p>{{ article.content | strip_html | truncate: 40, ' ...' }}</p>
+                    <div class="inspiration_card_cta">
+                      <a href="{{ article.url }}" class="btn btn-outline-primary">Get Inspired</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <h3 class="center">No inspiration available right now!</h3>
+          {% endif %}
+        </div>
+      </div>
+      {% if blog.articles.size > 0 %}
+        <div class="pagination_results_recommended_perpage d-flex align-items-center justify-content-end">
+          <div class="pagination_results_block d-flex align-items-center">
+            <div class="results_block">
+              {% assign form_num = paginate.page_size | times: paginate.current_page %}
+              {% if form_num <= paginate.items %}
+                {% assign fnum = form_num %}
+              {% else %}
+                {% assign fnum = paginate.items %}
+              {% endif %}
+
+              {{ paginate.current_offset | plus: 1 }} - {{ fnum }} of {{ paginate.items }} Results
+            </div>
+            {% render 'pagination', paginate: paginate %}
+          </div>
+        </div>
+      {% endif %}
+    {% endpaginate %}
+  </div>
+</div>
+
+{% schema %}
+{
+"name": "Inspiration Listing",
+"tag": "section",
+"class": "cb-inspiration-listing",
+"settings": [],
+"presets": [
+  {
+    "name": "Inspiration Listing"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

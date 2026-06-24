@@ -1,0 +1,310 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "image_banner_9hzALw": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_nh6frn": {
+          "type": "heading",
+          "settings": {
+            "heading": "Christmas Clearance",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_BckGat": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Bathroom Clearance",
+            "button_link_1": "shopify://collections/bathroom-christmas-clearance",
+            "button_style_secondary_1": false,
+            "button_label_2": "Kitchen Clearance",
+            "button_link_2": "shopify://collections/kitchen-christmas-clearance",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_nh6frn",
+        "buttons_BckGat"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/ChristmasClearanceLandingPage.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_mRn38w": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_ecTz9B": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h1>Christmas Clearance Sale On Now!</h1>",
+            "heading_size": "h1"
+          }
+        },
+        "text_f8CtTy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Christmas Clearance is live, with limited-time savings across selected kitchen and bathroom products. This is your end-of-year opportunity to secure premium pieces at reduced prices while stock lasts. Offers apply only to marked products and are automatically applied at checkout, so you can shop with confidence and lock in renovation value before the season ends.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ecTz9B",
+        "text_f8CtTy"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "cb_full_image_block_ERmCmC": {
+      "type": "cb-full-image-block",
+      "name": "Full Image Block",
+      "settings": {
+        "image": "shopify://shop_images/ChristmasDiscountsBanner.jpg"
+      }
+    },
+    "rich_text_eFEgD9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_k9H7Mr": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Christmas Clearance Extra Discounts!</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_imPthT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Wrap up the year with huge clearance savings <em>plus</em> an extra reward when you spend more. Use the code at checkout to unlock your bonus discount:</p><ul><li>Spend <strong>$1,000+</strong> get <strong>$50 off</strong> with code <strong>EXT50</strong></li><li>Spend <strong>$2,000+</strong> get <strong>$150 off</strong> with code <strong>EXT150</strong></li><li>Spend <strong>$3,000+</strong> get <strong>$300 off</strong> with code <strong>EXT300</strong><br/></li></ul><p>Stock is limited and prices are already reduced; this is the best time to grab your favourites before they’re gone. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_k9H7Mr",
+        "text_imPthT"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "collection_list_X3KMt3": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_HJHbbP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bestsellers-christmas-clearance"
+          }
+        },
+        "featured_collection_pwfBeW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "bathroom-christmas-clearance"
+          }
+        },
+        "featured_collection_zEkqXW": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "kitchen-christmas-clearance"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_HJHbbP",
+        "featured_collection_pwfBeW",
+        "featured_collection_zEkqXW"
+      ],
+      "name": "t:sections.collection-list.presets.name",
+      "settings": {
+        "title": "Shop by Clearance Collection",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_bG9E9Y": {
+      "type": "rich-text",
+      "blocks": {
+        "text_4qCENc": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>To make clearance shopping fast and relevant, we have grouped the offers into three focused collections. Start with Best Sellers Christmas Clearance for the products our customers choose most. Move into Kitchen Christmas Clearance for functional, high-impact upgrades in the heart of the home. Finish with Bathroom Christmas Clearance for pieces that elevate daily comfort and style. Each collection is curated for real renovation needs, so you can get straight to what suits your project.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_4qCENc"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "cb_image_with_content_6b7hzt": {
+      "type": "cb-image-with-content",
+      "name": "Image With Content",
+      "settings": {
+        "image": "shopify://shop_images/Mb_ChristmasClearance_Laundry_CollectionBanner.jpg",
+        "layout": "image_first",
+        "heading-tag": "h2",
+        "title": "Best Sellers Christmas Clearance",
+        "description": "<p>Best Sellers Christmas Clearance brings together the lines customers come back for. These are proven performers across kitchen and bathroom, chosen for build quality, finish consistency, and long-term usability. If you want safe choices with a strong track record in Australian renovation projects, this is the smartest place to start. Shop Best Sellers Christmas Clearance here:</p>",
+        "btn-style": "btn btn-primary",
+        "btn-name": "Shop Best Sellers",
+        "btn-link": "shopify://collections/bestsellers-christmas-clearance"
+      }
+    },
+    "cb_image_with_content_BNpceg": {
+      "type": "cb-image-with-content",
+      "name": "Image With Content",
+      "settings": {
+        "image": "shopify://shop_images/hpmobile_Wk50_ChristmasClearance_Bathroom.jpg",
+        "layout": "text_first",
+        "heading-tag": "h2",
+        "title": "Bathroom Christmas Clearance",
+        "description": "<p><br/>Bathroom Christmas Clearance covers the pieces that lift everyday routines. Expect selected basins, tapware, showers, baths, toilets, vanities, and the finishing details that bring a bathroom together. Each product is chosen for comfort, durability, and design value, now available at clearance pricing while stock remains. Explore Bathroom Christmas Clearance here:</p>",
+        "btn-style": "btn btn-primary",
+        "btn-name": "Shop Bathroom Clearance",
+        "btn-link": "shopify://collections/bathroom-christmas-clearance"
+      }
+    },
+    "cb_image_with_content_MDEdrD": {
+      "type": "cb-image-with-content",
+      "name": "Image With Content",
+      "settings": {
+        "image": "shopify://shop_images/hpmobile_Wk50_ChristmasClearance_Kitchen.jpg",
+        "layout": "image_first",
+        "heading-tag": "h2",
+        "title": "Kitchen Christmas Clearance",
+        "description": "<p>Kitchen Christmas Clearance is designed for upgrades that change how your kitchen looks, feels, and functions. From statement tapware and hardworking sinks to appliances and finishing accessories, these clearance offers are ideal for full renovations or targeted refreshes before summer entertaining. Browse Kitchen Christmas Clearance here:</p>",
+        "btn-style": "btn btn-primary",
+        "btn-name": "Shop Kitchen Clearance",
+        "btn-link": "shopify://collections/kitchen-christmas-clearance"
+      }
+    },
+    "rich_text_HByhtV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jhNwJD": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>While stock lasts!</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_eMKQw3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Clearance stock is limited and once a line sells through it will not be repeated. If you are renovating over summer or planning a new build for early next year, securing key items now helps avoid missing out on finishes, sizes, and matching pieces later. Shop Christmas Clearance today while availability lasts.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jhNwJD",
+        "text_eMKQw3"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "1732582639ca96dec8": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "image_banner_9hzALw",
+    "rich_text_mRn38w",
+    "cb_full_image_block_ERmCmC",
+    "rich_text_eFEgD9",
+    "collection_list_X3KMt3",
+    "rich_text_bG9E9Y",
+    "cb_image_with_content_6b7hzt",
+    "cb_image_with_content_BNpceg",
+    "cb_image_with_content_MDEdrD",
+    "rich_text_HByhtV",
+    "main",
+    "1732582639ca96dec8",
+    "9dc919b3-6af7-4d89-9297-212aa9a8d144"
+  ]
+}

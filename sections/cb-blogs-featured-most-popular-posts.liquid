@@ -1,0 +1,296 @@
+<div class="blogs_featured_popular_wrapper position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-12">
+        <div class="blogs_featured_block">
+          {% if section.settings.title != blank %}
+            <div class="title_block position-relative">
+              <p class="bg-white mb-0 d-inline-block">{{ section.settings.title }}</p>
+            </div>
+          {% endif %}
+          {% assign article = articles[section.settings.featured] %}
+          <div
+            class="blogs_featured_card position-relative bg_cover"
+            style="background-image: url({{ article.image | img_url :"master" }});"
+          >
+            <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/featured-blog-cover.png" alt="Featured" class="d-none d-md-block">
+            <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/featured-blog-mobile-cover.png" alt="Featured" class="d-md-none">
+            <div class="blogs_featured_card_content">
+              <ul class="d-flex list-unstyled blogs_featured_tags m-0 p-0">
+                {% for tag in article.tags %}
+                  <li class="mb-0">
+                    <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+              <a href="{{ article.url }}" class="h3 text-white">{{ article.title }}</a>
+              <p>{{ article.content | truncate: 140, ' ...' }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="blogs_popular_block">
+          <div class="title_block position-relative d-none d-sm-block">
+            <p class="bg-white mb-0 d-inline-block">Most Popular</p>
+          </div>
+          <div class="blogs_popular_listing">
+            <ul class="list-unstyled d-flex flex-column p-0 m-0">
+              {% assign most-popular = section.blocks | where: 'type', 'most-popular' %}
+              {% for block in most-popular %}
+                {% assign article = articles[block.settings.popular] %}
+                <li>
+                  <div class="blogs_popular_card position-relative d-flex align-items-start justify-content-between">
+                    <div class="blogs_popular_card_txt">
+                      <a href="{{ article.url }}" class="text-decoration-none"><h6>{{ article.title }}</h6></a>
+                      {% comment %}<p>By {{ article.author }}</p>{% endcomment %}
+                      <p>By Cook & Bathe</p>
+                    </div>
+                    {% if article.image != blank %}
+                      {% assign img = article.image | img_url: 'master' %}
+                    {% else %}
+                      {% assign img = '' %}
+                    {% endif %}
+                    <a href="{{ article.url }}" class="blogs_popular_card_img bg_cover text-decoration-none d-block" style="background-image: url({{ img }});">
+                      <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/blogs-popular-cover.png?v=1676871758" alt="{{ article.title }}">
+                    </a>
+                  </div>
+                </li>
+              {% endfor %}
+              {% comment %}
+                {%- for article in blog.articles limit: 4 -%}
+                  <li>
+                    <a
+                      href="{{ article.url }}"
+                      class="blogs_popular_card position-relative d-flex align-items-start justify-content-between"
+                    >
+                      <div class="blogs_popular_card_txt">
+                        <h6>{{ article.title }}</h6>
+                        <p>By {{ article.author }}</p>
+                      </div>
+                      {% if article.image != blank %}
+                        {% assign img = article.image | img_url: 'master' %}
+                      {% else %}
+                        {% assign img = '' %}
+                      {% endif %}
+                      <div
+                        class="blogs_popular_card_img bg_cover"
+                        style="background-image: url({{ img }});"
+                      >
+                        <img
+                          src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/blogs-popular-cover.png?v=1676871758"
+                          alt="{{ article.title }}"
+                        >
+                      </div>
+                    </a>
+                  </li>
+                {% endfor %}
+              {% endcomment %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "Blog Featured Popular",
+"tag": "section",
+"class": "cb-blogs-featured-most-popular-posts",
+"settings": [
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Title"
+  },
+  {
+    "type":"article",
+    "id":"featured",
+    "label":"Select Featured Article"
+  }
+],
+"blocks":[
+  {
+    "type":"most-popular",
+    "name":"Most Popular",
+    "settings":[
+      {
+        "type":"article",
+        "id":"popular",
+        "label":"Select Most Popular"
+      }
+    ]
+  },
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Blog Featured Popular"
+  }
+]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

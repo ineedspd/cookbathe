@@ -1,0 +1,116 @@
+<div class="connect_with_us position-relative">
+    <div class="container section-container">
+        
+        <div class="row {% if section.settings.image_right %} flex-lg-row-reverse {% endif %}">
+
+            <div class="col-lg-7 col-12 {% if section.settings.image_right %} ps-lg-0 {% else %} pe-lg-0 {% endif %}">
+                {% if section.settings.bg-image != blank %}
+                <div class="cwu_image w-100 h-100 position-relative d-block">
+                    <div class="cwu_desktop_image d-lg-block d-none bg_cover h-100 w-100" style="background-image: url('{{ section.settings.bg-image | img_url:'master' }}');"></div>
+                    <div class="cwu_mobile_image d-lg-none d-block">
+                        <img src="{{ section.settings.bg-image | img_url:'master' }}';" alt="Connect With Us">
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            
+            <div class="col-lg-5 col-12 {% if section.settings.image_right %} pe-lg-0 {% else %} ps-lg-0 {% endif %}">
+                <div class="cwu_content bg-black">
+                    {% if section.settings.logo != blank %}
+                    <div class="cwu_content_logo ">
+                        <img src="{{ section.settings.logo | img_url:'master' }}';" alt="On Spec Logo">
+                    </div>
+                    {% endif %}
+
+                    {% if section.settings.title != blank %}
+                        <h2 class="text-white h3">{{ section.settings.title }}</h2>
+                    {% endif %}
+
+                   <!-- Begin Mailchimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form
+                action="https://cookandbathe.us17.list-manage.com/subscribe/post?u=fd365139b58b749f9dac3767a&amp;id=f72d799bd8&amp;f_id=007398e0f0"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                class="validate subscribe-form"
+                target="_self"
+              >
+                <div id="mc_embed_signup_scroll">
+                  <div class="mc-field-group field_group input-group flex-nowrap">
+                    <label for="mce-LNAME" class="input-group-text position-relative border-0 rounded-0 bg-transparent">{% render 'usericon' %} </label>
+                    <input type="text" value="" name="LNAME" class="required form-control" id="mce-LNAME" placeholder="Name">
+                    <span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
+                  </div>
+                  <div class="mc-field-group field_group input-group input_group_email flex-nowrap">
+                    <label for="mce-EMAIL" class="input-group-text position-relative border-0 rounded-0 bg-transparent">{% render 'at-the-rate' %}</label>
+                    <input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email">
+                    <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                  </div>
+                  <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <!--
+                    real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                  -->
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_fd365139b58b749f9dac3767a_f72d799bd8" tabindex="-1" value="">
+                  </div>
+                  <div class="clear d-flex justify-content-end">
+                    <input
+                      type="submit"
+                      value="Sign Up"
+                      name="subscribe"
+                      id="mc-embedded-subscribe"
+                      class="btn btn-light"
+                    >
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- End mc_embed_signup -->
+                </div>
+    
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Connect with us",
+    "tag": "section",
+    "class": "cb_connect_with_us",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"bg-image",
+        "label":"Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "image_right",
+        "default": false,
+        "label": "Image to right"
+      },
+      {
+        "type":"image_picker",
+        "id":"logo",
+        "label":"On spec logo"
+      },
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Connect with us"
+      }
+    ]
+    }
+    {% endschema %}

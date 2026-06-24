@@ -1,0 +1,281 @@
+<div
+  class="contact_banner_wrapper position-relative bg_cover"
+  style="background-image: url({{ section.settings.image | img_url:'master' }});"
+>
+  <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/contact_banner_cover.png" alt="contact-us">
+</div>
+<div class="contact_wrapper position-relative">
+  <div class="container">
+    <div class="contact_content_block">
+      <div class="contact_form_head d-flex flex-column flex-sm-row align-items-center justify-content-between">
+        <h1 class="h2 mb-0">{{ section.settings.title }}</h1>
+        <a
+          href="tel:{{ section.settings.number | remove:' ' | remove :'('| remove:')' }}"
+          class="btn btn-outline-primary"
+        >
+          {%- render 'icon-call' -%}
+          {{ section.settings.number }}
+        </a>
+      </div>
+      <div class="contact_form">
+        {% form 'contact', id: 'ContactForm' %}
+          {%- if form.posted_successfully? -%}
+            <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+              {% render 'icon-success' %}
+              {{ 'templates.contact.form.post_success' | t }}
+            </h2>
+          {%- elsif form.errors -%}
+            <div class="form__message">
+              <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+                {% render 'icon-error' %}
+                {{ 'templates.contact.form.error_heading' | t }}
+              </h2>
+            </div>
+            <ul class="form-status-list caption-large" role="list">
+              <li>
+                <a href="#ContactForm-email" class="link">
+                  {{ form.errors.translated_fields.email | capitalize }}
+                  {{ form.errors.messages.email }}
+                </a>
+              </li>
+            </ul>
+          {%- endif -%}
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <div class="form_group">
+                <label>First Name</label>
+                <input type="text" class="form-control required" id="first-name" name="contact[first_name]">
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="form_group">
+                <label>Last Name</label>
+                <input type="text" name="contact[last_name]" id="last-name" class="form-control required">
+              </div>
+            </div>
+            <div class="col-lg-6 col-12">
+              <div class="form_group">
+                <label>Email Address</label>
+                <input type="email" class="form-control required email" name="contact[email]" id="email">
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="form_group">
+                <label>Phone Number</label>
+                <input type="tel" name="contact[phone]" id="phone" class="form-control required number phone_limit">
+              </div>
+            </div>
+            <div class="col-lg-9 col-12">
+              <div class="form_group">
+                <label>Message</label>
+                <textarea name="contact[body]" id="message" class="form-control required"></textarea>
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 align-self-end">
+              <div class="form_group">
+                <input type="submit" class="btn btn-primary btn_submit" value="Send Message">
+              </div>
+            </div>
+          </div>
+        {% endform %}
+      </div>
+    </div>
+  </div>
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "Contact Form",
+"tag": "section",
+"class": "cb-contact-form",
+"settings": [
+  {
+    "type":"text",
+    "id":"title",
+    "label":"Title"
+  },
+  {
+    "type":"text",
+    "id":"number",
+    "label":"Phone"
+  },
+  {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Image"
+  }
+],
+"blocks":[
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "Contact Form"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

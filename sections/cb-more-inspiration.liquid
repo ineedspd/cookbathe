@@ -1,0 +1,243 @@
+{% assign id = article.id %}
+{% if article.tags.size != 0 %} {% endif %}
+<div class="more_inspiration_wrapper position-relative">
+  <div class="more_inspiration_head bg-dark">
+    <div class="section_head_holder d-flex section_head_center_holder align-items-center justify-content-center">
+      <h2 class="h3 text-white">
+        {% if article.metafields.more.label != blank -%}
+          {{- article.metafields.more.label -}}
+        {%- else -%}
+          More Inspiration
+        {%- endif %}
+      </h2>
+    </div>
+  </div>
+  <div class="more_inspiration_content">
+    <div class="container">
+      <div class="row">
+        {% assign num = 0 %}
+        {% assign id = article.id %}
+        {% for article in blog.articles limit: 3 %}
+          {% if id != article.id and num < 3 %}
+            <div class="col-lg-4 col-12">
+              <div class="more_inspiration_card position-relative">
+                <div class="more_inspiration_card_cover bg_cover" style="background-image: url({{ article.image | img_url:'master' }});">
+                  <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/more_inspiration_cover.png" alt="{{ article.title }}" class="d-none d-sm-block">
+                  <img src="https://cdn.shopify.com/s/files/1/0667/0588/3436/files/more_inspiration_mobile_cover.png" alt="{{ article.title }}" class="d-sm-none">                  
+                </div>
+                <div class="more_inspiration_card_text bg-white">
+                  <h5>{{ article.title }}</h5>
+                  <a href="{{ article.url }}" class="btn btn-link">Read More</a>
+                </div>
+              </div>
+            </div>
+            {% assign num = num | plus: 1 %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% render 'cb-style' %}
+{% schema %}
+{
+"name": "More Inspiration",
+"tag": "section",
+"class": "cb-more-inspiration",
+"settings": [],
+"blocks":[
+  {
+    "type":"box",
+    "name":"Box",
+    "settings":[
+      {
+        "type":"image_picker",
+        "id":"image",
+        "label":"Image"
+      },
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"url",
+        "id":"link",
+        "label":"Link"
+      }
+    ]
+  },
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+],
+"presets": [
+  {
+    "name": "More Inspiration"
+  }
+]
+}
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

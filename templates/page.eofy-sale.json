@@ -1,0 +1,439 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c": {
+      "type": "cb-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Banner_careers_1920x253_09138000-8253-4506-896b-ce171bf77327.jpg"
+      }
+    },
+    "multicolumn_qrmJ7z": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BHRYDP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_alfresco_appliances.png",
+            "title": "EOFY Sale Kitchen",
+            "text": "",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/kitchen-eofy-sale-2025"
+          }
+        },
+        "column_MGHR4L": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icon_bathroom_e133ea1a-d919-481d-8962-3c374bcf5d53.png",
+            "title": "EOFY Sale Bathroom",
+            "text": "",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/bathroom-eofy-sale-2025"
+          }
+        },
+        "column_YFB9NN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons-31.svg",
+            "title": "EOFY Sale Laundry",
+            "text": "",
+            "link_label": "Shop Now",
+            "link": "shopify://collections/laundry-eofy-sale-2025"
+          }
+        }
+      },
+      "block_order": [
+        "column_BHRYDP",
+        "column_MGHR4L",
+        "column_YFB9NN"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Big Savings on EOFY Sale Collections",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_dpyLAM": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "EOFY Best Sellers",
+        "heading_size": "h1",
+        "description": "<p>Shop the current best sellers from this season</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-sellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_qjk7hk": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Kitchen Appliances Sale",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "kitchen-appliance-eofy-sale-2025",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_EWAf3w": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Kitchen Sinks & Tapware Sale",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "kitchen-sinks-tapware-eofy-sale-2025",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_jtYAGP": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Bathroom Basins & Tapware Sales",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bathroom-basins-tapware-eofy-sale-2025",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_hbr8R9": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Mirrors & Vanities Sale",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "mirrors-vanities-eofy-sale-2025",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_Gte3Bt": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Toilets Sale",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "toilets-eofy-sale-2025",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_3dUKgF": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "title": "Showers & Baths Sale",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "showers-and-baths-eofy-sale-2025",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "cb_find_showroom_PQG6UA": {
+      "type": "cb-find-showroom",
+      "blocks": {
+        "showroom_wr7UDV": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Burwood",
+            "address": "42-46 Burwood Hwy Vic 3125",
+            "map-link": "",
+            "phone": "(03) 9116  5788",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": false
+          }
+        },
+        "showroom_XCTJic": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Fawkner",
+            "address": "1329 Sydney Rd Fawkner Vic 3060",
+            "map-link": "",
+            "phone": "(03) 9357 4900",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        },
+        "showroom_qqTfrK": {
+          "type": "showroom",
+          "settings": {
+            "img-with-iframe": "iframe",
+            "name": "Flemington",
+            "address": "31 Ascot Vale Rd Flemington Vic 3031",
+            "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
+            "phone": "(03) 9376 2299",
+            "opening_hour": "",
+            "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
+            "btn-style-1": "btn btn-primary",
+            "btn-name-1": "Call the Showroom",
+            "btn-link-1": "",
+            "btn-target-1": false,
+            "btn-style-2": "btn btn-outline-primary",
+            "btn-name-2": "Get Directions",
+            "btn-link-2": "",
+            "btn-target-2": true
+          }
+        }
+      },
+      "block_order": [
+        "showroom_wr7UDV",
+        "showroom_XCTJic",
+        "showroom_qqTfrK"
+      ],
+      "settings": {
+        "show_map_full": false
+      }
+    },
+    "470d66d1-ac12-44e8-8b33-7169079e03e9": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Coming Soon!</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--16661658632492__470d66d1-ac12-44e8-8b33-7169079e03e9-1681367089edc1685a-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "173948753494c948f2": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_bqHKQr": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rNt9Bj": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_7ayJ8A": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Explore Unmissable EOFY Deals on Kitchen, Bathroom, and Laundry Essentials</h2><p>Upgrade your home for less during Cook & Bathe’s <strong>EOFY Sale</strong>, where premium quality meets unbeatable value. Whether you're building new, renovating, or simply refreshing a space, this is the ideal time to save big on carefully selected fixtures and appliances from Australia’s most trusted brands. Our End of Financial Year event offers exceptional discounts across our most popular categories, helping homeowners and renovators make the most of this limited-time opportunity.</p><h3>Bathroom Basins, Vanities & Tapware for Sale This EOFY</h3><p>Refresh your bathroom with our <a href=\"https://www.cookandbathe.com.au/collections/bathroom-basins-tapware-eofy-sale-2025\"><strong>bathroom basins for sale EOFY</strong></a>, available in a range of styles from contemporary counter-top designs to classic wall-mounted options. Pair your new basin with elegant <a href=\"https://www.cookandbathe.com.au/collections/bathroom-basins-tapware-eofy-sale-2025\"><strong>bathroom tapware EOFY specials</strong></a> that deliver form and function. For a complete bathroom transformation, explore discounted <a href=\"https://www.cookandbathe.com.au/collections/mirrors-vanities-eofy-sale-2025\"><strong>vanities EOFY</strong></a> with modern finishes, soft-closing drawers, and ample storage — ideal for both main bathrooms and powder rooms.</p><h3>Kitchen Appliances EOFY Sale – Save on Trusted Brands</h3><p>Make your kitchen work smarter, not harder, with exclusive <a href=\"https://www.cookandbathe.com.au/collections/kitchen-appliance-eofy-sale-2025\"><strong>Kitchen Appliances EOFY</strong></a> deals on ovens, cooktops, dishwashers, and rangehoods. Whether you’re a home cook or a seasoned entertainer, discover EOFY discounts on brands like Smeg, Franke, Euro Appliances and more. Elevate your cooking and cleaning experience with technology-forward appliances built to last — all at exceptional EOFY prices.</p><h3>EOFY Deals on Kitchen Sinks, Mixers & Tapware</h3><p>If you’re redesigning your kitchen or laundry, don’t miss our <a href=\"https://www.cookandbathe.com.au/collections/kitchen-sinks-tapware-eofy-sale-2025\"><strong>kitchen sink mixers for sale EOFY</strong></a>. Our collection features brushed gold, matte black, chrome and stainless steel finishes to match any interior style. From deep bowl <a href=\"https://www.cookandbathe.com.au/collections/kitchen-sinks-tapware-eofy-sale-2025\"><strong>kitchen sinks EOFY specials</strong></a> to compact options for tight spaces, we’ve curated versatile options from brands known for performance and durability. Complete the look with tapware engineered for efficiency and water-saving innovation.</p><h3>Shower, Toilet & Bath Discounts You Can’t Miss</h3><p>Shop <a href=\"https://www.cookandbathe.com.au/collections/toilets-eofy-sale-2025\"><strong>EOFY toilet sales</strong></a> and <a href=\"https://www.cookandbathe.com.au/collections/showers-and-baths-eofy-sale-2025\"><strong>showers for sale EOFY</strong></a> to modernise your bathroom with stylish, water-efficient fixtures. Our EOFY bath deals feature everything from freestanding statement pieces to practical inset models — all marked down for a limited time. These discounts make it easy to refresh every corner of your bathroom without compromising on quality or design.</p><h3>Smart Savings on Laundry Sinks, Tapware & More</h3><p>Don't forget the laundry – one of the most functional rooms in your home. With <a href=\"https://www.cookandbathe.com.au/collections/laundry-eofy-sale-2025\"><strong>EOFY laundry sink and tapware deals</strong></a>, now’s the time to install hardworking fixtures that make your daily routine smoother. Choose from spacious laundry tubs, minimalist tapware and sleek finishes designed for both form and function.</p><h3>EOFY Sale Ends Soon – Shop Online or In-Store</h3><p>With up to 60% off selected kitchen, bathroom and laundry products, our <strong>EOFY sale</strong> is your opportunity to invest in premium products without the premium price tag. Visit our showrooms or <a href=\"https://www.cookandbathe.com.au/collections\" title=\"Browse our Collections\">browse online</a> to explore our full range. Hurry — these EOFY offers are only available for a limited time, and once they’re gone, they’re gone.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rNt9Bj",
+        "text_7ayJ8A"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "50b53599-a92c-4d10-8ec0-cd61e21ece8a",
+    "4c80f9a0-329b-4c97-846f-3a8a7f6b753c",
+    "multicolumn_qrmJ7z",
+    "featured_collection_dpyLAM",
+    "featured_collection_qjk7hk",
+    "featured_collection_EWAf3w",
+    "featured_collection_jtYAGP",
+    "featured_collection_hbr8R9",
+    "featured_collection_Gte3Bt",
+    "featured_collection_3dUKgF",
+    "cb_find_showroom_PQG6UA",
+    "470d66d1-ac12-44e8-8b33-7169079e03e9",
+    "173948753494c948f2",
+    "main",
+    "rich_text_bqHKQr"
+  ]
+}

@@ -1,0 +1,69 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "5653fb08-14d0-4111-8ebb-b6880606b172": {
+      "type": "cb-blog-banner",
+      "settings": {
+        "image": "shopify://shop_images/blog-main-banner.png",
+        "title": "Blog",
+        "sub-title": "The Best Source for Articles on Interior Design"
+      }
+    },
+    "ac8c251c-c4cd-4717-be83-6ee8b9eeece3": {
+      "type": "cb-blogs-featured-most-popular-posts",
+      "settings": {
+        "title": "",
+        "featured": ""
+      }
+    },
+    "e8c1b72f-60a0-485f-b4db-a1e9edb49e37": {
+      "type": "cb-recently-blogs",
+      "settings": {
+        "title": "Recently Added",
+        "pagination_limit": 12
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "d15ab90e-29ac-4381-b2d9-012752c0da87": {
+      "type": "cb-signup",
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    },
+    "405199e0-a69f-448f-9745-78501e536418": {
+      "type": "cb-instagram-posts",
+      "settings": {
+        "title": "Our Insta Inspo",
+        "btn-style": "btn btn-link",
+        "btn-name": "Follow @cookandbathe",
+        "btnlink": ""
+      }
+    }
+  },
+  "order": [
+    "5653fb08-14d0-4111-8ebb-b6880606b172",
+    "ac8c251c-c4cd-4717-be83-6ee8b9eeece3",
+    "e8c1b72f-60a0-485f-b4db-a1e9edb49e37",
+    "main",
+    "d15ab90e-29ac-4381-b2d9-012752c0da87",
+    "405199e0-a69f-448f-9745-78501e536418"
+  ]
+}

@@ -1,0 +1,33 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "f4eec67b-96fd-4b66-a39a-0fc9fbca4be0": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Trusted by 35K Customers",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "4.8 Stars on Google",
+        "label-4": "3 Years Warranty"
+      }
+    },
+    "main": {
+      "type": "main-addresses",
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "f4eec67b-96fd-4b66-a39a-0fc9fbca4be0",
+    "main"
+  ]
+}

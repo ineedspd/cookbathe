@@ -1,0 +1,429 @@
+{% if page.metafields.product.title != blank or page.metafields.product.collections != blank %}
+  <div class="featured_products_wrapper position-relative">
+    <div class="container">
+      {% render 'cb-title-option' %}
+      {% if page.metafields.product.title != blank %}
+        <div class="section_head_holder d-flex align-items-center justify-content-between">
+          <h2 class="h3">{{ page.metafields.product.title }}</h2>
+          <a href="/collections/{{page.metafields.product.collections}}" class="btn btn-link  ">View All</a>
+        </div>
+      {% endif %}
+
+      <div class="featured_products_slider">
+        <div class="swiper featured_products_swiper" data-num="{{ section.settings.columns_desktop }}">
+          <div class="swiper-wrapper">
+            {% assign coll = page.metafields.product.collections %}
+            {% for product in collections[coll].products limit: 4 %}
+              <div class="swiper-slide">
+                {%
+                  render 'cb-product-card',
+                  card_product: product,
+                  double_image: section.settings.double_image,
+                  variant: section.settings.variant_enable,
+                  wishlist: section.settings.wishlist_enable,
+                  discount: section.settings.discount_enable,
+                  price: section.settings.price_enable,
+                  addtocart: section.settings.addtocart,
+                %}
+              </div>
+            {% endfor %}
+          </div>
+          <div class="featured_swiper_control d-xl-none">
+            <div class="swiper-pagination featured_products_pagination"></div>
+          </div>
+        </div>
+        {% if section.settings.arrows == true %}
+          <div class="featured_swiper_control d-none d-xl-block">
+            <div class="featured_swiper_next swiper-button-next">&nbsp;</div>
+            <div class="featured_swiper_prev swiper-button-prev">&nbsp;</div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% javascript %}
+  var num = jQuery('.featured_products_swiper').attr('data-num');
+   var swiper = new Swiper(".featured_products_swiper", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    pagination: {
+      el: ".featured_products_pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".featured_swiper_next",
+      prevEl: ".featured_swiper_prev",
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      992: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: num,
+        spaceBetween: 30,
+      },
+      1400: {
+        slidesPerView: num,
+        spaceBetween: 32,
+      },
+    },
+  });
+{% endjavascript %}
+{% schema %}
+{
+"name": "Range Featured Products",
+"tag": "section",
+"class": "cb-range-featured-products",
+"settings": [
+  {
+    "type": "range",
+    "id": "columns_desktop",
+    "min": 1,
+    "max": 5,
+    "step": 1,
+    "default": 4,
+    "label":"Number of columns on desktop"
+  },
+  {
+    "type": "range",
+    "id": "product_show",
+    "min": 1,
+    "max": 20,
+    "step": 1,
+    "default": 4,
+    "label":"Number of Product Show"
+  },
+  {
+    "type":"checkbox",
+    "id":"double_image",
+    "label":"Show second image on hover",
+    "default":true
+  },
+  {
+    "type":"checkbox",
+    "id":"variant_enable",
+    "label":"Show variant",
+    "default":true
+  },
+  {
+    "type":"checkbox",
+    "id":"wishlist_enable",
+    "label":"Show Wishlist",
+    "default":true
+  },
+  {
+    "type":"checkbox",
+    "id":"discount_enable",
+    "label":"Show Discount Code",
+    "default":true
+  },
+  {
+    "type":"checkbox",
+    "id":"price_enable",
+    "label":"Show Price",
+    "default":true
+  },
+  {
+    "type":"checkbox",
+    "id":"addtocart",
+    "label":"Show Add To Cart",
+    "default":false
+  },
+  {
+    "type":"checkbox",
+    "id":"arrows",
+    "label":"Show Arrow",
+    "default":false
+  }
+],
+"blocks":[
+  {
+    "type":"title-style-1",
+    "name":"Title style 1",
+    "limit":1,
+    "settings":[
+        {
+          "type":"select",
+          "options": [
+                        {
+                          "label": "Left",
+                          "value": "left"
+                        },
+                        {
+                          "label": "Center",
+                          "value": "center"
+                        }
+          ],
+          "id":"text-style",
+          "label":"Title Align"
+        },
+        {
+          "type":"text",
+          "id":"title",
+          "label":"Title"
+        }
+    ]
+  },
+  {
+  "type":"title-style-2",
+  "name":"Title style 2",
+  "limit":1,
+  "settings":[
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"richtext",
+        "id":"content",
+        "label":"Content"
+      }
+  ]
+},
+  {
+  "type":"title-style-3",
+  "name":"Title style 3",
+  "limit":1,
+  "settings":[
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+          "type":"select",
+          "id":"btn-type",
+          "options": [
+                        {
+                          "label": "Default",
+                          "value": "default"
+                        },
+                        {
+                          "label": "Large",
+                          "value": "large"
+                        }
+          ],
+          "label":"Button Type"
+      },
+      {
+        "type":"select",
+        "id":"btn-style",
+        "options": [
+                      {
+                        "label": "Primary",
+                        "value": "btn btn-primary"
+                      },
+                      {
+                        "label": "Outline",
+                        "value": "btn btn-outline-primary"
+                      },
+                      {
+                        "label": "Animation",
+                        "value": "btn btn-outline-primary btn-animated"
+                      },
+                      {
+                        "label": "Link",
+                        "value": "btn btn-link"
+                      }
+        ],
+        "label":"Button Style",
+        "default":"btn btn-primary"
+      },
+      {
+        "type":"text",
+        "id":"btn-name",
+        "label":"Button Name"
+      },
+      {
+        "type":"url",
+        "id":"btn-link",
+        "label":"Button Link"
+      }
+  ]
+},
+  {
+    "type":"collection",
+    "name":"Collections",
+    "limit":1,
+    "settings":[
+      {
+        "type":"collection",
+        "id":"coll",
+        "label":"Select Collection"
+      }
+    ]
+  },
+  {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+  {
+  "type": "section_padding",
+  "name": "Section Padding",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Large\/Desktop Device"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "label": "Padding Top",
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 500,
+      "step": 5,
+      "label": "Padding Bottom",
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Tablet Device"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_md",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "label": "Padding Top",
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_md",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "label": "Padding Bottom",
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Mobile Device"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_xs",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "label": "Padding Top",
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_xs",
+      "min": 0,
+      "max": 300,
+      "step": 5,
+      "label": "Padding Bottom",
+      "unit": "px",
+      "default": 50
+    }
+  ]
+}
+],
+"presets": [
+  {
+    "name": "Range Featured Products"
+  }
+]
+}
+{% endschema %}

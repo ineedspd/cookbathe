@@ -1,0 +1,196 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "618987e6-91fa-4eee-b395-2cc664fc3568": {
+      "type": "cb-top-rate",
+      "settings": {
+        "label-1": "Over 30 Years of Experience",
+        "label-2": "Australian Owned and Operated",
+        "label-3": "Trusted Brands",
+        "label-4": "After Sales Care"
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "layout": "collage",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "5653fb08-14d0-4111-8ebb-b6880606b172": {
+      "type": "cb-blog-banner",
+      "settings": {
+        "image": "shopify://shop_images/blog_header_banner.jpg",
+        "title": "Blog",
+        "sub-title": "The Best Source for Articles on Interior Design"
+      }
+    },
+    "ac8c251c-c4cd-4717-be83-6ee8b9eeece3": {
+      "type": "cb-blogs-featured-most-popular-posts",
+      "blocks": {
+        "e3f2f0cc-c2d8-4229-a0c8-023a2159eab3": {
+          "type": "most-popular",
+          "settings": {
+            "popular": "news/get-inspired-9-styles-we-cant-get-enough-of"
+          }
+        },
+        "6904bd64-0975-4d07-b5ba-87d472576d66": {
+          "type": "most-popular",
+          "settings": {
+            "popular": "news/the-pros-cons-of-granite-vs-stainless-steel-kitchen-sinks"
+          }
+        },
+        "75cc737f-0c52-4211-8e0d-a60c77d574f3": {
+          "type": "most-popular",
+          "settings": {
+            "popular": "news/your-bathroom-renovation-checklist-5-luxe-must-haves-to-elevate-your-space"
+          }
+        },
+        "5d7f888d-856b-460f-9cb6-c814e50f88bc": {
+          "type": "most-popular",
+          "settings": {
+            "popular": "news/affordable-elegance-tapware-under-200-that-redefines-style"
+          }
+        }
+      },
+      "block_order": [
+        "e3f2f0cc-c2d8-4229-a0c8-023a2159eab3",
+        "6904bd64-0975-4d07-b5ba-87d472576d66",
+        "75cc737f-0c52-4211-8e0d-a60c77d574f3",
+        "5d7f888d-856b-460f-9cb6-c814e50f88bc"
+      ],
+      "settings": {
+        "title": "Featured",
+        "featured": "news/designing-with-the-pantone-colour-of-the-year-a-modern-take-on-white-kitchens-and-bathrooms"
+      }
+    },
+    "e8c1b72f-60a0-485f-b4db-a1e9edb49e37": {
+      "type": "cb-recently-blogs",
+      "custom_css": [],
+      "settings": {
+        "title": "Recently Added",
+        "pagination_limit": 8
+      }
+    },
+    "5ffda712-973d-4c90-90ae-250100e30a6d": {
+      "type": "cb-collage",
+      "blocks": {
+        "da006173-af83-43b6-9589-9cb82dd10f71": {
+          "type": "title-style-1",
+          "settings": {
+            "heading-tag": "h2",
+            "text-style": "center",
+            "title": "Explore and be Inspired"
+          }
+        },
+        "74c26d07-63a4-4b09-a76f-f2c87a69ee87": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_kitchen_banner.jpg",
+            "name": "Kitchen",
+            "link": "shopify://collections/kitchen"
+          }
+        },
+        "15fa78d1-8563-451f-9578-7fdfd6f3c7a4": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_bathroom_phoenixtapware_banner.jpg",
+            "name": "Bathroom",
+            "link": "shopify://collections/bathroom"
+          }
+        },
+        "50af5c3f-0736-4e8c-902d-795bad927628": {
+          "type": "inspired",
+          "settings": {
+            "image": "shopify://shop_images/homepage_laundry_franke_banner.jpg",
+            "name": "Laundry",
+            "link": "shopify://collections/laundry"
+          }
+        }
+      },
+      "block_order": [
+        "da006173-af83-43b6-9589-9cb82dd10f71",
+        "74c26d07-63a4-4b09-a76f-f2c87a69ee87",
+        "15fa78d1-8563-451f-9578-7fdfd6f3c7a4",
+        "50af5c3f-0736-4e8c-902d-795bad927628"
+      ],
+      "settings": {}
+    },
+    "17325857243c60c820": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "d15ab90e-29ac-4381-b2d9-012752c0da87": {
+      "type": "cb-signup",
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/signup_banner.jpg",
+        "mobile-show": false,
+        "heading-tag": "h2",
+        "heading-class": "none",
+        "title": "Enjoy FREE Delivery on your first purchase!*",
+        "description": "<p>Offer only valid for orders over $1000 and delivery within Metro Melbourne</p>"
+      }
+    },
+    "405199e0-a69f-448f-9745-78501e536418": {
+      "type": "cb-instagram-posts",
+      "settings": {
+        "heading-tag": "h2",
+        "title": "Our Insta Inspo",
+        "btn-style": "btn btn-link",
+        "btn-name": "Follow @cookandbathe",
+        "btnlink": ""
+      }
+    },
+    "1678074603fe3a21c5": {
+      "type": "apps",
+      "blocks": {
+        "a34b35c1-c76d-4dd1-9bab-1ddc593c4004": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 0,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 0,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 80
+          }
+        }
+      },
+      "block_order": [
+        "a34b35c1-c76d-4dd1-9bab-1ddc593c4004"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "618987e6-91fa-4eee-b395-2cc664fc3568",
+    "main",
+    "5653fb08-14d0-4111-8ebb-b6880606b172",
+    "ac8c251c-c4cd-4717-be83-6ee8b9eeece3",
+    "e8c1b72f-60a0-485f-b4db-a1e9edb49e37",
+    "5ffda712-973d-4c90-90ae-250100e30a6d",
+    "17325857243c60c820",
+    "d15ab90e-29ac-4381-b2d9-012752c0da87",
+    "405199e0-a69f-448f-9745-78501e536418",
+    "1678074603fe3a21c5"
+  ]
+}

@@ -1,0 +1,381 @@
+ <div class="container">
+<div class="bottom_collection_text">
+   {%- if collection.handle == "sinks" and current_tags contains "black" -%}
+     <h2>Inset Black Sinks</h2>
+<p>Our <a href="https://www.cookandbathe.com.au/collections/inset-sinks">Inset Sinks</a> are the perfect fit for all kitchen styles. Whether you are refurbishing a classic kitchen or building a modern one from scratch, these black sinks integrate seamlessly with your countertops. With their self-rimming design and robust construction, Inset Sinks combine practicality with style, ensuring a kitchen space that is easy to use and even easier to admire.</p>
+<h2>Undermount Black Sinks</h2>
+<p>Delve into our collection of <a href="https://www.cookandbathe.com.au/collections/undermount">Undermount Sinks</a>, designed for those who appreciate a clean and sleek aesthetic. By attaching beneath the countertop, these black sinks provide a seamless transition from countertop to sink, allowing easy wipe-downs and clean-ups. Available in various materials and finishes, our Undermount Sinks are a nod to understated elegance and efficient design.</p>
+<h2>Flushmount Black Sinks</h2>
+<p>Explore our range of <a href="https://www.cookandbathe.com.au/collections/flushmount">Flushmount Sinks</a>, the epitome of seamless integration. These black sinks sit flush with your countertop, providing a harmonious, uniform look to your kitchen. Perfect for contemporary spaces, Flushmount black Sinks offer a stylish yet minimalist appeal, making your kitchen appear more spacious and uncluttered.</p>
+<h2>Butler & Ceramic Black Sinks</h2>
+<p>Our collection of Butler & <a href="https://www.cookandbathe.com.au/collections/ceramic">Ceramic Sinks</a> is perfect for those looking for a blend of tradition and functionality. The timeless charm of Butler Sinks, coupled with the durability and ease of maintenance of Ceramic Sinks, can create a kitchen space that exudes a warm, inviting atmosphere. These black sinks are not only a statement piece but also provide a spacious area for all your kitchen tasks.</p>
+<h2>Black Sink Accessories</h2>
+<p>Finally, to complement our sink collection, we also offer a variety of <a href="https://www.cookandbathe.com.au/collections/sink-accessories">Sink Accessories</a>. From bespoke draining baskets, cutting boards, and colanders, to protective bottom grids and soap dispensers, these accessories are designed to enhance the functionality of your sink and make your kitchen chores more efficient.</p>
+  {%- elsif collection.handle == "sinks" and current_tags contains "Double" -%}
+     <h2>Discover the Elegance of Double Black Kitchen Sinks</h2>
+     <p>Upgrade your kitchen with our stunning collection of <strong>double black sinks</strong>, where style meets practicality. Whether you’re renovating or building from scratch, our range of inset, undermount, and flushmount sinks provides the perfect blend of sophistication and durability. Explore top-quality brands like <strong>Franke, Oliveri, and Phoenix</strong>, all designed to elevate your kitchen experience.</p>
+     <h3>Inset Double Black Sinks</h3>
+     <p>Looking for a sink that balances aesthetics and convenience? Our <a href="https://www.cookandbathe.com.au/products/franke-basis-1-1-4-bowl-inset-sink-onyx">Inset Double Black Sinks</a> seamlessly integrate with any kitchen style, whether modern or classic. Designed for easy installation, these sinks feature a self-rimming design that sits on top of your countertop, creating a bold and functional workspace.</p>
+     <h3>Undermount Double Black Sinks</h3>
+     <p>For a sleek, modern look, our <a href="https://www.cookandbathe.com.au/products/oliveri-santorini-black-double-bowl-undermount-sink">Undermount Double Black Sinks</a> are the ideal choice. Designed to be installed beneath the countertop, these sinks offer a clean and streamlined appearance, making countertop wipe-downs effortless. They bring a luxurious touch to contemporary kitchens while maximizing workspace.</p>
+     <h3>Flushmount Double Black Sinks</h3>
+     <p>For those who love seamless integration, <a href="https://www.cookandbathe.com.au/collections/flushmount">Flushmount Double Black Sinks</a> sit level with your countertop for a minimalist, clutter-free aesthetic. Perfect for modern and industrial-style kitchens, these sinks provide a sleek and polished look without compromising functionality.</p>
+   {%- else -%}
+{{ collection.metafields.custom.collection_bottom_content }}
+    {%- endif -%}
+</div>
+</div>
+<footer class="footer_wrapper position-relative">
+  <div class="footer_top">
+    <div class="container">
+      <div class="footer_top_first">
+        <div class="row justify-content-center">
+          <div class="col-xxl-10 col-12">
+            <div class="footer_top_first_inner d-flex flex-wrap justify-content-between">
+              <div class="logo_social_call">
+                <a href="{{ shop.url }}"
+                  ><img
+                    src="{{ section.settings.image | img_url:"master" }}"
+                    alt="cookeandbathe" loading="lazy" height="63" width="293"
+                ></a>
+                <ul class="list-unstyled d-flex flex-wrap align-items-center">
+                  {% if section.settings.social != blank %}
+                    {% if settings.social_instagram_link != blank %}
+                      <li class="mb-0 social_item">
+                        <a href="{{ settings.social_instagram_link }}" target="_blank">
+                          {%- render 'ic-social-instagram' -%}
+                        </a>
+                      </li>
+                    {% endif %}
+                    {% if settings.social_facebook_link != blank %}
+                      <li class="mb-0 social_item">
+                        <a href="{{ settings.social_facebook_link }}" target="_blank">
+                          {%- render 'ic-social-facebook' -%}
+                        </a>
+                      </li>
+                    {% endif %}
+                    {% if settings.social_pinterest_link != blank %}
+                      <li class="mb-0 social_item">
+                        <a href="{{ settings.social_pinterest_link }}" target="_blank">
+                          {%- render 'ic-social-pinterest' -%}
+                        </a>
+                      </li>
+                    {% endif %}
+                    {% if settings.social_youtube_link != blank %}
+                      <li class="mb-0 social_item">
+                        <a href="{{ settings.social_youtube_link }}" target="_blank">
+                          {%- render 'ic-social-youtube' -%}
+                        </a>
+                      </li>
+                    {% endif %}
+                  {% endif %}
+                  <li class="mb-0 call_item">
+                    <a href="tel:{{ section.settings.phone }}">
+                      {%- render 'icon-call' -%}
+                      {{- section.settings.phone -}}
+                    </a>
+                  </li>
+                </ul>
+              </div>
+             <div class="footer_top_third">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <h6 class="d-none d-md-block">{{ section.settings['title-show'] }}</h6>
+                    <h6 class="d-md-none"><strong>Click to Get Directions</strong> to our Showrooms:</h6>
+                    <div class="footer_showrooms_cta d-flex flex-column flex-xl-row align-items-center">
+                      {% assign location = section.blocks | where: 'type', 'locations' %}
+                      {% for block in location %}
+                        <a href="{{ block.settings.link }}" target="blank" class="btn btn-outline-primary">
+                          {% render 'icon-location' -%}
+                          {{- block.settings['location-name'] }}
+                        </a>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% if section.settings.subscribe_newsletter_show != blank %}
+              <div class="subscribe_newsletter d-none d-md-block">
+                {% if section.settings['title-subs'] != blank %}
+                  <h6 class="text-white">{{ section.settings['title-subs'] }}</h6>
+                {% endif %}
+                <p class="text-white">{{ section.settings['sub-title-subs'] }}</p>         
+                 <!-- Begin Mailchimp Signup Form -->
+                <div id="mc_embed_signup">
+                  <form
+                    action="https://cookandbathe.us17.list-manage.com/subscribe/post?u=fd365139b58b749f9dac3767a&amp;id=f72d799bd8&amp;f_id=007398e0f0"
+                    method="post"
+                    id="mc-embedded-subscribe-form"
+                    name="mc-embedded-subscribe-form"
+                    class="validate subscribe-form"
+                    target="_self"
+                  >
+                    <div id="mc_embed_signup_scroll">
+                      <div class="mc-field-group">
+                        <label for="mce-EMAIL">{% render 'icon-attherate' %}</label>
+                        <input
+                          type="email"
+                          value=""
+                          name="EMAIL"
+                          class="required email"
+                          id="mce-EMAIL"
+                          placeholder="Email"
+                        >
+                        <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                      </div>
+                      <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                      </div>
+                      <!--
+                        real people should not fill this in and expect good things - do not remove this or risk form bot signups
+                      -->
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_fd365139b58b749f9dac3767a_f72d799bd8" tabindex="-1" value="">
+                      </div>
+                      <div class="clear">
+                        <input
+                          type="submit"
+                          value="Sign Up"
+                          name="subscribe"
+                          id="mc-embedded-subscribe"
+                          class="btn btn-light"
+                        >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- End mc_embed_signup -->
+              </div>
+              {% endif %}
+              <div class="questions_block d-none d-md-block">
+                <h6 class="text-white">{{ section.settings['title-help'] }}</h6>
+                <p class="text-white">{{ section.settings['sub-title-help'] }}</p>
+                {% if section.settings['link-help'] != blank %}
+                  <a href="{{ section.settings.link-help }}" class="help_center_btn">
+                    {%- render 'icon-help-center' %} Help Center {% render 'icon-right-arrow' -%}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_top_second">
+        <div class="row justify-content-center">
+          <div class="col-xxl-10 col-12">
+            <div class="footer_top_second_inner d-flex flex-wrap justify-content-between">
+              {% assign menu = section.blocks | where: 'type', 'menu' %}
+              {% for block in menu %}
+                <div class="footer_navbar">
+                  {% if block.settings.title != blank %}
+                    <h6>{{ block.settings.title }}</h6>
+                  {% endif %}
+                  <ul class="list-unstyled">
+                    {% assign menu_link = block.settings.link %}
+                    {% for link in linklists[menu_link].links -%}
+                      <li>
+                        <a href="{{ link.url }}">{{ link.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% comment %}
+      <div class="footer_top_third">
+        <div class="row justify-content-center">
+          <div class="col-xxl-10 col-12">
+            <h6 class="d-none d-md-block">{{ section.settings['title-show'] }}</h6>
+            <h6 class="d-md-none"><strong>Click to Get Directions</strong> to our Showrooms:</h6>
+            <div class="footer_showrooms_cta d-flex flex-column flex-sm-row align-items-center">
+              {% assign location = section.blocks | where: 'type', 'locations' %}
+              {% for block in location %}
+                <a href="{{ block.settings.link }}" target="blank" class="btn btn-outline-primary">
+                  {% render 'icon-location' -%}
+                  {{- block.settings['location-name'] }}
+                </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endcomment %}
+    </div>
+  </div>
+  <div class="footer_bottom bg-black position-relative">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xxl-10 col-12">
+          <div class=" row g-0 footer_bottom_content">
+            <div class="col-lg-6 col-12">
+              <div class="footer_bottom_text">
+                <div class="d-none d-md-block">
+                  {{ section.settings['content-term'] }}
+                </div>
+                <div class="d-md-none">
+                  {{ section.settings['content-term-1'] }}
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 d-none d-md-block">
+              <div class="footer_bottom_payment">
+                 {% comment %}
+                <ul class="list-unstyled d-flex align-items-center">
+                  {%- for type in shop.enabled_payment_types -%}
+                    <li class="mb-0">
+                      {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+             {% endcomment %}
+                 <ul class="list-unstyled d-flex align-items-center payment-icons">
+  {% for type in shop.enabled_payment_types %}
+    <li class="mb-0">
+      <img src="{{ type | payment_type_img_url }}" alt="{{ type | capitalize }}" width="38" height="24">
+    </li>
+  {% endfor %}
+                </ul>     
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+{% schema %}
+{
+"name": "Footer",
+"class": "cb-footer",
+"settings": [
+  {
+    "type":"image_picker",
+    "id":"image",
+    "label":"Logo"
+  },
+  {
+    "type":"header",
+    "content":"Subscribe"
+  },
+  {
+    "type":"checkbox",
+    "id":"subscribe_newsletter_show",
+    "label":"Subscribe Newsletter Show",
+    "default":false
+  },
+  {
+    "type":"text",
+    "id":"title-subs",
+    "label":"Title",
+    "default":"Subscribe to our Newsletter"
+  },
+  {
+    "type":"text",
+    "id":"sub-title-subs",
+    "label":"Sub Title",
+    "default":"Get instant access to the latest trends"
+  },
+  {
+    "type":"header",
+    "content":"Help Center"
+  },
+  {
+    "type":"text",
+    "id":"title-help",
+    "label":"Title"
+  },
+  {
+    "type":"text",
+    "id":"sub-title-help",
+    "label":"Sub Title"
+  },
+  {
+    "type":"url",
+    "id":"link-help",
+    "label":"Help Center Link"
+  },
+  {
+    "type":"header",
+    "content":"Details"
+  },
+  {
+    "type":"checkbox",
+    "id":"social",
+    "label":"Social Media Enable",
+    "default":true
+  },
+  {
+    "type":"text",
+    "id":"phone",
+    "label":"Phone"
+  },
+  {
+    "type":"header",
+    "content":"Showroom"
+  },
+  {
+    "type":"text",
+    "id":"title-show",
+    "label":"Title",
+    "default":"Click to get directions to our Showrooms"
+  },
+  {
+    "type":"header",
+    "content":"Term & Condition"
+  },
+  {
+    "type":"richtext",
+    "id":"content-term",
+    "label":"Content"
+  },
+  {
+    "type":"header",
+    "content":"Mobile Detail"
+  },
+  {
+    "type":"richtext",
+    "id":"content-term-1",
+    "label":"Content"
+  }
+],
+"blocks":[
+  {
+    "type":"menu",
+    "name":"Menu",
+    "limit":5,
+    "settings":[
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"link_list",
+        "id":"link",
+        "label":"Select Menu"
+      }
+    ]
+  },
+  {
+    "type":"locations",
+    "name":"Locations",
+    "settings":[
+      {
+        "type":"text",
+        "id":"location-name",
+        "label":"Location Name"
+      },
+      {
+        "type":"url",
+        "id":"link",
+        "label":"Map Link"
+      }
+    ]
+  }
+]
+}
+{% endschema %}

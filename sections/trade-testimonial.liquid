@@ -1,0 +1,78 @@
+<div class="trade_testimoials position-relative">
+    <div class="container">
+        <div class="trade_testimoials_title text-center section_head_holder section_head_center_holder">
+            <h2 class="h3">{{section.settings.title}}</h2>
+        </div>
+
+        <div class="swiper trade_testimoials_slider">
+            <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div class="swiper-slide">
+                <div class="trade_testimonial_box h-100 text-center d-flex flex-column justify-content-between">
+                    {% if block.settings.rating != blank %}
+                    <div class="tt_ratings">
+                        {% assign image_url = block.settings.rating %}
+                        {% assign image_name = image_url | split: '/' | last | split: '.' | first %}
+                        <img src="{{ image_url | img_url : 'medium' }}" alt="{{ image_name }}" loading="lazy" style="transform: scale(1.50);">
+                    </div>
+                    {% endif %}
+                    {% if block.settings.content != blank %}
+                    <div class="tt_content">
+                        {{block.settings.content}}
+                    </div>
+                    {% endif %}
+                    {% if block.settings.author != blank %}
+                    <div class="tt_author">
+                        <p>{{block.settings.author}}</p>
+                    </div>
+                    {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+    </div>
+</div>
+{% schema %}
+  {
+    "name": "Trader testimonial",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+    ],
+    "blocks": [
+        {
+        "type": "testimonial_block",
+        "name": "Testimonial block",
+        "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "rating",
+                    "label": "Rating"
+                },
+                {
+                    "type": "richtext",
+                    "id": "content",
+                    "label": "Content"
+                },
+                {
+                    "type": "text",
+                    "id": "author",
+                    "label": "Author"
+                },
+            ]
+        }
+    ],
+    "presets" : [
+        {
+        "name" : "Trader testimonial"
+        }
+    ]
+  }
+{% endschema %}

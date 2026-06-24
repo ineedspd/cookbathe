@@ -1,0 +1,266 @@
+<div class="about_content_block  position-relative">
+  <div class="container">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'box' %}
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-12">
+              <div class="row flex-row-reverse align-items-center">
+                <div class="col-md-6 col-12">
+                  <div class="about_content_odd_even_img">
+                    <img
+                      src="{{ block.settings.image | img_url:'master' }}"
+                      alt="{{ block.settings.image.alt }}"
+                    >
+                  </div>
+                </div>
+                <div class="col-md-6 col-12">
+                  <div class="about_content_odd_even_txt">
+                    {{ block.settings.content }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% when 'image' %}
+          <div class="about_content_img">
+            <div class="row justify-content-center">
+              <div class="col-xl-10 col-12">
+                <img src="{{ block.settings.image | img_url:'master' }}" alt="{{ block.settings.image.alt }}">
+              </div>
+            </div>
+          </div>
+        {% when 'content' %}
+          <div class="about_content_txt">
+            <div class="row justify-content-center">
+              <div class="col-xl-8 col-12">
+                {{ block.settings.content }}
+              </div>
+            </div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+{% render 'cb-style' %}
+{% schema %}
+{
+  "name": "About Content Block",
+  "tag": "section",
+  "class": "cb-about-content-block",
+  "settings": [],
+  "blocks":[
+    {
+      "type":"box",
+      "name":"Box",
+      "limit":1,
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        },
+        {
+          "type":"richtext",
+          "id":"content",
+          "label":"Content"
+        }
+      ]
+    },
+    {
+      "type":"image",
+      "name":"Image",
+      "limit":1,
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label":"Image"
+        }
+      ]
+    },
+    {
+      "type":"content",
+      "name":"Content",
+      "limit":1,
+      "settings":[
+        {
+          "type":"richtext",
+          "id":"content",
+          "label":"Content"
+        }
+      ]
+
+    },
+    {
+    "type": "section_margin",
+    "name": "Section Margin",
+    "limit": 1,
+    "settings": [
+          {
+            "type": "header",
+            "content": "Large\/Desktop Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Tablet Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_md",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "header",
+            "content": "Mobile Device"
+          },
+          {
+            "type": "range",
+            "id": "section_margin_top_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Top",
+            "unit": "px",
+            "default": 0
+          },
+          {
+            "type": "range",
+            "id": "section_margin_bottom_xs",
+            "min": 0,
+            "max": 150,
+            "step": 5,
+            "label": "Margin Bottom",
+            "unit": "px",
+            "default": 0
+          }
+      ]
+    },
+    {
+    "type": "section_padding",
+    "name": "Section Padding",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Large\/Desktop Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 500,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "Tablet Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_md",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 80
+      },
+      {
+        "type": "header",
+        "content": "Mobile Device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 50
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_xs",
+        "min": 0,
+        "max": 300,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 50
+      }
+    ]
+  }
+  ],
+  "presets": [
+    {
+      "name": "About Content Block"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
