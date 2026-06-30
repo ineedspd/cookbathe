@@ -29,6 +29,7 @@
       "footer": {
         "type": "footer",
         "settings": {
+          "image": "shopify://shop_images/cook-and-bathh-brand-light.svg",
           "subscribe_newsletter_show": false,
           "title-subs": "Subscribe to our Newsletter",
           "sub-title-subs": "Get instant access to the latest trends",
