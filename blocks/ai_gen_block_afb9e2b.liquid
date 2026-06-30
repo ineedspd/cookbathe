@@ -254,69 +254,72 @@
     </div>
 
     <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
-      <label for="ai-contact-phone-input-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
-        {{ block.settings.phone_label }}
-        <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
-      </label>
-      <div class="ai-contact-form__phone-container-{{ ai_gen_id }}" data-phone-container>
-        <select
-          id="ai-contact-country-code-{{ ai_gen_id }}"
-          class="ai-contact-form__country-select-{{ ai_gen_id }}"
-          data-field="country-code"
-          aria-label="Country code"
-        >
-          <option value="+1">+1</option>
-          <option value="+44">+44</option>
-          <option value="+91">+91</option>
-          <option value="+61">+61</option>
-          <option value="+81">+81</option>
-          <option value="+86">+86</option>
-          <option value="+33">+33</option>
-          <option value="+49">+49</option>
-          <option value="+39">+39</option>
-          <option value="+34">+34</option>
-          <option value="+7">+7</option>
-          <option value="+55">+55</option>
-          <option value="+52">+52</option>
-          <option value="+27">+27</option>
-          <option value="+82">+82</option>
-          <option value="+31">+31</option>
-          <option value="+46">+46</option>
-          <option value="+47">+47</option>
-          <option value="+45">+45</option>
-          <option value="+358">+358</option>
-          <option value="+48">+48</option>
-          <option value="+351">+351</option>
-          <option value="+30">+30</option>
-          <option value="+90">+90</option>
-          <option value="+971">+971</option>
-          <option value="+966">+966</option>
-          <option value="+65">+65</option>
-          <option value="+60">+60</option>
-          <option value="+62">+62</option>
-          <option value="+63">+63</option>
-          <option value="+64">+64</option>
-        </select>
-        <input
-          type="tel"
-          id="ai-contact-phone-input-{{ ai_gen_id }}"
-          class="ai-contact-form__phone-input-{{ ai_gen_id }}"
-          value="{{ form.phone }}"
-          placeholder="{{ block.settings.phone_placeholder }}"
-          autocomplete="tel"
-          required
-          aria-required="true"
-          data-field="phone"
-        >
-      </div>
-      <input
-        type="hidden"
-        name="contact[phone]"
-        id="ai-contact-phone-hidden-{{ ai_gen_id }}"
-        class="ai-contact-form__hidden-phone-{{ ai_gen_id }}"
-      >
-      <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="phone"></span>
+  <label for="ai-contact-phone-input-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
+    {{ block.settings.phone_label }}
+    <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
+  </label>
+
+  <div class="ai-contact-form__phone-container-{{ ai_gen_id }}" data-phone-container>
+
+    <!-- Trigger -->
+    <div class="ai-contact-form__country-trigger-{{ ai_gen_id }}" data-country-trigger>
+      <img class="ai-contact-form__flag-{{ ai_gen_id }}" data-flag src="https://flagcdn.com/w20/us.png" alt="flag">
+      <span data-code>+1</span>
     </div>
+
+    <!-- Dropdown -->
+    <div class="ai-contact-form__country-dropdown-{{ ai_gen_id }}" data-country-dropdown>
+
+      <div class="country-option" data-code="+1" data-flag="us">
+        <img src="https://flagcdn.com/w20/us.png"> +1 (US)
+      </div>
+
+      <div class="country-option" data-code="+44" data-flag="gb">
+        <img src="https://flagcdn.com/w20/gb.png"> +44 (UK)
+      </div>
+
+      <div class="country-option" data-code="+91" data-flag="in">
+        <img src="https://flagcdn.com/w20/in.png"> +91 (IN)
+      </div>
+
+      <div class="country-option" data-code="+61" data-flag="au">
+        <img src="https://flagcdn.com/w20/au.png"> +61 (AU)
+      </div>
+
+      <div class="country-option" data-code="+81" data-flag="jp">
+        <img src="https://flagcdn.com/w20/jp.png"> +81 (JP)
+      </div>
+
+      <div class="country-option" data-code="+971" data-flag="ae">
+        <img src="https://flagcdn.com/w20/ae.png"> +971 (UAE)
+      </div>
+
+    </div>
+
+    <!-- Phone input -->
+    <input
+      type="tel"
+      id="ai-contact-phone-input-{{ ai_gen_id }}"
+      class="ai-contact-form__phone-input-{{ ai_gen_id }}"
+      placeholder="{{ block.settings.phone_placeholder }}"
+      autocomplete="tel"
+      required
+      aria-required="true"
+      data-field="phone"
+    >
+  </div>
+
+  <!-- Hidden combined value -->
+  <input
+    type="hidden"
+    name="contact[phone]"
+    id="ai-contact-phone-hidden-{{ ai_gen_id }}"
+    class="ai-contact-form__hidden-phone-{{ ai_gen_id }}"
+    data-phone-hidden
+  >
+
+  <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="phone"></span>
+</div>
 
     <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
       <label for="ai-contact-message-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
