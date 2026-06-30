@@ -499,7 +499,16 @@
       // default value
       this.updatePhone(hidden, codeEl.textContent, phoneInput.value);
     }
+phoneInput.addEventListener('focus', () => {
+  dropdown.classList.remove('active');
+});
 
+// optional safety: prevents race condition on click
+phoneInput.addEventListener('blur', () => {
+  setTimeout(() => {
+    dropdown.classList.remove('active');
+  }, 150);
+});
     updatePhone(hiddenInput, code, number) {
       hiddenInput.value = `${code}${number}`;
     }
