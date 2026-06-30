@@ -174,7 +174,7 @@
     height: 1px;
   }
 {% endstyle %}
-
+<div class="container">
 <contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   {%- form 'contact' -%}
     {%- if form.posted_successfully? -%}
@@ -340,7 +340,7 @@
     </button>
   {%- endform -%}
 </contact-form-{{ ai_gen_id }}>
-
+</div>
 <script>
   (function() {
     class ContactForm{{ ai_gen_id }} extends HTMLElement {
