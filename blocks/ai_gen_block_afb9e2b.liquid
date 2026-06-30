@@ -596,18 +596,7 @@
           input.removeAttribute('aria-invalid');
         }
       }
-handleOutsideClick(e) {
-  const dropdown = this.querySelector('[data-country-dropdown]');
-  const trigger = this.querySelector('[data-country-trigger]');
 
-  if (!dropdown || !trigger) return;
-
-  const isClickInside = this.contains(e.target);
-
-  if (!isClickInside) {
-    dropdown.classList.remove('active');
-  }
-}
       clearErrors() {
         const errorSpans = this.querySelectorAll('[data-error]');
         errorSpans.forEach(span => {
