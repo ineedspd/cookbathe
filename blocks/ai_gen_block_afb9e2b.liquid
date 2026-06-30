@@ -440,7 +440,7 @@
         };
       }
 
-      setupPhoneField() {
+      {% comment %} setupPhoneField() {
         const updateHiddenPhone = () => {
           const countryCode = this.countryCodeSelect.value;
           const phoneNumber = this.phoneInput.value;
@@ -451,8 +451,48 @@
         this.phoneInput.addEventListener('input', updateHiddenPhone);
 
         updateHiddenPhone();
-      }
+      } {% endcomment %}
+setupPhoneField() {
+  const trigger = this.querySelector('[data-country-trigger]');
+  const dropdown = this.querySelector('[data-country-dropdown]');
+  const phoneInput = this.phoneInput;
+  const hidden = this.querySelector('[data-phone-hidden]');
 
+  const codeEl = trigger.querySelector('[data-code]');
+  const flagEl = trigger.querySelector('[data-flag]');
+
+  trigger.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
+  });
+
+  dropdown.querySelectorAll('.country-option').forEach(opt => {
+    opt.addEventListener('click', () => {
+      const code = opt.dataset.code;
+      const flag = opt.dataset.flag;
+
+      codeEl.textContent = code;
+      flagEl.src = `https://flagcdn.com/w20/${flag}.png`;
+
+      dropdown.classList.remove('active');
+      this.updatePhone(hidden, code, phoneInput.value);
+    });
+  });
+
+  phoneInput.addEventListener('input', () => {
+    const code = codeEl.textContent;
+    this.updatePhone(hidden, code, phoneInput.value);
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!this.contains(e.target)) {
+      dropdown.classList.remove('active');
+    }
+  });
+
+  this.updatePhone = (hiddenInput, code, number) => {
+    hiddenInput.value = `${code}${number}`;
+  };
+}
       setupValidation() {
         this.form.addEventListener('submit', (e) => {
           let isValid = true;
@@ -575,47 +615,7 @@
           input.setAttribute('aria-invalid', 'true');
         }
       }
-setupPhoneField() {
-  const trigger = this.querySelector('[data-country-trigger]');
-  const dropdown = this.querySelector('[data-country-dropdown]');
-  const phoneInput = this.phoneInput;
-  const hidden = this.querySelector('[data-phone-hidden]');
 
-  const codeEl = trigger.querySelector('[data-code]');
-  const flagEl = trigger.querySelector('[data-flag]');
-
-  trigger.addEventListener('click', () => {
-    dropdown.classList.toggle('active');
-  });
-
-  dropdown.querySelectorAll('.country-option').forEach(opt => {
-    opt.addEventListener('click', () => {
-      const code = opt.dataset.code;
-      const flag = opt.dataset.flag;
-
-      codeEl.textContent = code;
-      flagEl.src = `https://flagcdn.com/w20/${flag}.png`;
-
-      dropdown.classList.remove('active');
-      this.updatePhone(hidden, code, phoneInput.value);
-    });
-  });
-
-  phoneInput.addEventListener('input', () => {
-    const code = codeEl.textContent;
-    this.updatePhone(hidden, code, phoneInput.value);
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!this.contains(e.target)) {
-      dropdown.classList.remove('active');
-    }
-  });
-
-  this.updatePhone = (hiddenInput, code, number) => {
-    hiddenInput.value = `${code}${number}`;
-  };
-}
       clearFieldError(fieldName) {
         const errorSpan = this.querySelector(`[data-error="${fieldName}"]`);
         let input = this.querySelector(`[data-field="${fieldName}"]`);
