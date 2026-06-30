@@ -252,7 +252,7 @@
     }
   }
 {% endstyle %}
-
+<div class="container">
 <contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }} " {{ block.shopify_attributes }}>
   {% if block.settings.heading != blank %}
     <h2 class="ai-contact-form__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
@@ -473,7 +473,7 @@
     {%- endif -%}
   {%- endform -%}
 </contact-form-{{ ai_gen_id }}>
-
+</div>
 <script>
   (function() {
     class ContactForm{{ ai_gen_id }} extends HTMLElement {
