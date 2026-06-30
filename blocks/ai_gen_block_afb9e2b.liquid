@@ -488,11 +488,23 @@ setupPhoneField() {
       dropdown.classList.remove('active');
     }
   });
+handleOutsideClick(e) {
+  const dropdown = this.querySelector('[data-country-dropdown]');
+  const trigger = this.querySelector('[data-country-trigger]');
 
+  if (!dropdown || !trigger) return;
+
+  const isClickInside = this.contains(e.target);
+
+  if (!isClickInside) {
+    dropdown.classList.remove('active');
+  }
+}
   this.updatePhone = (hiddenInput, code, number) => {
     hiddenInput.value = `${code}${number}`;
   };
 }
+
       setupValidation() {
         this.form.addEventListener('submit', (e) => {
           let isValid = true;
