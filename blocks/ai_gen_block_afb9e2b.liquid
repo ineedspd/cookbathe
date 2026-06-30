@@ -403,71 +403,257 @@
   class ContactForm{{ ai_gen_id }} extends HTMLElement {
     constructor() {
       super();
+      this.validationMessages = {};
+      this.handleOutsideClick = this.handleOutsideClick.bind(this);
     }
 
     connectedCallback() {
+      this.form = this.querySelector('form');
+
       this.phoneInput = this.querySelector('[data-field="phone"]');
+      this.phoneContainer = this.querySelector('[data-phone-container]');
       this.hiddenPhoneInput = this.querySelector('[data-phone-hidden]');
 
-      this.setupPhoneFormatting();
+      this.dropdown = this.querySelector('[data-country-dropdown]');
+      this.trigger = this.querySelector('[data-country-trigger]');
+
+      this.selectedCode = this.trigger.querySelector('[data-code]').textContent || '+1';
+
+      this.loadValidationMessages();
+      this.setupPhoneField();
+      this.setupValidation();
+
+      document.addEventListener('click', this.handleOutsideClick);
+    }
+
+    disconnectedCallback() {
+      document.removeEventListener('click', this.handleOutsideClick);
+    }
+
+    // CLOSE DROPDOWN ON OUTSIDE CLICK
+    handleOutsideClick(e) {
+      if (!this.contains(e.target) && this.dropdown) {
+        this.dropdown.classList.remove('active');
+      }
+    }
+
+    loadValidationMessages() {
+      this.validationMessages = {
+        email: {
+          required: '{{ block.settings.email_required_message }}',
+          invalid: '{{ block.settings.email_invalid_message }}'
+        },
+        firstname: {
+          required: '{{ block.settings.firstname_required_message }}'
+        },
+        lastname: {
+          required: '{{ block.settings.lastname_required_message }}'
+        },
+        phone: {
+          required: '{{ block.settings.phone_required_message }}',
+          invalid: '{{ block.settings.phone_invalid_message }}'
+        },
+        message: {
+          required: '{{ block.settings.message_required_message }}'
+        }
+      };
     }
 
     // =========================
-    // PHONE FORMATTING
+    // PHONE FIELD (UPDATED)
     // =========================
-    setupPhoneFormatting() {
-      if (!this.phoneInput) return;
+    setupPhoneField() {
+      const phoneInput = this.phoneInput;
 
-      this.phoneInput.addEventListener('input', () => {
-        const formatted = this.formatPhone(this.phoneInput.value);
+      const codeEl = this.trigger.querySelector('[data-code]');
+      const flagEl = this.trigger.querySelector('[data-flag]');
 
-        this.phoneInput.value = formatted;
+      // toggle dropdown
+      this.trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.dropdown.classList.toggle('active');
+      });
 
-        // store clean value in hidden input
-        if (this.hiddenPhoneInput) {
-          this.hiddenPhoneInput.value = this.cleanPhone(formatted);
+      // select country code (ONLY UI STATE)
+      this.dropdown.querySelectorAll('.country-option').forEach(opt => {
+        opt.addEventListener('click', (e) => {
+          e.stopPropagation();
+
+          const code = opt.dataset.code;
+          const flag = opt.dataset.flag;
+
+          this.selectedCode = code;
+
+          codeEl.textContent = code;
+          flagEl.src = `https://flagcdn.com/w20/${flag}.png`;
+
+          this.dropdown.classList.remove('active');
+
+          // DO NOT modify input value anymore
+        });
+      });
+
+      // close on focus
+      phoneInput.addEventListener('focus', () => {
+        this.dropdown.classList.remove('active');
+      });
+
+      // no prefix injection anymore
+    }
+
+    // =========================
+    // BUILD FULL PHONE ONLY ON SUBMIT
+    // =========================
+    getFullPhone() {
+      const localNumber = this.phoneInput.value.trim();
+
+      if (!localNumber) return '';
+
+      const cleaned = localNumber.replace(/\s+/g, '');
+
+      return `${this.selectedCode}${cleaned}`;
+    }
+
+    // =========================
+    // VALIDATION
+    // =========================
+    isValidPhone(number) {
+      const digits = number.replace(/\D/g, '');
+      return digits.length >= 7 && digits.length <= 15;
+    }
+
+    isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    setupValidation() {
+      this.form.addEventListener('submit', (e) => {
+        let isValid = true;
+        this.clearErrors();
+
+        const emailInput = this.querySelector('[data-field="email"]');
+        const firstnameInput = this.querySelector('[data-field="firstname"]');
+        const lastnameInput = this.querySelector('[data-field="lastname"]');
+        const phoneInput = this.querySelector('[data-field="phone"]');
+        const messageInput = this.querySelector('[data-field="message"]');
+
+        // EMAIL
+        if (!emailInput.value.trim()) {
+          this.showError('email', this.validationMessages.email.required);
+          isValid = false;
+        } else if (!this.isValidEmail(emailInput.value)) {
+          this.showError('email', this.validationMessages.email.invalid);
+          isValid = false;
         }
+
+        // FIRSTNAME
+        if (!firstnameInput.value.trim()) {
+          this.showError('firstname', this.validationMessages.firstname.required);
+          isValid = false;
+        }
+
+        // LASTNAME
+        if (!lastnameInput.value.trim()) {
+          this.showError('lastname', this.validationMessages.lastname.required);
+          isValid = false;
+        }
+
+        // PHONE (local validation only)
+        if (!phoneInput.value.trim()) {
+          this.showError('phone', this.validationMessages.phone.required);
+          isValid = false;
+        } else if (!this.isValidPhone(phoneInput.value)) {
+          this.showError('phone', this.validationMessages.phone.invalid);
+          isValid = false;
+        }
+
+        // MESSAGE
+        if (!messageInput.value.trim()) {
+          this.showError('message', this.validationMessages.message.required);
+          isValid = false;
+        }
+
+        // FINAL: inject full phone into hidden field ONLY here
+        if (isValid) {
+          this.hiddenPhoneInput.value = this.getFullPhone();
+        }
+
+        if (!isValid) e.preventDefault();
+      });
+
+      const inputs = this.querySelectorAll('[data-field]');
+      inputs.forEach(input => {
+        input.addEventListener('blur', () => this.validateField(input));
       });
     }
 
-    // +61 412 345 678 → +61-412-345-678
-    formatPhone(value) {
-      if (!value) return '';
+    validateField(input) {
+      const fieldName = input.dataset.field;
+      const value = input.value.trim();
 
-      let hasPlus = value.trim().startsWith('+');
+      this.clearFieldError(fieldName);
 
-      // keep digits only
-      let digits = value.replace(/\D/g, '');
-
-      if (!digits) return '';
-
-      let result = hasPlus ? '+' : '';
-
-      // if short, just return
-      if (digits.length <= 3) {
-        return result + digits;
+      if (!value) {
+        this.showError(fieldName, this.validationMessages[fieldName].required);
+        return false;
       }
 
-      // split country + local
-      const country = digits.slice(0, digits.length - 9);
-      const local = digits.slice(-9);
-
-      let formattedLocal = local;
-
-      if (local.length > 6) {
-        formattedLocal = local.replace(/(\d{3})(\d{3})(\d{0,3})/, (m, a, b, c) => {
-          return c ? `${a}-${b}-${c}` : `${a}-${b}`;
-        });
-      } else if (local.length > 3) {
-        formattedLocal = local.replace(/(\d{3})(\d{0,3})/, '$1-$2');
+      if (fieldName === 'email' && !this.isValidEmail(value)) {
+        this.showError(fieldName, this.validationMessages.email.invalid);
+        return false;
       }
 
-      return (result + country + '-' + formattedLocal).replace(/-$/, '');
+      if (fieldName === 'phone' && !this.isValidPhone(value)) {
+        this.showError(fieldName, this.validationMessages.phone.invalid);
+        return false;
+      }
+
+      return true;
     }
 
-    // clean number for backend
-    cleanPhone(value) {
-      return value.replace(/\D/g, '');
+    showError(fieldName, message) {
+      const errorSpan = this.querySelector(`[data-error="${fieldName}"]`);
+      const input = this.querySelector(`[data-field="${fieldName}"]`);
+
+      if (errorSpan) errorSpan.textContent = message;
+
+      if (input) {
+        input.classList.add('error');
+        input.setAttribute('aria-invalid', 'true');
+      }
+
+      if (fieldName === 'phone' && this.phoneContainer) {
+        this.phoneContainer.classList.add('error');
+      }
+    }
+
+    clearFieldError(fieldName) {
+      const errorSpan = this.querySelector(`[data-error="${fieldName}"]`);
+      const input = this.querySelector(`[data-field="${fieldName}"]`);
+
+      if (errorSpan) errorSpan.textContent = '';
+
+      if (input) {
+        input.classList.remove('error');
+        input.removeAttribute('aria-invalid');
+      }
+
+      if (fieldName === 'phone' && this.phoneContainer) {
+        this.phoneContainer.classList.remove('error');
+      }
+    }
+
+    clearErrors() {
+      this.querySelectorAll('[data-error]').forEach(el => el.textContent = '');
+
+      this.querySelectorAll('[data-field]').forEach(el => {
+        el.classList.remove('error');
+        el.removeAttribute('aria-invalid');
+      });
+
+      if (this.phoneContainer) {
+        this.phoneContainer.classList.remove('error');
+      }
     }
   }
 
