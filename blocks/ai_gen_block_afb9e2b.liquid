@@ -417,6 +417,8 @@
       this.dropdown = this.querySelector('[data-country-dropdown]');
       this.trigger = this.querySelector('[data-country-trigger]');
 
+      this.selectedCode = this.trigger.querySelector('[data-code]').textContent || '+1';
+
       this.loadValidationMessages();
       this.setupPhoneField();
       this.setupValidation();
@@ -428,9 +430,7 @@
       document.removeEventListener('click', this.handleOutsideClick);
     }
 
-    // =========================
-    // OUTSIDE CLICK CLOSE FIX
-    // =========================
+    // CLOSE DROPDOWN ON OUTSIDE CLICK
     handleOutsideClick(e) {
       if (!this.contains(e.target) && this.dropdown) {
         this.dropdown.classList.remove('active');
@@ -460,22 +460,21 @@
     }
 
     // =========================
-    // PHONE FIELD (FIXED)
+    // PHONE FIELD (UPDATED)
     // =========================
     setupPhoneField() {
       const phoneInput = this.phoneInput;
-      const hidden = this.hiddenPhoneInput;
 
       const codeEl = this.trigger.querySelector('[data-code]');
       const flagEl = this.trigger.querySelector('[data-flag]');
 
-      // open/close dropdown
+      // toggle dropdown
       this.trigger.addEventListener('click', (e) => {
         e.stopPropagation();
         this.dropdown.classList.toggle('active');
       });
 
-      // select country
+      // select country code (ONLY UI STATE)
       this.dropdown.querySelectorAll('.country-option').forEach(opt => {
         opt.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -483,61 +482,44 @@
           const code = opt.dataset.code;
           const flag = opt.dataset.flag;
 
+          this.selectedCode = code;
+
           codeEl.textContent = code;
           flagEl.src = `https://flagcdn.com/w20/${flag}.png`;
 
           this.dropdown.classList.remove('active');
 
-          this.updatePhone(hidden, code, phoneInput.value);
+          // DO NOT modify input value anymore
         });
       });
 
-      // close on focus (IMPORTANT UX FIX)
+      // close on focus
       phoneInput.addEventListener('focus', () => {
         this.dropdown.classList.remove('active');
       });
 
-      // sync typing
-      phoneInput.addEventListener('input', () => {
-        this.updatePhone(hidden, codeEl.textContent, phoneInput.value);
-      });
-
-      // init
-      this.updatePhone(hidden, codeEl.textContent, phoneInput.value);
+      // no prefix injection anymore
     }
 
     // =========================
-    // PHONE NORMALIZATION (BEST PRACTICE)
+    // BUILD FULL PHONE ONLY ON SUBMIT
     // =========================
-    normalizePhone(code, number) {
-      let raw = `${code}${number}`.replace(/\s+/g, '');
+    getFullPhone() {
+      const localNumber = this.phoneInput.value.trim();
 
-      let cleaned = raw.replace(/[^\d+]/g, '');
+      if (!localNumber) return '';
 
-      // ensure only one "+"
-      if (cleaned.split('+').length > 2) {
-        cleaned = '+' + cleaned.replace(/\+/g, '');
-      }
+      const cleaned = localNumber.replace(/\s+/g, '');
 
-      if (!cleaned.startsWith('+')) {
-        cleaned = '+' + cleaned;
-      }
-
-      return cleaned;
-    }
-
-    updatePhone(hiddenInput, code, number) {
-      hiddenInput.value = this.normalizePhone(code, number);
+      return `${this.selectedCode}${cleaned}`;
     }
 
     // =========================
-    // VALIDATION (FIXED)
+    // VALIDATION
     // =========================
-    isValidPhone(phone) {
-      if (!phone) return false;
-
-      const digits = phone.replace(/\D/g, '');
-      return digits.length >= 8 && digits.length <= 15;
+    isValidPhone(number) {
+      const digits = number.replace(/\D/g, '');
+      return digits.length >= 7 && digits.length <= 15;
     }
 
     isValidEmail(email) {
@@ -555,6 +537,7 @@
         const phoneInput = this.querySelector('[data-field="phone"]');
         const messageInput = this.querySelector('[data-field="message"]');
 
+        // EMAIL
         if (!emailInput.value.trim()) {
           this.showError('email', this.validationMessages.email.required);
           isValid = false;
@@ -563,16 +546,19 @@
           isValid = false;
         }
 
+        // FIRSTNAME
         if (!firstnameInput.value.trim()) {
           this.showError('firstname', this.validationMessages.firstname.required);
           isValid = false;
         }
 
+        // LASTNAME
         if (!lastnameInput.value.trim()) {
           this.showError('lastname', this.validationMessages.lastname.required);
           isValid = false;
         }
 
+        // PHONE (local validation only)
         if (!phoneInput.value.trim()) {
           this.showError('phone', this.validationMessages.phone.required);
           isValid = false;
@@ -581,9 +567,15 @@
           isValid = false;
         }
 
+        // MESSAGE
         if (!messageInput.value.trim()) {
           this.showError('message', this.validationMessages.message.required);
           isValid = false;
+        }
+
+        // FINAL: inject full phone into hidden field ONLY here
+        if (isValid) {
+          this.hiddenPhoneInput.value = this.getFullPhone();
         }
 
         if (!isValid) e.preventDefault();
