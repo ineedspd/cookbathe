@@ -430,7 +430,6 @@
       document.removeEventListener('click', this.handleOutsideClick);
     }
 
-    // CLOSE DROPDOWN ON OUTSIDE CLICK
     handleOutsideClick(e) {
       if (!this.contains(e.target) && this.dropdown) {
         this.dropdown.classList.remove('active');
@@ -460,7 +459,7 @@
     }
 
     // =========================
-    // PHONE FIELD (UPDATED)
+    // PHONE FIELD + FORMATTER
     // =========================
     setupPhoneField() {
       const phoneInput = this.phoneInput;
@@ -474,7 +473,7 @@
         this.dropdown.classList.toggle('active');
       });
 
-      // select country code (ONLY UI STATE)
+      // select country code
       this.dropdown.querySelectorAll('.country-option').forEach(opt => {
         opt.addEventListener('click', (e) => {
           e.stopPropagation();
@@ -488,35 +487,40 @@
           flagEl.src = `https://flagcdn.com/w20/${flag}.png`;
 
           this.dropdown.classList.remove('active');
-
-          // DO NOT modify input value anymore
         });
       });
 
-      // close on focus
+      // 👉 FORMAT LOCAL NUMBER ONLY
+      phoneInput.addEventListener('input', () => {
+        let value = phoneInput.value;
+
+        // remove non digits
+        let digits = value.replace(/\D/g, '');
+
+        // format: XXX-XXX-XXX
+        if (digits.length > 3 && digits.length <= 6) {
+          digits = digits.replace(/(\d{3})(\d{1,3})/, '$1-$2');
+        } else if (digits.length > 6) {
+          digits = digits.replace(/(\d{3})(\d{3})(\d{1,3})/, '$1-$2-$3');
+        }
+
+        phoneInput.value = digits;
+      });
+
       phoneInput.addEventListener('focus', () => {
         this.dropdown.classList.remove('active');
       });
-
-      // no prefix injection anymore
     }
 
     // =========================
-    // BUILD FULL PHONE ONLY ON SUBMIT
+    // BUILD FULL PHONE
     // =========================
     getFullPhone() {
-      const localNumber = this.phoneInput.value.trim();
-
-      if (!localNumber) return '';
-
-      const cleaned = localNumber.replace(/\s+/g, '');
-
-      return `${this.selectedCode}${cleaned}`;
+      const local = this.phoneInput.value.replace(/\D/g, '');
+      if (!local) return '';
+      return `${this.selectedCode}${local}`;
     }
 
-    // =========================
-    // VALIDATION
-    // =========================
     isValidPhone(number) {
       const digits = number.replace(/\D/g, '');
       return digits.length >= 7 && digits.length <= 15;
@@ -558,7 +562,7 @@
           isValid = false;
         }
 
-        // PHONE (local validation only)
+        // PHONE
         if (!phoneInput.value.trim()) {
           this.showError('phone', this.validationMessages.phone.required);
           isValid = false;
@@ -573,7 +577,7 @@
           isValid = false;
         }
 
-        // FINAL: inject full phone into hidden field ONLY here
+        // 👉 FINAL: store full phone
         if (isValid) {
           this.hiddenPhoneInput.value = this.getFullPhone();
         }
