@@ -253,13 +253,13 @@
   }
 {% endstyle %}
 
-<contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }} container" {{ block.shopify_attributes }}>
+<contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }} " {{ block.shopify_attributes }}>
   {% if block.settings.heading != blank %}
     <h2 class="ai-contact-form__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
   {% endif %}
 
   {% if block.settings.subtext != blank %}
-    <div class="ai-contact-form__subtext-{{ ai_gen_id }}">{{ block.settings.subtext }}</div>
+    <div class="ai-contact-form__subtext-{{ ai_gen_id }} container">{{ block.settings.subtext }}</div>
   {% endif %}
 
   {%- form 'contact' -%}
