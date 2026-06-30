@@ -413,11 +413,13 @@
       this.phoneContainer = this.querySelector('[data-phone-container]');
       this.hiddenPhoneInput = this.querySelector('[data-phone-hidden]');
 
+      this.dropdown = this.querySelector('[data-country-dropdown]');
+      this.trigger = this.querySelector('[data-country-trigger]');
+
       this.loadValidationMessages();
       this.setupPhoneField();
       this.setupValidation();
 
-      // global click listener (ONCE)
       document.addEventListener('click', this.handleOutsideClick);
     }
 
@@ -426,13 +428,8 @@
     }
 
     handleOutsideClick(e) {
-      const dropdown = this.querySelector('[data-country-dropdown]');
-      const trigger = this.querySelector('[data-country-trigger]');
-
-      if (!dropdown || !trigger) return;
-
-      if (!this.contains(e.target)) {
-        dropdown.classList.remove('active');
+      if (!this.contains(e.target) && this.dropdown) {
+        this.dropdown.classList.remove('active');
       }
     }
 
@@ -459,22 +456,20 @@
     }
 
     setupPhoneField() {
-      const trigger = this.querySelector('[data-country-trigger]');
-      const dropdown = this.querySelector('[data-country-dropdown]');
       const phoneInput = this.phoneInput;
       const hidden = this.hiddenPhoneInput;
 
-      const codeEl = trigger.querySelector('[data-code]');
-      const flagEl = trigger.querySelector('[data-flag]');
+      const codeEl = this.trigger.querySelector('[data-code]');
+      const flagEl = this.trigger.querySelector('[data-flag]');
 
       // toggle dropdown
-      trigger.addEventListener('click', (e) => {
+      this.trigger.addEventListener('click', (e) => {
         e.stopPropagation();
-        dropdown.classList.toggle('active');
+        this.dropdown.classList.toggle('active');
       });
 
       // select country
-      dropdown.querySelectorAll('.country-option').forEach(opt => {
+      this.dropdown.querySelectorAll('.country-option').forEach(opt => {
         opt.addEventListener('click', (e) => {
           e.stopPropagation();
 
@@ -484,7 +479,7 @@
           codeEl.textContent = code;
           flagEl.src = `https://flagcdn.com/w20/${flag}.png`;
 
-          dropdown.classList.remove('active');
+          this.dropdown.classList.remove('active');
 
           this.updatePhone(hidden, code, phoneInput.value);
         });
@@ -496,19 +491,22 @@
         this.updatePhone(hidden, code, phoneInput.value);
       });
 
+      // ✅ CLOSE ON FOCUS
+      phoneInput.addEventListener('focus', () => {
+        this.dropdown.classList.remove('active');
+      });
+
+      // ✅ CLOSE ON BLUR (safe delay for clicks)
+      phoneInput.addEventListener('blur', () => {
+        setTimeout(() => {
+          this.dropdown.classList.remove('active');
+        }, 150);
+      });
+
       // default value
       this.updatePhone(hidden, codeEl.textContent, phoneInput.value);
     }
-phoneInput.addEventListener('focus', () => {
-  dropdown.classList.remove('active');
-});
 
-// optional safety: prevents race condition on click
-phoneInput.addEventListener('blur', () => {
-  setTimeout(() => {
-    dropdown.classList.remove('active');
-  }, 150);
-});
     updatePhone(hiddenInput, code, number) {
       hiddenInput.value = `${code}${number}`;
     }
