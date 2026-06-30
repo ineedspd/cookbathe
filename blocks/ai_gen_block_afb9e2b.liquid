@@ -173,6 +173,60 @@
     width: 1px;
     height: 1px;
   }
+  .ai-contact-form__country-trigger-{{ ai_gen_id }} {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  bottom: 1px;
+  width: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  border-right: 1px solid {{ block.settings.input_border_color }};
+  background: {{ block.settings.input_background_color }};
+  font-size: 14px;
+}
+
+.ai-contact-form__flag-{{ ai_gen_id }} {
+  width: 18px;
+  height: 12px;
+  object-fit: cover;
+}
+
+.ai-contact-form__country-dropdown-{{ ai_gen_id }} {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  width: 200px;
+  z-index: 50;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.ai-contact-form__country-dropdown-{{ ai_gen_id }}.active {
+  display: block;
+}
+
+.country-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.country-option:hover {
+  background: #f5f5f5;
+}
+
+.ai-contact-form__phone-container-{{ ai_gen_id }} {
+  position: relative;
+}
 {% endstyle %}
 <div class="container">
 <contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
