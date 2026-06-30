@@ -575,47 +575,7 @@
           input.setAttribute('aria-invalid', 'true');
         }
       }
-setupPhoneField() {
-  const trigger = this.querySelector('[data-country-trigger]');
-  const dropdown = this.querySelector('[data-country-dropdown]');
-  const phoneInput = this.phoneInput;
-  const hidden = this.querySelector('[data-phone-hidden]');
 
-  const codeEl = trigger.querySelector('[data-code]');
-  const flagEl = trigger.querySelector('[data-flag]');
-
-  trigger.addEventListener('click', () => {
-    dropdown.classList.toggle('active');
-  });
-
-  dropdown.querySelectorAll('.country-option').forEach(opt => {
-    opt.addEventListener('click', () => {
-      const code = opt.dataset.code;
-      const flag = opt.dataset.flag;
-
-      codeEl.textContent = code;
-      flagEl.src = `https://flagcdn.com/w20/${flag}.png`;
-
-      dropdown.classList.remove('active');
-      this.updatePhone(hidden, code, phoneInput.value);
-    });
-  });
-
-  phoneInput.addEventListener('input', () => {
-    const code = codeEl.textContent;
-    this.updatePhone(hidden, code, phoneInput.value);
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!this.contains(e.target)) {
-      dropdown.classList.remove('active');
-    }
-  });
-
-  this.updatePhone = (hiddenInput, code, number) => {
-    hiddenInput.value = `${code}${number}`;
-  };
-}
       clearFieldError(fieldName) {
         const errorSpan = this.querySelector(`[data-error="${fieldName}"]`);
         let input = this.querySelector(`[data-field="${fieldName}"]`);
@@ -636,7 +596,18 @@ setupPhoneField() {
           input.removeAttribute('aria-invalid');
         }
       }
+handleOutsideClick(e) {
+  const dropdown = this.querySelector('[data-country-dropdown]');
+  const trigger = this.querySelector('[data-country-trigger]');
 
+  if (!dropdown || !trigger) return;
+
+  const isClickInside = this.contains(e.target);
+
+  if (!isClickInside) {
+    dropdown.classList.remove('active');
+  }
+}
       clearErrors() {
         const errorSpans = this.querySelectorAll('[data-error]');
         errorSpans.forEach(span => {
