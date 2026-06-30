@@ -316,10 +316,14 @@
   <div class="ai-contact-form__phone-container-{{ ai_gen_id }}" data-phone-container>
 
     <!-- Trigger -->
-    <div class="ai-contact-form__country-trigger-{{ ai_gen_id }}" data-country-trigger>
+    {% comment %} <div class="ai-contact-form__country-trigger-{{ ai_gen_id }}" data-country-trigger>
       <img class="ai-contact-form__flag-{{ ai_gen_id }}" data-flag src="https://flagcdn.com/w20/us.png" alt="flag">
       <span data-code>+1</span>
-    </div>
+    </div> {% endcomment %}
+    <div class="ai-contact-form__country-trigger-{{ ai_gen_id }}" data-country-trigger>
+  <img class="ai-contact-form__flag-{{ ai_gen_id }}" data-flag src="https://flagcdn.com/w20/us.png" alt="US">
+  <span data-code>+1</span>
+</div>
 
     <!-- Dropdown -->
     <div class="ai-contact-form__country-dropdown-{{ ai_gen_id }}" data-country-dropdown>
