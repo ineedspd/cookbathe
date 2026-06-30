@@ -398,8 +398,236 @@
   {%- endform -%}
 </contact-form-{{ ai_gen_id }}>
 </div>
-</script>
+<script>
+(function() {
+  class ContactForm{{ ai_gen_id }} extends HTMLElement {
+    constructor() {
+      super();
+      this.validationMessages = {};
+      this.handleOutsideClick = this.handleOutsideClick.bind(this);
+    }
 
+    connectedCallback() {
+      this.form = this.querySelector('form');
+
+      this.phoneInput = this.querySelector('[data-field="phone"]');
+      this.phoneContainer = this.querySelector('[data-phone-container]');
+      this.hiddenPhoneInput = this.querySelector('[data-phone-hidden]');
+
+      this.dropdown = this.querySelector('[data-country-dropdown]');
+      this.trigger = this.querySelector('[data-country-trigger]');
+
+      this.codeEl = this.trigger.querySelector('[data-code]');
+      this.flagEl = this.trigger.querySelector('[data-flag]');
+
+      this.selectedCode = this.codeEl?.textContent?.trim() || '+1';
+
+      this.loadValidationMessages();
+      this.setupPhoneField();
+      this.setupValidation();
+
+      document.addEventListener('click', this.handleOutsideClick);
+    }
+
+    disconnectedCallback() {
+      document.removeEventListener('click', this.handleOutsideClick);
+    }
+
+    handleOutsideClick(e) {
+      if (!this.contains(e.target) && this.dropdown) {
+        this.dropdown.classList.remove('active');
+      }
+    }
+
+    loadValidationMessages() {
+      this.validationMessages = {
+        email: {
+          required: '{{ block.settings.email_required_message }}',
+          invalid: '{{ block.settings.email_invalid_message }}'
+        },
+        firstname: {
+          required: '{{ block.settings.firstname_required_message }}'
+        },
+        lastname: {
+          required: '{{ block.settings.lastname_required_message }}'
+        },
+        phone: {
+          required: '{{ block.settings.phone_required_message }}',
+          invalid: '{{ block.settings.phone_invalid_message }}'
+        },
+        message: {
+          required: '{{ block.settings.message_required_message }}'
+        }
+      };
+    }
+
+    // =========================
+    // PHONE FIELD LOGIC
+    // =========================
+    setupPhoneField() {
+      const phoneInput = this.phoneInput;
+
+      // toggle dropdown
+      this.trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.dropdown.classList.toggle('active');
+      });
+
+      // select country
+      this.dropdown.querySelectorAll('.country-option').forEach(opt => {
+        opt.addEventListener('click', (e) => {
+          e.stopPropagation();
+
+          const code = opt.dataset.code;
+          const flag = opt.dataset.flag;
+
+          this.selectedCode = code;
+          this.codeEl.textContent = code;
+          this.flagEl.src = `https://flagcdn.com/w20/${flag}.png`;
+
+          this.dropdown.classList.remove('active');
+        });
+      });
+
+      // ===== INPUT NORMALIZATION =====
+      phoneInput.addEventListener('input', (e) => {
+        let value = e.target.value;
+
+        // keep only +, digits, spaces, dashes
+        value = value.replace(/[^0-9+\s-]/g, '');
+
+        // ensure + stays only at start
+        if (value.indexOf('+') > 0) {
+          value = value.replace(/\+/g, '');
+        }
+
+        // convert spaces → dash
+        value = value.replace(/\s+/g, '-');
+
+        // prevent multiple dashes
+        value = value.replace(/-+/g, '-');
+
+        e.target.value = value;
+      });
+
+      phoneInput.addEventListener('focus', () => {
+        this.dropdown.classList.remove('active');
+      });
+    }
+
+    // =========================
+    // BUILD FINAL PHONE
+    // =========================
+    getFullPhone() {
+      let local = this.phoneInput.value.trim();
+
+      if (!local) return '';
+
+      // ensure format cleanup
+      local = local.replace(/\s+/g, '-');
+      local = local.replace(/[^0-9-]/g, '');
+
+      return `${this.selectedCode}${local}`;
+    }
+
+    // =========================
+    // VALIDATION
+    // =========================
+    isValidPhone(value) {
+      const digits = value.replace(/\D/g, '');
+      return digits.length >= 7 && digits.length <= 15;
+    }
+
+    isValidEmail(email) {
+      return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    }
+
+    setupValidation() {
+      this.form.addEventListener('submit', (e) => {
+        let isValid = true;
+        this.clearErrors();
+
+        const emailInput = this.querySelector('[data-field="email"]');
+        const firstnameInput = this.querySelector('[data-field="firstname"]');
+        const lastnameInput = this.querySelector('[data-field="lastname"]');
+        const phoneInput = this.querySelector('[data-field="phone"]');
+        const messageInput = this.querySelector('[data-field="message"]');
+
+        if (!emailInput.value.trim()) {
+          this.showError('email', this.validationMessages.email.required);
+          isValid = false;
+        } else if (!this.isValidEmail(emailInput.value)) {
+          this.showError('email', this.validationMessages.email.invalid);
+          isValid = false;
+        }
+
+        if (!firstnameInput.value.trim()) {
+          this.showError('firstname', this.validationMessages.firstname.required);
+          isValid = false;
+        }
+
+        if (!lastnameInput.value.trim()) {
+          this.showError('lastname', this.validationMessages.lastname.required);
+          isValid = false;
+        }
+
+        if (!phoneInput.value.trim()) {
+          this.showError('phone', this.validationMessages.phone.required);
+          isValid = false;
+        } else if (!this.isValidPhone(phoneInput.value)) {
+          this.showError('phone', this.validationMessages.phone.invalid);
+          isValid = false;
+        }
+
+        if (!messageInput.value.trim()) {
+          this.showError('message', this.validationMessages.message.required);
+          isValid = false;
+        }
+
+        if (isValid) {
+          this.hiddenPhoneInput.value = this.getFullPhone();
+        }
+
+        if (!isValid) e.preventDefault();
+      });
+    }
+
+    // =========================
+    // ERRORS
+    // =========================
+    showError(fieldName, message) {
+      const errorSpan = this.querySelector(`[data-error="${fieldName}"]`);
+      const input = this.querySelector(`[data-field="${fieldName}"]`);
+
+      if (errorSpan) errorSpan.textContent = message;
+
+      if (input) {
+        input.classList.add('error');
+        input.setAttribute('aria-invalid', 'true');
+      }
+
+      if (fieldName === 'phone' && this.phoneContainer) {
+        this.phoneContainer.classList.add('error');
+      }
+    }
+
+    clearErrors() {
+      this.querySelectorAll('[data-error]').forEach(el => el.textContent = '');
+
+      this.querySelectorAll('[data-field]').forEach(el => {
+        el.classList.remove('error');
+        el.removeAttribute('aria-invalid');
+      });
+
+      if (this.phoneContainer) {
+        this.phoneContainer.classList.remove('error');
+      }
+    }
+  }
+
+  customElements.define('contact-form-{{ ai_gen_id }}', ContactForm{{ ai_gen_id }});
+})();
+</script>
 
 {% schema %}
 {
