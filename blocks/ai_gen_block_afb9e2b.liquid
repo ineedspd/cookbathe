@@ -409,6 +409,7 @@
 
     connectedCallback() {
       this.form = this.querySelector('form');
+
       this.phoneInput = this.querySelector('[data-field="phone"]');
       this.phoneContainer = this.querySelector('[data-phone-container]');
       this.hiddenPhoneInput = this.querySelector('[data-phone-hidden]');
@@ -485,30 +486,48 @@
         });
       });
 
-      // phone typing sync
+      // typing sync
       phoneInput.addEventListener('input', () => {
         const code = codeEl.textContent;
         this.updatePhone(hidden, code, phoneInput.value);
       });
 
-      // ✅ CLOSE ON FOCUS
+      // close on focus
       phoneInput.addEventListener('focus', () => {
         this.dropdown.classList.remove('active');
       });
 
-      // ✅ CLOSE ON BLUR (safe delay for clicks)
+      // close on blur (safe delay)
       phoneInput.addEventListener('blur', () => {
         setTimeout(() => {
           this.dropdown.classList.remove('active');
         }, 150);
       });
 
-      // default value
+      // init value
       this.updatePhone(hidden, codeEl.textContent, phoneInput.value);
     }
 
     updatePhone(hiddenInput, code, number) {
       hiddenInput.value = `${code}${number}`;
+    }
+
+    // =========================
+    // PHONE VALIDATION (IMPROVED)
+    // =========================
+    isValidPhone(phone) {
+      if (!phone) return false;
+
+      // must contain +
+      if (!phone.startsWith('+')) return false;
+
+      // remove non-digits
+      const digits = phone.replace(/\D/g, '');
+
+      // E.164 range check (international standard)
+      if (digits.length < 8 || digits.length > 15) return false;
+
+      return true;
     }
 
     setupValidation() {
@@ -522,6 +541,7 @@
         const phoneInput = this.querySelector('[data-field="phone"]');
         const messageInput = this.querySelector('[data-field="message"]');
 
+        // EMAIL
         if (!emailInput.value.trim()) {
           this.showError('email', this.validationMessages.email.required);
           isValid = false;
@@ -530,16 +550,19 @@
           isValid = false;
         }
 
+        // FIRST NAME
         if (!firstnameInput.value.trim()) {
           this.showError('firstname', this.validationMessages.firstname.required);
           isValid = false;
         }
 
+        // LAST NAME
         if (!lastnameInput.value.trim()) {
           this.showError('lastname', this.validationMessages.lastname.required);
           isValid = false;
         }
 
+        // PHONE
         if (!phoneInput.value.trim()) {
           this.showError('phone', this.validationMessages.phone.required);
           isValid = false;
@@ -548,6 +571,7 @@
           isValid = false;
         }
 
+        // MESSAGE
         if (!messageInput.value.trim()) {
           this.showError('message', this.validationMessages.message.required);
           isValid = false;
@@ -588,11 +612,6 @@
 
     isValidEmail(email) {
       return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    }
-
-    isValidPhone(phone) {
-      const digits = phone.replace(/\D/g, '');
-      return digits.length >= 7 && digits.length <= 15;
     }
 
     showError(fieldName, message) {
