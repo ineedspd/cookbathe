@@ -37,8 +37,7 @@
       "disabled": true,
       "settings": {
         "title": "Contact Us",
-        "number": "(03) 93762299",
-        "image": "shopify://shop_images/1700x300_Banner.jpg"
+        "number": "(03) 93762299"
       }
     },
     "74b6df4d-8580-460b-bcf6-4c9975fb8b08": {
@@ -59,11 +58,11 @@
           "type": "showroom",
           "settings": {
             "img-with-iframe": "iframe",
-            "logo": "shopify://shop_images/flemington_banner.jpg",
             "name": "Flemington",
             "address": "31 Ascot Vale Rd Flemington Vic 3031",
             "map-link": "https://maps.app.goo.gl/7WyqEKDXBKdZVFPh6",
             "phone": "(03) 9376 2299",
+            "opening_hour": "",
             "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.259298110793!2d144.9211832!3d-37.783962599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65da34ea3dba3%3A0x3bd2422e1b4dbed8!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694746276343!5m2!1sen!2sau",
             "btn-style-1": "btn btn-primary",
             "btn-name-1": "Call the Showroom",
@@ -79,11 +78,11 @@
           "type": "showroom",
           "settings": {
             "img-with-iframe": "iframe",
-            "logo": "shopify://shop_images/fawkner_banner.jpg",
             "name": "Fawkner",
             "address": "1329 Sydney Rd Fawkner Vic 3060",
             "map-link": "https://maps.app.goo.gl/cRuiaDRb6RMjcf7J9",
             "phone": "(03) 9357 4900",
+            "opening_hour": "",
             "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.895021613717!2d144.9589895!3d-37.6986644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65b058c7f6e7d%3A0x2518ac9adc0da8cc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sau!4v1694745820696!5m2!1sen!2sau",
             "btn-style-1": "btn btn-primary",
             "btn-name-1": "Call the Showroom",
@@ -99,11 +98,11 @@
           "type": "showroom",
           "settings": {
             "img-with-iframe": "iframe",
-            "logo": "shopify://shop_images/burwood_banner.jpg",
             "name": "Burwood",
             "address": "42-46 Burwood Hwy Vic 3125",
             "map-link": "https://goo.gl/maps/ft2uwknpyB8FoCQJ6",
             "phone": "(03)9116 5788",
+            "opening_hour": "",
             "map-iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.4080533249225!2d145.0971408!3d-37.850741600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6412cf0b6e63d%3A0xeb80e0bf2bfd4fbc!2sCook%20and%20Bathe!5e0!3m2!1sen!2sin!4v1681196682500!5m2!1sen!2sin",
             "btn-style-1": "btn btn-primary",
             "btn-name-1": "Call the Showroom",
@@ -125,13 +124,14 @@
       "custom_css": [
         "{padding-top: 20px;}"
       ],
-      "settings": {}
+      "settings": {
+        "show_map_full": false
+      }
     },
     "f3e59d4c-4f53-41be-a6fd-1f7029e5bcd6": {
       "type": "cb-signup",
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/signup_banner.jpg",
         "mobile-show": false,
         "heading-tag": "h2",
         "heading-class": "none",
@@ -170,6 +170,60 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "1782814420340406a9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_9220c4c_LiTwNR": {
+          "type": "ai_gen_block_9220c4c",
+          "settings": {
+            "heading": "Get in touch",
+            "description": "<p>We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>",
+            "text_alignment": "left",
+            "name_label": "Name",
+            "name_placeholder": "Your name",
+            "name_required": true,
+            "email_label": "Email",
+            "email_placeholder": "your@email.com",
+            "show_phone": false,
+            "phone_label": "Phone",
+            "phone_placeholder": "Your phone number",
+            "phone_required": false,
+            "message_label": "Message",
+            "message_placeholder": "Write your message here...",
+            "button_text": "Send message",
+            "success_message": "Thank you for contacting us. We'll get back to you as soon as possible.",
+            "error_heading": "Please correct the following:",
+            "desktop_width_percent": 100,
+            "padding": 40,
+            "spacing": 24,
+            "field_spacing": 16,
+            "background_color": "#FFFFFF",
+            "heading_color": "#121212",
+            "text_color": "#121212",
+            "input_background_color": "#FFFFFF",
+            "input_text_color": "#121212",
+            "input_border_color": "#D1D1D1",
+            "input_focus_color": "#334FB4",
+            "button_color": "#121212",
+            "button_text_color": "#FFFFFF",
+            "button_hover_color": "#334FB4",
+            "success_background_color": "#D4EDDA",
+            "success_text_color": "#155724",
+            "error_background_color": "#F8D7DA",
+            "error_text_color": "#721C24",
+            "heading_size": 32,
+            "border_radius": 8,
+            "input_border_radius": 4,
+            "button_border_radius": 4
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_9220c4c_LiTwNR"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -180,6 +234,7 @@
     "74b6df4d-8580-460b-bcf6-4c9975fb8b08",
     "f3e59d4c-4f53-41be-a6fd-1f7029e5bcd6",
     "ff71ac46-df84-4392-b5b3-353e9ad1fae3",
-    "167807488128afd22b"
+    "167807488128afd22b",
+    "1782814420340406a9"
   ]
 }
