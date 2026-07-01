@@ -20,7 +20,7 @@
           data-level="0"
           role="button"
           tabindex="0"
-           
+           id="mobile-menu-return"
   type="button"
           aria-label="Return to previous menu"
         >
@@ -1017,20 +1017,26 @@
 </div>
 <!-- end navbar wrapper -->
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const returnBtn = document.querySelector(".menu-drawer__back");
+document.addEventListener("DOMContentLoaded", () => {
+    const returnBtn = document.getElementById("mobile-menu-return");
 
     if (!returnBtn) return;
 
-    returnBtn.id = "mobile-menu-return";
-    returnBtn.setAttribute("role", "button");
-    returnBtn.setAttribute("tabindex", "0");
-    returnBtn.setAttribute("aria-label", "Return to previous menu");
+    function goBackToPreviousMenu() {
+        // Replace this with your existing submenu close/back logic.
+        console.log("Return clicked");
 
-    returnBtn.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            returnBtn.click();
+        // Example:
+        // document.querySelector(".mobile-submenu.active")?.classList.remove("active");
+        // document.querySelector(".mobile-menu-level-1")?.classList.add("active");
+    }
+
+    returnBtn.addEventListener("click", goBackToPreviousMenu);
+
+    returnBtn.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            goBackToPreviousMenu();
         }
     });
 });
