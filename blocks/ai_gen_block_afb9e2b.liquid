@@ -748,7 +748,81 @@
           this.showError('message', this.validationMessages.message.required);
           isValid = false;
         }
+setupEventListeners() {
+        this.dropdownButton.addEventListener('click', (e) => {
+          e.preventDefault();
+          this.toggleDropdown();
+        });
 
+        this.options.forEach(option => {
+          option.addEventListener('click', () => {
+            this.selectOption(option);
+          });
+        });
+
+        this.searchInput.addEventListener('input', (e) => {
+          this.filterOptions(e.target.value);
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!this.contains(e.target)) {
+            this.closeDropdown();
+          }
+        });
+
+        this.searchInput.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
+      }
+
+      toggleDropdown() {
+        const isActive = this.dropdownMenu.classList.contains('active');
+        if (isActive) {
+          this.closeDropdown();
+        } else {
+          this.openDropdown();
+        }
+      }
+
+      openDropdown() {
+        this.dropdownMenu.classList.add('active');
+        this.dropdownButton.setAttribute('aria-expanded', 'true');
+        this.searchInput.value = '';
+        this.filterOptions('');
+        setTimeout(() => {
+          this.searchInput.focus();
+        }, 100);
+      }
+
+      closeDropdown() {
+        this.dropdownMenu.classList.remove('active');
+        this.dropdownButton.setAttribute('aria-expanded', 'false');
+      }
+
+      selectOption(option) {
+        const code = option.dataset.code;
+        const country = option.dataset.country;
+        const flagSrc = option.querySelector('.ai-contact-form__flag-{{ ai_gen_id }}').src;
+
+        this.selectedFlag.src = flagSrc;
+        this.selectedCode.textContent = code;
+        this.hiddenInput.value = code;
+
+        this.closeDropdown();
+      }
+
+      filterOptions(searchTerm) {
+        const term = searchTerm.toLowerCase();
+        this.options.forEach(option => {
+          const name = option.dataset.name.toLowerCase();
+          const code = option.dataset.code.toLowerCase();
+          if (name.includes(term) || code.includes(term)) {
+            option.classList.remove('hidden');
+          } else {
+            option.classList.add('hidden');
+          }
+        });
+      }
         // 👉 FINAL: store full phone
         if (isValid) {
           this.hiddenPhoneInput.value = this.getFullPhone();
