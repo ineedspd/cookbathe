@@ -436,7 +436,8 @@ h6, .h6     {font-size: 18px; line-height: 29px;}
   visibility: visible;
 }
 .return_menu_link svg {
-    width: 31px;
+    /* width: 31px; */
+    width: 8px;
     height: auto;
     margin-right: 16px;
 }
