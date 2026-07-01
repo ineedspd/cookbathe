@@ -262,6 +262,164 @@
   flex: 1;
   margin-left: 6px;
 }
+.ai-contact-form__input-{{ ai_gen_id }},
+  .ai-contact-form__textarea-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid {{ block.settings.input_border_color }};
+    border-radius: {{ block.settings.input_border_radius }}px;
+    font-size: 14px;
+    background-color: {{ block.settings.input_background_color }};
+    color: {{ block.settings.input_text_color }};
+  }
+
+  .ai-contact-form__input-{{ ai_gen_id }}:focus,
+  .ai-contact-form__textarea-{{ ai_gen_id }}:focus {
+    outline: 2px solid {{ block.settings.input_focus_color }};
+    outline-offset: 0;
+  }
+
+  .ai-contact-form__textarea-{{ ai_gen_id }} {
+    min-height: 120px;
+    resize: vertical;
+  }
+
+  .ai-contact-form__phone-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    gap: 8px;
+  }
+
+  .ai-contact-form__country-select-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 140px;
+    flex-shrink: 0;
+  }
+
+  .ai-contact-form__country-select-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 12px 32px 12px 12px;
+    border: 1px solid {{ block.settings.input_border_color }};
+    border-radius: {{ block.settings.input_border_radius }}px;
+    font-size: 14px;
+    background-color: {{ block.settings.input_background_color }};
+    color: {{ block.settings.input_text_color }};
+    cursor: pointer;
+    appearance: none;
+  }
+
+  .ai-contact-form__country-select-{{ ai_gen_id }}:focus {
+    outline: 2px solid {{ block.settings.input_focus_color }};
+    outline-offset: 0;
+  }
+
+  .ai-contact-form__dropdown-icon-{{ ai_gen_id }} {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: {{ block.settings.input_text_color }};
+  }
+
+  .ai-contact-form__custom-dropdown-{{ ai_gen_id }} {
+    position: relative;
+    width: 140px;
+    flex-shrink: 0;
+  }
+
+  .ai-contact-form__dropdown-button-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 12px 32px 12px 12px;
+    border: 1px solid {{ block.settings.input_border_color }};
+    border-radius: {{ block.settings.input_border_radius }}px;
+    font-size: 14px;
+    background-color: {{ block.settings.input_background_color }};
+    color: {{ block.settings.input_text_color }};
+    cursor: pointer;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .ai-contact-form__dropdown-button-{{ ai_gen_id }}:focus {
+    outline: 2px solid {{ block.settings.input_focus_color }};
+    outline-offset: 0;
+  }
+
+  .ai-contact-form__dropdown-menu-{{ ai_gen_id }} {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    width: 280px;
+    max-height: 300px;
+    background-color: {{ block.settings.input_background_color }};
+    border: 1px solid {{ block.settings.input_border_color }};
+    border-radius: {{ block.settings.input_border_radius }}px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+  }
+
+  .ai-contact-form__dropdown-menu-{{ ai_gen_id }}.active {
+    display: flex;
+  }
+
+  .ai-contact-form__dropdown-search-{{ ai_gen_id }} {
+    padding: 8px;
+    border-bottom: 1px solid {{ block.settings.input_border_color }};
+  }
+
+  .ai-contact-form__search-input-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid {{ block.settings.input_border_color }};
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: {{ block.settings.input_background_color }};
+    color: {{ block.settings.input_text_color }};
+  }
+
+  .ai-contact-form__search-input-{{ ai_gen_id }}:focus {
+    outline: 2px solid {{ block.settings.input_focus_color }};
+    outline-offset: 0;
+  }
+
+  .ai-contact-form__dropdown-list-{{ ai_gen_id }} {
+    overflow-y: auto;
+    max-height: 240px;
+  }
+
+  .ai-contact-form__dropdown-option-{{ ai_gen_id }} {
+    padding: 10px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: {{ block.settings.input_text_color }};
+  }
+
+  .ai-contact-form__dropdown-option-{{ ai_gen_id }}:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .ai-contact-form__dropdown-option-{{ ai_gen_id }}.hidden {
+    display: none;
+  }
+
+  .ai-contact-form__flag-{{ ai_gen_id }} {
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .ai-contact-form__phone-input-{{ ai_gen_id }} {
+    flex: 1;
+  }
 {% endstyle %}
 <div class="container">
 <contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
