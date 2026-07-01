@@ -411,7 +411,7 @@ h6, .h6     {font-size: 18px; line-height: 29px;}
 }
 /* !!!! HEADER STYLE CSS !!!! */
 .return_menu_link {
-    max-width: 190px;
+    /* max-width: 190px; */
     width: 100%;
     position: absolute;
     font-size: 16px;
@@ -420,13 +420,15 @@ h6, .h6     {font-size: 18px; line-height: 29px;}
     text-decoration: none;
     font-weight: 400;
     background: var(--bs-white);
-    padding: 20px 20px 20px 0;
+    /* padding: 20px 20px 20px 0; */
     opacity: 0;
     visibility: hidden;
     z-index: 99;
     border: 0;
     display: flex;
     align-items: center;
+    max-width: min-content;
+    padding: 6px 10px;
 }
 .mega_menu_body .return_menu_link {
   opacity: 1;
