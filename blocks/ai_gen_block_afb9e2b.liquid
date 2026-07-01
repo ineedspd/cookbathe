@@ -753,6 +753,16 @@
       this.setupPhoneField();
       this.setupValidation();
 
+        this.dropdownButton = this.querySelector('.ai-contact-form__dropdown-button-{{ ai_gen_id }}');
+        this.dropdownMenu = this.querySelector('.ai-contact-form__dropdown-menu-{{ ai_gen_id }}');
+        this.searchInput = this.querySelector('.ai-contact-form__search-input-{{ ai_gen_id }}');
+        this.options = this.querySelectorAll('.ai-contact-form__dropdown-option-{{ ai_gen_id }}');
+        this.selectedFlag = this.querySelector('.ai-contact-form__selected-flag-{{ ai_gen_id }}');
+        this.selectedCode = this.querySelector('.ai-contact-form__selected-code-{{ ai_gen_id }}');
+        this.hiddenInput = this.querySelector('.ai-contact-form__country-code-input-{{ ai_gen_id }}');
+
+        this.setupEventListeners();
+      
       document.addEventListener('click', this.handleOutsideClick);
     }
 
