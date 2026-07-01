@@ -227,6 +227,41 @@
 .ai-contact-form__phone-container-{{ ai_gen_id }} {
   position: relative;
 }
+.ai-contact-form__country-trigger-{{ ai_gen_id }} {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  bottom: 1px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  cursor: pointer;
+  border-right: 1px solid {{ block.settings.input_border_color }};
+  background: {{ block.settings.input_background_color }};
+  font-size: 14px;
+}
+
+.ai-contact-form__country-trigger-{{ ai_gen_id }}::after {
+  content: "";
+  width: 10px;
+  height: 6px;
+  background: no-repeat center/contain
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath fill='%23666' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+  flex-shrink: 0;
+}
+
+.ai-contact-form__flag-{{ ai_gen_id }} {
+  width: 18px;
+  height: 12px;
+  object-fit: cover;
+}
+
+.ai-contact-form__country-trigger-{{ ai_gen_id }} span {
+  flex: 1;
+  margin-left: 6px;
+}
 {% endstyle %}
 <div class="container">
 <contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
@@ -245,6 +280,9 @@
 
     {%- if block.settings.heading != blank -%}
       <h2 class="ai-contact-form__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {%- endif -%}
+      {%- if block.settings.subparagraph != blank -%}
+      <h2 class="ai-contact-form__heading-{{ ai_gen_id }}">{{ block.settings.subparagraph }}</h2>
     {%- endif -%}
 
     <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
@@ -693,6 +731,12 @@
       "step": 2,
       "unit": "px",
       "default": 32
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subparagraph",
+      "label": "Paragraph",
+      "default": "Sign up to receive access to our latest updates and best offers."
     },
     {
       "type": "inline_richtext",
