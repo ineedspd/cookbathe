@@ -429,6 +429,7 @@ h6, .h6     {font-size: 18px; line-height: 29px;}
     align-items: center;
     max-width: min-content;
     padding: 6px 10px;
+    border:1px solid #363031;
 }
 .mega_menu_body .return_menu_link {
   opacity: 1;
