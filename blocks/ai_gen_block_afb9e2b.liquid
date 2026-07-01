@@ -264,7 +264,7 @@
     margin-left: 6px;
   }
 {% endstyle %}
-<div class="container">
+<div class="container section_head_holder">
   <contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
     {%- form 'contact' -%}
       {%- if form.posted_successfully? -%}
@@ -278,7 +278,7 @@
           {{ block.settings.error_message }}
         </div>
       {%- endif -%}
-      <div class="section_head_holder">
+      <div class="">
         {%- if block.settings.heading != blank -%}
           <h2 class="ai-contact-form__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
         {%- endif -%}
