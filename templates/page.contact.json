@@ -207,6 +207,7 @@
       "block_order": [
         "ai_gen_block_95a43a8_KkCwrt"
       ],
+      "disabled": true,
       "settings": {}
     },
     "178282986753288129": {
@@ -217,6 +218,7 @@
           "settings": {
             "heading": "<strong>Have a question? Our expert consultants are here to help.</strong>",
             "heading_size": 32,
+            "subparagraph": "Sign up to receive access to our latest updates and best offers.",
             "email_label": "Email",
             "email_placeholder": "you@example.com",
             "firstname_label": "First name",
@@ -240,20 +242,20 @@
             "desktop_width_percent": 100,
             "form_padding": 32,
             "border_radius": 0,
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "text_color": "#121212",
-            "input_background_color": "#FFFFFF",
+            "input_background_color": "#ffffff",
             "input_text_color": "#121212",
-            "input_border_color": "#D1D1D1",
+            "input_border_color": "#d1d1d1",
             "placeholder_color": "#999999",
-            "input_focus_color": "#334FB4",
+            "input_focus_color": "#334fb4",
             "button_color": "#121212",
-            "button_hover_color": "#334FB4",
-            "button_text_color": "#FFFFFF",
-            "success_bg_color": "#D4EDDA",
+            "button_hover_color": "#334fb4",
+            "button_text_color": "#ffffff",
+            "success_bg_color": "#d4edda",
             "success_text_color": "#155724",
-            "error_bg_color": "#F8D7DA",
-            "error_text_color": "#721C24",
+            "error_bg_color": "#f8d7da",
+            "error_text_color": "#721c24",
             "input_border_radius": 0,
             "button_border_radius": 0
           },
@@ -271,11 +273,11 @@
     "ade25c85-2b0e-471b-a21d-fe6d2a139922",
     "173275900856dbbd75",
     "98de05d7-b432-4c85-9374-0d14f397596b",
+    "178282986753288129",
     "74b6df4d-8580-460b-bcf6-4c9975fb8b08",
     "f3e59d4c-4f53-41be-a6fd-1f7029e5bcd6",
     "ff71ac46-df84-4392-b5b3-353e9ad1fae3",
     "167807488128afd22b",
-    "17828146205f06cd33",
-    "178282986753288129"
+    "17828146205f06cd33"
   ]
 }
