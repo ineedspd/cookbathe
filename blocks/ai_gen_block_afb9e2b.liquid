@@ -5,441 +5,441 @@
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
 {% style %}
-  .ai-contact-form-{{ ai_gen_id }} {
-    display: block;
-    width: {{ block.settings.desktop_width_percent }}%;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: {{ block.settings.form_padding }}px;
-    background-color: {{ block.settings.background_color }};
-    border-radius: {{ block.settings.border_radius }}px;
-  }
+    .ai-contact-form-{{ ai_gen_id }} {
+      display: block;
+      width: {{ block.settings.desktop_width_percent }}%;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: {{ block.settings.form_padding }}px;
+      background-color: {{ block.settings.background_color }};
+      border-radius: {{ block.settings.border_radius }}px;
+    }
 
-  .ai-contact-form__heading-{{ ai_gen_id }} {
-    margin: 0 0 24px;
-    color: {{ block.settings.text_color }};
-    font-size: {{ block.settings.heading_size }}px;
-    text-align: left;
-  }
+    .ai-contact-form__heading-{{ ai_gen_id }} {
+      margin: 0 0 24px;
+      color: {{ block.settings.text_color }};
+      font-size: {{ block.settings.heading_size }}px;
+      text-align: left;
+    }
 
-  .ai-contact-form__field-group-{{ ai_gen_id }} {
-    margin-bottom: 16px;
-  }
+    .ai-contact-form__field-group-{{ ai_gen_id }} {
+      margin-bottom: 16px;
+    }
 
-  .ai-contact-form__label-{{ ai_gen_id }} {
-    display: block;
-    margin-bottom: 8px;
-    color: {{ block.settings.text_color }};
-    font-size: 14px;
-    text-align: left;
-    padding-left: 0;
-    font-weight: 600;
-  }
+    .ai-contact-form__label-{{ ai_gen_id }} {
+      display: block;
+      margin-bottom: 8px;
+      color: {{ block.settings.text_color }};
+      font-size: 14px;
+      text-align: left;
+      padding-left: 0;
+      font-weight: 600;
+    }
 
-  .ai-contact-form__input-{{ ai_gen_id }},
-  .ai-contact-form__textarea-{{ ai_gen_id }} {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid {{ block.settings.input_border_color }};
-    border-radius: {{ block.settings.input_border_radius }}px;
-    font-size: 16px;
-    background-color: {{ block.settings.input_background_color }};
-    color: {{ block.settings.input_text_color }};
-    text-align: left;
-  }
+    .ai-contact-form__input-{{ ai_gen_id }},
+    .ai-contact-form__textarea-{{ ai_gen_id }} {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid {{ block.settings.input_border_color }};
+      border-radius: {{ block.settings.input_border_radius }}px;
+      font-size: 16px;
+      background-color: {{ block.settings.input_background_color }};
+      color: {{ block.settings.input_text_color }};
+      text-align: left;
+    }
 
-  .ai-contact-form__phone-container-{{ ai_gen_id }} {
-    position: relative;
-    width: 100%;
-  }
+    .ai-contact-form__phone-container-{{ ai_gen_id }} {
+      position: relative;
+      width: 100%;
+    }
 
-  .ai-contact-form__phone-input-{{ ai_gen_id }} {
-    width: 100%;
-    padding: 12px 16px 12px 100px;
-    border: 1px solid {{ block.settings.input_border_color }};
-    border-radius: {{ block.settings.input_border_radius }}px;
-    font-size: 16px;
-    background-color: {{ block.settings.input_background_color }};
-    color: {{ block.settings.input_text_color }};
-  }
+    .ai-contact-form__phone-input-{{ ai_gen_id }} {
+      width: 100%;
+      padding: 12px 16px 12px 100px;
+      border: 1px solid {{ block.settings.input_border_color }};
+      border-radius: {{ block.settings.input_border_radius }}px;
+      font-size: 16px;
+      background-color: {{ block.settings.input_background_color }};
+      color: {{ block.settings.input_text_color }};
+    }
 
-  .ai-contact-form__country-select-{{ ai_gen_id }} {
+    .ai-contact-form__country-select-{{ ai_gen_id }} {
+      position: absolute;
+      left: 1px;
+      top: 1px;
+      bottom: 1px;
+      width: 80px;
+      padding: 0 4px 0 12px;
+      border: none;
+      border-right: 1px solid {{ block.settings.input_border_color }};
+      border-radius: {{ block.settings.input_border_radius }}px 0 0 {{ block.settings.input_border_radius }}px;
+      font-size: 16px;
+      background-color: {{ block.settings.input_background_color }};
+      color: {{ block.settings.input_text_color }};
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 4px center;
+      background-size: 10px;
+    }
+
+    .ai-contact-form__input-{{ ai_gen_id }}.error,
+    .ai-contact-form__textarea-{{ ai_gen_id }}.error,
+    .ai-contact-form__phone-input-{{ ai_gen_id }}.error {
+      border-color: {{ block.settings.error_text_color }};
+    }
+
+    .ai-contact-form__phone-container-{{ ai_gen_id }}.error .ai-contact-form__country-select-{{ ai_gen_id }} {
+      border-right-color: {{ block.settings.error_text_color }};
+    }
+
+    .ai-contact-form__input-{{ ai_gen_id }}::placeholder,
+    .ai-contact-form__textarea-{{ ai_gen_id }}::placeholder,
+    .ai-contact-form__phone-input-{{ ai_gen_id }}::placeholder {
+      color: {{ block.settings.placeholder_color }};
+      opacity: 1;
+    }
+
+    .ai-contact-form__input-{{ ai_gen_id }}:focus,
+    .ai-contact-form__textarea-{{ ai_gen_id }}:focus,
+    .ai-contact-form__phone-input-{{ ai_gen_id }}:focus {
+      outline: 2px solid {{ block.settings.input_focus_color }};
+      outline-offset: 2px;
+    }
+
+    .ai-contact-form__country-select-{{ ai_gen_id }}:focus {
+      outline: 2px solid {{ block.settings.input_focus_color }};
+      outline-offset: -2px;
+      z-index: 1;
+    }
+
+    .ai-contact-form__textarea-{{ ai_gen_id }} {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .ai-contact-form__button-{{ ai_gen_id }} {
+      width: 100%;
+      padding: 14px 24px;
+      background-color: {{ block.settings.button_color }};
+      color: {{ block.settings.button_text_color }};
+      border: none;
+      border-radius: {{ block.settings.button_border_radius }}px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .ai-contact-form__button-{{ ai_gen_id }}:hover {
+      background-color: {{ block.settings.button_hover_color }};
+    }
+
+    .ai-contact-form__success-{{ ai_gen_id }} {
+      padding: 16px;
+      margin-bottom: 16px;
+      background-color: {{ block.settings.success_bg_color }};
+      color: {{ block.settings.success_text_color }};
+      border-radius: {{ block.settings.input_border_radius }}px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .ai-contact-form__error-{{ ai_gen_id }} {
+      padding: 16px;
+      margin-bottom: 16px;
+      background-color: {{ block.settings.error_bg_color }};
+      color: {{ block.settings.error_text_color }};
+      border-radius: {{ block.settings.input_border_radius }}px;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .ai-contact-form__field-error-{{ ai_gen_id }} {
+      display: block;
+      margin-top: 6px;
+      color: {{ block.settings.error_text_color }};
+      font-size: 13px;
+      text-align: left;
+    }
+
+    .ai-contact-form__required-{{ ai_gen_id }} {
+      color: {{ block.settings.error_text_color }};
+    }
+
+    .ai-contact-form__hidden-phone-{{ ai_gen_id }} {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+    }
+    .ai-contact-form__country-trigger-{{ ai_gen_id }} {
     position: absolute;
     left: 1px;
     top: 1px;
     bottom: 1px;
-    width: 80px;
-    padding: 0 4px 0 12px;
-    border: none;
+    width: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
     border-right: 1px solid {{ block.settings.input_border_color }};
-    border-radius: {{ block.settings.input_border_radius }}px 0 0 {{ block.settings.input_border_radius }}px;
-    font-size: 16px;
-    background-color: {{ block.settings.input_background_color }};
-    color: {{ block.settings.input_text_color }};
-    cursor: pointer;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 4px center;
-    background-size: 10px;
-  }
-
-  .ai-contact-form__input-{{ ai_gen_id }}.error,
-  .ai-contact-form__textarea-{{ ai_gen_id }}.error,
-  .ai-contact-form__phone-input-{{ ai_gen_id }}.error {
-    border-color: {{ block.settings.error_text_color }};
-  }
-
-  .ai-contact-form__phone-container-{{ ai_gen_id }}.error .ai-contact-form__country-select-{{ ai_gen_id }} {
-    border-right-color: {{ block.settings.error_text_color }};
-  }
-
-  .ai-contact-form__input-{{ ai_gen_id }}::placeholder,
-  .ai-contact-form__textarea-{{ ai_gen_id }}::placeholder,
-  .ai-contact-form__phone-input-{{ ai_gen_id }}::placeholder {
-    color: {{ block.settings.placeholder_color }};
-    opacity: 1;
-  }
-
-  .ai-contact-form__input-{{ ai_gen_id }}:focus,
-  .ai-contact-form__textarea-{{ ai_gen_id }}:focus,
-  .ai-contact-form__phone-input-{{ ai_gen_id }}:focus {
-    outline: 2px solid {{ block.settings.input_focus_color }};
-    outline-offset: 2px;
-  }
-
-  .ai-contact-form__country-select-{{ ai_gen_id }}:focus {
-    outline: 2px solid {{ block.settings.input_focus_color }};
-    outline-offset: -2px;
-    z-index: 1;
-  }
-
-  .ai-contact-form__textarea-{{ ai_gen_id }} {
-    min-height: 120px;
-    resize: vertical;
-  }
-
-  .ai-contact-form__button-{{ ai_gen_id }} {
-    width: 100%;
-    padding: 14px 24px;
-    background-color: {{ block.settings.button_color }};
-    color: {{ block.settings.button_text_color }};
-    border: none;
-    border-radius: {{ block.settings.button_border_radius }}px;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-
-  .ai-contact-form__button-{{ ai_gen_id }}:hover {
-    background-color: {{ block.settings.button_hover_color }};
-  }
-
-  .ai-contact-form__success-{{ ai_gen_id }} {
-    padding: 16px;
-    margin-bottom: 16px;
-    background-color: {{ block.settings.success_bg_color }};
-    color: {{ block.settings.success_text_color }};
-    border-radius: {{ block.settings.input_border_radius }}px;
+    background: {{ block.settings.input_background_color }};
     font-size: 14px;
-    text-align: left;
   }
 
-  .ai-contact-form__error-{{ ai_gen_id }} {
-    padding: 16px;
-    margin-bottom: 16px;
-    background-color: {{ block.settings.error_bg_color }};
-    color: {{ block.settings.error_text_color }};
-    border-radius: {{ block.settings.input_border_radius }}px;
-    font-size: 14px;
-    text-align: left;
+  .ai-contact-form__flag-{{ ai_gen_id }} {
+    width: 18px;
+    height: 12px;
+    object-fit: cover;
   }
 
-  .ai-contact-form__field-error-{{ ai_gen_id }} {
-    display: block;
-    margin-top: 6px;
-    color: {{ block.settings.error_text_color }};
-    font-size: 13px;
-    text-align: left;
-  }
-
-  .ai-contact-form__required-{{ ai_gen_id }} {
-    color: {{ block.settings.error_text_color }};
-  }
-
-  .ai-contact-form__hidden-phone-{{ ai_gen_id }} {
+  .ai-contact-form__country-dropdown-{{ ai_gen_id }} {
+    display: none;
     position: absolute;
-    left: -9999px;
-    width: 1px;
-    height: 1px;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 200px;
+    z-index: 50;
+    max-height: 220px;
+    overflow-y: auto;
+  }
+
+  .ai-contact-form__country-dropdown-{{ ai_gen_id }}.active {
+    display: block;
+  }
+
+  .country-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  .country-option:hover {
+    background: #f5f5f5;
+  }
+
+  .ai-contact-form__phone-container-{{ ai_gen_id }} {
+    position: relative;
   }
   .ai-contact-form__country-trigger-{{ ai_gen_id }} {
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  bottom: 1px;
-  width: 85px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  cursor: pointer;
-  border-right: 1px solid {{ block.settings.input_border_color }};
-  background: {{ block.settings.input_background_color }};
-  font-size: 14px;
-}
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    bottom: 1px;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    cursor: pointer;
+    border-right: 1px solid {{ block.settings.input_border_color }};
+    background: {{ block.settings.input_background_color }};
+    font-size: 14px;
+  }
 
-.ai-contact-form__flag-{{ ai_gen_id }} {
-  width: 18px;
-  height: 12px;
-  object-fit: cover;
-}
+  .ai-contact-form__country-trigger-{{ ai_gen_id }}::after {
+    content: "";
+    width: 10px;
+    height: 6px;
+    background: no-repeat center/contain
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath fill='%23666' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+    flex-shrink: 0;
+  }
 
-.ai-contact-form__country-dropdown-{{ ai_gen_id }} {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background: #fff;
-  border: 1px solid #ddd;
-  width: 200px;
-  z-index: 50;
-  max-height: 220px;
-  overflow-y: auto;
-}
+  .ai-contact-form__flag-{{ ai_gen_id }} {
+    width: 18px;
+    height: 12px;
+    object-fit: cover;
+  }
 
-.ai-contact-form__country-dropdown-{{ ai_gen_id }}.active {
-  display: block;
-}
-
-.country-option {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px;
-  cursor: pointer;
-}
-
-.country-option:hover {
-  background: #f5f5f5;
-}
-
-.ai-contact-form__phone-container-{{ ai_gen_id }} {
-  position: relative;
-}
-.ai-contact-form__country-trigger-{{ ai_gen_id }} {
-  position: absolute;
-  left: 1px;
-  top: 1px;
-  bottom: 1px;
-  width: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-  cursor: pointer;
-  border-right: 1px solid {{ block.settings.input_border_color }};
-  background: {{ block.settings.input_background_color }};
-  font-size: 14px;
-}
-
-.ai-contact-form__country-trigger-{{ ai_gen_id }}::after {
-  content: "";
-  width: 10px;
-  height: 6px;
-  background: no-repeat center/contain
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'%3E%3Cpath fill='%23666' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
-  flex-shrink: 0;
-}
-
-.ai-contact-form__flag-{{ ai_gen_id }} {
-  width: 18px;
-  height: 12px;
-  object-fit: cover;
-}
-
-.ai-contact-form__country-trigger-{{ ai_gen_id }} span {
-  flex: 1;
-  margin-left: 6px;
-}
+  .ai-contact-form__country-trigger-{{ ai_gen_id }} span {
+    flex: 1;
+    margin-left: 6px;
+  }
 {% endstyle %}
 <div class="container">
-<contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
-  {%- form 'contact' -%}
-    {%- if form.posted_successfully? -%}
-      <div class="ai-contact-form__success-{{ ai_gen_id }}" id="ai-contact-form-success-{{ ai_gen_id }}">
-        {{ block.settings.success_message }}
-      </div>
-    {%- endif -%}
+  <contact-form-{{ ai_gen_id }} class="ai-contact-form-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+    {%- form 'contact' -%}
+      {%- if form.posted_successfully? -%}
+        <div class="ai-contact-form__success-{{ ai_gen_id }}" id="ai-contact-form-success-{{ ai_gen_id }}">
+          {{ block.settings.success_message }}
+        </div>
+      {%- endif -%}
 
-    {%- if form.errors -%}
-      <div class="ai-contact-form__error-{{ ai_gen_id }}" id="ai-contact-form-error-{{ ai_gen_id }}">
-        {{ block.settings.error_message }}
+      {%- if form.errors -%}
+        <div class="ai-contact-form__error-{{ ai_gen_id }}" id="ai-contact-form-error-{{ ai_gen_id }}">
+          {{ block.settings.error_message }}
+        </div>
+      {%- endif -%}
+      <div class="section_head_holder">
+        {%- if block.settings.heading != blank -%}
+          <h2 class="ai-contact-form__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+        {%- endif -%}
       </div>
-    {%- endif -%}
-
-    {%- if block.settings.heading != blank -%}
-      <h2 class="ai-contact-form__heading-{{ ai_gen_id }} h3">{{ block.settings.heading }}</h2>
-    {%- endif -%}
       {%- if block.settings.subparagraph != blank -%}
-      <p class="">{{ block.settings.subparagraph }}</p>
-    {%- endif -%}
+        <p class="">{{ block.settings.subparagraph }}</p>
+      {%- endif -%}
 
-    <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
-      <label for="ai-contact-email-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
-        {{ block.settings.email_label }}
-        <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
-      </label>
-      <input
-        type="email"
-        id="ai-contact-email-{{ ai_gen_id }}"
-        name="contact[email]"
-        class="ai-contact-form__input-{{ ai_gen_id }}"
-        value="{{ form.email }}"
-        placeholder="{{ block.settings.email_placeholder }}"
-        autocomplete="email"
-        required
-        aria-required="true"
-        data-field="email"
-      >
-      <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="email"></span>
-    </div>
-
-    <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
-      <label for="ai-contact-firstname-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
-        {{ block.settings.firstname_label }}
-        <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
-      </label>
-      <input
-        type="text"
-        id="ai-contact-firstname-{{ ai_gen_id }}"
-        name="contact[first_name]"
-        class="ai-contact-form__input-{{ ai_gen_id }}"
-        value="{{ form.first_name }}"
-        placeholder="{{ block.settings.firstname_placeholder }}"
-        autocomplete="given-name"
-        required
-        aria-required="true"
-        data-field="firstname"
-      >
-      <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="firstname"></span>
-    </div>
-
-    <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
-      <label for="ai-contact-lastname-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
-        {{ block.settings.lastname_label }}
-        <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
-      </label>
-      <input
-        type="text"
-        id="ai-contact-lastname-{{ ai_gen_id }}"
-        name="contact[last_name]"
-        class="ai-contact-form__input-{{ ai_gen_id }}"
-        value="{{ form.last_name }}"
-        placeholder="{{ block.settings.lastname_placeholder }}"
-        autocomplete="family-name"
-        required
-        aria-required="true"
-        data-field="lastname"
-      >
-      <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="lastname"></span>
-    </div>
-
-    <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
-  <label for="ai-contact-phone-input-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
-    {{ block.settings.phone_label }}
-    <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
-  </label>
-
-  <div class="ai-contact-form__phone-container-{{ ai_gen_id }}" data-phone-container>
-
-    <!-- Trigger -->
-    {% comment %} <div class="ai-contact-form__country-trigger-{{ ai_gen_id }}" data-country-trigger>
-      <img class="ai-contact-form__flag-{{ ai_gen_id }}" data-flag src="https://flagcdn.com/w20/us.png" alt="flag">
-      <span data-code>+1</span>
-    </div> {% endcomment %}
-    <div class="ai-contact-form__country-trigger-{{ ai_gen_id }}" data-country-trigger>
-  <img class="ai-contact-form__flag-{{ ai_gen_id }}" data-flag src="https://flagcdn.com/w20/us.png" alt="US">
-  <span data-code>+1</span>
-</div>
-
-    <!-- Dropdown -->
-    <div class="ai-contact-form__country-dropdown-{{ ai_gen_id }}" data-country-dropdown>
-
-      <div class="country-option" data-code="+1" data-flag="us">
-        <img src="https://flagcdn.com/w20/us.png"> +1 (US)
+      <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
+        <label for="ai-contact-email-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
+          {{ block.settings.email_label }}
+          <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
+        </label>
+        <input
+          type="email"
+          id="ai-contact-email-{{ ai_gen_id }}"
+          name="contact[email]"
+          class="ai-contact-form__input-{{ ai_gen_id }}"
+          value="{{ form.email }}"
+          placeholder="{{ block.settings.email_placeholder }}"
+          autocomplete="email"
+          required
+          aria-required="true"
+          data-field="email"
+        >
+        <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="email"></span>
       </div>
 
-      <div class="country-option" data-code="+44" data-flag="gb">
-        <img src="https://flagcdn.com/w20/gb.png"> +44 (UK)
+      <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
+        <label for="ai-contact-firstname-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
+          {{ block.settings.firstname_label }}
+          <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
+        </label>
+        <input
+          type="text"
+          id="ai-contact-firstname-{{ ai_gen_id }}"
+          name="contact[first_name]"
+          class="ai-contact-form__input-{{ ai_gen_id }}"
+          value="{{ form.first_name }}"
+          placeholder="{{ block.settings.firstname_placeholder }}"
+          autocomplete="given-name"
+          required
+          aria-required="true"
+          data-field="firstname"
+        >
+        <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="firstname"></span>
       </div>
 
-      <div class="country-option" data-code="+91" data-flag="in">
-        <img src="https://flagcdn.com/w20/in.png"> +91 (IN)
+      <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
+        <label for="ai-contact-lastname-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
+          {{ block.settings.lastname_label }}
+          <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
+        </label>
+        <input
+          type="text"
+          id="ai-contact-lastname-{{ ai_gen_id }}"
+          name="contact[last_name]"
+          class="ai-contact-form__input-{{ ai_gen_id }}"
+          value="{{ form.last_name }}"
+          placeholder="{{ block.settings.lastname_placeholder }}"
+          autocomplete="family-name"
+          required
+          aria-required="true"
+          data-field="lastname"
+        >
+        <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="lastname"></span>
       </div>
 
-      <div class="country-option" data-code="+61" data-flag="au">
-        <img src="https://flagcdn.com/w20/au.png"> +61 (AU)
+      <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
+        <label for="ai-contact-phone-input-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
+          {{ block.settings.phone_label }}
+          <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
+        </label>
+
+        <div class="ai-contact-form__phone-container-{{ ai_gen_id }}" data-phone-container>
+          <!-- Trigger -->
+          {% comment %}
+            <div class="ai-contact-form__country-trigger-{{ ai_gen_id }}" data-country-trigger>
+              <img class="ai-contact-form__flag-{{ ai_gen_id }}" data-flag src="https://flagcdn.com/w20/us.png" alt="flag">
+              <span data-code>+1</span>
+            </div>
+          {% endcomment %}
+          <div class="ai-contact-form__country-trigger-{{ ai_gen_id }}" data-country-trigger>
+            <img class="ai-contact-form__flag-{{ ai_gen_id }}" data-flag src="https://flagcdn.com/w20/us.png" alt="US">
+            <span data-code>+1</span>
+          </div>
+
+          <!-- Dropdown -->
+          <div class="ai-contact-form__country-dropdown-{{ ai_gen_id }}" data-country-dropdown>
+            <div class="country-option" data-code="+1" data-flag="us">
+              <img src="https://flagcdn.com/w20/us.png"> +1 (US)
+            </div>
+
+            <div class="country-option" data-code="+44" data-flag="gb">
+              <img src="https://flagcdn.com/w20/gb.png"> +44 (UK)
+            </div>
+
+            <div class="country-option" data-code="+91" data-flag="in">
+              <img src="https://flagcdn.com/w20/in.png"> +91 (IN)
+            </div>
+
+            <div class="country-option" data-code="+61" data-flag="au">
+              <img src="https://flagcdn.com/w20/au.png"> +61 (AU)
+            </div>
+
+            <div class="country-option" data-code="+81" data-flag="jp">
+              <img src="https://flagcdn.com/w20/jp.png"> +81 (JP)
+            </div>
+
+            <div class="country-option" data-code="+971" data-flag="ae">
+              <img src="https://flagcdn.com/w20/ae.png"> +971 (UAE)
+            </div>
+          </div>
+
+          <!-- Phone input -->
+          <input
+            type="tel"
+            id="ai-contact-phone-input-{{ ai_gen_id }}"
+            class="ai-contact-form__phone-input-{{ ai_gen_id }}"
+            placeholder="{{ block.settings.phone_placeholder }}"
+            autocomplete="tel"
+            required
+            aria-required="true"
+            data-field="phone"
+          >
+        </div>
+
+        <!-- Hidden combined value -->
+        <input
+          type="hidden"
+          name="contact[phone]"
+          id="ai-contact-phone-hidden-{{ ai_gen_id }}"
+          class="ai-contact-form__hidden-phone-{{ ai_gen_id }}"
+          data-phone-hidden
+        >
+
+        <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="phone"></span>
       </div>
 
-      <div class="country-option" data-code="+81" data-flag="jp">
-        <img src="https://flagcdn.com/w20/jp.png"> +81 (JP)
+      <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
+        <label for="ai-contact-message-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
+          {{ block.settings.message_label }}
+          <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
+        </label>
+        <textarea
+          id="ai-contact-message-{{ ai_gen_id }}"
+          name="contact[body]"
+          class="ai-contact-form__textarea-{{ ai_gen_id }}"
+          placeholder="{{ block.settings.message_placeholder }}"
+          required
+          aria-required="true"
+          data-field="message"
+        >{{ form.body }}</textarea>
+        <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="message"></span>
       </div>
 
-      <div class="country-option" data-code="+971" data-flag="ae">
-        <img src="https://flagcdn.com/w20/ae.png"> +971 (UAE)
-      </div>
-
-    </div>
-
-    <!-- Phone input -->
-    <input
-      type="tel"
-      id="ai-contact-phone-input-{{ ai_gen_id }}"
-      class="ai-contact-form__phone-input-{{ ai_gen_id }}"
-      placeholder="{{ block.settings.phone_placeholder }}"
-      autocomplete="tel"
-      required
-      aria-required="true"
-      data-field="phone"
-    >
-  </div>
-
-  <!-- Hidden combined value -->
-  <input
-    type="hidden"
-    name="contact[phone]"
-    id="ai-contact-phone-hidden-{{ ai_gen_id }}"
-    class="ai-contact-form__hidden-phone-{{ ai_gen_id }}"
-    data-phone-hidden
-  >
-
-  <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="phone"></span>
-</div>
-
-    <div class="ai-contact-form__field-group-{{ ai_gen_id }}">
-      <label for="ai-contact-message-{{ ai_gen_id }}" class="ai-contact-form__label-{{ ai_gen_id }}">
-        {{ block.settings.message_label }}
-        <span class="ai-contact-form__required-{{ ai_gen_id }}">*</span>
-      </label>
-      <textarea
-        id="ai-contact-message-{{ ai_gen_id }}"
-        name="contact[body]"
-        class="ai-contact-form__textarea-{{ ai_gen_id }}"
-        placeholder="{{ block.settings.message_placeholder }}"
-        required
-        aria-required="true"
-        data-field="message"
-      >{{ form.body }}</textarea>
-      <span class="ai-contact-form__field-error-{{ ai_gen_id }}" data-error="message"></span>
-    </div>
-
-    <button type="submit" class="ai-contact-form__button-{{ ai_gen_id }}">
-      {{ block.settings.button_text }}
-    </button>
-  {%- endform -%}
-</contact-form-{{ ai_gen_id }}>
+      <button type="submit" class="ai-contact-form__button-{{ ai_gen_id }}">
+        {{ block.settings.button_text }}
+      </button>
+    {%- endform -%}
+  </contact-form-{{ ai_gen_id }}>
 </div>
 <script>
 (function() {
