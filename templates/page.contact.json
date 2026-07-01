@@ -215,7 +215,7 @@
         "ai_gen_block_afb9e2b_efaben": {
           "type": "ai_gen_block_afb9e2b",
           "settings": {
-            "heading": "Get in touch",
+            "heading": "<strong>Have a question? Our expert consultants are here to help.</strong>",
             "heading_size": 32,
             "email_label": "Email",
             "email_placeholder": "you@example.com",
